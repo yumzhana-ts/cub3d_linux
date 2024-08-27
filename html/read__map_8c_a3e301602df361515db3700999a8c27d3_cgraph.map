@@ -1,0 +1,7 @@
+<map id="read_map" name="read_map">
+<area shape="rect" id="Node000001" title="Opens a file and reads map." alt="" coords="5,31,84,56"/>
+<area shape="rect" id="Node000002" href="$read__map_8c.html#a804cd515bd4c1bf7169adeb352db80fb" title="Adds a new line to the heightmap." alt="" coords="148,5,218,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,34,132,25,133,30,84,39"/>
+<area shape="rect" id="Node000003" href="$read__map_8c.html#af446920934fed0c42e436d04caa7776a" title="Calculates the width of a map represented by a string." alt="" coords="132,55,234,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,48,117,53,116,59,84,53"/>
+</map>

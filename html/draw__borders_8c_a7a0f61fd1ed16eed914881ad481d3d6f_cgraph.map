@@ -1,0 +1,16 @@
+<map id="draw_border" name="draw_border">
+<area shape="rect" id="Node000001" title="Draw borders of map." alt="" coords="5,80,98,106"/>
+<area shape="rect" id="Node000002" href="$draw__borders_8c.html#a24b7b602bee179e2f49b2f6c4e4f3de0" title="Draw bottom border." alt="" coords="146,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,77,145,40,157,35,159,39,147,45,76,82"/>
+<area shape="rect" id="Node000004" href="$draw__borders_8c.html#a9bc672a7253ed16ae0c35641b48214d3" title="Draw left border." alt="" coords="157,55,274,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,83,141,76,142,82,99,88"/>
+<area shape="rect" id="Node000005" href="$draw__borders_8c.html#a2a1cbc9a6116e4eb11883cea084346aa" title="Draw right border." alt="" coords="153,104,278,130"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="99,97,138,103,137,108,98,102"/>
+<area shape="rect" id="Node000006" href="$draw__borders_8c.html#a4bf979fd1a1016b16d047a65f1ea8c0b" title="Draw top border." alt="" coords="157,153,274,179"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="77,104,147,140,159,145,157,150,145,145,74,109"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title=" " alt="" coords="333,80,459,106"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,29,286,40,355,71,353,75,284,45,256,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="275,73,318,79,317,84,274,78"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="278,106,318,101,318,106,278,111"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="256,150,284,140,352,110,354,115,286,145,258,155"/>
+</map>

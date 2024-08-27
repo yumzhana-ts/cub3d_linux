@@ -1,0 +1,40 @@
+\chapter{CUB3D}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{CUB3D@{CUB3D}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+2d raycast\+:
+\begin{DoxyEnumerate}
+\item Set Up Your Development Environment
+\item Initialize the Screen Define constants such as screen\+Width, screen\+Height, map\+Width, and map\+Height. Set up the world\+Map as a 2D array to represent the game world. Initialize the MLX window using mlx\+\_\+init() and mlx\+\_\+new\+\_\+window() with the specified width and height.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Read map
+\item Test map \DoxyHorRuler{0}
+
+\end{DoxyEnumerate}
+
+A valid map / config file obeys the following rules\+:
+\begin{DoxyEnumerate}
+\item The map must be composed of only 6 possible characters\+: 0 for an empty space, 1 for a wall, and N,S,E or W for the player’s start position and spawning orientation.
+\item The map must be closed/surrounded by walls
+\item Except for the map content, each type of element can be separated by one or more empty line(s).
+\item Except for the map content which always has to be the last, each type of element can be set in any order in the file.
+\item Except for the map, each type of information from an element can be separated by one or more space(s).
+\item The map must be parsed as it looks in the file. Spaces are a valid part of the map and are up to you to handle. You must be able to parse any kind of map, as long as it respects the rules of the map.
+\end{DoxyEnumerate}
+
+DDA
+
+
+\begin{DoxyEnumerate}
+\item Set Up Player and Camera Define the player\textquotesingle{}s starting position (posX, posY) and direction (dirX, dirY). Set up the camera plane (planeX, planeY) to define the field of view.
+\item Implement Raycasting Logic For each vertical stripe on the screen, calculate the ray\textquotesingle{}s direction based on the player\textquotesingle{}s direction and the camera plane. Use the Digital Differential Analyzer (DDA) algorithm to determine the intersection of the ray with the map grid. Compute the perpendicular distance to the wall to avoid fisheye effects. Calculate the height of the wall slice to be rendered based on this distance.
+\item Render the Scene Use MLX functions like mlx\+\_\+pixel\+\_\+put() or draw to an image buffer with mlx\+\_\+put\+\_\+image\+\_\+to\+\_\+window() to render vertical lines representing the walls. Assign different colors to the walls based on the world\+Map values and apply shading based on whether the wall is hit from the side.
+\item Handle User Input Use MLX\textquotesingle{}s input handling functions (mlx\+\_\+key\+\_\+hook, mlx\+\_\+hook, etc.) to manage player movement (forward, backward) and rotation (left, right). Update the player’s position and direction based on the keys pressed.
+\item Implement Frame Timing Calculate the frame time to adjust movement and rotation speeds. Optionally, display the FPS (frames per second) by calculating it from the frame time.
+\item Loop and Refresh Set up the main loop using mlx\+\_\+loop(). Continuously clear the screen, render the scene, and handle input in each iteration.
+\item Test and Debug Compile and run your program, checking for correct rendering, movement, and collision detection. Debug issues related to raycasting calculations or screen rendering.
+\item Optimize and Enhance (Optional) Optimize the performance by refining calculations and managing resources efficiently. Consider adding advanced features like textured walls, dynamic lighting, or more complex maps to enhance the raycaster. This plan should guide you through implementing a flat raycaster using C and the MLX library. 
+\end{DoxyEnumerate}

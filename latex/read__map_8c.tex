@@ -1,0 +1,94 @@
+\doxysection{src/map/read\+\_\+map.c File Reference}
+\hypertarget{read__map_8c}{}\label{read__map_8c}\index{src/map/read\_map.c@{src/map/read\_map.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for read\+\_\+map.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{read__map_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{read__map_8c_af446920934fed0c42e436d04caa7776a}{width\+\_\+of\+\_\+map}} (char \texorpdfstring{$\ast$}{*}string)
+\begin{DoxyCompactList}\small\item\em Calculates the width of a map represented by a string. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{read__map_8c_a804cd515bd4c1bf7169adeb352db80fb}{add\+\_\+line}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}line)
+\begin{DoxyCompactList}\small\item\em Adds a new line to the heightmap. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{read__map_8c_abc6a0e39f4097410a6462b03e8b98fe5}{read\+\_\+map}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Opens a file and reads map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{read__map_8c_a804cd515bd4c1bf7169adeb352db80fb}\index{read\_map.c@{read\_map.c}!add\_line@{add\_line}}
+\index{add\_line@{add\_line}!read\_map.c@{read\_map.c}}
+\doxysubsubsection{\texorpdfstring{add\_line()}{add\_line()}}
+{\footnotesize\ttfamily \label{read__map_8c_a804cd515bd4c1bf7169adeb352db80fb} 
+static int add\+\_\+line (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a new line to the heightmap. 
+
+This function increments the heightmap count, allocates a new array to accommodate the additional line, and copies existing lines into this new array. The new line is then added to the end of the array. The old array is freed, and the map pointer is updated to the new array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the structure containing the map and heightmap information. \\
+\hline
+{\em line} & The new line to be added. This should be a valid string. If {\ttfamily NULL}, no action is taken, and the function returns {\ttfamily 0}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the line was successfully added and the map was updated, 0 if the provided line was {\ttfamily NULL} or memory allocation failed. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]👾 Handle different map forms \end{DoxyRefDesc}
+\Hypertarget{read__map_8c_abc6a0e39f4097410a6462b03e8b98fe5}\index{read\_map.c@{read\_map.c}!read\_map@{read\_map}}
+\index{read\_map@{read\_map}!read\_map.c@{read\_map.c}}
+\doxysubsubsection{\texorpdfstring{read\_map()}{read\_map()}}
+{\footnotesize\ttfamily \label{read__map_8c_abc6a0e39f4097410a6462b03e8b98fe5} 
+int read\+\_\+map (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{, }\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Opens a file and reads map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & File path. \\
+\hline
+{\em m} & Pointer to {\ttfamily t\+\_\+data} for storing the file descriptor and line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; error code from {\ttfamily fd\+\_\+error} otherwise.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]👾\+Handle additional file read errors and edge cases. \end{DoxyRefDesc}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{read__map_8c_abc6a0e39f4097410a6462b03e8b98fe5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{read__map_8c_af446920934fed0c42e436d04caa7776a}\index{read\_map.c@{read\_map.c}!width\_of\_map@{width\_of\_map}}
+\index{width\_of\_map@{width\_of\_map}!read\_map.c@{read\_map.c}}
+\doxysubsubsection{\texorpdfstring{width\_of\_map()}{width\_of\_map()}}
+{\footnotesize\ttfamily \label{read__map_8c_af446920934fed0c42e436d04caa7776a} 
+static int width\+\_\+of\+\_\+map (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the width of a map represented by a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Pointer to a null-\/terminated string representing the map. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The width of the map as an integer. If the string is empty or consists solely of a newline character, the width will be 0. 
+\end{DoxyReturn}

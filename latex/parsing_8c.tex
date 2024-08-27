@@ -1,0 +1,49 @@
+\doxysection{src/map/parsing.c File Reference}
+\hypertarget{parsing_8c}{}\label{parsing_8c}\index{src/map/parsing.c@{src/map/parsing.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for parsing.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{parsing_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{parsing_8c_a5a92095eb57b614020d1000c4cdc92d5}{parsing}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Validates command-\/line arguments and file extension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{parsing_8c_a5a92095eb57b614020d1000c4cdc92d5}\index{parsing.c@{parsing.c}!parsing@{parsing}}
+\index{parsing@{parsing}!parsing.c@{parsing.c}}
+\doxysubsubsection{\texorpdfstring{parsing()}{parsing()}}
+{\footnotesize\ttfamily \label{parsing_8c_a5a92095eb57b614020d1000c4cdc92d5} 
+int parsing (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
+
+
+
+Validates command-\/line arguments and file extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & Array of command-\/line argument strings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]👾 Separate reading the map from parsing,~\newline
+ 👾 Add texture and color reading\end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+0 if arguments are valid. Exits the program with an error message otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{parsing_8c_a5a92095eb57b614020d1000c4cdc92d5_cgraph}
+\end{center}
+\end{figure}

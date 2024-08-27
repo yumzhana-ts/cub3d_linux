@@ -1,0 +1,48 @@
+\doxysection{src/graphics/mlx\+\_\+init\+\_\+create\+\_\+win.c File Reference}
+\hypertarget{mlx__init__create__win_8c}{}\label{mlx__init__create__win_8c}\index{src/graphics/mlx\_init\_create\_win.c@{src/graphics/mlx\_init\_create\_win.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+Include dependency graph for mlx\+\_\+init\+\_\+create\+\_\+win.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{mlx__init__create__win_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mlx__init__create__win_8c_a81e5bd795cb879b651de99812ac575da}{mlx\+\_\+init\+\_\+create\+\_\+window}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the MLX library and create a new window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mlx__init__create__win_8c_a81e5bd795cb879b651de99812ac575da}\index{mlx\_init\_create\_win.c@{mlx\_init\_create\_win.c}!mlx\_init\_create\_window@{mlx\_init\_create\_window}}
+\index{mlx\_init\_create\_window@{mlx\_init\_create\_window}!mlx\_init\_create\_win.c@{mlx\_init\_create\_win.c}}
+\doxysubsubsection{\texorpdfstring{mlx\_init\_create\_window()}{mlx\_init\_create\_window()}}
+{\footnotesize\ttfamily \label{mlx__init__create__win_8c_a81e5bd795cb879b651de99812ac575da} 
+int mlx\+\_\+init\+\_\+create\+\_\+window (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the MLX library and create a new window. 
+
+This function initializes the MLX library and attempts to create a new window with the specified dimensions. It checks for errors during initialization and window creation and handles them by returning an appropriate error code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gm} & Pointer to the game data structure (t\+\_\+data), which contains information about the game state, including the desired window dimensions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, 1 if MLX initialization fails, 1 if window creation fails. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]👾 Handle proper resource cleanup on error~\newline
+ 👾 Further error handling and logging \end{DoxyRefDesc}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{mlx__init__create__win_8c_a81e5bd795cb879b651de99812ac575da_cgraph}
+\end{center}
+\end{figure}
