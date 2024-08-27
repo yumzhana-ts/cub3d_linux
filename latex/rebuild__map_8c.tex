@@ -1,0 +1,66 @@
+\doxysection{src/map/rebuild\+\_\+map.c File Reference}
+\hypertarget{rebuild__map_8c}{}\label{rebuild__map_8c}\index{src/map/rebuild\_map.c@{src/map/rebuild\_map.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+Include dependency graph for rebuild\+\_\+map.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{rebuild__map_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{rebuild__map_8c_a337196ad3e584b45eb6ae76bb05c1d57}{ones}} (char \texorpdfstring{$\ast$}{*}src, int size)
+\begin{DoxyCompactList}\small\item\em Fills the remainder of a string with \textquotesingle{}1\textquotesingle{} characters up to a specified size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rebuild__map_8c_ab9b63b0339a215e857933184d27c1ead}{fill\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Replaces spaces in a map with \textquotesingle{}1\textquotesingle{}s and fills remaining spaces with \textquotesingle{}1\textquotesingle{}s up to the map width. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rebuild__map_8c_ab9b63b0339a215e857933184d27c1ead}\index{rebuild\_map.c@{rebuild\_map.c}!fill\_map@{fill\_map}}
+\index{fill\_map@{fill\_map}!rebuild\_map.c@{rebuild\_map.c}}
+\doxysubsubsection{\texorpdfstring{fill\_map()}{fill\_map()}}
+{\footnotesize\ttfamily \label{rebuild__map_8c_ab9b63b0339a215e857933184d27c1ead} 
+void fill\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Replaces spaces in a map with \textquotesingle{}1\textquotesingle{}s and fills remaining spaces with \textquotesingle{}1\textquotesingle{}s up to the map width. 
+
+This function iterates over each row of the map in the {\ttfamily t\+\_\+data} structure. For each row, it replaces all spaces (\textquotesingle{} \textquotesingle{}) with \textquotesingle{}1\textquotesingle{}. After processing all rows, it calls the {\ttfamily ones} function to fill each row with \textquotesingle{}1\textquotesingle{} up to the width of the map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to a {\ttfamily t\+\_\+data} structure containing the map and its width. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{rebuild__map_8c_ab9b63b0339a215e857933184d27c1ead_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rebuild__map_8c_a337196ad3e584b45eb6ae76bb05c1d57}\index{rebuild\_map.c@{rebuild\_map.c}!ones@{ones}}
+\index{ones@{ones}!rebuild\_map.c@{rebuild\_map.c}}
+\doxysubsubsection{\texorpdfstring{ones()}{ones()}}
+{\footnotesize\ttfamily \label{rebuild__map_8c_a337196ad3e584b45eb6ae76bb05c1d57} 
+static void ones (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fills the remainder of a string with \textquotesingle{}1\textquotesingle{} characters up to a specified size. 
+
+This function searches for the first occurrence of either \textquotesingle{}~\newline
+\textquotesingle{} or \textquotesingle{}\textbackslash{}0\textquotesingle{} in the {\ttfamily src} string and then fills the remaining part of the string with the character \textquotesingle{}1\textquotesingle{} until the specified size ({\ttfamily size}). Finally, it adds a newline character at the end.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & The source string to be filled with \textquotesingle{}1\textquotesingle{} characters. \\
+\hline
+{\em size} & The size up to which the string should be filled with \textquotesingle{}1\textquotesingle{}. \\
+\hline
+\end{DoxyParams}

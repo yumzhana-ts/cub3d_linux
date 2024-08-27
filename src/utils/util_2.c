@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/22 01:49:55 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/08/27 18:56:23 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /**
  * @brief Prints the map to the standard output
+ * @callgraph
  */
 void print_map(t_data *game)
 {
@@ -30,6 +31,7 @@ void print_map(t_data *game)
 
 /**
  * @brief Prints debugging information about the map.
+ * @callgraph
  */
 void map_debug(t_data *game)
 {
@@ -46,6 +48,7 @@ void map_debug(t_data *game)
  * angle in radians.
  * @param degrees The angle in degrees to be converted to radians.
  * @return The equivalent angle in radians.
+ * @callgraph
  */
 float degrees_to_radians(double degrees) {
     return degrees * (M_PI / 180.0);

@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,32,133,26,134,32,102,37"/>
 <area shape="rect" id="Node000004" href="$draw__player_8c.html#aa32d1a2cbd10349e6d59e101d801cb22" title="Draw pixel." alt="" coords="151,55,234,80"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="102,49,137,55,136,60,101,54"/>
-<area shape="rect" id="Node000003" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title=" " alt="" coords="285,31,411,56"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="285,31,411,56"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,23,270,28,269,33,237,28"/>
 <area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="235,58,269,53,270,58,235,64"/>
 </map>

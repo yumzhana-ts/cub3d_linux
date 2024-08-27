@@ -14,7 +14,7 @@ Include dependency graph for util\+\_\+1.\+c\+:\nopagebreak
 int \mbox{\hyperlink{util__1_8c_abdd79f8c7592cfe0da42efdeeb0b09a1}{fd\+\_\+error}} (char \texorpdfstring{$\ast$}{*}s)
 \begin{DoxyCompactList}\small\item\em Outputs an error message to the standard error stream. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{util__1_8c_a26e24eb705fb43a7fc63f86db9427312}{my\+\_\+mlx\+\_\+pixel\+\_\+put}} (t\+\_\+pixel \texorpdfstring{$\ast$}{*}data, int x, int y, int color)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fast version on pixel put. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -30,7 +30,7 @@ Outputs an error message to the standard error stream.
 
 
 \begin{DoxyParams}{Parameters}
-{\em s} & A pointer to a null-\/terminated string containing the error message to be printed. \\
+{\em s} & A pointer to a null-\/terminated string containing the error message to be printed.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -41,4 +41,8 @@ Always returns {\ttfamily 1}, indicating the function has completed its error re
 \doxysubsubsection{\texorpdfstring{my\_mlx\_pixel\_put()}{my\_mlx\_pixel\_put()}}
 {\footnotesize\ttfamily \label{util__1_8c_a26e24eb705fb43a7fc63f86db9427312} 
 void my\+\_\+mlx\+\_\+pixel\+\_\+put (\begin{DoxyParamCaption}\item[{t\+\_\+pixel \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Fast version on pixel put. 
 

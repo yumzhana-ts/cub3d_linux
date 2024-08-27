@@ -83,7 +83,7 @@ typedef struct s_data
 #define BG_WHITE "\033[0;47m"
 
 // Additional prototypes
-int	checkextension(char *name)
+int	checkextension(char *name, char *extension)
 ;
 int	exit_point(t_data *game)
 ;
@@ -132,7 +132,7 @@ void print_map(t_data *game)
 
 float degrees_to_radians(double degrees);
 void	my_mlx_pixel_put(t_pixel *data, int x, int y, int color);
-
+void fill_map(t_data *game);
 
 
 #endif

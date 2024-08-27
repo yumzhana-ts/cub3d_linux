@@ -1,0 +1,5 @@
+<map id="fill_map" name="fill_map">
+<area shape="rect" id="Node000001" title="Replaces spaces in a map with &#39;1&#39;s and fills remaining spaces with &#39;1&#39;s up to the map width." alt="" coords="5,5,72,31"/>
+<area shape="rect" id="Node000002" href="$rebuild__map_8c.html#a337196ad3e584b45eb6ae76bb05c1d57" title="Fills the remainder of a string with &#39;1&#39; characters up to a specified size." alt="" coords="120,5,169,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,16,104,16,104,21,72,21"/>
+</map>

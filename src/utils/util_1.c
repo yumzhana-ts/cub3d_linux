@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   util_1.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/26 21:31:17 by jstrojsa         ###   ########.fr       */
+/*   Updated: 2024/08/27 18:56:38 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
  * @brief Outputs an error message to the standard error stream.
  * @param s A pointer to a null-terminated string containing the error message to 
  *          be printed.
+ * @callgraph
  * @return Always returns `1`, indicating the function has completed its error 
  *         reporting.
  */
@@ -41,6 +42,10 @@ int	fd_error(char *s)
 	return (p);
 }
 
+/**
+ * @brief Fast version on pixel put
+ * @callgraph
+ */
 void	my_mlx_pixel_put(t_pixel *data, int x, int y, int color)
 {
 	char	*dst;

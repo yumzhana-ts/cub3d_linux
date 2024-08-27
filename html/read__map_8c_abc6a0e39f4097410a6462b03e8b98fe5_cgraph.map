@@ -1,9 +1,13 @@
 <map id="read_map" name="read_map">
-<area shape="rect" id="Node000001" title="Opens a file and reads map." alt="" coords="5,55,84,80"/>
+<area shape="rect" id="Node000001" title="Opens a file and reads map." alt="" coords="5,80,84,106"/>
 <area shape="rect" id="Node000002" href="$read__map_8c.html#a804cd515bd4c1bf7169adeb352db80fb" title="Adds a new line to the heightmap." alt="" coords="148,5,218,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,52,133,33,135,38,84,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,77,130,40,138,36,141,40,133,45,69,82"/>
 <area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="150,55,216,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,65,134,65,134,70,84,70"/>
-<area shape="rect" id="Node000004" href="$read__map_8c.html#af446920934fed0c42e436d04caa7776a" title="Calculates the width of a map represented by a string." alt="" coords="132,104,234,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,78,131,96,130,101,82,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,83,134,74,135,79,84,88"/>
+<area shape="rect" id="Node000004" href="$rebuild__map_8c.html#ab9b63b0339a215e857933184d27c1ead" title="Replaces spaces in a map with &#39;1&#39;s and fills remaining spaces with &#39;1&#39;s up to the map width." alt="" coords="150,104,216,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,97,135,106,134,111,84,102"/>
+<area shape="rect" id="Node000006" href="$read__map_8c.html#a85b45c355bcd7ef210d4d1abb1bd0d03" title="Calculates the longest width of a map represented by a string." alt="" coords="132,153,234,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="69,104,133,140,141,144,138,149,130,145,67,109"/>
+<area shape="rect" id="Node000005" href="$rebuild__map_8c.html#a337196ad3e584b45eb6ae76bb05c1d57" title="Fills the remainder of a string with &#39;1&#39; characters up to a specified size." alt="" coords="282,104,331,130"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,114,267,114,267,120,217,120"/>
 </map>

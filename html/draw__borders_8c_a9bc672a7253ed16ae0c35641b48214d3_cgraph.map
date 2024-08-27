@@ -1,5 +1,5 @@
 <map id="draw_left_border" name="draw_left_border">
 <area shape="rect" id="Node000001" title="Draw left border." alt="" coords="5,5,123,31"/>
-<area shape="rect" id="Node000002" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title=" " alt="" coords="171,5,297,31"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="171,5,297,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,16,155,16,155,21,123,21"/>
 </map>

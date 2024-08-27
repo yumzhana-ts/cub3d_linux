@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/19 13:58:26 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/08/27 17:04:55 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 
 int	parsing(int argc, char **argv)
 {
-	if (argc != 2 || checkextension(argv[1]))
+	if (argc != 2 || checkextension(argv[1], ".cub"))
 		exit(fd_error("no map or invalid map extension\n"));
 	return (0);
 }

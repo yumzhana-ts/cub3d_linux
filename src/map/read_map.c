@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/19 13:57:37 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/08/27 23:38:59 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,32 @@
 #include "libft.h"
 
 /**
- * @brief Calculates the width of a map represented by a string.
+ * @brief Calculates the longest width of a map represented by a string.
  * @param string Pointer to a null-terminated string representing the map.
- * @return The width of the map as an integer. If the string is empty or
- *         consists solely of a newline character, the width will be 0.
+ * @callgraph
+ * @return The width of the map as an integer. 
  */
-static int width_of_map(char *string) 
+
+static int width_of_map(t_data *m)
 {
-    int width = 0;
-    while (string[width] != '\0') 
+    int i;
+    int j;
+    
+    i = 0;
+
+    m->widthmap = 0;
+    while(m->map[i])
     {
-        width++;
+        j = 0;
+        while(m->map[i][j] != '\n' && m->map[i][j] != '\0')
+        {
+            j++;
+        }
+        if(j > m->widthmap)
+            m->widthmap = j;
+        i++;
     }
-    if (string[width - 1] == '\n') {
-        width--;
-    }
-    return (width);
+    return(m->widthmap);
 }
 
 /**
@@ -44,6 +54,7 @@ static int width_of_map(char *string)
  *             heightmap information.
  * @param line The new line to be added. This should be a valid string. If 
  *             `NULL`, no action is taken, and the function returns `0`.
+ * @callgraph
  * 
  * @return 1 if the line was successfully added and the map was updated, 
  *         0 if the provided line was `NULL` or memory allocation failed.
@@ -67,9 +78,8 @@ static int add_line(t_data *game, char *line)
         i++;
     }
     temporary[i] = line;
-    if (game->map) {
+    if (game->map)
         free(game->map);
-    }
     game->map = temporary;
     return (0);
 }
@@ -95,6 +105,8 @@ int	read_map(char **argv, t_data *m)
             break;
 	}
 	close(m->fd);
-    m->widthmap = width_of_map(m->map[0]);
+    m->widthmap = width_of_map(m);
+    fill_map(m);
 	return (0);
 }
+

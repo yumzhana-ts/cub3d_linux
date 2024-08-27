@@ -110,9 +110,9 @@ Include dependency graph for read_map.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af446920934fed0c42e436d04caa7776a" id="r_af446920934fed0c42e436d04caa7776a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af446920934fed0c42e436d04caa7776a">width_of_map</a> (char *string)</td></tr>
-<tr class="memdesc:af446920934fed0c42e436d04caa7776a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the width of a map represented by a string.  <br /></td></tr>
-<tr class="separator:af446920934fed0c42e436d04caa7776a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b45c355bcd7ef210d4d1abb1bd0d03" id="r_a85b45c355bcd7ef210d4d1abb1bd0d03"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85b45c355bcd7ef210d4d1abb1bd0d03">width_of_map</a> (t_data *m)</td></tr>
+<tr class="memdesc:a85b45c355bcd7ef210d4d1abb1bd0d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the longest width of a map represented by a string.  <br /></td></tr>
+<tr class="separator:a85b45c355bcd7ef210d4d1abb1bd0d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804cd515bd4c1bf7169adeb352db80fb" id="r_a804cd515bd4c1bf7169adeb352db80fb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a804cd515bd4c1bf7169adeb352db80fb">add_line</a> (t_data *game, char *line)</td></tr>
 <tr class="memdesc:a804cd515bd4c1bf7169adeb352db80fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new line to the heightmap.  <br /></td></tr>
 <tr class="separator:a804cd515bd4c1bf7169adeb352db80fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,20 +196,24 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="read__map_8c_abc6a0e39f4097410a6462b03e8b98fe5_cgraph.png" border="0" usemap="#aread__map_8c_abc6a0e39f4097410a6462b03e8b98fe5_cgraph" alt=""/></div>
 <map name="aread__map_8c_abc6a0e39f4097410a6462b03e8b98fe5_cgraph" id="aread__map_8c_abc6a0e39f4097410a6462b03e8b98fe5_cgraph">
-<area shape="rect" title="Opens a file and reads map." alt="" coords="5,55,84,80"/>
+<area shape="rect" title="Opens a file and reads map." alt="" coords="5,80,84,106"/>
 <area shape="rect" href="read__map_8c.html#a804cd515bd4c1bf7169adeb352db80fb" title="Adds a new line to the heightmap." alt="" coords="148,5,218,31"/>
-<area shape="poly" title=" " alt="" coords="82,52,133,33,135,38,84,57"/>
+<area shape="poly" title=" " alt="" coords="66,77,130,40,138,36,141,40,133,45,69,82"/>
 <area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="150,55,216,80"/>
-<area shape="poly" title=" " alt="" coords="84,65,134,65,134,70,84,70"/>
-<area shape="rect" href="read__map_8c.html#af446920934fed0c42e436d04caa7776a" title="Calculates the width of a map represented by a string." alt="" coords="132,104,234,130"/>
-<area shape="poly" title=" " alt="" coords="84,78,131,96,130,101,82,83"/>
+<area shape="poly" title=" " alt="" coords="83,83,134,74,135,79,84,88"/>
+<area shape="rect" href="rebuild__map_8c.html#ab9b63b0339a215e857933184d27c1ead" title="Replaces spaces in a map with &#39;1&#39;s and fills remaining spaces with &#39;1&#39;s up to the map width." alt="" coords="150,104,216,130"/>
+<area shape="poly" title=" " alt="" coords="84,97,135,106,134,111,84,102"/>
+<area shape="rect" href="read__map_8c.html#a85b45c355bcd7ef210d4d1abb1bd0d03" title="Calculates the longest width of a map represented by a string." alt="" coords="132,153,234,179"/>
+<area shape="poly" title=" " alt="" coords="69,104,133,140,141,144,138,149,130,145,67,109"/>
+<area shape="rect" href="rebuild__map_8c.html#a337196ad3e584b45eb6ae76bb05c1d57" title="Fills the remainder of a string with &#39;1&#39; characters up to a specified size." alt="" coords="282,104,331,130"/>
+<area shape="poly" title=" " alt="" coords="217,114,267,114,267,120,217,120"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af446920934fed0c42e436d04caa7776a" name="af446920934fed0c42e436d04caa7776a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af446920934fed0c42e436d04caa7776a">&#9670;&#160;</a></span>width_of_map()</h2>
+<a id="a85b45c355bcd7ef210d4d1abb1bd0d03" name="a85b45c355bcd7ef210d4d1abb1bd0d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b45c355bcd7ef210d4d1abb1bd0d03">&#9670;&#160;</a></span>width_of_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +224,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">static int width_of_map </td>
           <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>string</em></span></td><td>)</td>
+          <td class="paramtype">t_data *</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -231,14 +235,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Calculates the width of a map represented by a string. </p>
+<p>Calculates the longest width of a map represented by a string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">string</td><td>Pointer to a null-terminated string representing the map. </td></tr>
+    <tr><td class="paramname">string</td><td>Pointer to a null-terminated string representing the map.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The width of the map as an integer. If the string is empty or consists solely of a newline character, the width will be 0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The width of the map as an integer. </dd></dl>
 
 </div>
 </div>

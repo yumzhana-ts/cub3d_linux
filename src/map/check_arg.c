@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/19 17:03:27 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/08/27 17:04:28 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@
  * @callgraph
  */
 
-int	checkextension(char *name)
+int	checkextension(char *name, char *extension)
 {
 	char	*dotp;
 	
 	if (!name || !(dotp = ft_strrchr(name, '.')))
 		return (1);
-	if (ft_strcmp(dotp, ".cub") == 0)
+	if (ft_strcmp(dotp, extension) == 0)
 		return (0);
 	return (1);
 }

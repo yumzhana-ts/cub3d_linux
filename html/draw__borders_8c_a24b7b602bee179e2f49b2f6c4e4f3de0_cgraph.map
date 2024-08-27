@@ -1,5 +1,5 @@
 <map id="draw_bottom_border" name="draw_bottom_border">
 <area shape="rect" id="Node000001" title="Draw bottom border." alt="" coords="5,5,145,31"/>
-<area shape="rect" id="Node000002" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title=" " alt="" coords="193,5,319,31"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="193,5,319,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,16,177,16,177,21,145,21"/>
 </map>
