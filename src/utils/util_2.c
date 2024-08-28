@@ -19,14 +19,21 @@
 void print_map(t_data *game)
 {
     int i;
+    int j;
     
     i = 0;
     while (i < game->heightmap) 
     {
-        printf("%s", game->map[i]);
+        j = 0;
+        while(j < game->widthmap)
+        {
+            printf("%c", game->map[i][j]);
+            j++;
+        }
+        printf("\n");
         i++;
     }
-    printf("\n");
+
 }
 
 /**

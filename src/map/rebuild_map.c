@@ -11,63 +11,57 @@
 /* ************************************************************************** */
 
 #include "cub3d.h"
+#include "libft.h"
 
 /**
- * @brief Fills the remainder of a string with '1' characters up to a specified size.
+ * @brief Modifies the input string `src` by replacing certain characters with '1'.
  *
- * This function searches for the first occurrence of either '\n' or '\0' in the
- * `src` string and then fills the remaining part of the string with the character '1'
- * until the specified size (`size`). Finally, it adds a newline character at the end.
+ * Allocates a new string `temp` of size `size + 2`. It initializes this new string
+ * with '1' characters and then copies characters from `src` until it encounters a
+ * newline character, a null terminator, or exceeds the specified size. It replaces
+ * 'P' or '0' characters with the corresponding characters from `src`.
  * @callgraph
- * @param src The source string to be filled with '1' characters.
- * @param size The size up to which the string should be filled with '1'.
+ * @param src The source string to be modified. This pointer will be freed and replaced
+ *            with a new allocated string.
+ * @param size The maximum number of characters to copy from `src`.
  */
-static void ones(char *src, int size)
+static void ones(char **src, int size)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (src[i] != '\n' && src[i] != '\0')
-        i++;
-    while (i < size)
-    {
-        src[i] = '1';
-        i++;
-    }
-    src[i] = '\n';
+	i = 0;
+	char *temp = (char *)malloc(sizeof(char) * (size + 2));
+	if (!temp)
+		return;
+	ft_memset(temp, '1', size);
+	temp[size + 1] = '\0';
+	while ((*src)[i] != '\n' && (*src)[i] != '\0')
+	{
+		if ((*src)[i] == 'P' || (*src)[i] == '0')
+			temp[i] = (*src)[i];
+		i++;
+	}
+	free(*src);
+	*src = temp;
 }
 
 /**
- * @brief Replaces spaces in a map with '1's and fills remaining spaces with '1's up to the map width.
+ * @brief Fills the map in the `t_data` structure by modifying each row using the `ones` function.
  *
- * This function iterates over each row of the map in the `t_data` structure.
- * For each row, it replaces all spaces (' ') with '1'. After processing all rows,
- * it calls the `ones` function to fill each row with '1' up to the width of the map.
+ * Iterates over each row of the map (`m->map`) and calls the `ones` function on each row.
+ * The width of the map (`m->widthmap`) is used to specify the maximum number of characters
+ * to process for each row.
  * @callgraph
- * @param m Pointer to a `t_data` structure containing the map and its width.
+ * @param m Pointer to a `t_data` structure that contains the map data to be modified.
  */
 void fill_map(t_data *m)
 {
-    int i;
-    int j;
-    
-    i = 0;
-    while (m->map[i])
-    {
-        j = 0;
-        while (m->map[i][j] != '\n' && m->map[i][j] != '\0')
-        {
-            if (m->map[i][j] == ' ')
-                m->map[i][j] = '1';
-            j++;
-        }
-        i++;
-    }
-    i = 0;
-    while (m->map[i])
-    {
-        ones(m->map[i], m->widthmap);
-        i++;
-    }
-    m->map[i] = '\0';
+	int i;
+
+	i = 0;
+	while (m->map[i] != NULL)
+	{
+		ones(&m->map[i], m->widthmap);
+		i++;
+	}
 }

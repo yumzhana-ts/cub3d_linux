@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/27 23:38:59 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/08/28 15:14:52 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,10 @@ static int add_line(t_data *game, char *line)
     i = 0;
     game->heightmap++;
     temporary = (char **)malloc(sizeof(char *) * (game->heightmap + 1));
+    if(!temporary)
+        return (1);
     temporary[game->heightmap] = NULL;
+    
     while (i < game->heightmap - 1) 
 	{
         temporary[i] = game->map[i];
@@ -101,8 +104,15 @@ int	read_map(char **argv, t_data *m)
 	while (1)
 	{
 		readmap = get_next_line(m->fd);
-        if (add_line(m, readmap))
+        if (!readmap)
             break;
+
+        if (add_line(m, readmap))
+        {
+            free(readmap);
+            close(m->fd);
+            return fd_error("memory allocation failed");
+        }
 	}
 	close(m->fd);
     m->widthmap = width_of_map(m);
