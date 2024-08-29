@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:45 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/26 22:47:53 by jstrojsa         ###   ########.fr       */
+/*   Updated: 2024/08/29 15:46:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,19 @@ int	exit_point(t_data *game)
 	exit(0);
 }
 
+/**
+ * @brief Processes the command-line arguments and initializes the game map.
+ *
+ * This function checks the validity of the command-line arguments and reads
+ * the game map from a file. If the arguments are invalid, it returns an error.
+ * Otherwise, it proceeds to read the map and perform additional parsing and debugging.
+ * @callgraph
+ * @param argc The number of command-line arguments.
+ * @param argv An array of command-line arguments.
+ * @param game A pointer to the game data structure.
+ * @return Returns 0 on success, or 1 if an error occurs during argument checking
+ *         or parsing the game data.
+ */
 int map(int argc, char **argv, t_data *game)
 {
 	if (check_args(argc, argv))

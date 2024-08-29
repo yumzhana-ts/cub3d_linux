@@ -1,13 +1,14 @@
 <map id="read_map" name="read_map">
-<area shape="rect" id="Node000001" title="Opens a file and reads map." alt="" coords="5,80,84,106"/>
+<area shape="rect" id="Node000001" title="Opens a file and reads map." alt="" coords="5,81,84,107"/>
 <area shape="rect" id="Node000002" href="$read__map_8c.html#a804cd515bd4c1bf7169adeb352db80fb" title="Adds a new line to the heightmap." alt="" coords="148,5,218,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,77,130,40,138,36,141,40,133,45,69,82"/>
-<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="150,55,216,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,83,134,74,135,79,84,88"/>
-<area shape="rect" id="Node000004" href="$rebuild__map_8c.html#ab9b63b0339a215e857933184d27c1ead" title="Replaces spaces in a map with &#39;1&#39;s and fills remaining spaces with &#39;1&#39;s up to the map width." alt="" coords="150,104,216,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,97,135,106,134,111,84,102"/>
-<area shape="rect" id="Node000006" href="$read__map_8c.html#a85b45c355bcd7ef210d4d1abb1bd0d03" title="Calculates the longest width of a map represented by a string." alt="" coords="132,153,234,179"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="69,104,133,140,141,144,138,149,130,145,67,109"/>
-<area shape="rect" id="Node000005" href="$rebuild__map_8c.html#a337196ad3e584b45eb6ae76bb05c1d57" title="Fills the remainder of a string with &#39;1&#39; characters up to a specified size." alt="" coords="282,104,331,130"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,114,267,114,267,120,217,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,79,143,37,146,41,71,83"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="282,57,347,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,88,266,72,267,77,84,93"/>
+<area shape="rect" id="Node000004" href="$rebuild__map_8c.html#aa90f1f0c25556207e47fc2f745ee1b08" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="150,107,216,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,99,135,108,134,113,83,104"/>
+<area shape="rect" id="Node000006" href="$read__map_8c.html#a85b45c355bcd7ef210d4d1abb1bd0d03" title="Calculates the longest width of a map represented by a string." alt="" coords="132,156,234,182"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="69,105,133,142,141,147,138,151,130,147,66,110"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="215,105,267,85,268,90,217,110"/>
+<area shape="rect" id="Node000005" href="$rebuild__map_8c.html#a56fad01de869c2d66274980841bd34ba" title="Modifies the input string src by replacing certain characters with &#39;1&#39;." alt="" coords="290,107,339,132"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="216,117,274,117,274,122,216,122"/>
 </map>

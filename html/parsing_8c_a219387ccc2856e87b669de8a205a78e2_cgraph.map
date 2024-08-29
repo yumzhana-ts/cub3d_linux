@@ -1,0 +1,5 @@
+<map id="parsing" name="parsing">
+<area shape="rect" id="Node000001" title="Map parsing." alt="" coords="5,5,69,31"/>
+<area shape="rect" id="Node000002" href="$check__arg_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="117,5,210,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,16,101,16,101,21,69,21"/>
+</map>

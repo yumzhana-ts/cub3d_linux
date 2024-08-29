@@ -13,6 +13,8 @@ Include dependency graph for cub3d.\+c\+:\nopagebreak
 \item 
 int \mbox{\hyperlink{cub3d_8c_a935bbae1ea2cb5d18534db1274ec24dd}{exit\+\_\+point}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game)
 \begin{DoxyCompactList}\small\item\em Entry point of the program. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{cub3d_8c_ae34ab973156b2d388ca9e6283d78bba3}{map}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, t\+\_\+data \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Processes the command-\/line arguments and initializes the game map. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{cub3d_8c_aaef388738fbd36457dc32bf714b39363}{init}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game)
 \item 
 int \mbox{\hyperlink{cub3d_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
@@ -20,11 +22,11 @@ int \mbox{\hyperlink{cub3d_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int arg
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{cub3d_8c_a935bbae1ea2cb5d18534db1274ec24dd}\label{cub3d_8c_a935bbae1ea2cb5d18534db1274ec24dd} 
-\index{cub3d.c@{cub3d.c}!exit\_point@{exit\_point}}
+\Hypertarget{cub3d_8c_a935bbae1ea2cb5d18534db1274ec24dd}\index{cub3d.c@{cub3d.c}!exit\_point@{exit\_point}}
 \index{exit\_point@{exit\_point}!cub3d.c@{cub3d.c}}
 \doxysubsubsection{\texorpdfstring{exit\_point()}{exit\_point()}}
-{\footnotesize\ttfamily int exit\+\_\+point (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{cub3d_8c_a935bbae1ea2cb5d18534db1274ec24dd} 
+int exit\+\_\+point (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
 
 
 
@@ -45,17 +47,17 @@ This is the main function, which parses command-\/line arguments and initiates t
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000001}{Todo}}]👾 Handle destroy game,~\newline
  👾 Handle exits \end{DoxyRefDesc}
-\Hypertarget{cub3d_8c_aaef388738fbd36457dc32bf714b39363}\label{cub3d_8c_aaef388738fbd36457dc32bf714b39363} 
-\index{cub3d.c@{cub3d.c}!init@{init}}
+\Hypertarget{cub3d_8c_aaef388738fbd36457dc32bf714b39363}\index{cub3d.c@{cub3d.c}!init@{init}}
 \index{init@{init}!cub3d.c@{cub3d.c}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily static void init (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{cub3d_8c_aaef388738fbd36457dc32bf714b39363} 
+static void init (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{cub3d_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{cub3d_8c_a3c04138a5bfe5d72780bb7e82a18e627} 
-\index{cub3d.c@{cub3d.c}!main@{main}}
+\Hypertarget{cub3d_8c_a3c04138a5bfe5d72780bb7e82a18e627}\index{cub3d.c@{cub3d.c}!main@{main}}
 \index{main@{main}!cub3d.c@{cub3d.c}}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
-{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{cub3d_8c_a3c04138a5bfe5d72780bb7e82a18e627} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
 
 
 
@@ -83,5 +85,37 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{cub3d_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cub3d_8c_ae34ab973156b2d388ca9e6283d78bba3}\index{cub3d.c@{cub3d.c}!map@{map}}
+\index{map@{map}!cub3d.c@{cub3d.c}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{cub3d_8c_ae34ab973156b2d388ca9e6283d78bba3} 
+int map (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{, }\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Processes the command-\/line arguments and initializes the game map. 
+
+This function checks the validity of the command-\/line arguments and reads the game map from a file. If the arguments are invalid, it returns an error. Otherwise, it proceeds to read the map and perform additional parsing and debugging.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & An array of command-\/line arguments. \\
+\hline
+{\em game} & A pointer to the game data structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, or 1 if an error occurs during argument checking or parsing the game data. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cub3d_8c_ae34ab973156b2d388ca9e6283d78bba3_cgraph}
 \end{center}
 \end{figure}

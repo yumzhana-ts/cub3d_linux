@@ -15,15 +15,15 @@ Include dependency graph for parsing.\+c\+:\nopagebreak
 int \mbox{\hyperlink{parsing_8c_a9572228285cd82518fa287634356ac30}{check\+\_\+args}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
 \begin{DoxyCompactList}\small\item\em Validates command-\/line arguments and file extension. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{parsing_8c_a219387ccc2856e87b669de8a205a78e2}{parsing}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Map parsing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{parsing_8c_a9572228285cd82518fa287634356ac30}\label{parsing_8c_a9572228285cd82518fa287634356ac30} 
-\index{parsing.c@{parsing.c}!check\_args@{check\_args}}
+\Hypertarget{parsing_8c_a9572228285cd82518fa287634356ac30}\index{parsing.c@{parsing.c}!check\_args@{check\_args}}
 \index{check\_args@{check\_args}!parsing.c@{parsing.c}}
 \doxysubsubsection{\texorpdfstring{check\_args()}{check\_args()}}
-{\footnotesize\ttfamily int check\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{parsing_8c_a9572228285cd82518fa287634356ac30} 
+int check\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
 
 
 
@@ -37,9 +37,34 @@ Validates command-\/line arguments and file extension.
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]👾 Separate reading the map from parsing,~\newline
- 👾 Add texture and color reading\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]👾 Add texture and color reading\end{DoxyRefDesc}
 \begin{DoxyReturn}{Returns}
 0 if arguments are valid. Exits the program with an error message otherwise. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{parsing_8c_a9572228285cd82518fa287634356ac30_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{parsing_8c_a219387ccc2856e87b669de8a205a78e2}\index{parsing.c@{parsing.c}!parsing@{parsing}}
+\index{parsing@{parsing}!parsing.c@{parsing.c}}
+\doxysubsubsection{\texorpdfstring{parsing()}{parsing()}}
+{\footnotesize\ttfamily \label{parsing_8c_a219387ccc2856e87b669de8a205a78e2} 
+int parsing (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Map parsing. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{parsing_8c_a219387ccc2856e87b669de8a205a78e2_cgraph}
+\end{center}
+\end{figure}

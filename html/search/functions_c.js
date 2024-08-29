@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width_5fof_5fmap_0',['width_of_map',['../read__map_8c.html#a85b45c355bcd7ef210d4d1abb1bd0d03',1,'read_map.c']]]
+  ['vertical_5fwall_0',['vertical_wall',['../check__arg_8c.html#a1ce89894b382f2bf336e4f00772620ee',1,'check_arg.c']]]
 ];
