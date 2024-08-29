@@ -116,7 +116,10 @@ int	read_map(char **argv, t_data *m)
 	}
 	close(m->fd);
     m->widthmap = width_of_map(m);
-    fill_map(m);
+    if (fill_map(m))
+    {
+        return(1);
+    }
 	return (0);
 }
 

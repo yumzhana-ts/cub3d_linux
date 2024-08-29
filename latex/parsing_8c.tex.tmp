@@ -43,3 +43,10 @@ Validates command-\/line arguments and file extension.
 0 if arguments are valid. Exits the program with an error message otherwise. 
 \end{DoxyReturn}
 Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{parsing_8c_a219387ccc2856e87b669de8a205a78e2}\label{parsing_8c_a219387ccc2856e87b669de8a205a78e2} 
+\index{parsing.c@{parsing.c}!parsing@{parsing}}
+\index{parsing@{parsing}!parsing.c@{parsing.c}}
+\doxysubsubsection{\texorpdfstring{parsing()}{parsing()}}
+{\footnotesize\ttfamily int parsing (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+

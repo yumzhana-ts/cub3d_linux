@@ -31,6 +31,19 @@ int	exit_point(t_data *game)
 	exit(0);
 }
 
+int map(int argc, char **argv, t_data *game)
+{
+	if (check_args(argc, argv))
+		return (1);
+	if (!read_map(argv, game))
+	{
+		map_debug(game);
+		if (parsing(game))
+			return(1); //free?
+	}
+	return(0);
+}
+
 static void init(t_data *game)
 {
     game->map = NULL;
@@ -52,23 +65,22 @@ static void init(t_data *game)
  * @param argv The array of command-line arguments.
  * @callgraph
  * @return 0 on success.
- * @todo 👾 Handle struct initialization,\n 👾 Handle exits
+ * @todo 👾 Handle struct initialization,\n 👾 Handle exits \n 👾 Free everything
  */
 int	main(int argc, char **argv) 
 {
 	t_data	game = {0};
 	
 	init(&game);
-	parsing(argc, argv);
-	read_map(argv, &game);
+	if (map(argc, argv, &game))
+		return(1);
 	if (mlx_init_create_window(&game))
-		return (0);
+		return (1); //free?
 	game.img.img = mlx_new_image(game.mlx_ptr, game.widthmap * TILE_SIZE, 
 		game.heightmap * TILE_SIZE);
 	game.img.addr = mlx_get_data_addr(game.img.img, &game.img.bits_per_pixel, &game.img.line_length,
 								&game.img.endian);
 	// my_mlx_pixel_put(&img, 0, 0, 0x00FF0000);
-	map_debug(&game);
 	display_map(&game, true);
 	mlx_put_image_to_window(game.mlx_ptr, game.win_ptr, game.img.img, 0, 0);
 	mlx_hook(game.win_ptr, 17, 0, exit_point, &game);

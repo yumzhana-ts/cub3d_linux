@@ -22,9 +22,16 @@
  * @return 0 if arguments are valid. Exits the program with an error message otherwise.
  */
 
-int	parsing(int argc, char **argv)
+int	check_args(int argc, char **argv)
 {
 	if (argc != 2 || checkextension(argv[1], ".cub"))
 		exit(fd_error("no map or invalid map extension\n"));
 	return (0);
+}
+
+int parsing(t_data *m)
+{
+	if (check_walls(m))
+		return(1);
+	return(0);
 }

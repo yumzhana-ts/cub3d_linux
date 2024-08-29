@@ -82,8 +82,14 @@ typedef struct s_data
 #define BOLD_BLACK "\033[1;30m"
 #define BG_WHITE "\033[0;47m"
 
+
 // Additional prototypes
-int	checkextension(char *name, char *extension)
+bool first_angle_is_on_dx(float view_angle)
+;
+float degrees_to_radians(double degrees) ;
+float get_angle(float view_angle)
+;
+int	check_args(int argc, char **argv)
 ;
 int	exit_point(t_data *game)
 ;
@@ -91,25 +97,31 @@ int	fd_error(char *s)
 ;
 int	main(int argc, char **argv) 
 ;
-int	mlx_init_create_window(t_data *game)
-;
-int	parsing(int argc, char **argv)
-;
 int	read_map(char **argv, t_data *m)
+;
+int check_walls(t_data *m)
+;
+int checkextension(char *name, char *extension)
+;
+int fill_map(t_data *m)
 ;
 int get_ray_line_x(t_data *game, int j)
 ;
-int get_ray_line_y(t_data *game, int j)
+int get_ray_line_y(t_data *game, int i)
 ;
 int get_shortest_length(t_data *game)
 ;
 int handle_keypress(int keysym, t_data *game)
 ;
-void	draw_arrow(t_data *game, int color, int ray_length)
+int mlx_init_create_window(t_data *game)
 ;
-void	move_player(t_data *game, int dx, int dy)
+int parsing(t_data *m)
+;
+void	my_mlx_pixel_put(t_pixel *data, int x, int y, int color)
 ;
 void display_map(t_data *game, bool first_init)
+;
+void draw_arrow(t_data *game, int color, int ray_length)
 ;
 void draw_border(t_data *game, int x, int y, int color)
 ;
@@ -127,12 +139,10 @@ void draw_top_border(t_data *game, int x, int y, int color)
 ;
 void map_debug(t_data *game)
 ;
+void move_player(t_data *game, int dx, int dy)
+;
 void print_map(t_data *game)
 ;
 
-float degrees_to_radians(double degrees);
-void	my_mlx_pixel_put(t_pixel *data, int x, int y, int color);
-void fill_map(t_data *game);
-
-
+int map(int argc, char **argv, t_data *game);
 #endif
