@@ -1,0 +1,5 @@
+<map id="check_player_ns" name="check_player_ns">
+<area shape="rect" id="Node000001" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="5,5,136,31"/>
+<area shape="rect" id="Node000002" href="$player__verification_8c.html#a73455b1cdf6709a84259383b64b8e991" title="Sets the player&#39;s position and direction based on map data." alt="" coords="184,5,307,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,15,170,15,170,21,136,21"/>
+</map>

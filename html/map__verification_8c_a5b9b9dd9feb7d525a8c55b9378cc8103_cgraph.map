@@ -1,0 +1,7 @@
+<map id="check_walls" name="check_walls">
+<area shape="rect" id="Node000001" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="5,31,107,56"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="171,5,244,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,32,156,24,157,29,107,38"/>
+<area shape="rect" id="Node000003" href="$map__verification_8c.html#a753104db9499b280a27994290cee30d2" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="155,55,260,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,49,141,54,141,59,106,54"/>
+</map>

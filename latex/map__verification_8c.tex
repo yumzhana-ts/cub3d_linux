@@ -1,0 +1,189 @@
+\doxysection{src/map/map\+\_\+verification.c File Reference}
+\hypertarget{map__verification_8c}{}\label{map__verification_8c}\index{src/map/map\_verification.c@{src/map/map\_verification.c}}
+
+
+Contains functions for validation the game map and player position.  
+
+
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for map\+\_\+verification.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{map__verification_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498}{validate\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Validates the game map and player position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072}{checkextension}} (char \texorpdfstring{$\ast$}{*}name, char \texorpdfstring{$\ast$}{*}extension)
+\begin{DoxyCompactList}\small\item\em Checks if the given filename has a specific file extension. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__verification_8c_a753104db9499b280a27994290cee30d2}{vertical\+\_\+wall}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game, int j)
+\begin{DoxyCompactList}\small\item\em Checks if all characters in a specific vertical wall of the map are \textquotesingle{}1\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103}{check\+\_\+walls}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Checks if the map is correctly enclosed by walls on all sides. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1}{check\+\_\+valid\+\_\+values}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Checks if each character in the map is valid (01WSEN~\newline
+). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains functions for validation the game map and player position. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1}\label{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1} 
+\index{map\_verification.c@{map\_verification.c}!check\_valid\_values@{check\_valid\_values}}
+\index{check\_valid\_values@{check\_valid\_values}!map\_verification.c@{map\_verification.c}}
+\doxysubsubsection{\texorpdfstring{check\_valid\_values()}{check\_valid\_values()}}
+{\footnotesize\ttfamily int check\+\_\+valid\+\_\+values (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Checks if each character in the map is valid (01WSEN~\newline
+). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to the {\ttfamily t\+\_\+data} structure containing map data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 if valid, or the error code from {\ttfamily fd\+\_\+error} if invalid. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103}\label{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103} 
+\index{map\_verification.c@{map\_verification.c}!check\_walls@{check\_walls}}
+\index{check\_walls@{check\_walls}!map\_verification.c@{map\_verification.c}}
+\doxysubsubsection{\texorpdfstring{check\_walls()}{check\_walls()}}
+{\footnotesize\ttfamily int check\+\_\+walls (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Checks if the map is correctly enclosed by walls on all sides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & A pointer to the t\+\_\+data structure that contains the game map and its dimensions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if all walls are correctly enclosed, otherwise returns a non-\/zero value and reports an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072}\label{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072} 
+\index{map\_verification.c@{map\_verification.c}!checkextension@{checkextension}}
+\index{checkextension@{checkextension}!map\_verification.c@{map\_verification.c}}
+\doxysubsubsection{\texorpdfstring{checkextension()}{checkextension()}}
+{\footnotesize\ttfamily int checkextension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{extension }\end{DoxyParamCaption})}
+
+
+
+Checks if the given filename has a specific file extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A pointer to a string representing the filename to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the filename ends with "{}.\+cub"{}, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498}\label{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498} 
+\index{map\_verification.c@{map\_verification.c}!validate\_map@{validate\_map}}
+\index{validate\_map@{validate\_map}!map\_verification.c@{map\_verification.c}}
+\doxysubsubsection{\texorpdfstring{validate\_map()}{validate\_map()}}
+{\footnotesize\ttfamily int validate\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Validates the game map and player position. 
+
+This function performs various checks to validate the map and player configuration. It checks if the map walls are correct, ensures the player has been placed properly, and verifies that the player is not in an invalid or locked position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to a {\ttfamily t\+\_\+data} structure containing map and player data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the map is valid, 1 if there are wall issues, or an error code if validation fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__verification_8c_a753104db9499b280a27994290cee30d2}\label{map__verification_8c_a753104db9499b280a27994290cee30d2} 
+\index{map\_verification.c@{map\_verification.c}!vertical\_wall@{vertical\_wall}}
+\index{vertical\_wall@{vertical\_wall}!map\_verification.c@{map\_verification.c}}
+\doxysubsubsection{\texorpdfstring{vertical\_wall()}{vertical\_wall()}}
+{\footnotesize\ttfamily int vertical\+\_\+wall (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Checks if all characters in a specific vertical wall of the map are \textquotesingle{}1\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the t\+\_\+data structure that contains the game map and its dimensions. \\
+\hline
+{\em j} & The column index to check for a vertical wall. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if the entire column is filled with \textquotesingle{}1\textquotesingle{}s, otherwise returns 1. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__verification_8c_a753104db9499b280a27994290cee30d2_icgraph}
+\end{center}
+\end{figure}

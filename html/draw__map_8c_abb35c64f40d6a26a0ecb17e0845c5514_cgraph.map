@@ -1,27 +1,27 @@
 <map id="display_map" name="display_map">
-<area shape="rect" id="Node000001" title="Prints squares, borders and player of the map." alt="" coords="5,157,100,182"/>
-<area shape="rect" id="Node000002" href="$draw__player_8c.html#a0130fbcda5fe3198cee34212ce33edbc" title="Draw vector of player." alt="" coords="151,33,240,58"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,154,166,67,170,71,71,158"/>
-<area shape="rect" id="Node000004" href="$draw__borders_8c.html#a7a0f61fd1ed16eed914881ad481d3d6f" title="Draw borders of map." alt="" coords="149,131,242,157"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,159,133,153,134,158,101,164"/>
-<area shape="rect" id="Node000009" href="$draw__player_8c.html#aa32d1a2cbd10349e6d59e101d801cb22" title="Draw pixel." alt="" coords="154,206,237,232"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="93,181,143,198,141,203,91,186"/>
-<area shape="rect" id="Node000010" href="$draw__map_8c.html#ad574847dfafc7f9060c6de1e5e52eb38" title="Prints square by tile size with mlx pixel put." alt="" coords="148,255,243,281"/>
-<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="70,181,105,210,149,242,154,245,151,250,146,246,102,214,67,185"/>
-<area shape="rect" id="Node000003" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="478,131,605,157"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,30,270,16,322,6,377,4,405,9,431,18,463,38,490,63,528,116,524,119,486,67,460,42,429,23,404,14,377,10,322,11,271,21,230,35"/>
-<area shape="rect" id="Node000005" href="$draw__borders_8c.html#a24b7b602bee179e2f49b2f6c4e4f3de0" title="Draw bottom border." alt="" coords="291,33,430,58"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="209,129,244,99,290,67,299,63,301,67,292,72,247,103,212,133"/>
-<area shape="rect" id="Node000006" href="$draw__borders_8c.html#a9bc672a7253ed16ae0c35641b48214d3" title="Draw left border." alt="" coords="302,82,419,108"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="240,128,300,110,301,115,242,133"/>
-<area shape="rect" id="Node000007" href="$draw__borders_8c.html#a2a1cbc9a6116e4eb11883cea084346aa" title="Draw right border." alt="" coords="298,131,423,157"/>
-<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="242,142,283,142,283,147,242,147"/>
-<area shape="rect" id="Node000008" href="$draw__borders_8c.html#a4bf979fd1a1016b16d047a65f1ea8c0b" title="Draw top border." alt="" coords="302,181,419,206"/>
-<area shape="poly" id="edge10_Node000004_Node000008" title=" " alt="" coords="242,155,301,173,300,178,240,160"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="407,57,432,67,475,93,513,119,510,124,472,97,429,72,405,61"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="411,106,478,124,476,129,410,111"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="423,142,463,142,463,147,423,147"/>
-<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="410,178,476,159,478,164,411,183"/>
-<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="238,223,327,230,379,227,429,216,476,194,514,165,517,169,479,198,431,221,380,232,327,235,237,229"/>
-<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="243,267,332,261,382,251,429,235,455,221,479,203,518,166,522,170,483,207,458,225,431,240,383,257,333,266,244,272"/>
+<area shape="rect" id="Node000001" title="Prints squares, borders and player of the map." alt="" coords="5,158,111,183"/>
+<area shape="rect" id="Node000002" href="$draw__player_8c.html#a0130fbcda5fe3198cee34212ce33edbc" title="Draw vector of player." alt="" coords="162,34,261,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,156,182,66,185,70,77,160"/>
+<area shape="rect" id="Node000004" href="$draw__borders_8c.html#a7a0f61fd1ed16eed914881ad481d3d6f" title="Draw borders of map." alt="" coords="160,133,263,158"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="110,159,146,153,147,159,111,165"/>
+<area shape="rect" id="Node000009" href="$draw__player_8c.html#aa32d1a2cbd10349e6d59e101d801cb22" title="Draw pixel." alt="" coords="165,207,257,233"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="99,181,159,200,157,205,97,186"/>
+<area shape="rect" id="Node000010" href="$draw__map_8c.html#ad574847dfafc7f9060c6de1e5e52eb38" title="Prints square by tile size with mlx pixel put." alt="" coords="159,257,264,282"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="77,181,114,210,160,242,171,248,168,253,157,246,111,215,73,186"/>
+<area shape="rect" id="Node000003" href="$util__2_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="517,133,659,158"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,31,290,17,347,6,410,4,441,9,470,19,504,39,533,66,574,119,570,122,529,69,501,43,468,24,439,14,409,10,348,11,291,22,245,36"/>
+<area shape="rect" id="Node000005" href="$draw__borders_8c.html#a24b7b602bee179e2f49b2f6c4e4f3de0" title="Draw bottom border." alt="" coords="312,34,469,59"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="225,130,262,100,311,68,326,62,328,67,313,73,265,104,228,135"/>
+<area shape="rect" id="Node000006" href="$draw__borders_8c.html#a9bc672a7253ed16ae0c35641b48214d3" title="Draw left border." alt="" coords="325,83,456,109"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="257,130,329,110,331,115,259,135"/>
+<area shape="rect" id="Node000007" href="$draw__borders_8c.html#a2a1cbc9a6116e4eb11883cea084346aa" title="Draw right border." alt="" coords="321,133,461,158"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="263,143,307,143,307,148,263,148"/>
+<area shape="rect" id="Node000008" href="$draw__borders_8c.html#a4bf979fd1a1016b16d047a65f1ea8c0b" title="Draw top border." alt="" coords="325,182,456,207"/>
+<area shape="poly" id="edge10_Node000004_Node000008" title=" " alt="" coords="259,155,331,176,329,181,257,161"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="441,57,470,68,519,95,560,122,557,127,516,99,468,73,439,62"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="443,106,524,127,523,132,441,111"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="461,143,504,143,504,148,461,148"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="441,179,523,159,524,164,443,185"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="258,224,356,230,413,227,469,216,519,193,560,165,563,169,521,198,470,221,414,232,356,236,258,230"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="264,269,361,263,416,253,468,236,496,222,522,204,564,166,567,170,525,208,499,226,470,241,417,258,362,268,265,274"/>
 </map>

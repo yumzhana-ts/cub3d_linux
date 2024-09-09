@@ -11,20 +11,24 @@ Include dependency graph for util\+\_\+2.\+c\+:\nopagebreak
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{util__2_8c_a0c4f74f9034ba14fa383ed748ab577a0}{print\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game)
+void \mbox{\hyperlink{util__2_8c_a493bccc094a8b964b4610c4d914106c6}{print\+\_\+arrays}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}array)
 \begin{DoxyCompactList}\small\item\em Prints the map to the standard output. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{util__2_8c_ad7d661fed596492a19e7d67b862ee02e}{map\+\_\+debug}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game)
 \begin{DoxyCompactList}\small\item\em Prints debugging information about the map. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{util__2_8c_a0c0aded23c79610babd8ff945f6b486b}{degrees\+\_\+to\+\_\+radians}} (double degrees)
-\begin{DoxyCompactList}\small\item\em Converts an angle from degrees to radians. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Converts an angle from degrees to radians. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{util__2_8c_a26e24eb705fb43a7fc63f86db9427312}{my\+\_\+mlx\+\_\+pixel\+\_\+put}} (t\+\_\+pixel \texorpdfstring{$\ast$}{*}data, int x, int y, int color)
+\begin{DoxyCompactList}\small\item\em Fast version on pixel put. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{util__2_8c_afe7be0aad77df527e1464669ea972746}{ft\+\_\+strstr}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}to\+\_\+find)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{util__2_8c_a0c0aded23c79610babd8ff945f6b486b}\index{util\_2.c@{util\_2.c}!degrees\_to\_radians@{degrees\_to\_radians}}
+\Hypertarget{util__2_8c_a0c0aded23c79610babd8ff945f6b486b}\label{util__2_8c_a0c0aded23c79610babd8ff945f6b486b} 
+\index{util\_2.c@{util\_2.c}!degrees\_to\_radians@{degrees\_to\_radians}}
 \index{degrees\_to\_radians@{degrees\_to\_radians}!util\_2.c@{util\_2.c}}
 \doxysubsubsection{\texorpdfstring{degrees\_to\_radians()}{degrees\_to\_radians()}}
-{\footnotesize\ttfamily \label{util__2_8c_a0c0aded23c79610babd8ff945f6b486b} 
-float degrees\+\_\+to\+\_\+radians (\begin{DoxyParamCaption}\item[{double}]{degrees}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float degrees\+\_\+to\+\_\+radians (\begin{DoxyParamCaption}\item[{double}]{degrees }\end{DoxyParamCaption})}
 
 
 
@@ -38,11 +42,24 @@ This function takes an angle in degrees as input and returns the equivalent angl
 \begin{DoxyReturn}{Returns}
 The equivalent angle in radians. 
 \end{DoxyReturn}
-\Hypertarget{util__2_8c_ad7d661fed596492a19e7d67b862ee02e}\index{util\_2.c@{util\_2.c}!map\_debug@{map\_debug}}
+\Hypertarget{util__2_8c_afe7be0aad77df527e1464669ea972746}\label{util__2_8c_afe7be0aad77df527e1464669ea972746} 
+\index{util\_2.c@{util\_2.c}!ft\_strstr@{ft\_strstr}}
+\index{ft\_strstr@{ft\_strstr}!util\_2.c@{util\_2.c}}
+\doxysubsubsection{\texorpdfstring{ft\_strstr()}{ft\_strstr()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} ft\+\_\+strstr (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{char \texorpdfstring{$\ast$}{*}}]{to\+\_\+find }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__2_8c_afe7be0aad77df527e1464669ea972746_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__2_8c_ad7d661fed596492a19e7d67b862ee02e}\label{util__2_8c_ad7d661fed596492a19e7d67b862ee02e} 
+\index{util\_2.c@{util\_2.c}!map\_debug@{map\_debug}}
 \index{map\_debug@{map\_debug}!util\_2.c@{util\_2.c}}
 \doxysubsubsection{\texorpdfstring{map\_debug()}{map\_debug()}}
-{\footnotesize\ttfamily \label{util__2_8c_ad7d661fed596492a19e7d67b862ee02e} 
-void map\+\_\+debug (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void map\+\_\+debug (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
 
 
 
@@ -52,16 +69,47 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=241pt]{util__2_8c_ad7d661fed596492a19e7d67b862ee02e_cgraph}
+\includegraphics[width=279pt]{util__2_8c_ad7d661fed596492a19e7d67b862ee02e_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{util__2_8c_a0c4f74f9034ba14fa383ed748ab577a0}\index{util\_2.c@{util\_2.c}!print\_map@{print\_map}}
-\index{print\_map@{print\_map}!util\_2.c@{util\_2.c}}
-\doxysubsubsection{\texorpdfstring{print\_map()}{print\_map()}}
-{\footnotesize\ttfamily \label{util__2_8c_a0c4f74f9034ba14fa383ed748ab577a0} 
-void print\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{util__2_8c_ad7d661fed596492a19e7d67b862ee02e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__2_8c_a26e24eb705fb43a7fc63f86db9427312}\label{util__2_8c_a26e24eb705fb43a7fc63f86db9427312} 
+\index{util\_2.c@{util\_2.c}!my\_mlx\_pixel\_put@{my\_mlx\_pixel\_put}}
+\index{my\_mlx\_pixel\_put@{my\_mlx\_pixel\_put}!util\_2.c@{util\_2.c}}
+\doxysubsubsection{\texorpdfstring{my\_mlx\_pixel\_put()}{my\_mlx\_pixel\_put()}}
+{\footnotesize\ttfamily void my\+\_\+mlx\+\_\+pixel\+\_\+put (\begin{DoxyParamCaption}\item[{t\+\_\+pixel \texorpdfstring{$\ast$}{*}}]{data,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+
+
+Fast version on pixel put. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__2_8c_a26e24eb705fb43a7fc63f86db9427312_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__2_8c_a493bccc094a8b964b4610c4d914106c6}\label{util__2_8c_a493bccc094a8b964b4610c4d914106c6} 
+\index{util\_2.c@{util\_2.c}!print\_arrays@{print\_arrays}}
+\index{print\_arrays@{print\_arrays}!util\_2.c@{util\_2.c}}
+\doxysubsubsection{\texorpdfstring{print\_arrays()}{print\_arrays()}}
+{\footnotesize\ttfamily void print\+\_\+arrays (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{array }\end{DoxyParamCaption})}
 
 
 
 Prints the map to the standard output. 
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__2_8c_a493bccc094a8b964b4610c4d914106c6_icgraph}
+\end{center}
+\end{figure}

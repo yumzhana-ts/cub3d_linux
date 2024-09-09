@@ -1,0 +1,11 @@
+<map id="debug_case" name="debug_case">
+<area shape="rect" id="Node000001" title="Outputs debug info with case in green color." alt="" coords="545,5,644,31"/>
+<area shape="rect" id="Node000002" href="$player__verification_8c.html#a0642ea6088fbb44224456feada7cfb1e" title="Prints the player&#39;s position and direction information for debugging." alt="" coords="365,5,497,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,21,497,21,497,15,532,15"/>
+<area shape="rect" id="Node000003" href="$map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498" title="Validates the game map and player position." alt="" coords="207,5,317,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,21,318,21,318,15,352,15"/>
+<area shape="rect" id="Node000004" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

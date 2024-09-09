@@ -1,0 +1,7 @@
+<map id="vertical_wall" name="vertical_wall">
+<area shape="rect" id="Node000001" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="273,5,379,31"/>
+<area shape="rect" id="Node000002" href="$check__arg_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="124,5,225,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,21,225,21,225,15,259,15"/>
+<area shape="rect" id="Node000003" href="$parsing_8c.html#a219387ccc2856e87b669de8a205a78e2" title="Map parsing." alt="" coords="5,5,76,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,21,76,21,76,15,110,15"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="split_create_array" name="split_create_array">
+<area shape="rect" id="Node000001" title="Allocates an array for split words." alt="" coords="753,5,892,31"/>
+<area shape="rect" id="Node000002" href="$util__4_8c.html#ad57ecdce78737f830dfa1844b698e1fe" title="Splits str by commas into an array." alt="" coords="583,5,705,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="740,21,706,21,706,15,740,15"/>
+<area shape="rect" id="Node000003" href="$color__parsing_8c.html#a2e8ad273762e56b6271457f0771e12d9" title="Saves color data into an array by splitting a string." alt="" coords="401,5,535,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="569,21,535,21,535,15,569,15"/>
+<area shape="rect" id="Node000004" href="$color__parsing_8c.html#aa506e293773a33e3b92ccc95b8d06fa1" title="Parses the file to save ceiling and floor colors." alt="" coords="207,5,353,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="388,21,354,21,354,15,388,15"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<area shape="rect" id="Node000006" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

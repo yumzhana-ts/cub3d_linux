@@ -1,0 +1,7 @@
+<map id="src/map/player_verification.c" name="src/map/player_verification.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,216,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,79,102,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,32,82,69,78,66,101,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="127,79,185,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,30,144,66,139,69,116,32"/>
+</map>

@@ -1,66 +1,120 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title="Entry point of the program." alt="" coords="5,505,55,531"/>
-<area shape="rect" id="Node000002" href="$draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="136,105,230,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="34,504,169,145,174,147,39,506"/>
-<area shape="rect" id="Node000012" href="$cub3d_8c.html#a935bbae1ea2cb5d18534db1274ec24dd" title="Entry point of the program." alt="" coords="144,431,222,456"/>
-<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="45,503,71,484,101,465,129,454,131,459,104,470,74,488,48,507"/>
-<area shape="rect" id="Node000013" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="123,480,242,506"/>
-<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="55,512,108,503,109,508,56,517"/>
-<area shape="rect" id="Node000014" href="$cub3d_8c.html#aaef388738fbd36457dc32bf714b39363" title=" " alt="" coords="164,529,202,555"/>
-<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="56,519,148,534,148,539,55,525"/>
-<area shape="rect" id="Node000015" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="160,579,206,604"/>
-<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="49,529,74,548,104,565,145,580,143,585,102,570,71,552,46,534"/>
-<area shape="rect" id="Node000028" href="$mlx__init__create__win_8c.html#a81e5bd795cb879b651de99812ac575da" title="Initialize the MLX library and create a new window." alt="" coords="103,679,263,704"/>
-<area shape="poly" id="edge35_Node000001_Node000028" title=" " alt="" coords="42,530,69,569,105,615,157,667,153,671,101,619,64,572,38,533"/>
-<area shape="rect" id="Node000003" href="$draw__player_8c.html#a0130fbcda5fe3198cee34212ce33edbc" title="Draw vector of player." alt="" coords="314,105,403,131"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="231,116,299,116,299,121,231,121"/>
-<area shape="rect" id="Node000005" href="$draw__borders_8c.html#a7a0f61fd1ed16eed914881ad481d3d6f" title="Draw borders of map." alt="" coords="312,205,405,231"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="209,129,323,195,320,200,206,134"/>
-<area shape="rect" id="Node000010" href="$draw__player_8c.html#aa32d1a2cbd10349e6d59e101d801cb22" title="Draw pixel." alt="" coords="317,5,400,31"/>
-<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="205,102,310,41,318,36,321,41,312,46,208,107"/>
-<area shape="rect" id="Node000011" href="$draw__map_8c.html#ad574847dfafc7f9060c6de1e5e52eb38" title="Prints square by tile size with mlx pixel put." alt="" coords="311,56,406,82"/>
-<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="230,102,296,84,297,89,231,108"/>
-<area shape="rect" id="Node000004" href="$util__1_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="642,156,768,182"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,119,492,127,594,141,637,149,636,155,593,146,491,132,403,124"/>
-<area shape="rect" id="Node000006" href="$draw__borders_8c.html#a24b7b602bee179e2f49b2f6c4e4f3de0" title="Draw bottom border." alt="" coords="454,304,594,330"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="375,229,410,260,456,291,465,295,462,300,453,295,407,264,372,233"/>
-<area shape="rect" id="Node000007" href="$draw__borders_8c.html#a9bc672a7253ed16ae0c35641b48214d3" title="Draw left border." alt="" coords="465,156,583,182"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="404,202,463,184,465,189,405,207"/>
-<area shape="rect" id="Node000008" href="$draw__borders_8c.html#a2a1cbc9a6116e4eb11883cea084346aa" title="Draw right border." alt="" coords="462,205,586,231"/>
-<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="405,216,446,216,446,221,405,221"/>
-<area shape="rect" id="Node000009" href="$draw__borders_8c.html#a4bf979fd1a1016b16d047a65f1ea8c0b" title="Draw top border." alt="" coords="465,255,583,280"/>
-<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="405,229,465,247,463,252,404,234"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="572,301,592,291,620,268,646,242,685,193,689,196,650,246,624,272,595,295,575,306"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="583,166,626,166,626,172,583,172"/>
-<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="573,202,640,184,641,189,575,207"/>
-<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="568,252,592,241,636,216,673,189,676,194,639,220,595,246,570,256"/>
-<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="401,21,492,41,544,57,595,78,643,109,681,143,678,147,639,114,592,83,543,62,491,46,400,26"/>
-<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="407,72,495,87,595,113,668,146,666,151,593,118,494,92,406,77"/>
-<area shape="rect" id="Node000016" href="$parsing_8c.html#a9572228285cd82518fa287634356ac30" title="Validates command&#45;line arguments and file extension." alt="" coords="314,652,403,678"/>
-<area shape="poly" id="edge21_Node000015_Node000016" title=" " alt="" coords="207,598,313,643,311,648,205,603"/>
-<area shape="rect" id="Node000019" href="$util__2_8c.html#ad7d661fed596492a19e7d67b862ee02e" title="Prints debugging information about the map." alt="" coords="314,553,403,579"/>
-<area shape="poly" id="edge24_Node000015_Node000019" title=" " alt="" coords="206,586,298,572,299,577,207,591"/>
-<area shape="rect" id="Node000021" href="$parsing_8c.html#a219387ccc2856e87b669de8a205a78e2" title="Map parsing." alt="" coords="327,603,390,628"/>
-<area shape="poly" id="edge26_Node000015_Node000021" title=" " alt="" coords="207,592,312,606,311,612,206,597"/>
-<area shape="rect" id="Node000023" href="$read__map_8c.html#abc6a0e39f4097410a6462b03e8b98fe5" title="Opens a file and reads map." alt="" coords="320,452,398,478"/>
-<area shape="poly" id="edge28_Node000015_Node000023" title=" " alt="" coords="206,585,234,578,262,565,305,528,338,489,342,492,309,532,264,570,235,583,207,591"/>
-<area shape="rect" id="Node000017" href="$check__arg_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="468,652,580,678"/>
-<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="403,662,452,662,452,668,403,668"/>
-<area shape="rect" id="Node000018" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="672,603,738,628"/>
-<area shape="poly" id="edge23_Node000016_Node000018" title=" " alt="" coords="399,676,440,686,489,695,542,696,593,688,639,665,677,636,681,641,642,670,594,693,542,702,489,700,439,692,398,681"/>
-<area shape="rect" id="Node000020" href="$util__2_8c.html#a0c4f74f9034ba14fa383ed748ab577a0" title="Prints the map to the standard output." alt="" coords="485,553,563,579"/>
-<area shape="poly" id="edge25_Node000019_Node000020" title=" " alt="" coords="403,564,469,564,469,569,403,569"/>
-<area shape="rect" id="Node000022" href="$check__arg_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="477,603,571,628"/>
-<area shape="poly" id="edge27_Node000021_Node000022" title=" " alt="" coords="391,613,462,613,462,618,391,618"/>
-<area shape="poly" id="edge30_Node000023_Node000018" title=" " alt="" coords="399,473,505,506,595,538,639,564,676,591,673,595,636,568,593,543,503,511,397,478"/>
-<area shape="rect" id="Node000024" href="$read__map_8c.html#a804cd515bd4c1bf7169adeb352db80fb" title="Adds a new line to the heightmap." alt="" coords="489,353,559,379"/>
-<area shape="poly" id="edge29_Node000023_Node000024" title=" " alt="" coords="372,450,407,419,453,388,473,378,476,383,456,392,410,423,375,454"/>
-<area shape="rect" id="Node000025" href="$rebuild__map_8c.html#aa90f1f0c25556207e47fc2f745ee1b08" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="491,452,557,478"/>
-<area shape="poly" id="edge31_Node000023_Node000025" title=" " alt="" coords="398,462,475,462,475,468,398,468"/>
-<area shape="rect" id="Node000027" href="$read__map_8c.html#a85b45c355bcd7ef210d4d1abb1bd0d03" title="Calculates the longest width of a map represented by a string." alt="" coords="473,403,575,428"/>
-<area shape="poly" id="edge34_Node000023_Node000027" title=" " alt="" coords="397,451,463,431,465,436,399,456"/>
-<area shape="poly" id="edge32_Node000025_Node000018" title=" " alt="" coords="559,475,595,495,647,542,687,588,683,592,643,546,592,499,556,479"/>
-<area shape="rect" id="Node000026" href="$rebuild__map_8c.html#a56fad01de869c2d66274980841bd34ba" title="Modifies the input string src by replacing certain characters with &#39;1&#39;." alt="" coords="680,452,730,478"/>
-<area shape="poly" id="edge33_Node000025_Node000026" title=" " alt="" coords="558,462,665,462,665,468,558,468"/>
-<area shape="poly" id="edge36_Node000028_Node000018" title=" " alt="" coords="236,702,308,716,399,725,448,726,497,723,546,715,593,702,619,690,643,673,681,638,685,641,646,678,621,695,595,707,547,721,498,728,448,731,399,731,308,721,235,708"/>
+<area shape="rect" id="Node000001" title="Entry point of the program." alt="" coords="5,648,60,673"/>
+<area shape="rect" id="Node000002" href="$cub3d_8c.html#aaef388738fbd36457dc32bf714b39363" title=" " alt="" coords="112,623,155,648"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,651,98,641,99,647,61,656"/>
+<area shape="rect" id="Node000003" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,672,159,697"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="61,665,95,673,94,678,60,670"/>
+<area shape="rect" id="Node000004" href="$map__helpers_8c.html#a9572228285cd82518fa287634356ac30" title="Validates command&#45;line arguments and file extension." alt="" coords="233,547,327,572"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,670,157,658,170,636,178,618,187,600,205,581,219,573,222,577,208,585,192,603,182,620,174,639,161,661,150,673"/>
+<area shape="rect" id="Node000007" href="$color__parsing_8c.html#aa506e293773a33e3b92ccc95b8d06fa1" title="Parses the file to save ceiling and floor colors." alt="" coords="207,320,353,345"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="147,670,156,658,205,531,267,357,272,359,210,533,161,661,151,673"/>
+<area shape="rect" id="Node000022" href="$util__2_8c.html#a493bccc094a8b964b4610c4d914106c6" title="Prints the map to the standard output." alt="" coords="645,611,745,636"/>
+<area shape="poly" id="edge38_Node000003_Node000022" title=" " alt="" coords="158,679,631,628,632,633,159,685"/>
+<area shape="rect" id="Node000023" href="$map__parsing_8c.html#ac190d22718f692b89123f6067a935371" title="Verifies the overall format of the map file." alt="" coords="207,596,353,621"/>
+<area shape="poly" id="edge27_Node000003_Node000023" title=" " alt="" coords="153,669,205,638,234,624,236,629,208,643,156,674"/>
+<area shape="rect" id="Node000026" href="$util__2_8c.html#ad7d661fed596492a19e7d67b862ee02e" title="Prints debugging information about the map." alt="" coords="433,697,532,723"/>
+<area shape="poly" id="edge34_Node000003_Node000026" title=" " alt="" coords="159,684,420,703,420,708,159,689"/>
+<area shape="rect" id="Node000027" href="$read__file_8c.html#a0a6c39f92e83ec40dea691b333ea800c" title="Opens a file and readstfile." alt="" coords="241,1065,319,1091"/>
+<area shape="poly" id="edge39_Node000003_Node000027" title=" " alt="" coords="142,697,272,1052,267,1053,137,699"/>
+<area shape="rect" id="Node000030" href="$map__parsing_8c.html#a7c433d738867e1aa6b529290ef9b5cda" title="Reads the map from the file data into the t_data structure." alt="" coords="237,1264,323,1289"/>
+<area shape="poly" id="edge43_Node000003_Node000030" title=" " alt="" coords="138,697,142,797,153,954,162,1037,175,1114,190,1179,209,1225,223,1241,240,1255,237,1259,219,1245,204,1227,185,1180,169,1115,157,1037,148,954,136,798,132,698"/>
+<area shape="rect" id="Node000031" href="$map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="229,1189,331,1215"/>
+<area shape="poly" id="edge45_Node000003_Node000031" title=" " alt="" coords="137,697,140,762,150,863,172,982,188,1043,209,1101,233,1143,259,1177,255,1181,228,1146,204,1103,183,1045,166,984,145,864,135,762,132,698"/>
+<area shape="rect" id="Node000035" href="$texture__parsing_8c.html#a1355647db0e7f6c60e04109725204c31" title="Loads textures from the file." alt="" coords="401,205,564,231"/>
+<area shape="poly" id="edge50_Node000003_Node000035" title=" " alt="" coords="147,670,156,658,174,608,178,561,175,518,168,476,162,435,163,393,176,350,205,306,244,271,290,247,339,230,387,221,388,226,341,236,292,251,247,275,209,309,181,353,169,394,168,434,173,475,180,517,183,561,179,609,161,661,152,673"/>
+<area shape="rect" id="Node000039" href="$map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498" title="Validates the game map and player position." alt="" coords="427,915,538,940"/>
+<area shape="poly" id="edge58_Node000003_Node000039" title=" " alt="" coords="154,695,453,905,450,909,151,700"/>
+<area shape="rect" id="Node000005" href="$map__verification_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="421,571,544,596"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,562,408,572,408,577,327,568"/>
+<area shape="rect" id="Node000006" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="1031,459,1104,484"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="290,544,334,499,365,475,400,457,485,433,573,419,662,415,749,417,831,424,905,434,1018,456,1017,462,904,439,830,429,749,422,662,420,574,425,486,438,402,462,368,479,337,503,293,548"/>
+<area shape="poly" id="edge19_Node000007_Node000006" title=" " alt="" coords="354,329,475,332,632,345,718,356,806,371,893,391,977,417,1009,431,1038,449,1036,453,1007,436,975,422,891,396,805,376,717,361,631,350,474,338,354,334"/>
+<area shape="rect" id="Node000008" href="$util__3_8c.html#a8d68a28a03acd21c0698cbffacb49c7a" title="Prints the map to the standard output." alt="" coords="441,371,524,396"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="332,343,428,367,427,372,331,348"/>
+<area shape="rect" id="Node000009" href="$color__parsing_8c.html#a2e8ad273762e56b6271457f0771e12d9" title="Saves color data into an array by splitting a string." alt="" coords="416,104,549,129"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="289,318,336,262,399,191,455,137,458,141,403,195,340,266,294,322"/>
+<area shape="rect" id="Node000010" href="$color__parsing_8c.html#a3e3149f37161eff9e263077d93e8435f" title="Extracts a color string from a file line." alt="" coords="649,5,741,31"/>
+<area shape="poly" id="edge18_Node000007_Node000010" title=" " alt="" coords="281,319,292,275,314,213,349,146,372,116,400,89,427,70,456,55,519,33,581,21,636,16,636,21,582,26,521,38,459,60,430,75,403,93,376,119,354,149,319,215,297,277,286,320"/>
+<area shape="rect" id="Node000017" href="$map__parsing_8c.html#a6087d20282ccd4e416a8ed98b6950872" title="Determines the starting index of the map in the file data." alt="" coords="651,276,739,301"/>
+<area shape="poly" id="edge20_Node000007_Node000017" title=" " alt="" coords="353,318,401,311,638,290,638,295,402,317,354,323"/>
+<area shape="rect" id="Node000020" href="$color__parsing_8c.html#a5869197f83942752bd146063e22d69d9" title="Prints color information for debugging." alt="" coords="429,521,536,547"/>
+<area shape="poly" id="edge24_Node000007_Node000020" title=" " alt="" coords="289,344,304,377,328,421,362,467,403,507,418,515,415,520,400,511,358,470,324,424,299,379,284,347"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="501,101,550,71,611,40,635,30,637,35,613,44,552,76,504,106"/>
+<area shape="rect" id="Node000012" href="$util__4_8c.html#ad57ecdce78737f830dfa1844b698e1fe" title="Splits str by commas into an array." alt="" coords="634,104,757,129"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="550,114,620,114,620,119,550,119"/>
+<area shape="rect" id="Node000011" href="$util__2_8c.html#afe7be0aad77df527e1464669ea972746" title=" " alt="" coords="865,5,937,31"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="742,15,852,15,852,21,742,21"/>
+<area shape="rect" id="Node000013" href="$util__4_8c.html#a5b8502e2446206f9853ebc53ed575169" title="Allocates an array for split words." alt="" coords="832,104,971,129"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="757,114,818,114,818,119,757,119"/>
+<area shape="rect" id="Node000015" href="$util__4_8c.html#a07b1fd8e8fdf0414a8fcd728b299dc23" title="Saves a substring from or to str." alt="" coords="835,55,967,80"/>
+<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="748,101,834,81,835,86,750,107"/>
+<area shape="poly" id="edge13_Node000013_Node000006" title=" " alt="" coords="950,127,978,147,1004,183,1025,223,1040,264,1052,307,1065,385,1069,445,1063,445,1059,386,1046,308,1035,266,1020,225,1000,186,974,151,947,132"/>
+<area shape="rect" id="Node000014" href="$util__4_8c.html#aebd8a0c483222f7f8a5b651aed99b345" title="Counts words separated by commas in str." alt="" coords="1030,104,1105,129"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="971,114,1016,114,1016,119,971,119"/>
+<area shape="poly" id="edge16_Node000015_Node000006" title=" " alt="" coords="963,78,978,90,996,117,1011,157,1037,258,1055,364,1066,445,1060,445,1050,365,1032,260,1006,159,991,120,974,93,960,82"/>
+<area shape="rect" id="Node000016" href="$util__4_8c.html#accbc8abe1d4ff400f1fe694d2f338bb7" title="Copies up to n characters from s2 to s1." alt="" coords="1024,55,1111,80"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="968,65,1010,65,1010,70,968,70"/>
+<area shape="poly" id="edge22_Node000017_Node000006" title=" " alt="" coords="739,274,791,265,853,261,917,268,948,277,977,292,997,307,1013,325,1038,366,1055,409,1064,445,1059,446,1050,410,1033,368,1009,328,993,311,975,296,946,282,916,273,853,266,791,270,740,279"/>
+<area shape="rect" id="Node000018" href="$util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="842,636,961,661"/>
+<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="703,301,722,368,753,464,790,559,810,597,829,621,835,627,832,631,825,625,805,599,785,562,748,466,717,369,698,302"/>
+<area shape="rect" id="Node000019" href="$map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="842,307,961,332"/>
+<area shape="poly" id="edge23_Node000017_Node000019" title=" " alt="" coords="740,293,829,306,828,311,739,298"/>
+<area shape="rect" id="Node000021" href="$util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="854,587,949,612"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="537,540,840,587,839,593,536,545"/>
+<area shape="poly" id="edge26_Node000020_Node000022" title=" " alt="" coords="536,544,565,556,590,572,613,589,645,603,642,608,611,594,587,577,563,560,534,549"/>
+<area shape="rect" id="Node000024" href="$map__verification_8c.html#a7a942c088d4ce1fdde82d4c687625bd1" title="Checks if each character in the map is valid (01WSEN )." alt="" coords="827,812,976,837"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="292,620,336,674,367,705,403,732,452,758,505,779,560,795,616,807,722,821,813,825,813,830,722,826,615,813,559,801,504,784,450,763,400,736,364,709,332,677,288,623"/>
+<area shape="rect" id="Node000025" href="$map__parsing_8c.html#a66b150036d9a4a18c2b8f45481ec322e" title="Verifies the map format and controls its placement within the file data." alt="" coords="427,472,538,497"/>
+<area shape="poly" id="edge30_Node000023_Node000025" title=" " alt="" coords="330,594,352,581,367,563,375,545,383,525,400,507,413,498,416,503,403,511,387,528,380,547,372,566,355,585,333,598"/>
+<area shape="poly" id="edge29_Node000024_Node000006" title=" " alt="" coords="957,810,974,797,1001,763,1022,723,1038,681,1049,639,1061,559,1064,498,1069,498,1066,559,1054,640,1043,683,1027,726,1005,766,978,801,960,814"/>
+<area shape="poly" id="edge32_Node000025_Node000006" title=" " alt="" coords="538,481,1017,470,1017,475,538,486"/>
+<area shape="poly" id="edge33_Node000025_Node000017" title=" " alt="" coords="496,470,668,309,672,313,500,474"/>
+<area shape="poly" id="edge31_Node000025_Node000018" title=" " alt="" coords="530,495,565,506,674,547,780,596,828,621,848,629,846,634,826,626,777,600,672,552,563,511,529,500"/>
+<area shape="poly" id="edge35_Node000026_Node000018" title=" " alt="" coords="532,709,645,706,712,700,778,690,820,679,858,664,860,669,822,684,779,695,713,706,645,712,532,714"/>
+<area shape="poly" id="edge36_Node000026_Node000021" title=" " alt="" coords="532,701,646,681,712,665,778,645,802,633,826,621,843,614,845,619,828,626,804,638,780,650,714,670,647,686,533,706"/>
+<area shape="poly" id="edge37_Node000026_Node000022" title=" " alt="" coords="516,695,563,676,611,653,646,638,648,643,613,658,565,680,518,700"/>
+<area shape="poly" id="edge41_Node000027_Node000006" title=" " alt="" coords="319,1070,430,1064,497,1066,565,1075,589,1086,613,1097,720,1123,767,1134,810,1140,851,1139,891,1129,932,1108,974,1073,989,1055,1002,1030,1023,965,1039,884,1050,795,1061,620,1063,497,1069,497,1066,621,1055,795,1044,885,1028,966,1006,1032,993,1058,978,1077,935,1112,893,1134,852,1144,810,1145,766,1139,719,1128,611,1102,587,1091,563,1081,497,1071,430,1069,320,1076"/>
+<area shape="rect" id="Node000028" href="$read__file_8c.html#a804cd515bd4c1bf7169adeb352db80fb" title="Adds a new line to the file." alt="" coords="444,1140,521,1165"/>
+<area shape="poly" id="edge40_Node000027_Node000028" title=" " alt="" coords="312,1088,402,1125,432,1135,430,1140,400,1130,310,1093"/>
+<area shape="rect" id="Node000029" href="$map__helpers_8c.html#a3d8ea9766faf2c86e2c85633469e99f3" title="Replaces newline characters with null characters in a 2D array of strings. Iterates through each stri..." alt="" coords="431,1091,534,1116"/>
+<area shape="poly" id="edge42_Node000027_Node000029" title=" " alt="" coords="320,1080,418,1093,417,1098,319,1085"/>
+<area shape="poly" id="edge44_Node000030_Node000006" title=" " alt="" coords="324,1285,381,1297,456,1309,542,1317,636,1318,731,1308,778,1298,823,1284,865,1266,905,1243,942,1214,974,1180,989,1157,1002,1125,1024,1045,1040,948,1051,842,1062,638,1064,498,1069,498,1067,638,1057,843,1046,949,1030,1046,1007,1127,994,1159,978,1184,945,1218,908,1247,868,1271,825,1289,779,1303,732,1313,636,1323,542,1322,455,1314,380,1302,323,1290"/>
+<area shape="rect" id="Node000032" href="$map__manipulation_8c.html#aa90f1f0c25556207e47fc2f745ee1b08" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="445,1189,520,1215"/>
+<area shape="poly" id="edge46_Node000031_Node000032" title=" " alt="" coords="332,1199,431,1199,431,1205,332,1205"/>
+<area shape="rect" id="Node000034" href="$map__manipulation_8c.html#a4819a56cb75720839b162da18bc30e1e" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="425,1239,540,1264"/>
+<area shape="poly" id="edge49_Node000031_Node000034" title=" " alt="" coords="332,1212,417,1233,416,1238,331,1217"/>
+<area shape="poly" id="edge47_Node000032_Node000006" title=" " alt="" coords="520,1198,776,1180,906,1163,951,1153,974,1143,990,1122,1004,1094,1027,1020,1044,929,1054,829,1064,634,1064,498,1069,498,1069,634,1060,829,1049,930,1033,1021,1009,1096,995,1125,978,1147,952,1159,907,1169,777,1185,520,1203"/>
+<area shape="rect" id="Node000033" href="$map__manipulation_8c.html#a5cb1605f425211f88f0aa268bb6cdf12" title="Replaces the source string with a new string of a given size, filled with &#39;1&#39;, while retaining certai..." alt="" coords="669,1215,722,1240"/>
+<area shape="poly" id="edge48_Node000032_Node000033" title=" " alt="" coords="520,1204,655,1220,655,1225,520,1209"/>
+<area shape="poly" id="edge51_Node000035_Node000006" title=" " alt="" coords="512,203,599,171,657,156,721,144,788,139,855,143,919,159,949,173,978,191,1005,217,1027,248,1043,283,1055,319,1067,390,1069,445,1064,445,1061,390,1050,320,1038,285,1022,251,1001,220,974,195,947,177,917,164,854,148,788,144,721,149,658,161,600,176,514,208"/>
+<area shape="poly" id="edge52_Node000035_Node000017" title=" " alt="" coords="523,228,644,269,643,274,521,233"/>
+<area shape="rect" id="Node000036" href="$texture__parsing_8c.html#ac4830c7bcce81a00ea93f1bfddd95560" title="Prints texture paths for debugging." alt="" coords="639,205,752,231"/>
+<area shape="poly" id="edge53_Node000035_Node000036" title=" " alt="" coords="565,215,624,215,624,221,565,221"/>
+<area shape="rect" id="Node000038" href="$texture__parsing_8c.html#a0c1c165f7e7254954081e9e0bd16f095" title="Extracts texture path from a file line." alt="" coords="642,55,749,80"/>
+<area shape="poly" id="edge56_Node000035_Node000038" title=" " alt="" coords="496,203,562,139,584,112,595,101,611,89,628,80,631,85,613,94,598,105,588,116,566,142,500,207"/>
+<area shape="poly" id="edge55_Node000036_Node000021" title=" " alt="" coords="733,228,758,242,781,262,797,287,814,322,847,410,896,573,891,574,842,412,809,324,793,289,777,265,755,247,731,233"/>
+<area shape="rect" id="Node000037" href="$util__1_8c.html#a24cfd74052ac4c8a7d0b27284af44a80" title="Outputs debug info with case in green color." alt="" coords="848,205,955,231"/>
+<area shape="poly" id="edge54_Node000036_Node000037" title=" " alt="" coords="752,215,835,215,835,221,752,221"/>
+<area shape="poly" id="edge57_Node000038_Node000011" title=" " alt="" coords="748,52,851,27,853,32,750,57"/>
+<area shape="poly" id="edge67_Node000039_Node000006" title=" " alt="" coords="538,913,612,899,694,893,801,888,855,883,904,876,945,864,974,847,992,822,1008,784,1034,684,1051,578,1061,498,1066,498,1056,579,1039,685,1013,785,997,824,978,851,947,869,906,881,856,889,802,893,695,898,612,905,539,919"/>
+<area shape="rect" id="Node000040" href="$player__verification_8c.html#a3483943405fddf6f035cb64d945b9f23" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="630,1013,761,1039"/>
+<area shape="poly" id="edge59_Node000039_Node000040" title=" " alt="" coords="505,938,553,967,613,998,634,1006,632,1011,611,1003,550,972,502,942"/>
+<area shape="rect" id="Node000042" href="$player__verification_8c.html#a64fbe2ea7216129cf3463f1a78a8fe9d" title="Checks if player is not surrounded by walls." alt="" coords="612,964,779,989"/>
+<area shape="poly" id="edge61_Node000039_Node000042" title=" " alt="" coords="539,937,627,958,626,963,537,943"/>
+<area shape="rect" id="Node000043" href="$player__verification_8c.html#ac806885085229a5b7735e4cefb93ada8" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="628,1063,763,1088"/>
+<area shape="poly" id="edge62_Node000039_Node000043" title=" " alt="" coords="496,938,543,991,576,1021,613,1048,629,1055,626,1060,611,1052,573,1026,539,995,492,942"/>
+<area shape="rect" id="Node000044" href="$map__verification_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="645,915,746,940"/>
+<area shape="poly" id="edge64_Node000039_Node000044" title=" " alt="" coords="538,925,631,925,631,930,538,930"/>
+<area shape="rect" id="Node000046" href="$player__verification_8c.html#a0642ea6088fbb44224456feada7cfb1e" title="Prints the player&#39;s position and direction information for debugging." alt="" coords="629,763,761,788"/>
+<area shape="poly" id="edge68_Node000039_Node000046" title=" " alt="" coords="500,912,664,794,667,798,503,917"/>
+<area shape="rect" id="Node000041" href="$player__verification_8c.html#a73455b1cdf6709a84259383b64b8e991" title="Sets the player&#39;s position and direction based on map data." alt="" coords="840,1039,963,1064"/>
+<area shape="poly" id="edge60_Node000040_Node000041" title=" " alt="" coords="761,1031,826,1039,826,1045,761,1037"/>
+<area shape="poly" id="edge63_Node000043_Node000041" title=" " alt="" coords="762,1065,826,1057,827,1063,763,1070"/>
+<area shape="poly" id="edge65_Node000044_Node000006" title=" " alt="" coords="746,935,799,940,861,939,892,933,921,925,949,912,974,893,994,865,1012,821,1026,767,1038,707,1054,588,1062,498,1067,498,1059,588,1043,708,1031,769,1017,823,999,867,978,897,952,916,923,930,893,939,861,944,799,945,746,940"/>
+<area shape="rect" id="Node000045" href="$map__verification_8c.html#a753104db9499b280a27994290cee30d2" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="849,965,954,991"/>
+<area shape="poly" id="edge66_Node000044_Node000045" title=" " alt="" coords="747,937,836,959,835,965,746,942"/>
+<area shape="poly" id="edge70_Node000046_Node000018" title=" " alt="" coords="735,760,777,741,831,705,874,669,878,673,834,709,780,746,737,765"/>
+<area shape="poly" id="edge71_Node000046_Node000021" title=" " alt="" coords="709,761,777,691,790,671,798,654,808,638,825,621,840,612,843,617,828,625,812,641,803,657,794,674,781,694,713,764"/>
+<area shape="rect" id="Node000047" href="$util__1_8c.html#a5616d9ac38f4be83b46d3d995bbe6e75" title="Outputs debug info with case in green color." alt="" coords="852,763,951,788"/>
+<area shape="poly" id="edge69_Node000046_Node000047" title=" " alt="" coords="762,773,838,773,838,778,762,778"/>
 </map>

@@ -1,0 +1,27 @@
+<map id="validate_map" name="validate_map">
+<area shape="rect" id="Node000001" title="Validates the game map and player position." alt="" coords="5,129,116,155"/>
+<area shape="rect" id="Node000002" href="$player__verification_8c.html#a3483943405fddf6f035cb64d945b9f23" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="182,5,313,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,127,107,85,133,60,163,40,175,33,178,38,165,44,137,65,111,88,74,131"/>
+<area shape="rect" id="Node000004" href="$player__verification_8c.html#a64fbe2ea7216129cf3463f1a78a8fe9d" title="Checks if player is not surrounded by walls." alt="" coords="164,55,331,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,127,163,89,183,82,185,87,165,94,86,132"/>
+<area shape="rect" id="Node000005" href="$player__verification_8c.html#ac806885085229a5b7735e4cefb93ada8" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="180,104,315,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="116,132,166,125,167,130,117,137"/>
+<area shape="rect" id="Node000006" href="$map__verification_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="197,205,298,231"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="92,152,165,184,201,198,199,203,163,188,90,157"/>
+<area shape="rect" id="Node000007" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="403,155,477,180"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="117,143,389,161,389,167,116,148"/>
+<area shape="rect" id="Node000009" href="$player__verification_8c.html#a0642ea6088fbb44224456feada7cfb1e" title="Prints the player&#39;s position and direction information for debugging." alt="" coords="181,279,313,304"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="75,153,114,194,166,240,211,270,208,274,162,244,110,198,71,157"/>
+<area shape="rect" id="Node000003" href="$player__verification_8c.html#a73455b1cdf6709a84259383b64b8e991" title="Sets the player&#39;s position and direction based on map data." alt="" coords="379,55,501,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,28,377,49,376,54,297,33"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="297,101,376,81,377,86,298,107"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="296,203,390,178,391,183,297,208"/>
+<area shape="rect" id="Node000008" href="$map__verification_8c.html#a753104db9499b280a27994290cee30d2" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="387,204,493,229"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="298,215,373,214,373,220,298,220"/>
+<area shape="rect" id="Node000010" href="$util__1_8c.html#a5616d9ac38f4be83b46d3d995bbe6e75" title="Outputs debug info with case in green color." alt="" coords="391,253,489,279"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="313,280,376,272,377,277,314,285"/>
+<area shape="rect" id="Node000011" href="$util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="381,303,499,328"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="314,297,367,304,366,309,313,302"/>
+<area shape="rect" id="Node000012" href="$util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="393,352,487,377"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="283,302,394,344,392,349,281,307"/>
+</map>

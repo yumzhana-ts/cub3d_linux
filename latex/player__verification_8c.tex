@@ -1,0 +1,144 @@
+\doxysection{src/map/player\+\_\+verification.c File Reference}
+\hypertarget{player__verification_8c}{}\label{player__verification_8c}\index{src/map/player\_verification.c@{src/map/player\_verification.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for player\+\_\+verification.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{player__verification_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{player__verification_8c_a0642ea6088fbb44224456feada7cfb1e}{print\+\_\+player\+\_\+info}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Prints the player\textquotesingle{}s position and direction information for debugging. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{player__verification_8c_a73455b1cdf6709a84259383b64b8e991}{set\+\_\+player\+\_\+info}} (int i, char \texorpdfstring{$\ast$}{*}str, int c, t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s position and direction based on map data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player__verification_8c_a3483943405fddf6f035cb64d945b9f23}{check\+\_\+player\+\_\+ns}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Checks for the presence of player characters \textquotesingle{}N\textquotesingle{} or \textquotesingle{}S\textquotesingle{} on the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player__verification_8c_ac806885085229a5b7735e4cefb93ada8}{check\+\_\+player\+\_\+we}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Checks for the presence of player characters \textquotesingle{}W\textquotesingle{} or \textquotesingle{}E\textquotesingle{} on the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player__verification_8c_a64fbe2ea7216129cf3463f1a78a8fe9d}{check\+\_\+player\+\_\+position}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Checks if player is not surrounded by walls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{player__verification_8c_a3483943405fddf6f035cb64d945b9f23}\label{player__verification_8c_a3483943405fddf6f035cb64d945b9f23} 
+\index{player\_verification.c@{player\_verification.c}!check\_player\_ns@{check\_player\_ns}}
+\index{check\_player\_ns@{check\_player\_ns}!player\_verification.c@{player\_verification.c}}
+\doxysubsubsection{\texorpdfstring{check\_player\_ns()}{check\_player\_ns()}}
+{\footnotesize\ttfamily int check\+\_\+player\+\_\+ns (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Checks for the presence of player characters \textquotesingle{}N\textquotesingle{} or \textquotesingle{}S\textquotesingle{} on the map. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]checking for duplicates \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+0 if a player character \textquotesingle{}N\textquotesingle{} or \textquotesingle{}S\textquotesingle{} is found and player info is set, otherwise 1. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{player__verification_8c_a3483943405fddf6f035cb64d945b9f23_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__verification_8c_a3483943405fddf6f035cb64d945b9f23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player__verification_8c_a64fbe2ea7216129cf3463f1a78a8fe9d}\label{player__verification_8c_a64fbe2ea7216129cf3463f1a78a8fe9d} 
+\index{player\_verification.c@{player\_verification.c}!check\_player\_position@{check\_player\_position}}
+\index{check\_player\_position@{check\_player\_position}!player\_verification.c@{player\_verification.c}}
+\doxysubsubsection{\texorpdfstring{check\_player\_position()}{check\_player\_position()}}
+{\footnotesize\ttfamily int check\+\_\+player\+\_\+position (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Checks if player is not surrounded by walls. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__verification_8c_a64fbe2ea7216129cf3463f1a78a8fe9d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player__verification_8c_ac806885085229a5b7735e4cefb93ada8}\label{player__verification_8c_ac806885085229a5b7735e4cefb93ada8} 
+\index{player\_verification.c@{player\_verification.c}!check\_player\_we@{check\_player\_we}}
+\index{check\_player\_we@{check\_player\_we}!player\_verification.c@{player\_verification.c}}
+\doxysubsubsection{\texorpdfstring{check\_player\_we()}{check\_player\_we()}}
+{\footnotesize\ttfamily int check\+\_\+player\+\_\+we (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Checks for the presence of player characters \textquotesingle{}W\textquotesingle{} or \textquotesingle{}E\textquotesingle{} on the map. 
+
+\begin{DoxyReturn}{Returns}
+0 if a player character \textquotesingle{}N\textquotesingle{} or \textquotesingle{}S\textquotesingle{} is found and player info is set, otherwise 1. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{player__verification_8c_ac806885085229a5b7735e4cefb93ada8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__verification_8c_ac806885085229a5b7735e4cefb93ada8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player__verification_8c_a0642ea6088fbb44224456feada7cfb1e}\label{player__verification_8c_a0642ea6088fbb44224456feada7cfb1e} 
+\index{player\_verification.c@{player\_verification.c}!print\_player\_info@{print\_player\_info}}
+\index{print\_player\_info@{print\_player\_info}!player\_verification.c@{player\_verification.c}}
+\doxysubsubsection{\texorpdfstring{print\_player\_info()}{print\_player\_info()}}
+{\footnotesize\ttfamily void print\+\_\+player\+\_\+info (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Prints the player\textquotesingle{}s position and direction information for debugging. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{player__verification_8c_a0642ea6088fbb44224456feada7cfb1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__verification_8c_a0642ea6088fbb44224456feada7cfb1e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player__verification_8c_a73455b1cdf6709a84259383b64b8e991}\label{player__verification_8c_a73455b1cdf6709a84259383b64b8e991} 
+\index{player\_verification.c@{player\_verification.c}!set\_player\_info@{set\_player\_info}}
+\index{set\_player\_info@{set\_player\_info}!player\_verification.c@{player\_verification.c}}
+\doxysubsubsection{\texorpdfstring{set\_player\_info()}{set\_player\_info()}}
+{\footnotesize\ttfamily static int set\+\_\+player\+\_\+info (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{int}]{c,  }\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the player\textquotesingle{}s position and direction based on map data. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__verification_8c_a73455b1cdf6709a84259383b64b8e991_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,7 @@
+<map id="split_save_string" name="split_save_string">
+<area shape="rect" id="Node000001" title="Saves a substring from or to str." alt="" coords="5,31,137,56"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="192,5,265,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,30,178,23,179,29,138,35"/>
+<area shape="rect" id="Node000003" href="$util__4_8c.html#a1253dcda6e2d9b6e4b4be25b4c032a29" title="Copies up to n characters from s2 to s1." alt="" coords="185,55,272,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,51,172,56,171,61,137,56"/>
+</map>

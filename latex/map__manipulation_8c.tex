@@ -1,0 +1,151 @@
+\doxysection{src/map/map\+\_\+manipulation.c File Reference}
+\hypertarget{map__manipulation_8c}{}\label{map__manipulation_8c}\index{src/map/map\_manipulation.c@{src/map/map\_manipulation.c}}
+
+
+Contains functions for manipulating the map data and modifying its contents.  
+
+
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for map\+\_\+manipulation.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{map__manipulation_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{map__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f}{rebuild\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Rebuilds the map by calculating its width and filling it with modified data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08}{fill\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Fills the map in the {\ttfamily t\+\_\+data} structure by modifying each row using the {\ttfamily ones} function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__manipulation_8c_a4819a56cb75720839b162da18bc30e1e}{width\+\_\+of\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Calculates the width of the map. Iterates through each row of the map and finds the maximum width. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12}{ones}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}src, int size)
+\begin{DoxyCompactList}\small\item\em Replaces the source string with a new string of a given size, filled with \textquotesingle{}1\textquotesingle{}, while retaining certain characters (\textquotesingle{}0\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}N\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}W\textquotesingle{}, \textquotesingle{}E\textquotesingle{}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains functions for manipulating the map data and modifying its contents. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{map__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08}\label{map__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08} 
+\index{map\_manipulation.c@{map\_manipulation.c}!fill\_map@{fill\_map}}
+\index{fill\_map@{fill\_map}!map\_manipulation.c@{map\_manipulation.c}}
+\doxysubsubsection{\texorpdfstring{fill\_map()}{fill\_map()}}
+{\footnotesize\ttfamily int fill\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Fills the map in the {\ttfamily t\+\_\+data} structure by modifying each row using the {\ttfamily ones} function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to a {\ttfamily t\+\_\+data} structure that contains the map data to be modified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{map__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12}\label{map__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12} 
+\index{map\_manipulation.c@{map\_manipulation.c}!ones@{ones}}
+\index{ones@{ones}!map\_manipulation.c@{map\_manipulation.c}}
+\doxysubsubsection{\texorpdfstring{ones()}{ones()}}
+{\footnotesize\ttfamily int ones (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{src,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Replaces the source string with a new string of a given size, filled with \textquotesingle{}1\textquotesingle{}, while retaining certain characters (\textquotesingle{}0\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}N\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}W\textquotesingle{}, \textquotesingle{}E\textquotesingle{}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Pointer to the original string, which will be replaced. \\
+\hline
+{\em size} & The size of the new string to be allocated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, 1 if memory allocation fails. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f}\label{map__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f} 
+\index{map\_manipulation.c@{map\_manipulation.c}!rebuild\_map@{rebuild\_map}}
+\index{rebuild\_map@{rebuild\_map}!map\_manipulation.c@{map\_manipulation.c}}
+\doxysubsubsection{\texorpdfstring{rebuild\_map()}{rebuild\_map()}}
+{\footnotesize\ttfamily int rebuild\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Rebuilds the map by calculating its width and filling it with modified data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to the t\+\_\+data structure that contains the map data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{map__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__manipulation_8c_a4819a56cb75720839b162da18bc30e1e}\label{map__manipulation_8c_a4819a56cb75720839b162da18bc30e1e} 
+\index{map\_manipulation.c@{map\_manipulation.c}!width\_of\_map@{width\_of\_map}}
+\index{width\_of\_map@{width\_of\_map}!map\_manipulation.c@{map\_manipulation.c}}
+\doxysubsubsection{\texorpdfstring{width\_of\_map()}{width\_of\_map()}}
+{\footnotesize\ttfamily int width\+\_\+of\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Calculates the width of the map. Iterates through each row of the map and finds the maximum width. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to the t\+\_\+data structure containing the map data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the width of the map. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__manipulation_8c_a4819a56cb75720839b162da18bc30e1e_icgraph}
+\end{center}
+\end{figure}

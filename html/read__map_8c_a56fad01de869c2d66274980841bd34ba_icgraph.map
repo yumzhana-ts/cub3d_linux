@@ -1,0 +1,5 @@
+<map id="ones" name="ones">
+<area shape="rect" id="Node000001" title="Calculates the longest width of atfile represented by a string." alt="" coords="128,5,181,31"/>
+<area shape="rect" id="Node000002" href="$read__map_8c.html#aa90f1f0c25556207e47fc2f745ee1b08" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,21,80,21,80,15,115,15"/>
+</map>

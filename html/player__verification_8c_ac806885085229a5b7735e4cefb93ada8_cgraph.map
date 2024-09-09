@@ -1,0 +1,5 @@
+<map id="check_player_we" name="check_player_we">
+<area shape="rect" id="Node000001" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="5,5,140,31"/>
+<area shape="rect" id="Node000002" href="$player__verification_8c.html#a73455b1cdf6709a84259383b64b8e991" title="Sets the player&#39;s position and direction based on map data." alt="" coords="188,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,15,174,15,174,21,140,21"/>
+</map>

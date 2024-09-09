@@ -1,5 +1,9 @@
 <map id="parsing" name="parsing">
-<area shape="rect" id="Node000001" title="Map parsing." alt="" coords="5,5,69,31"/>
-<area shape="rect" id="Node000002" href="$check__arg_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="117,5,210,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,16,101,16,101,21,69,21"/>
+<area shape="rect" id="Node000001" title="Map parsing." alt="" coords="5,31,76,56"/>
+<area shape="rect" id="Node000002" href="$check__arg_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="124,31,225,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,41,110,41,110,46,76,46"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="289,5,363,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,32,275,24,276,29,226,38"/>
+<area shape="rect" id="Node000004" href="$check__arg_8c.html#a1ce89894b382f2bf336e4f00772620ee" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="273,55,379,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="226,49,260,54,259,59,225,54"/>
 </map>

@@ -1,0 +1,11 @@
+<map id="ones" name="ones">
+<area shape="rect" id="Node000001" title="Modifies the input string src by replacing certain characters with &#39;1&#39;." alt="" coords="480,5,533,31"/>
+<area shape="rect" id="Node000002" href="$map__manipulation_8c.html#aa90f1f0c25556207e47fc2f745ee1b08" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="357,5,432,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="467,21,432,21,432,15,467,15"/>
+<area shape="rect" id="Node000003" href="$map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="207,5,309,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,21,310,21,310,15,344,15"/>
+<area shape="rect" id="Node000004" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

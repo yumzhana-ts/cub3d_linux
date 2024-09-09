@@ -1,0 +1,9 @@
+<map id="map_start" name="map_start">
+<area shape="rect" id="Node000001" title="Determines the starting index of the map in the file data." alt="" coords="5,55,93,80"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="141,5,260,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,52,147,33,149,38,90,57"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="164,55,237,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,65,150,65,150,70,94,70"/>
+<area shape="rect" id="Node000004" href="$map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="141,104,260,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="90,78,149,97,147,102,88,83"/>
+</map>

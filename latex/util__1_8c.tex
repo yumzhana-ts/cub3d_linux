@@ -13,16 +13,90 @@ Include dependency graph for util\+\_\+1.\+c\+:\nopagebreak
 \item 
 int \mbox{\hyperlink{util__1_8c_abdd79f8c7592cfe0da42efdeeb0b09a1}{fd\+\_\+error}} (char \texorpdfstring{$\ast$}{*}s)
 \begin{DoxyCompactList}\small\item\em Outputs an error message to the standard error stream. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{util__1_8c_a26e24eb705fb43a7fc63f86db9427312}{my\+\_\+mlx\+\_\+pixel\+\_\+put}} (t\+\_\+pixel \texorpdfstring{$\ast$}{*}data, int x, int y, int color)
-\begin{DoxyCompactList}\small\item\em Fast version on pixel put. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{util__1_8c_a08016234ad2e243c79137f0d479e69c2}{debug\+\_\+number}} (char \texorpdfstring{$\ast$}{*}str, int n)
+\begin{DoxyCompactList}\small\item\em Outputs debug info with number in green color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{util__1_8c_a5616d9ac38f4be83b46d3d995bbe6e75}{debug\+\_\+case}} (char \texorpdfstring{$\ast$}{*}str, char c)
+\begin{DoxyCompactList}\small\item\em Outputs debug info with case in green color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{util__1_8c_a24cfd74052ac4c8a7d0b27284af44a80}{debug\+\_\+string}} (char \texorpdfstring{$\ast$}{*}info, char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Outputs debug info with case in green color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{util__1_8c_a02f953addb15c10c0207a72be1aed7cb}{debug\+\_\+text}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Outputs debug text. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{util__1_8c_abdd79f8c7592cfe0da42efdeeb0b09a1}\index{util\_1.c@{util\_1.c}!fd\_error@{fd\_error}}
+\Hypertarget{util__1_8c_a5616d9ac38f4be83b46d3d995bbe6e75}\label{util__1_8c_a5616d9ac38f4be83b46d3d995bbe6e75} 
+\index{util\_1.c@{util\_1.c}!debug\_case@{debug\_case}}
+\index{debug\_case@{debug\_case}!util\_1.c@{util\_1.c}}
+\doxysubsubsection{\texorpdfstring{debug\_case()}{debug\_case()}}
+{\footnotesize\ttfamily void debug\+\_\+case (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Outputs debug info with case in green color. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__1_8c_a5616d9ac38f4be83b46d3d995bbe6e75_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__1_8c_a08016234ad2e243c79137f0d479e69c2}\label{util__1_8c_a08016234ad2e243c79137f0d479e69c2} 
+\index{util\_1.c@{util\_1.c}!debug\_number@{debug\_number}}
+\index{debug\_number@{debug\_number}!util\_1.c@{util\_1.c}}
+\doxysubsubsection{\texorpdfstring{debug\_number()}{debug\_number()}}
+{\footnotesize\ttfamily void debug\+\_\+number (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Outputs debug info with number in green color. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__1_8c_a08016234ad2e243c79137f0d479e69c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__1_8c_a24cfd74052ac4c8a7d0b27284af44a80}\label{util__1_8c_a24cfd74052ac4c8a7d0b27284af44a80} 
+\index{util\_1.c@{util\_1.c}!debug\_string@{debug\_string}}
+\index{debug\_string@{debug\_string}!util\_1.c@{util\_1.c}}
+\doxysubsubsection{\texorpdfstring{debug\_string()}{debug\_string()}}
+{\footnotesize\ttfamily void debug\+\_\+string (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{info,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Outputs debug info with case in green color. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__1_8c_a24cfd74052ac4c8a7d0b27284af44a80_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__1_8c_a02f953addb15c10c0207a72be1aed7cb}\label{util__1_8c_a02f953addb15c10c0207a72be1aed7cb} 
+\index{util\_1.c@{util\_1.c}!debug\_text@{debug\_text}}
+\index{debug\_text@{debug\_text}!util\_1.c@{util\_1.c}}
+\doxysubsubsection{\texorpdfstring{debug\_text()}{debug\_text()}}
+{\footnotesize\ttfamily void debug\+\_\+text (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Outputs debug text. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__1_8c_a02f953addb15c10c0207a72be1aed7cb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__1_8c_abdd79f8c7592cfe0da42efdeeb0b09a1}\label{util__1_8c_abdd79f8c7592cfe0da42efdeeb0b09a1} 
+\index{util\_1.c@{util\_1.c}!fd\_error@{fd\_error}}
 \index{fd\_error@{fd\_error}!util\_1.c@{util\_1.c}}
 \doxysubsubsection{\texorpdfstring{fd\_error()}{fd\_error()}}
-{\footnotesize\ttfamily \label{util__1_8c_abdd79f8c7592cfe0da42efdeeb0b09a1} 
-int fd\+\_\+error (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int fd\+\_\+error (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})}
 
 
 
@@ -36,13 +110,10 @@ Outputs an error message to the standard error stream.
 \begin{DoxyReturn}{Returns}
 Always returns {\ttfamily 1}, indicating the function has completed its error reporting. 
 \end{DoxyReturn}
-\Hypertarget{util__1_8c_a26e24eb705fb43a7fc63f86db9427312}\index{util\_1.c@{util\_1.c}!my\_mlx\_pixel\_put@{my\_mlx\_pixel\_put}}
-\index{my\_mlx\_pixel\_put@{my\_mlx\_pixel\_put}!util\_1.c@{util\_1.c}}
-\doxysubsubsection{\texorpdfstring{my\_mlx\_pixel\_put()}{my\_mlx\_pixel\_put()}}
-{\footnotesize\ttfamily \label{util__1_8c_a26e24eb705fb43a7fc63f86db9427312} 
-void my\+\_\+mlx\+\_\+pixel\+\_\+put (\begin{DoxyParamCaption}\item[{t\+\_\+pixel \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
-
-
-
-Fast version on pixel put. 
-
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__1_8c_abdd79f8c7592cfe0da42efdeeb0b09a1_icgraph}
+\end{center}
+\end{figure}

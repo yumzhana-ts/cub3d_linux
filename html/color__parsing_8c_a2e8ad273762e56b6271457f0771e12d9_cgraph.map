@@ -1,0 +1,20 @@
+<map id="color_array_save" name="color_array_save">
+<area shape="rect" id="Node000001" title="Saves color data into an array by splitting a string." alt="" coords="5,31,139,56"/>
+<area shape="rect" id="Node000002" href="$color__parsing_8c.html#a3e3149f37161eff9e263077d93e8435f" title="Extracts a color string from a file line." alt="" coords="202,5,294,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,31,188,24,188,29,139,36"/>
+<area shape="rect" id="Node000004" href="$util__4_8c.html#ad57ecdce78737f830dfa1844b698e1fe" title="Splits str by commas into an array." alt="" coords="187,55,309,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,50,173,54,172,60,138,55"/>
+<area shape="rect" id="Node000003" href="$util__2_8c.html#afe7be0aad77df527e1464669ea972746" title=" " alt="" coords="391,5,463,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,15,377,15,377,21,294,21"/>
+<area shape="rect" id="Node000005" href="$util__4_8c.html#a5b8502e2446206f9853ebc53ed575169" title="Allocates an array for split words." alt="" coords="357,55,496,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="309,65,344,65,344,70,309,70"/>
+<area shape="rect" id="Node000008" href="$util__4_8c.html#a07b1fd8e8fdf0414a8fcd728b299dc23" title="Saves a substring from or to str." alt="" coords="361,104,493,129"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="295,77,367,98,365,103,294,83"/>
+<area shape="rect" id="Node000006" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="551,79,624,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="497,75,538,81,537,87,496,80"/>
+<area shape="rect" id="Node000007" href="$util__4_8c.html#aebd8a0c483222f7f8a5b651aed99b345" title="Counts words separated by commas in str." alt="" coords="550,29,625,55"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="496,54,536,47,537,53,497,59"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="492,104,537,97,538,102,493,109"/>
+<area shape="rect" id="Node000009" href="$util__4_8c.html#accbc8abe1d4ff400f1fe694d2f338bb7" title="Copies up to n characters from s2 to s1." alt="" coords="544,128,631,153"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="493,124,531,130,530,135,492,129"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="print_player_info" name="print_player_info">
+<area shape="rect" id="Node000001" title="Prints the player&#39;s position and direction information for debugging." alt="" coords="5,55,137,80"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#a5616d9ac38f4be83b46d3d995bbe6e75" title="Outputs debug info with case in green color." alt="" coords="195,5,294,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,52,185,32,187,37,117,57"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="185,55,304,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,65,172,65,172,70,138,70"/>
+<area shape="rect" id="Node000004" href="$util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="197,104,292,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="117,77,187,98,185,103,116,83"/>
+</map>

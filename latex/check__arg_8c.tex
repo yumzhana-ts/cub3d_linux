@@ -14,18 +14,18 @@ Include dependency graph for check\+\_\+arg.\+c\+:\nopagebreak
 \item 
 int \mbox{\hyperlink{check__arg_8c_a7ab11ed507b3d0e58c22de178191e072}{checkextension}} (char \texorpdfstring{$\ast$}{*}name, char \texorpdfstring{$\ast$}{*}extension)
 \begin{DoxyCompactList}\small\item\em Checks if the given filename has a specific file extension. \end{DoxyCompactList}\item 
-static int \mbox{\hyperlink{check__arg_8c_a1ce89894b382f2bf336e4f00772620ee}{vertical\+\_\+wall}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game, int j)
+int \mbox{\hyperlink{check__arg_8c_a753104db9499b280a27994290cee30d2}{vertical\+\_\+wall}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game, int j)
 \begin{DoxyCompactList}\small\item\em Checks if all characters in a specific vertical wall of the map are \textquotesingle{}1\textquotesingle{}. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{check__arg_8c_a5b9b9dd9feb7d525a8c55b9378cc8103}{check\+\_\+walls}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Checks if the map is correctly enclosed by walls on all sides. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{check__arg_8c_a5b9b9dd9feb7d525a8c55b9378cc8103}\index{check\_arg.c@{check\_arg.c}!check\_walls@{check\_walls}}
+\Hypertarget{check__arg_8c_a5b9b9dd9feb7d525a8c55b9378cc8103}\label{check__arg_8c_a5b9b9dd9feb7d525a8c55b9378cc8103} 
+\index{check\_arg.c@{check\_arg.c}!check\_walls@{check\_walls}}
 \index{check\_walls@{check\_walls}!check\_arg.c@{check\_arg.c}}
 \doxysubsubsection{\texorpdfstring{check\_walls()}{check\_walls()}}
-{\footnotesize\ttfamily \label{check__arg_8c_a5b9b9dd9feb7d525a8c55b9378cc8103} 
-int check\+\_\+walls (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int check\+\_\+walls (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -41,11 +41,25 @@ This function checks the first and last rows of the map to ensure they are fully
 \begin{DoxyReturn}{Returns}
 Returns 0 if all walls are correctly enclosed, otherwise returns a non-\/zero value and reports an error. 
 \end{DoxyReturn}
-\Hypertarget{check__arg_8c_a7ab11ed507b3d0e58c22de178191e072}\index{check\_arg.c@{check\_arg.c}!checkextension@{checkextension}}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{check__arg_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{check__arg_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{check__arg_8c_a7ab11ed507b3d0e58c22de178191e072}\label{check__arg_8c_a7ab11ed507b3d0e58c22de178191e072} 
+\index{check\_arg.c@{check\_arg.c}!checkextension@{checkextension}}
 \index{checkextension@{checkextension}!check\_arg.c@{check\_arg.c}}
 \doxysubsubsection{\texorpdfstring{checkextension()}{checkextension()}}
-{\footnotesize\ttfamily \label{check__arg_8c_a7ab11ed507b3d0e58c22de178191e072} 
-int checkextension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{extension}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int checkextension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{extension }\end{DoxyParamCaption})}
 
 
 
@@ -59,11 +73,18 @@ Checks if the given filename has a specific file extension.
 \begin{DoxyReturn}{Returns}
 0 if the filename ends with "{}.\+cub"{}, 1 otherwise. 
 \end{DoxyReturn}
-\Hypertarget{check__arg_8c_a1ce89894b382f2bf336e4f00772620ee}\index{check\_arg.c@{check\_arg.c}!vertical\_wall@{vertical\_wall}}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{check__arg_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{check__arg_8c_a753104db9499b280a27994290cee30d2}\label{check__arg_8c_a753104db9499b280a27994290cee30d2} 
+\index{check\_arg.c@{check\_arg.c}!vertical\_wall@{vertical\_wall}}
 \index{vertical\_wall@{vertical\_wall}!check\_arg.c@{check\_arg.c}}
 \doxysubsubsection{\texorpdfstring{vertical\_wall()}{vertical\_wall()}}
-{\footnotesize\ttfamily \label{check__arg_8c_a1ce89894b382f2bf336e4f00772620ee} 
-static int vertical\+\_\+wall (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{j}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily int vertical\+\_\+wall (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game,  }\item[{int}]{j }\end{DoxyParamCaption})}
 
 
 
@@ -81,3 +102,10 @@ This function iterates through a column of the game map to verify if all charact
 \begin{DoxyReturn}{Returns}
 Returns 0 if the entire column is filled with \textquotesingle{}1\textquotesingle{}s, otherwise returns 1. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{check__arg_8c_a753104db9499b280a27994290cee30d2_icgraph}
+\end{center}
+\end{figure}

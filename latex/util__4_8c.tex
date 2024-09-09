@@ -1,0 +1,151 @@
+\doxysection{src/utils/util\+\_\+4.c File Reference}
+\hypertarget{util__4_8c}{}\label{util__4_8c}\index{src/utils/util\_4.c@{src/utils/util\_4.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for util\+\_\+4.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{util__4_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{util__4_8c_accbc8abe1d4ff400f1fe694d2f338bb7}{ft\+\_\+strncpy}} (char \texorpdfstring{$\ast$}{*}s1, char \texorpdfstring{$\ast$}{*}s2, int n)
+\begin{DoxyCompactList}\small\item\em Copies up to {\ttfamily n} characters from {\ttfamily s2} to {\ttfamily s1}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{util__4_8c_aebd8a0c483222f7f8a5b651aed99b345}{wc\+\_\+split}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Counts words separated by commas in {\ttfamily str}. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{util__4_8c_a5b8502e2446206f9853ebc53ed575169}{split\+\_\+create\+\_\+array}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Allocates an array for split words. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{util__4_8c_a07b1fd8e8fdf0414a8fcd728b299dc23}{split\+\_\+save\+\_\+string}} (char \texorpdfstring{$\ast$}{*}str, int i, int j, char \texorpdfstring{$\ast$}{*}or)
+\begin{DoxyCompactList}\small\item\em Saves a substring from {\ttfamily or} to {\ttfamily str}. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{util__4_8c_ad57ecdce78737f830dfa1844b698e1fe}{ft\+\_\+split\+\_\+comma}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Splits {\ttfamily str} by commas into an array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{util__4_8c_ad57ecdce78737f830dfa1844b698e1fe}\label{util__4_8c_ad57ecdce78737f830dfa1844b698e1fe} 
+\index{util\_4.c@{util\_4.c}!ft\_split\_comma@{ft\_split\_comma}}
+\index{ft\_split\_comma@{ft\_split\_comma}!util\_4.c@{util\_4.c}}
+\doxysubsubsection{\texorpdfstring{ft\_split\_comma()}{ft\_split\_comma()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} ft\+\_\+split\+\_\+comma (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Splits {\ttfamily str} by commas into an array. 
+
+\begin{DoxyReturn}{Returns}
+Array of strings or NULL on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__4_8c_ad57ecdce78737f830dfa1844b698e1fe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__4_8c_ad57ecdce78737f830dfa1844b698e1fe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__4_8c_accbc8abe1d4ff400f1fe694d2f338bb7}\label{util__4_8c_accbc8abe1d4ff400f1fe694d2f338bb7} 
+\index{util\_4.c@{util\_4.c}!ft\_strncpy@{ft\_strncpy}}
+\index{ft\_strncpy@{ft\_strncpy}!util\_4.c@{util\_4.c}}
+\doxysubsubsection{\texorpdfstring{ft\_strncpy()}{ft\_strncpy()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} ft\+\_\+strncpy (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s1,  }\item[{char \texorpdfstring{$\ast$}{*}}]{s2,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Copies up to {\ttfamily n} characters from {\ttfamily s2} to {\ttfamily s1}. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to {\ttfamily s1}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__4_8c_accbc8abe1d4ff400f1fe694d2f338bb7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__4_8c_a5b8502e2446206f9853ebc53ed575169}\label{util__4_8c_a5b8502e2446206f9853ebc53ed575169} 
+\index{util\_4.c@{util\_4.c}!split\_create\_array@{split\_create\_array}}
+\index{split\_create\_array@{split\_create\_array}!util\_4.c@{util\_4.c}}
+\doxysubsubsection{\texorpdfstring{split\_create\_array()}{split\_create\_array()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} split\+\_\+create\+\_\+array (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Allocates an array for split words. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to array of strings or NULL on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{util__4_8c_a5b8502e2446206f9853ebc53ed575169_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__4_8c_a5b8502e2446206f9853ebc53ed575169_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__4_8c_a07b1fd8e8fdf0414a8fcd728b299dc23}\label{util__4_8c_a07b1fd8e8fdf0414a8fcd728b299dc23} 
+\index{util\_4.c@{util\_4.c}!split\_save\_string@{split\_save\_string}}
+\index{split\_save\_string@{split\_save\_string}!util\_4.c@{util\_4.c}}
+\doxysubsubsection{\texorpdfstring{split\_save\_string()}{split\_save\_string()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} split\+\_\+save\+\_\+string (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{char \texorpdfstring{$\ast$}{*}}]{or }\end{DoxyParamCaption})}
+
+
+
+Saves a substring from {\ttfamily or} to {\ttfamily str}. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to {\ttfamily str} or NULL on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{util__4_8c_a07b1fd8e8fdf0414a8fcd728b299dc23_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__4_8c_a07b1fd8e8fdf0414a8fcd728b299dc23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util__4_8c_aebd8a0c483222f7f8a5b651aed99b345}\label{util__4_8c_aebd8a0c483222f7f8a5b651aed99b345} 
+\index{util\_4.c@{util\_4.c}!wc\_split@{wc\_split}}
+\index{wc\_split@{wc\_split}!util\_4.c@{util\_4.c}}
+\doxysubsubsection{\texorpdfstring{wc\_split()}{wc\_split()}}
+{\footnotesize\ttfamily int wc\+\_\+split (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Counts words separated by commas in {\ttfamily str}. 
+
+\begin{DoxyReturn}{Returns}
+Number of words. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util__4_8c_aebd8a0c483222f7f8a5b651aed99b345_icgraph}
+\end{center}
+\end{figure}

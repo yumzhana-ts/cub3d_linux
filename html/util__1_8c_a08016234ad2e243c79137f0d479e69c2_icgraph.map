@@ -1,0 +1,28 @@
+<map id="debug_number" name="debug_number">
+<area shape="rect" id="Node000001" title="Outputs debug info with number in green color." alt="" coords="792,81,911,107"/>
+<area shape="rect" id="Node000002" href="$map__parsing_8c.html#a66b150036d9a4a18c2b8f45481ec322e" title="Verifies the map format and controls its placement within the file data." alt="" coords="427,56,538,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="778,92,538,75,538,70,778,86"/>
+<area shape="rect" id="Node000006" href="$util__2_8c.html#ad7d661fed596492a19e7d67b862ee02e" title="Prints debugging information about the map." alt="" coords="231,5,329,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="796,80,743,67,628,48,512,35,329,23,330,17,513,30,628,43,745,62,797,75"/>
+<area shape="rect" id="Node000007" href="$map__parsing_8c.html#a6087d20282ccd4e416a8ed98b6950872" title="Determines the starting index of the map in the file data." alt="" coords="634,107,722,132"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="779,107,723,116,722,110,778,102"/>
+<area shape="rect" id="Node000010" href="$player__verification_8c.html#a0642ea6088fbb44224456feada7cfb1e" title="Prints the player&#39;s position and direction information for debugging." alt="" coords="612,181,744,207"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="818,116,703,183,700,179,815,111"/>
+<area shape="rect" id="Node000003" href="$map__parsing_8c.html#ac190d22718f692b89123f6067a935371" title="Verifies the overall format of the map file." alt="" coords="207,55,353,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="413,71,354,70,354,65,414,66"/>
+<area shape="rect" id="Node000004" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,105,159,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="230,87,160,112,158,107,229,82"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,105,60,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,121,60,121,60,115,94,115"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="219,38,208,44,172,75,146,107,142,103,168,72,205,40,216,34"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="620,107,532,84,533,79,621,102"/>
+<area shape="rect" id="Node000008" href="$color__parsing_8c.html#aa506e293773a33e3b92ccc95b8d06fa1" title="Parses the file to save ceiling and floor colors." alt="" coords="207,156,353,181"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="621,135,564,146,454,159,354,167,353,162,453,154,564,141,620,130"/>
+<area shape="rect" id="Node000009" href="$texture__parsing_8c.html#a1355647db0e7f6c60e04109725204c31" title="Loads textures from the file." alt="" coords="401,105,564,131"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="620,122,564,121,564,116,620,116"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="229,154,158,129,160,124,230,149"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="387,121,159,121,159,115,387,115"/>
+<area shape="rect" id="Node000011" href="$map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498" title="Validates the game map and player position." alt="" coords="427,207,538,232"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="599,207,539,215,538,210,598,202"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="414,229,366,229,313,226,258,215,205,196,184,183,166,166,140,133,145,129,170,162,188,179,208,192,259,210,313,220,366,224,414,223"/>
+</map>

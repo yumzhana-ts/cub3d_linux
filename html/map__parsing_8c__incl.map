@@ -1,0 +1,7 @@
+<map id="src/map/map_parsing.c" name="src/map/map_parsing.c">
+<area shape="rect" id="Node000001" title="Contains functions for parsing and verifying the map structure from the file data." alt="" coords="5,5,179,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="10,79,83,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,32,64,69,59,66,82,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="108,79,167,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,30,125,66,120,69,97,32"/>
+</map>

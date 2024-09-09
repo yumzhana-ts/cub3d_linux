@@ -1,0 +1,7 @@
+<map id="format_verification" name="format_verification">
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,5,353,31"/>
+<area shape="rect" id="Node000002" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<area shape="rect" id="Node000003" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

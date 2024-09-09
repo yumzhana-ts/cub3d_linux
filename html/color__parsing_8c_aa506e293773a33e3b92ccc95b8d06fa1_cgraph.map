@@ -1,0 +1,39 @@
+<map id="color_manipulation" name="color_manipulation">
+<area shape="rect" id="Node000001" title="Parses the file to save ceiling and floor colors." alt="" coords="5,132,152,157"/>
+<area shape="rect" id="Node000002" href="$util__3_8c.html#a8d68a28a03acd21c0698cbffacb49c7a" title="Prints the map to the standard output." alt="" coords="225,5,308,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,130,138,91,199,48,222,34,225,39,201,52,141,96,96,134"/>
+<area shape="rect" id="Node000003" href="$color__parsing_8c.html#a2e8ad273762e56b6271457f0771e12d9" title="Saves color data into an array by splitting a string." alt="" coords="200,107,333,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,132,186,128,186,133,153,137"/>
+<area shape="rect" id="Node000004" href="$color__parsing_8c.html#a3e3149f37161eff9e263077d93e8435f" title="Extracts a color string from a file line." alt="" coords="397,56,489,81"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="103,130,147,109,199,91,295,74,382,67,383,73,296,80,201,97,149,114,105,134"/>
+<area shape="rect" id="Node000008" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="745,156,819,181"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="152,144,732,164,732,170,152,150"/>
+<area shape="rect" id="Node000012" href="$map__parsing_8c.html#a6087d20282ccd4e416a8ed98b6950872" title="Determines the starting index of the map in the file data." alt="" coords="223,232,311,257"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="105,155,231,223,228,228,103,160"/>
+<area shape="rect" id="Node000015" href="$color__parsing_8c.html#a5869197f83942752bd146063e22d69d9" title="Prints color information for debugging." alt="" coords="213,359,320,384"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="93,156,248,346,244,350,88,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="311,104,383,83,385,88,312,109"/>
+<area shape="rect" id="Node000006" href="$util__4_8c.html#ad57ecdce78737f830dfa1844b698e1fe" title="Splits str by commas into an array." alt="" coords="381,107,504,132"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="334,117,367,117,367,122,334,122"/>
+<area shape="rect" id="Node000005" href="$util__2_8c.html#afe7be0aad77df527e1464669ea972746" title=" " alt="" coords="585,8,657,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="488,54,572,31,573,36,490,59"/>
+<area shape="rect" id="Node000007" href="$util__4_8c.html#a5b8502e2446206f9853ebc53ed575169" title="Allocates an array for split words." alt="" coords="552,57,691,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="489,104,560,84,562,89,490,109"/>
+<area shape="rect" id="Node000010" href="$util__4_8c.html#a07b1fd8e8fdf0414a8fcd728b299dc23" title="Saves a substring from or to str." alt="" coords="555,107,687,132"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="504,117,541,117,541,122,504,122"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="669,80,692,92,708,104,717,116,740,141,747,146,744,150,737,145,713,119,704,108,689,96,667,85"/>
+<area shape="rect" id="Node000009" href="$util__4_8c.html#aebd8a0c483222f7f8a5b651aed99b345" title="Counts words separated by commas in str." alt="" coords="745,57,819,83"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="691,67,731,67,731,73,691,73"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="664,129,733,151,731,156,663,135"/>
+<area shape="rect" id="Node000011" href="$util__4_8c.html#accbc8abe1d4ff400f1fe694d2f338bb7" title="Copies up to n characters from s2 to s1." alt="" coords="739,107,825,132"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="687,117,725,117,725,122,687,122"/>
+<area shape="poly" id="edge16_Node000012_Node000008" title=" " alt="" coords="291,255,333,275,382,291,443,300,503,291,574,271,642,242,748,186,750,191,644,247,576,276,505,297,443,305,381,297,331,280,289,260"/>
+<area shape="rect" id="Node000013" href="$util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="383,257,502,283"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="311,248,370,257,369,262,310,254"/>
+<area shape="rect" id="Node000014" href="$map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="383,208,502,233"/>
+<area shape="poly" id="edge17_Node000012_Node000014" title=" " alt="" coords="310,236,369,228,370,233,311,241"/>
+<area shape="rect" id="Node000016" href="$util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="395,359,490,384"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="320,369,382,369,382,374,320,374"/>
+<area shape="rect" id="Node000017" href="$util__2_8c.html#a493bccc094a8b964b4610c4d914106c6" title="Prints the map to the standard output." alt="" coords="393,408,493,433"/>
+<area shape="poly" id="edge20_Node000015_Node000017" title=" " alt="" coords="313,381,384,402,382,407,312,387"/>
+</map>

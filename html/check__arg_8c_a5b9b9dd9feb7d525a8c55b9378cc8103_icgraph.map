@@ -1,0 +1,5 @@
+<map id="check_walls" name="check_walls">
+<area shape="rect" id="Node000001" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="124,5,225,31"/>
+<area shape="rect" id="Node000002" href="$map__helpers_8c.html#a219387ccc2856e87b669de8a205a78e2" title="Map parsing." alt="" coords="5,5,76,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,21,76,21,76,15,110,15"/>
+</map>

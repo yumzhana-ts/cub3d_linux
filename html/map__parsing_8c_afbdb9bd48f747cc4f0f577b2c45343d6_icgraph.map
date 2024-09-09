@@ -1,0 +1,13 @@
+<map id="find_map" name="find_map">
+<area shape="rect" id="Node000001" title="Finds the start of the map in the given string." alt="" coords="696,5,779,31"/>
+<area shape="rect" id="Node000002" href="$map__parsing_8c.html#a6087d20282ccd4e416a8ed98b6950872" title="Determines the starting index of the map in the file data." alt="" coords="560,5,648,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="682,21,648,21,648,15,682,15"/>
+<area shape="rect" id="Node000003" href="$map__parsing_8c.html#a66b150036d9a4a18c2b8f45481ec322e" title="Verifies the map format and controls its placement within the file data." alt="" coords="401,5,512,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="546,21,512,21,512,15,546,15"/>
+<area shape="rect" id="Node000004" href="$map__parsing_8c.html#ac190d22718f692b89123f6067a935371" title="Verifies the overall format of the map file." alt="" coords="207,5,353,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="388,21,354,21,354,15,388,15"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<area shape="rect" id="Node000006" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

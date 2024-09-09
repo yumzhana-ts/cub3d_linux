@@ -1,0 +1,156 @@
+\doxysection{src/map/color\+\_\+parsing.c File Reference}
+\hypertarget{color__parsing_8c}{}\label{color__parsing_8c}\index{src/map/color\_parsing.c@{src/map/color\_parsing.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for color\+\_\+parsing.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{color__parsing_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1}{color\+\_\+manipulation}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Parses the file to save ceiling and floor colors. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f}{color\+\_\+save}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Extracts a color string from a file line. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9}{color\+\_\+array\+\_\+save}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Saves color data into an array by splitting a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{color__parsing_8c_a5869197f83942752bd146063e22d69d9}{print\+\_\+colores}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Prints color information for debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9}\label{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9} 
+\index{color\_parsing.c@{color\_parsing.c}!color\_array\_save@{color\_array\_save}}
+\index{color\_array\_save@{color\_array\_save}!color\_parsing.c@{color\_parsing.c}}
+\doxysubsubsection{\texorpdfstring{color\_array\_save()}{color\_array\_save()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} color\+\_\+array\+\_\+save (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{char \texorpdfstring{$\ast$}{*}}]{file }\end{DoxyParamCaption})}
+
+
+
+Saves color data into an array by splitting a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Identifier to search for. \\
+\hline
+{\em file} & File line to search in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of color strings or NULL on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1}\label{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1} 
+\index{color\_parsing.c@{color\_parsing.c}!color\_manipulation@{color\_manipulation}}
+\index{color\_manipulation@{color\_manipulation}!color\_parsing.c@{color\_parsing.c}}
+\doxysubsubsection{\texorpdfstring{color\_manipulation()}{color\_manipulation()}}
+{\footnotesize\ttfamily int color\+\_\+manipulation (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Parses the file to save ceiling and floor colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to {\ttfamily t\+\_\+data} with file and color data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, or error code on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f}\label{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f} 
+\index{color\_parsing.c@{color\_parsing.c}!color\_save@{color\_save}}
+\index{color\_save@{color\_save}!color\_parsing.c@{color\_parsing.c}}
+\doxysubsubsection{\texorpdfstring{color\_save()}{color\_save()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} color\+\_\+save (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{char \texorpdfstring{$\ast$}{*}}]{file }\end{DoxyParamCaption})}
+
+
+
+Extracts a color string from a file line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Identifier to search for. \\
+\hline
+{\em file} & File line to search in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to color string or NULL on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{color__parsing_8c_a5869197f83942752bd146063e22d69d9}\label{color__parsing_8c_a5869197f83942752bd146063e22d69d9} 
+\index{color\_parsing.c@{color\_parsing.c}!print\_colores@{print\_colores}}
+\index{print\_colores@{print\_colores}!color\_parsing.c@{color\_parsing.c}}
+\doxysubsubsection{\texorpdfstring{print\_colores()}{print\_colores()}}
+{\footnotesize\ttfamily void print\+\_\+colores (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Prints color information for debugging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to {\ttfamily t\+\_\+data} with color data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{color__parsing_8c_a5869197f83942752bd146063e22d69d9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color__parsing_8c_a5869197f83942752bd146063e22d69d9_icgraph}
+\end{center}
+\end{figure}

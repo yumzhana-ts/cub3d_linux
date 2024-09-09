@@ -1,0 +1,7 @@
+<map id="draw_square" name="draw_square">
+<area shape="rect" id="Node000001" title="Prints square by tile size with mlx pixel put." alt="" coords="337,5,443,31"/>
+<area shape="rect" id="Node000002" href="$draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="184,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="324,21,290,21,290,15,324,15"/>
+<area shape="rect" id="Node000003" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="5,5,136,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="170,21,137,21,137,15,170,15"/>
+</map>

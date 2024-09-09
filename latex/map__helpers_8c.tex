@@ -1,0 +1,91 @@
+\doxysection{src/map/map\+\_\+helpers.c File Reference}
+\hypertarget{map__helpers_8c}{}\label{map__helpers_8c}\index{src/map/map\_helpers.c@{src/map/map\_helpers.c}}
+
+
+Contains helper functions related to map manipulation.  
+
+
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for map\+\_\+helpers.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{map__helpers_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{map__helpers_8c_a9572228285cd82518fa287634356ac30}{check\+\_\+args}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Validates command-\/line arguments and file extension. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3}{fix\+\_\+newlines}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Replaces newline characters with null characters in a 2D array of strings. Iterates through each string in {\ttfamily game-\/\texorpdfstring{$>$}{>}file} and replaces \textquotesingle{}~\newline
+\textquotesingle{} with \textquotesingle{}\textbackslash{}0\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains helper functions related to map manipulation. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{map__helpers_8c_a9572228285cd82518fa287634356ac30}\label{map__helpers_8c_a9572228285cd82518fa287634356ac30} 
+\index{map\_helpers.c@{map\_helpers.c}!check\_args@{check\_args}}
+\index{check\_args@{check\_args}!map\_helpers.c@{map\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{check\_args()}{check\_args()}}
+{\footnotesize\ttfamily int check\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+
+
+
+Validates command-\/line arguments and file extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & Array of command-\/line argument strings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]👾 Add texture and color reading\end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+0 if arguments are valid. Exits the program with an error message otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{map__helpers_8c_a9572228285cd82518fa287634356ac30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{map__helpers_8c_a9572228285cd82518fa287634356ac30_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3}\label{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3} 
+\index{map\_helpers.c@{map\_helpers.c}!fix\_newlines@{fix\_newlines}}
+\index{fix\_newlines@{fix\_newlines}!map\_helpers.c@{map\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{fix\_newlines()}{fix\_newlines()}}
+{\footnotesize\ttfamily void fix\+\_\+newlines (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
+
+
+
+Replaces newline characters with null characters in a 2D array of strings. Iterates through each string in {\ttfamily game-\/\texorpdfstring{$>$}{>}file} and replaces \textquotesingle{}~\newline
+\textquotesingle{} with \textquotesingle{}\textbackslash{}0\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to a t\+\_\+data structure containing the array of strings. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3_icgraph}
+\end{center}
+\end{figure}

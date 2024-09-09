@@ -6,7 +6,7 @@
 #    By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/10 22:36:40 by jstrojsa          #+#    #+#              #
-#    Updated: 2024/08/27 16:06:50 by ytsyrend         ###   ########.fr        #
+#    Updated: 2024/09/06 16:27:56 by ytsyrend         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,8 @@ SRC_DIR		:= src/
 COMMON_SRCS	:= $(SRC_DIR)*.c $(GRAPH_DIR)*.c $(MAP_DIR)*.c $(UTIL_DIR)*.c $(GNL_DIR)
 SRCS 		:= $(COMMON_SRCS)
 
-
+TEST_MAP_DIR := ./maps/good
+MAPS = $(wildcard $(TEST_MAP_DIR)/*)
 VALGRIND		= @valgrind --leak-check=full --show-leak-kinds=all \
 --track-origins=yes --quiet --tool=memcheck --keep-debuginfo=yes
 
@@ -54,6 +55,44 @@ dox:
 proto:
 	@echo "Updating prototypes..."
 	python3 head.py $(SRC_DIR)
+
+# Define ANSI color codes
+GREEN = \033[0;32m
+RED = \033[0;31m
+NC = \033[0m  # No Color
+
+test: cub3d
+	echo "Starting Valgrind tests..." | tee output.txt; \
+	for map in $(MAPS); do \
+		echo "Running valgrind on $$map..." | tee -a output.txt; \
+		valgrind --track-origins=yes --log-file=val.txt ./cub3d $$map | tee -a output.txt; \
+		expected_number=21; \
+		actual_number=$$(wc -l < val.txt); \
+		if [ "$$actual_number" -lt "$$expected_number" ]; then \
+			echo "$(GREEN)✅ No Valgrind alerts, no leaks$(NC)" | tee -a output.txt; \
+		elif [ "$$actual_number" -eq "$$expected_number" ]; then \
+			echo "$(YELLOW)⚠️ No Valgrind alerts, but with leaks$(NC)" | tee -a output.txt; \
+		else \
+			echo "$(RED)❌ Valgrind alert$(NC)" | tee -a output.txt; \
+		fi \
+	done
+
+
+mem: cub3d
+	valgrind --track-origins=yes --log-file=val.txt ./cub3d ./maps/good/test_map.cub
+	make leaks
+
+leaks:	
+	@expected_number=21; \
+	actual_number=$$(wc -l < val.txt); \
+	if [ "$$actual_number" -lt "$$expected_number" ]; then \
+	    echo "$(GREEN)✅ No Valgrind alerts, no leaks$(NC)"; \
+	elif [ "$$actual_number" -eq "$$expected_number" ]; then \
+	    echo "$(YELLOW) ⚠️ No Valgrind alerts, but with leaks$(NC)"; \
+	else \
+	    echo "$(RED)❌ Valgrind alert$(NC)"; \
+	fi
+
 
 clean:
 	make fclean -C ft_printf
