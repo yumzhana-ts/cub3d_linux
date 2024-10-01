@@ -1,9 +1,11 @@
 <map id="width_of_map" name="width_of_map">
-<area shape="rect" id="Node000001" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="357,5,472,31"/>
-<area shape="rect" id="Node000002" href="$map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="207,5,309,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="344,21,309,21,309,15,344,15"/>
-<area shape="rect" id="Node000003" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
-<area shape="rect" id="Node000004" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+<area shape="rect" id="Node000001" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="542,5,644,31"/>
+<area shape="rect" id="Node000002" href="$map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="402,5,494,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="526,21,494,21,494,16,526,16"/>
+<area shape="rect" id="Node000003" href="$map__handler_8c.html#a09daf03b4ab0069f5f0986553ec800fe" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="267,5,354,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,21,355,21,355,16,386,16"/>
+<area shape="rect" id="Node000004" href="$map__handler_8c.html#aa786b66981a4dd684c7c5a74739a5ec5" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="103,5,219,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,21,219,21,219,16,251,16"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

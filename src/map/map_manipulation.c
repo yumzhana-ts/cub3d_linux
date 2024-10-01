@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 11:16:23 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@
  * @brief Rebuilds the map by calculating its width 
  * and filling it with modified data.
  * @callgraph
- * @param m Pointer to the t_data structure that contains the map data.
+ * @param m Pointer to the t_file structure that contains the map data.
  * @return Returns 0 on success, 1 on failure.
  */
-int	rebuild_map(t_data *m)
+int	rebuild_map(t_file *m)
 {
 	m->widthmap = width_of_map(m);
 	if (fill_map(m))
@@ -35,14 +35,14 @@ int	rebuild_map(t_data *m)
 }
 
 /**
- * @brief Fills the map in the `t_data` structure by modifying each 
+ * @brief Fills the map in the `t_file` structure by modifying each 
  * row using the `ones` function.
  * @callgraph
- * @param m Pointer to a `t_data` structure that contains 
+ * @param m Pointer to a `t_file` structure that contains 
  * the map data to be modified.
  * @return Returns 0 on success, 1 on failure.
  */
-int	fill_map(t_data *m)
+int	fill_map(t_file *m)
 {
 	int	i;
 
@@ -60,10 +60,10 @@ int	fill_map(t_data *m)
  * @brief Calculates the width of the map.
  * Iterates through each row of the map and finds the maximum width.
  * @callgraph
- * @param m Pointer to the t_data structure containing the map data.
+ * @param m Pointer to the t_file structure containing the map data.
  * @return Returns the width of the map.
  */
-int	width_of_map(t_data *m)
+int	width_of_map(t_file *m)
 {
 	int	i;
 	int	j;

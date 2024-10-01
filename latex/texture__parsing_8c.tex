@@ -12,20 +12,45 @@ Include dependency graph for texture\+\_\+parsing.\+c\+:\nopagebreak
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{texture__parsing_8c_a1355647db0e7f6c60e04109725204c31}{texture\+\_\+manipulation}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{texture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7}{texture\+\_\+manipulation}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Loads textures from the file. \end{DoxyCompactList}\item 
-char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{texture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095}{texture\+\_\+save}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}file)
+int \mbox{\hyperlink{texture__parsing_8c_ad747f9189df3bc0c573e208b794fd081}{save\+\_\+helper}} (char \texorpdfstring{$\ast$}{*}str, t\+\_\+file \texorpdfstring{$\ast$}{*}m, char \texorpdfstring{$\ast$}{*}texture)
+\begin{DoxyCompactList}\small\item\em Processes texture identifiers ({\ttfamily NO}, {\ttfamily EA}, {\ttfamily WE}, {\ttfamily SO}) for different directions in the map data, It also checks for duplicates and raises an error if a texture for a given direction has already been saved. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{texture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7}{texture\+\_\+save}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}file, t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Extracts texture path from a file line. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{texture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560}{print\+\_\+textures}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
-\begin{DoxyCompactList}\small\item\em Prints texture paths for debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{texture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d}{print\+\_\+textures}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Prints texture paths for debugging. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{texture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3}{check\+\_\+texture}} (char \texorpdfstring{$\ast$}{*}filename)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{texture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560}\label{texture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560} 
+\Hypertarget{texture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3}\label{texture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3} 
+\index{texture\_parsing.c@{texture\_parsing.c}!check\_texture@{check\_texture}}
+\index{check\_texture@{check\_texture}!texture\_parsing.c@{texture\_parsing.c}}
+\doxysubsubsection{\texorpdfstring{check\_texture()}{check\_texture()}}
+{\footnotesize\ttfamily int check\+\_\+texture (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{texture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{texture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{texture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d}\label{texture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d} 
 \index{texture\_parsing.c@{texture\_parsing.c}!print\_textures@{print\_textures}}
 \index{print\_textures@{print\_textures}!texture\_parsing.c@{texture\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{print\_textures()}{print\_textures()}}
-{\footnotesize\ttfamily void print\+\_\+textures (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void print\+\_\+textures (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -33,62 +58,102 @@ Prints texture paths for debugging.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to {\ttfamily t\+\_\+data} with texture data. \\
+{\em m} & Pointer to {\ttfamily t\+\_\+file} with texture data. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=281pt]{texture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_cgraph}
+\includegraphics[width=281pt]{texture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{texture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_icgraph}
+\includegraphics[width=350pt]{texture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{texture__parsing_8c_a1355647db0e7f6c60e04109725204c31}\label{texture__parsing_8c_a1355647db0e7f6c60e04109725204c31} 
+\Hypertarget{texture__parsing_8c_ad747f9189df3bc0c573e208b794fd081}\label{texture__parsing_8c_ad747f9189df3bc0c573e208b794fd081} 
+\index{texture\_parsing.c@{texture\_parsing.c}!save\_helper@{save\_helper}}
+\index{save\_helper@{save\_helper}!texture\_parsing.c@{texture\_parsing.c}}
+\doxysubsubsection{\texorpdfstring{save\_helper()}{save\_helper()}}
+{\footnotesize\ttfamily int save\+\_\+helper (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m,  }\item[{char \texorpdfstring{$\ast$}{*}}]{texture }\end{DoxyParamCaption})}
+
+
+
+Processes texture identifiers ({\ttfamily NO}, {\ttfamily EA}, {\ttfamily WE}, {\ttfamily SO}) for different directions in the map data, It also checks for duplicates and raises an error if a texture for a given direction has already been saved. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & A string that represents the texture identifier ({\ttfamily NO}, {\ttfamily EA}, {\ttfamily WE}, {\ttfamily SO}). \\
+\hline
+{\em m} & A pointer to a {\ttfamily t\+\_\+file} structure where texture paths for different directions are stored\+: \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if the texture is successfully saved. If a duplicate texture is detected, it calls {\ttfamily fd\+\_\+error} with an appropriate message and returns the error result. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{texture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{texture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{texture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7}\label{texture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7} 
 \index{texture\_parsing.c@{texture\_parsing.c}!texture\_manipulation@{texture\_manipulation}}
 \index{texture\_manipulation@{texture\_manipulation}!texture\_parsing.c@{texture\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{texture\_manipulation()}{texture\_manipulation()}}
-{\footnotesize\ttfamily int texture\+\_\+manipulation (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int texture\+\_\+manipulation (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
 Loads textures from the file. 
 
-Extracts texture paths for north ("{}\+NO "{}), south ("{}\+SO "{}), west ("{}\+WE "{}), and east ("{}\+EA "{}) from the file data in {\ttfamily t\+\_\+data}.
+Extracts texture paths for north ("{}\+NO "{}), south ("{}\+SO "{}), west ("{}\+WE "{}), and east ("{}\+EA "{}) from the file data in {\ttfamily t\+\_\+file}.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to {\ttfamily t\+\_\+data} with file and texture data. \\
+{\em m} & Pointer to {\ttfamily t\+\_\+file} with file and texture data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 0 on success, error code if textures are missing or on failure. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{texture__parsing_8c_a1355647db0e7f6c60e04109725204c31_cgraph}
+\includegraphics[width=350pt]{texture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{texture__parsing_8c_a1355647db0e7f6c60e04109725204c31_icgraph}
+\includegraphics[width=350pt]{texture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{texture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095}\label{texture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095} 
+\Hypertarget{texture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7}\label{texture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7} 
 \index{texture\_parsing.c@{texture\_parsing.c}!texture\_save@{texture\_save}}
 \index{texture\_save@{texture\_save}!texture\_parsing.c@{texture\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{texture\_save()}{texture\_save()}}
-{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} texture\+\_\+save (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{char \texorpdfstring{$\ast$}{*}}]{file }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int texture\+\_\+save (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{char \texorpdfstring{$\ast$}{*}}]{file,  }\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -104,17 +169,21 @@ Extracts texture path from a file line.
 \begin{DoxyReturn}{Returns}
 Pointer to texture path, or NULL on failure. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]this malloc from strtrim can leak \end{DoxyRefDesc}
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=250pt]{texture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_cgraph}
+\includegraphics[width=350pt]{texture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{texture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_icgraph}
+\includegraphics[width=350pt]{texture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_icgraph}
 \end{center}
 \end{figure}

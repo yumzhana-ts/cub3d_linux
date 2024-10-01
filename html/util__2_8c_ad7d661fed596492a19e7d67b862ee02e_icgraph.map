@@ -1,7 +1,10 @@
 <map id="map_debug" name="map_debug">
-<area shape="rect" id="Node000001" title="Prints debugging information about the map." alt="" coords="207,5,305,31"/>
-<area shape="rect" id="Node000002" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
-<area shape="rect" id="Node000003" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+<area shape="rect" id="Node000001" title="Prints debugging information about the map." alt="" coords="335,31,433,56"/>
+<area shape="rect" id="Node000002" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="133,5,261,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,37,261,29,262,24,321,32"/>
+<area shape="rect" id="Node000004" href="$graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,55,287,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="321,54,287,58,287,53,321,49"/>
+<area shape="rect" id="Node000003" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,33,61,42,60,37,119,27"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="96,55,60,50,61,45,97,50"/>
 </map>

@@ -1,0 +1,18 @@
+<map id="format_verification" name="format_verification">
+<area shape="rect" id="Node000001" title="Verifies the overall format of the map file." alt="" coords="5,56,152,81"/>
+<area shape="rect" id="Node000002" href="$map__verification_8c.html#a9f756c577394e97afa158056bd82bf77" title="Checks for empty lines within the map data after the start of the map." alt="" coords="397,5,537,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,53,200,41,295,29,383,21,384,26,295,34,200,46,135,59"/>
+<area shape="rect" id="Node000004" href="$map__verification_8c.html#a60ef98f8034bcc53e01df2aaf5b33646" title="Checks if each character in the map is valid (01WSEN )." alt="" coords="200,56,349,81"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,66,186,66,186,71,153,71"/>
+<area shape="rect" id="Node000005" href="$map__parsing_8c.html#aa41e6d387b624ef849bc0cb2e3f2d982" title="Verifies the map format and controls its placement within the file data." alt="" coords="219,107,330,132"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="129,79,212,101,211,106,128,84"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="608,81,681,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,28,603,73,600,78,497,33"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="350,71,595,88,594,93,349,76"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="330,113,594,95,595,100,330,118"/>
+<area shape="rect" id="Node000006" href="$map__parsing_8c.html#a279662c9aa3745b424c440132ce4a7b6" title="Determines the starting index of the map in the file data." alt="" coords="423,157,511,183"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="325,130,411,153,410,158,323,135"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="497,155,600,110,603,115,499,160"/>
+<area shape="rect" id="Node000007" href="$map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="585,157,704,183"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="511,167,571,167,571,173,511,173"/>
+</map>

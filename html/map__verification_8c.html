@@ -98,28 +98,87 @@ Include dependency graph for map_verification.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2f104cb1e25919656e1d7a8c4e36498" id="r_ae2f104cb1e25919656e1d7a8c4e36498"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498">validate_map</a> (t_data *m)</td></tr>
-<tr class="memdesc:ae2f104cb1e25919656e1d7a8c4e36498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the game map and player position.  <br /></td></tr>
-<tr class="separator:ae2f104cb1e25919656e1d7a8c4e36498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab11ed507b3d0e58c22de178191e072" id="r_a7ab11ed507b3d0e58c22de178191e072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a7ab11ed507b3d0e58c22de178191e072">checkextension</a> (char *name, char *extension)</td></tr>
-<tr class="memdesc:a7ab11ed507b3d0e58c22de178191e072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given filename has a specific file extension.  <br /></td></tr>
-<tr class="separator:a7ab11ed507b3d0e58c22de178191e072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a753104db9499b280a27994290cee30d2" id="r_a753104db9499b280a27994290cee30d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a753104db9499b280a27994290cee30d2">vertical_wall</a> (t_data *game, int j)</td></tr>
-<tr class="memdesc:a753104db9499b280a27994290cee30d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all characters in a specific vertical wall of the map are '1'.  <br /></td></tr>
-<tr class="separator:a753104db9499b280a27994290cee30d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9b9dd9feb7d525a8c55b9378cc8103" id="r_a5b9b9dd9feb7d525a8c55b9378cc8103"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103">check_walls</a> (t_data *m)</td></tr>
-<tr class="memdesc:a5b9b9dd9feb7d525a8c55b9378cc8103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the map is correctly enclosed by walls on all sides.  <br /></td></tr>
-<tr class="separator:a5b9b9dd9feb7d525a8c55b9378cc8103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a942c088d4ce1fdde82d4c687625bd1" id="r_a7a942c088d4ce1fdde82d4c687625bd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a7a942c088d4ce1fdde82d4c687625bd1">check_valid_values</a> (t_data *m)</td></tr>
-<tr class="memdesc:a7a942c088d4ce1fdde82d4c687625bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if each character in the map is valid (01WSEN<br  />
+<tr class="memitem:a4a115a4aa3711c94db371e80eb7f9a93" id="r_a4a115a4aa3711c94db371e80eb7f9a93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a4a115a4aa3711c94db371e80eb7f9a93">validate_map</a> (t_file *m)</td></tr>
+<tr class="memdesc:a4a115a4aa3711c94db371e80eb7f9a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the game map and player position.  <br /></td></tr>
+<tr class="separator:a4a115a4aa3711c94db371e80eb7f9a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef82a5663351140dd3fcd335f542bc9" id="r_aeef82a5663351140dd3fcd335f542bc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#aeef82a5663351140dd3fcd335f542bc9">vertical_wall</a> (t_file *game, int j)</td></tr>
+<tr class="memdesc:aeef82a5663351140dd3fcd335f542bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all characters in a specific vertical wall of the map are '1'.  <br /></td></tr>
+<tr class="separator:aeef82a5663351140dd3fcd335f542bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6a2523bb20297fb6972ecb4f276ca9" id="r_a2e6a2523bb20297fb6972ecb4f276ca9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a2e6a2523bb20297fb6972ecb4f276ca9">check_walls</a> (t_file *m)</td></tr>
+<tr class="memdesc:a2e6a2523bb20297fb6972ecb4f276ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the map is correctly enclosed by walls on all sides.  <br /></td></tr>
+<tr class="separator:a2e6a2523bb20297fb6972ecb4f276ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ef98f8034bcc53e01df2aaf5b33646" id="r_a60ef98f8034bcc53e01df2aaf5b33646"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a60ef98f8034bcc53e01df2aaf5b33646">check_valid_values</a> (t_file *m)</td></tr>
+<tr class="memdesc:a60ef98f8034bcc53e01df2aaf5b33646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if each character in the map is valid (01WSEN<br  />
 ).  <br /></td></tr>
-<tr class="separator:a7a942c088d4ce1fdde82d4c687625bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a60ef98f8034bcc53e01df2aaf5b33646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f756c577394e97afa158056bd82bf77" id="r_a9f756c577394e97afa158056bd82bf77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__verification_8c.html#a9f756c577394e97afa158056bd82bf77">check_empty_line</a> (t_file *m)</td></tr>
+<tr class="memdesc:a9f756c577394e97afa158056bd82bf77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for empty lines within the map data after the start of the map.  <br /></td></tr>
+<tr class="separator:a9f756c577394e97afa158056bd82bf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains functions for validation the game map and player position. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a7a942c088d4ce1fdde82d4c687625bd1" name="a7a942c088d4ce1fdde82d4c687625bd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a942c088d4ce1fdde82d4c687625bd1">&#9670;&#160;</a></span>check_valid_values()</h2>
+<a id="a9f756c577394e97afa158056bd82bf77" name="a9f756c577394e97afa158056bd82bf77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f756c577394e97afa158056bd82bf77">&#9670;&#160;</a></span>check_empty_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_empty_line </td>
+          <td>(</td>
+          <td class="paramtype">t_file *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks for empty lines within the map data after the start of the map. </p>
+<p>This function iterates through the map data starting from the specified <code>map_start</code> index in the <code>t_file</code> structure. It looks for empty lines that consist solely of spaces and checks if the next line contains map elements (either '1' or '0'). If an empty line is found followed by a valid map line, an error is raised.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A pointer to a <code>t_file</code> structure that contains the map and file data.<ul>
+<li><code>m-&gt;map_start</code> represents the index of the first line of the map in the file.</li>
+<li><code>m-&gt;heightfile</code> is the total number of lines in the file.</li>
+<li><code>m-&gt;file</code> is a 2D array of characters representing each line of the file. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 if no issues are found. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="map__verification_8c_a9f756c577394e97afa158056bd82bf77_cgraph.png" border="0" usemap="#amap__verification_8c_a9f756c577394e97afa158056bd82bf77_cgraph" alt=""/></div>
+<map name="amap__verification_8c_a9f756c577394e97afa158056bd82bf77_cgraph" id="amap__verification_8c_a9f756c577394e97afa158056bd82bf77_cgraph">
+<area shape="rect" title="Checks for empty lines within the map data after the start of the map." alt="" coords="5,5,145,31"/>
+<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="193,5,267,31"/>
+<area shape="poly" title=" " alt="" coords="146,15,180,15,180,21,146,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="map__verification_8c_a9f756c577394e97afa158056bd82bf77_icgraph.png" border="0" usemap="#amap__verification_8c_a9f756c577394e97afa158056bd82bf77_icgraph" alt=""/></div>
+<map name="amap__verification_8c_a9f756c577394e97afa158056bd82bf77_icgraph" id="amap__verification_8c_a9f756c577394e97afa158056bd82bf77_icgraph">
+<area shape="rect" title="Checks for empty lines within the map data after the start of the map." alt="" coords="624,5,764,31"/>
+<area shape="rect" href="map__parsing_8c.html#ac0bab95559c0f02ae27df9d538db7c0c" title="Verifies the overall format of the map file." alt="" coords="429,5,576,31"/>
+<area shape="poly" title=" " alt="" coords="610,21,576,21,576,15,610,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,381,21,381,15,415,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60ef98f8034bcc53e01df2aaf5b33646" name="a60ef98f8034bcc53e01df2aaf5b33646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ef98f8034bcc53e01df2aaf5b33646">&#9670;&#160;</a></span>check_valid_values()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +186,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int check_valid_values </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -138,7 +197,7 @@ Functions</h2></td></tr>
 ). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Pointer to the <code>t_data</code> structure containing map data. </td></tr>
+    <tr><td class="paramname">m</td><td>Pointer to the <code>t_file</code> structure containing map data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -146,8 +205,8 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_cgraph.png" border="0" usemap="#amap__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_cgraph" alt=""/></div>
-<map name="amap__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_cgraph" id="amap__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_cgraph">
+<div class="center"><img src="map__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_cgraph.png" border="0" usemap="#amap__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_cgraph" alt=""/></div>
+<map name="amap__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_cgraph" id="amap__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_cgraph">
 <area shape="rect" title="Checks if each character in the map is valid (01WSEN )." alt="" coords="5,5,155,31"/>
 <area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="203,5,276,31"/>
 <area shape="poly" title=" " alt="" coords="155,15,189,15,189,21,155,21"/>
@@ -156,13 +215,15 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_icgraph.png" border="0" usemap="#amap__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_icgraph" alt=""/></div>
-<map name="amap__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_icgraph" id="amap__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_icgraph">
-<area shape="rect" title="Checks if each character in the map is valid (01WSEN )." alt="" coords="401,5,551,31"/>
-<area shape="rect" href="map__parsing_8c.html#ac190d22718f692b89123f6067a935371" title="Verifies the overall format of the map file." alt="" coords="207,5,353,31"/>
-<area shape="poly" title=" " alt="" coords="387,21,353,21,353,15,387,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_icgraph.png" border="0" usemap="#amap__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_icgraph" alt=""/></div>
+<map name="amap__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_icgraph" id="amap__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_icgraph">
+<area shape="rect" title="Checks if each character in the map is valid (01WSEN )." alt="" coords="624,5,773,31"/>
+<area shape="rect" href="map__parsing_8c.html#ac0bab95559c0f02ae27df9d538db7c0c" title="Verifies the overall format of the map file." alt="" coords="429,5,576,31"/>
+<area shape="poly" title=" " alt="" coords="610,21,576,21,576,15,610,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,381,21,381,15,415,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -170,8 +231,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a5b9b9dd9feb7d525a8c55b9378cc8103" name="a5b9b9dd9feb7d525a8c55b9378cc8103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b9b9dd9feb7d525a8c55b9378cc8103">&#9670;&#160;</a></span>check_walls()</h2>
+<a id="a2e6a2523bb20297fb6972ecb4f276ca9" name="a2e6a2523bb20297fb6972ecb4f276ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6a2523bb20297fb6972ecb4f276ca9">&#9670;&#160;</a></span>check_walls()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +240,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int check_walls </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -189,7 +250,7 @@ Here is the caller graph for this function:</div>
 <p>Checks if the map is correctly enclosed by walls on all sides. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>A pointer to the t_data structure that contains the game map and its dimensions. </td></tr>
+    <tr><td class="paramname">m</td><td>A pointer to the t_file structure that contains the game map and its dimensions. </td></tr>
   </table>
   </dd>
 </dl>
@@ -197,25 +258,27 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_cgraph.png" border="0" usemap="#amap__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_cgraph" alt=""/></div>
-<map name="amap__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_cgraph" id="amap__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_cgraph">
+<div class="center"><img src="map__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_cgraph.png" border="0" usemap="#amap__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_cgraph" alt=""/></div>
+<map name="amap__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_cgraph" id="amap__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_cgraph">
 <area shape="rect" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="5,31,107,56"/>
 <area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="171,5,244,31"/>
 <area shape="poly" title=" " alt="" coords="106,32,156,24,157,29,107,38"/>
-<area shape="rect" href="map__verification_8c.html#a753104db9499b280a27994290cee30d2" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="155,55,260,80"/>
+<area shape="rect" href="map__verification_8c.html#aeef82a5663351140dd3fcd335f542bc9" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="155,55,260,80"/>
 <area shape="poly" title=" " alt="" coords="107,49,141,54,141,59,106,54"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_icgraph.png" border="0" usemap="#amap__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_icgraph" alt=""/></div>
-<map name="amap__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_icgraph" id="amap__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_icgraph">
-<area shape="rect" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="365,5,467,31"/>
-<area shape="rect" href="map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498" title="Validates the game map and player position." alt="" coords="207,5,317,31"/>
-<area shape="poly" title=" " alt="" coords="352,21,318,21,318,15,352,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_icgraph.png" border="0" usemap="#amap__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_icgraph" alt=""/></div>
+<map name="amap__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_icgraph" id="amap__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_icgraph">
+<area shape="rect" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="588,5,689,31"/>
+<area shape="rect" href="map__verification_8c.html#a4a115a4aa3711c94db371e80eb7f9a93" title="Validates the game map and player position." alt="" coords="429,5,540,31"/>
+<area shape="poly" title=" " alt="" coords="574,21,540,21,540,15,574,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,382,21,382,15,415,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -223,59 +286,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a7ab11ed507b3d0e58c22de178191e072" name="a7ab11ed507b3d0e58c22de178191e072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ab11ed507b3d0e58c22de178191e072">&#9670;&#160;</a></span>checkextension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int checkextension </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>extension</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if the given filename has a specific file extension. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>A pointer to a string representing the filename to be checked. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if the filename ends with ".cub", 1 otherwise. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="map__verification_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph.png" border="0" usemap="#amap__verification_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph" alt=""/></div>
-<map name="amap__verification_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph" id="amap__verification_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph">
-<area shape="rect" title="Checks if the given filename has a specific file extension." alt="" coords="349,5,472,31"/>
-<area shape="rect" href="map__helpers_8c.html#a9572228285cd82518fa287634356ac30" title="Validates command&#45;line arguments and file extension." alt="" coords="207,5,301,31"/>
-<area shape="poly" title=" " alt="" coords="336,21,302,21,302,15,336,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
-<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
-<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae2f104cb1e25919656e1d7a8c4e36498" name="ae2f104cb1e25919656e1d7a8c4e36498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2f104cb1e25919656e1d7a8c4e36498">&#9670;&#160;</a></span>validate_map()</h2>
+<a id="a4a115a4aa3711c94db371e80eb7f9a93" name="a4a115a4aa3711c94db371e80eb7f9a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a115a4aa3711c94db371e80eb7f9a93">&#9670;&#160;</a></span>validate_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +295,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int validate_map </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -294,7 +306,7 @@ Here is the caller graph for this function:</div>
 <p>This function performs various checks to validate the map and player configuration. It checks if the map walls are correct, ensures the player has been placed properly, and verifies that the player is not in an invalid or locked position.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Pointer to a <code>t_data</code> structure containing map and player data. </td></tr>
+    <tr><td class="paramname">m</td><td>Pointer to a <code>t_file</code> structure containing map and player data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -302,43 +314,37 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_cgraph.png" border="0" usemap="#amap__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_cgraph" alt=""/></div>
-<map name="amap__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_cgraph" id="amap__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_cgraph">
-<area shape="rect" title="Validates the game map and player position." alt="" coords="5,129,116,155"/>
-<area shape="rect" href="player__verification_8c.html#a3483943405fddf6f035cb64d945b9f23" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="182,5,313,31"/>
-<area shape="poly" title=" " alt="" coords="70,127,107,85,133,60,163,40,175,33,178,38,165,44,137,65,111,88,74,131"/>
-<area shape="rect" href="player__verification_8c.html#a64fbe2ea7216129cf3463f1a78a8fe9d" title="Checks if player is not surrounded by walls." alt="" coords="164,55,331,80"/>
-<area shape="poly" title=" " alt="" coords="84,127,163,89,183,82,185,87,165,94,86,132"/>
-<area shape="rect" href="player__verification_8c.html#ac806885085229a5b7735e4cefb93ada8" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="180,104,315,129"/>
-<area shape="poly" title=" " alt="" coords="116,132,166,125,167,130,117,137"/>
-<area shape="rect" href="map__verification_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="197,205,298,231"/>
-<area shape="poly" title=" " alt="" coords="92,152,165,184,201,198,199,203,163,188,90,157"/>
+<div class="center"><img src="map__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_cgraph.png" border="0" usemap="#amap__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_cgraph" alt=""/></div>
+<map name="amap__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_cgraph" id="amap__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_cgraph">
+<area shape="rect" title="Validates the game map and player position." alt="" coords="5,104,116,129"/>
+<area shape="rect" href="player__verification_8c.html#a9673eac2437df9dc10edcd754f0e8cb2" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="182,5,313,31"/>
+<area shape="poly" title=" " alt="" coords="74,102,113,71,163,40,179,33,181,38,165,44,116,75,78,106"/>
+<area shape="rect" href="player__verification_8c.html#af6a5b0634eeb9b997129550117f11ed4" title="Checks if player is not surrounded by walls." alt="" coords="164,55,331,80"/>
+<area shape="poly" title=" " alt="" coords="109,101,185,81,186,86,110,107"/>
+<area shape="rect" href="player__verification_8c.html#a5094498756ca3548617ba9c4c6045207" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="180,104,315,129"/>
+<area shape="poly" title=" " alt="" coords="116,114,166,114,166,119,116,119"/>
+<area shape="rect" href="map__verification_8c.html#a2e6a2523bb20297fb6972ecb4f276ca9" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="197,205,298,231"/>
+<area shape="poly" title=" " alt="" coords="80,127,118,155,165,184,197,198,194,203,163,188,115,159,77,132"/>
 <area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="403,155,477,180"/>
-<area shape="poly" title=" " alt="" coords="117,143,389,161,389,167,116,148"/>
-<area shape="rect" href="player__verification_8c.html#a0642ea6088fbb44224456feada7cfb1e" title="Prints the player&#39;s position and direction information for debugging." alt="" coords="181,279,313,304"/>
-<area shape="poly" title=" " alt="" coords="75,153,114,194,166,240,211,270,208,274,162,244,110,198,71,157"/>
-<area shape="rect" href="player__verification_8c.html#a73455b1cdf6709a84259383b64b8e991" title="Sets the player&#39;s position and direction based on map data." alt="" coords="379,55,501,80"/>
+<area shape="poly" title=" " alt="" coords="111,127,164,138,286,153,390,162,389,167,285,159,164,143,109,132"/>
+<area shape="rect" href="player__verification_8c.html#ad1f1b6c05e7d62fc7128029a511de9b2" title="Sets the player&#39;s position and direction based on map data." alt="" coords="379,55,501,80"/>
 <area shape="poly" title=" " alt="" coords="298,28,377,49,376,54,297,33"/>
 <area shape="poly" title=" " alt="" coords="297,101,376,81,377,86,298,107"/>
 <area shape="poly" title=" " alt="" coords="296,203,390,178,391,183,297,208"/>
-<area shape="rect" href="map__verification_8c.html#a753104db9499b280a27994290cee30d2" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="387,204,493,229"/>
-<area shape="poly" title=" " alt="" coords="298,215,373,214,373,220,298,220"/>
-<area shape="rect" href="util__1_8c.html#a5616d9ac38f4be83b46d3d995bbe6e75" title="Outputs debug info with case in green color." alt="" coords="391,253,489,279"/>
-<area shape="poly" title=" " alt="" coords="313,280,376,272,377,277,314,285"/>
-<area shape="rect" href="util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="381,303,499,328"/>
-<area shape="poly" title=" " alt="" coords="314,297,367,304,366,309,313,302"/>
-<area shape="rect" href="util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="393,352,487,377"/>
-<area shape="poly" title=" " alt="" coords="283,302,394,344,392,349,281,307"/>
+<area shape="rect" href="map__verification_8c.html#aeef82a5663351140dd3fcd335f542bc9" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="387,205,493,231"/>
+<area shape="poly" title=" " alt="" coords="298,215,373,215,373,221,298,221"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_icgraph.png" border="0" usemap="#amap__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_icgraph" alt=""/></div>
-<map name="amap__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_icgraph" id="amap__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_icgraph">
-<area shape="rect" title="Validates the game map and player position." alt="" coords="207,5,317,31"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_icgraph.png" border="0" usemap="#amap__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_icgraph" alt=""/></div>
+<map name="amap__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_icgraph" id="amap__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_icgraph">
+<area shape="rect" title="Validates the game map and player position." alt="" coords="429,5,540,31"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,382,21,382,15,415,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -346,8 +352,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a753104db9499b280a27994290cee30d2" name="a753104db9499b280a27994290cee30d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a753104db9499b280a27994290cee30d2">&#9670;&#160;</a></span>vertical_wall()</h2>
+<a id="aeef82a5663351140dd3fcd335f542bc9" name="aeef82a5663351140dd3fcd335f542bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef82a5663351140dd3fcd335f542bc9">&#9670;&#160;</a></span>vertical_wall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +361,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int vertical_wall </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>game</em>, </td>
         </tr>
         <tr>
@@ -375,7 +381,7 @@ Here is the caller graph for this function:</div>
 <p>Checks if all characters in a specific vertical wall of the map are '1'. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">game</td><td>A pointer to the t_data structure that contains the game map and its dimensions. </td></tr>
+    <tr><td class="paramname">game</td><td>A pointer to the t_file structure that contains the game map and its dimensions. </td></tr>
     <tr><td class="paramname">j</td><td>The column index to check for a vertical wall. </td></tr>
   </table>
   </dd>
@@ -384,15 +390,17 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__verification_8c_a753104db9499b280a27994290cee30d2_icgraph.png" border="0" usemap="#amap__verification_8c_a753104db9499b280a27994290cee30d2_icgraph" alt=""/></div>
-<map name="amap__verification_8c_a753104db9499b280a27994290cee30d2_icgraph" id="amap__verification_8c_a753104db9499b280a27994290cee30d2_icgraph">
-<area shape="rect" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="515,5,620,31"/>
-<area shape="rect" href="map__verification_8c.html#a5b9b9dd9feb7d525a8c55b9378cc8103" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="365,5,467,31"/>
-<area shape="poly" title=" " alt="" coords="501,21,467,21,467,15,501,15"/>
-<area shape="rect" href="map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498" title="Validates the game map and player position." alt="" coords="207,5,317,31"/>
-<area shape="poly" title=" " alt="" coords="352,21,318,21,318,15,352,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__verification_8c_aeef82a5663351140dd3fcd335f542bc9_icgraph.png" border="0" usemap="#amap__verification_8c_aeef82a5663351140dd3fcd335f542bc9_icgraph" alt=""/></div>
+<map name="amap__verification_8c_aeef82a5663351140dd3fcd335f542bc9_icgraph" id="amap__verification_8c_aeef82a5663351140dd3fcd335f542bc9_icgraph">
+<area shape="rect" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="737,5,843,31"/>
+<area shape="rect" href="map__verification_8c.html#a2e6a2523bb20297fb6972ecb4f276ca9" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="588,5,689,31"/>
+<area shape="poly" title=" " alt="" coords="723,21,689,21,689,15,723,15"/>
+<area shape="rect" href="map__verification_8c.html#a4a115a4aa3711c94db371e80eb7f9a93" title="Validates the game map and player position." alt="" coords="429,5,540,31"/>
+<area shape="poly" title=" " alt="" coords="574,21,540,21,540,15,574,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,382,21,382,15,415,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>

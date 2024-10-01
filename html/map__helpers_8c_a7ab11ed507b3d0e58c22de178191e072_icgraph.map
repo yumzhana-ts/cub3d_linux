@@ -1,0 +1,16 @@
+<map id="checkextension" name="checkextension">
+<area shape="rect" id="Node000001" title="Checks if the given filename has a specific file extension." alt="" coords="657,31,780,56"/>
+<area shape="rect" id="Node000002" href="$map__helpers_8c.html#a9572228285cd82518fa287634356ac30" title="Validates command&#45;line arguments and file extension." alt="" coords="505,5,599,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="643,35,599,28,600,23,644,29"/>
+<area shape="rect" id="Node000006" href="$texture__parsing_8c.html#afb6fd0a8684ff3338961a0b1b6e257e3" title=" " alt="" coords="495,55,609,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="644,57,610,62,609,56,643,51"/>
+<area shape="rect" id="Node000003" href="$map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="317,5,414,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="491,21,414,21,414,15,491,15"/>
+<area shape="rect" id="Node000004" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,31,236,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="303,29,237,38,236,32,302,23"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+<area shape="rect" id="Node000007" href="$texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,55,447,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="481,70,447,70,447,65,481,65"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="270,58,236,54,237,49,271,53"/>
+</map>

@@ -101,10 +101,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a9572228285cd82518fa287634356ac30" id="r_a9572228285cd82518fa287634356ac30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__helpers_8c.html#a9572228285cd82518fa287634356ac30">check_args</a> (int argc, char **argv)</td></tr>
 <tr class="memdesc:a9572228285cd82518fa287634356ac30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates command-line arguments and file extension.  <br /></td></tr>
 <tr class="separator:a9572228285cd82518fa287634356ac30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d8ea9766faf2c86e2c85633469e99f3" id="r_a3d8ea9766faf2c86e2c85633469e99f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__helpers_8c.html#a3d8ea9766faf2c86e2c85633469e99f3">fix_newlines</a> (t_data *game)</td></tr>
-<tr class="memdesc:a3d8ea9766faf2c86e2c85633469e99f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces newline characters with null characters in a 2D array of strings. Iterates through each string in <code>game-&gt;file</code> and replaces '<br  />
+<tr class="memitem:a61607b9d42635b519cd2f77713c06e48" id="r_a61607b9d42635b519cd2f77713c06e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__helpers_8c.html#a61607b9d42635b519cd2f77713c06e48">fix_newlines</a> (t_file *game)</td></tr>
+<tr class="memdesc:a61607b9d42635b519cd2f77713c06e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces newline characters with null characters in array of strings. Iterates through each string in <code>game-&gt;file</code> and replaces '<br  />
 ' with '\0'.  <br /></td></tr>
-<tr class="separator:a3d8ea9766faf2c86e2c85633469e99f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a61607b9d42635b519cd2f77713c06e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab11ed507b3d0e58c22de178191e072" id="r_a7ab11ed507b3d0e58c22de178191e072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__helpers_8c.html#a7ab11ed507b3d0e58c22de178191e072">checkextension</a> (char *name, char *extension)</td></tr>
+<tr class="memdesc:a7ab11ed507b3d0e58c22de178191e072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given filename has a specific file extension.  <br /></td></tr>
+<tr class="separator:a7ab11ed507b3d0e58c22de178191e072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains helper functions related to map manipulation. </p>
@@ -143,18 +146,18 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>👾 Add texture and color reading</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if arguments are valid. Exits the program with an error message otherwise. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>👾 Add texture and color reading</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if arguments are valid, error message otherwise. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="map__helpers_8c_a9572228285cd82518fa287634356ac30_cgraph.png" border="0" usemap="#amap__helpers_8c_a9572228285cd82518fa287634356ac30_cgraph" alt=""/></div>
 <map name="amap__helpers_8c_a9572228285cd82518fa287634356ac30_cgraph" id="amap__helpers_8c_a9572228285cd82518fa287634356ac30_cgraph">
-<area shape="rect" title="Validates command&#45;line arguments and file extension." alt="" coords="5,31,100,56"/>
-<area shape="rect" href="map__verification_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="148,5,271,31"/>
-<area shape="poly" title=" " alt="" coords="100,33,134,28,135,33,101,38"/>
-<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="173,55,246,80"/>
-<area shape="poly" title=" " alt="" coords="101,48,160,57,159,62,100,53"/>
+<area shape="rect" title="Validates command&#45;line arguments and file extension." alt="" coords="5,31,94,56"/>
+<area shape="rect" href="map__helpers_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="142,5,254,31"/>
+<area shape="poly" title=" " alt="" coords="94,33,126,28,127,33,95,39"/>
+<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="165,55,230,80"/>
+<area shape="poly" title=" " alt="" coords="95,48,150,57,149,62,94,53"/>
 </map>
 </div>
 <div class="dynheader">
@@ -162,9 +165,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="map__helpers_8c_a9572228285cd82518fa287634356ac30_icgraph.png" border="0" usemap="#amap__helpers_8c_a9572228285cd82518fa287634356ac30_icgraph" alt=""/></div>
 <map name="amap__helpers_8c_a9572228285cd82518fa287634356ac30_icgraph" id="amap__helpers_8c_a9572228285cd82518fa287634356ac30_icgraph">
-<area shape="rect" title="Validates command&#45;line arguments and file extension." alt="" coords="207,5,301,31"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<area shape="rect" title="Validates command&#45;line arguments and file extension." alt="" coords="429,5,524,31"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,381,21,381,15,415,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -172,8 +177,66 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a3d8ea9766faf2c86e2c85633469e99f3" name="a3d8ea9766faf2c86e2c85633469e99f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d8ea9766faf2c86e2c85633469e99f3">&#9670;&#160;</a></span>fix_newlines()</h2>
+<a id="a7ab11ed507b3d0e58c22de178191e072" name="a7ab11ed507b3d0e58c22de178191e072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab11ed507b3d0e58c22de178191e072">&#9670;&#160;</a></span>checkextension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int checkextension </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>extension</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the given filename has a specific file extension. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>A pointer to a string representing the filename to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the filename ends with ".cub", 1 otherwise. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="map__helpers_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph.png" border="0" usemap="#amap__helpers_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph" alt=""/></div>
+<map name="amap__helpers_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph" id="amap__helpers_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph">
+<area shape="rect" title="Checks if the given filename has a specific file extension." alt="" coords="657,31,780,56"/>
+<area shape="rect" href="map__helpers_8c.html#a9572228285cd82518fa287634356ac30" title="Validates command&#45;line arguments and file extension." alt="" coords="505,5,599,31"/>
+<area shape="poly" title=" " alt="" coords="643,35,599,28,600,23,644,29"/>
+<area shape="rect" href="texture__parsing_8c.html#afb6fd0a8684ff3338961a0b1b6e257e3" title=" " alt="" coords="495,55,609,80"/>
+<area shape="poly" title=" " alt="" coords="644,57,610,62,609,56,643,51"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="317,5,414,31"/>
+<area shape="poly" title=" " alt="" coords="491,21,414,21,414,15,491,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,31,236,56"/>
+<area shape="poly" title=" " alt="" coords="303,29,237,38,236,32,302,23"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+<area shape="rect" href="texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,55,447,80"/>
+<area shape="poly" title=" " alt="" coords="481,70,447,70,447,65,481,65"/>
+<area shape="poly" title=" " alt="" coords="270,58,236,54,237,49,271,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a61607b9d42635b519cd2f77713c06e48" name="a61607b9d42635b519cd2f77713c06e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61607b9d42635b519cd2f77713c06e48">&#9670;&#160;</a></span>fix_newlines()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,31 +244,33 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void fix_newlines </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>game</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Replaces newline characters with null characters in a 2D array of strings. Iterates through each string in <code>game-&gt;file</code> and replaces '<br  />
+<p>Replaces newline characters with null characters in array of strings. Iterates through each string in <code>game-&gt;file</code> and replaces '<br  />
 ' with '\0'. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">game</td><td>Pointer to a t_data structure containing the array of strings. </td></tr>
+    <tr><td class="paramname">game</td><td>Pointer to a t_file structure containing the array of strings. </td></tr>
   </table>
   </dd>
 </dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3_icgraph.png" border="0" usemap="#amap__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3_icgraph" alt=""/></div>
-<map name="amap__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3_icgraph" id="amap__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3_icgraph">
-<area shape="rect" title="Replaces newline characters with null characters in a 2D array of strings. Iterates through each stri..." alt="" coords="333,5,436,31"/>
-<area shape="rect" href="read__file_8c.html#a0a6c39f92e83ec40dea691b333ea800c" title="Opens a file and readstfile." alt="" coords="207,5,285,31"/>
-<area shape="poly" title=" " alt="" coords="320,21,285,21,285,15,320,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__helpers_8c_a61607b9d42635b519cd2f77713c06e48_icgraph.png" border="0" usemap="#amap__helpers_8c_a61607b9d42635b519cd2f77713c06e48_icgraph" alt=""/></div>
+<map name="amap__helpers_8c_a61607b9d42635b519cd2f77713c06e48_icgraph" id="amap__helpers_8c_a61607b9d42635b519cd2f77713c06e48_icgraph">
+<area shape="rect" title="Replaces newline characters with null characters in array of strings. Iterates through each string in..." alt="" coords="556,5,659,31"/>
+<area shape="rect" href="read__file_8c.html#a80bc30d37fc3fd91db7c2c1a2ab93a38" title="Opens a file and readstfile." alt="" coords="429,5,508,31"/>
+<area shape="poly" title=" " alt="" coords="542,21,508,21,508,15,542,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,382,21,382,15,415,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>

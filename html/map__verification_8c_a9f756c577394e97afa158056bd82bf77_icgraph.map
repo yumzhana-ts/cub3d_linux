@@ -1,0 +1,11 @@
+<map id="check_empty_line" name="check_empty_line">
+<area shape="rect" id="Node000001" title="Checks for empty lines within the map data after the start of the map." alt="" coords="624,5,764,31"/>
+<area shape="rect" id="Node000002" href="$map__parsing_8c.html#ac0bab95559c0f02ae27df9d538db7c0c" title="Verifies the overall format of the map file." alt="" coords="429,5,576,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="610,21,576,21,576,15,610,15"/>
+<area shape="rect" id="Node000003" href="$map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,21,381,21,381,15,415,15"/>
+<area shape="rect" id="Node000004" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

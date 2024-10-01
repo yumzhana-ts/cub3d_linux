@@ -1,0 +1,7 @@
+<map id="print_colores" name="print_colores">
+<area shape="rect" id="Node000001" title="Prints color information for debugging." alt="" coords="5,31,101,56"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="151,5,236,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,32,135,26,136,31,102,37"/>
+<area shape="rect" id="Node000003" href="$util__2_8c.html#a493bccc094a8b964b4610c4d914106c6" title="Prints the map to the standard output." alt="" coords="149,55,238,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,49,133,55,132,60,101,54"/>
+</map>

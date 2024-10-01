@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 11:27:24 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@
 #include "libft.h"
 
 /**
- * @brief Reads the map from the file data into the t_data structure.
+ * @brief Reads the map from the file data into the t_file structure.
  *
- * @param m Pointer to the t_data structure that will store the map data.
+ * @param m Pointer to the t_file structure that will store the map data.
  * @return Returns 0 on success, 1 on failure.
  */
-int	read_map(t_data *m)
+int	read_map(t_file *m)
 {
 	int	i;
 	int	j;
@@ -50,10 +50,10 @@ int	read_map(t_data *m)
 /**
  * @brief Verifies the overall format of the map file.
  *
- * @param m Pointer to the t_data structure that contains the file data.
+ * @param m Pointer to the t_file structure that contains the file data.
  * @return Returns 0 on success, 1 on failure.
  */
-int	format_verification(t_data *m)
+int	format_verification(t_file *m)
 {
 	if (map_controls(m))
 		return (1);
@@ -85,10 +85,10 @@ int	find_map_start(char *str)
 /**
  * @brief Determines the starting index of the map in the file data.
  *
- * @param m Pointer to the t_data structure that contains the file data.
+ * @param m Pointer to the t_file structure that contains the file data.
  * @return Returns 0 on success, 1 on failure.
  */
-static int	map_start(t_data *m)
+static int	map_start(t_file *m)
 {
 	int	i;
 
@@ -113,10 +113,10 @@ static int	map_start(t_data *m)
  * @brief Verifies the map format and controls its 
  * placement within the file data.
  *
- * @param m Pointer to the t_data structure that contains the file data.
+ * @param m Pointer to the t_file structure that contains the file data.
  * @return Returns 0 on success, 1 on failure.
  */
-int	map_controls(t_data *m)
+int	map_controls(t_file *m)
 {
 	int	i;
 	int	j;

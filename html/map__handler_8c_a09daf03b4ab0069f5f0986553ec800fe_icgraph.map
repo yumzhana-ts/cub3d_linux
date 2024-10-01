@@ -1,0 +1,7 @@
+<map id="file_parsing" name="file_parsing">
+<area shape="rect" id="Node000001" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="267,5,354,31"/>
+<area shape="rect" id="Node000002" href="$map__handler_8c.html#aa786b66981a4dd684c7c5a74739a5ec5" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="103,5,219,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,21,219,21,219,16,251,16"/>
+<area shape="rect" id="Node000003" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

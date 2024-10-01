@@ -1,0 +1,9 @@
+<map id="manipulation_helper" name="manipulation_helper">
+<area shape="rect" id="Node000001" title="Helper function for validating color data in a structure." alt="" coords="5,55,142,80"/>
+<area shape="rect" id="Node000002" href="$util__5_8c.html#a8d68a28a03acd21c0698cbffacb49c7a" title="Prints the map to the standard output." alt="" coords="231,5,305,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,51,215,29,216,34,128,57"/>
+<area shape="rect" id="Node000003" href="$color__helper_8c.html#a3b9724a44019ba43767db94d610f52af" title="Validates color values in a given 2D array of strings." alt="" coords="190,55,346,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,65,174,65,174,70,142,70"/>
+<area shape="rect" id="Node000004" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="235,104,300,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="128,78,221,102,219,107,127,84"/>
+</map>

@@ -1,10 +1,18 @@
 <map id="draw_arrow" name="draw_arrow">
-<area shape="rect" id="Node000001" title="Draw vector of player." alt="" coords="339,31,437,56"/>
-<area shape="rect" id="Node000002" href="$draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="185,5,290,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,35,290,29,290,24,326,30"/>
-<area shape="rect" id="Node000004" href="$draw__player_8c.html#accfe03aa2a54df2f6ebd81d862d229fb" title="Moves player position and orintation." alt="" coords="184,55,291,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="326,56,292,61,291,56,325,51"/>
-<area shape="rect" id="Node000003" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="5,31,136,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,31,137,36,136,31,171,25"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="170,60,136,55,137,50,171,55"/>
+<area shape="rect" id="Node000001" title="Draw vector of player." alt="" coords="677,51,776,76"/>
+<area shape="rect" id="Node000002" href="$draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="519,75,624,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="664,76,625,82,624,76,663,70"/>
+<area shape="rect" id="Node000003" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="335,25,465,51"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="695,45,664,28,629,15,579,9,528,11,481,18,442,28,440,23,480,13,528,5,579,3,630,10,666,23,697,41"/>
+<area shape="rect" id="Node000006" href="$draw__player_8c.html#a56929c7070f2809e4dffa71a0a9e1d09" title=" " alt="" coords="513,25,629,51"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="663,56,629,50,630,45,664,50"/>
+<area shape="rect" id="Node000007" href="$draw__player_8c.html#accfe03aa2a54df2f6ebd81d862d229fb" title="Moves player position and orintation." alt="" coords="518,124,625,149"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="691,85,630,115,605,126,603,121,628,110,688,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="512,73,444,53,446,48,514,68"/>
+<area shape="rect" id="Node000004" href="$graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,51,287,76"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="505,86,287,72,287,66,505,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="321,50,287,55,287,49,321,45"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,51,60,76"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,66,60,66,60,61,94,61"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="499,41,465,41,465,35,499,35"/>
 </map>

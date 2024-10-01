@@ -31,12 +31,19 @@
  */
 int mlx_init_create_window(t_data *game)
 {
-	(*game).mlx_ptr = mlx_init();
-	if ((*game).mlx_ptr == NULL)
+	game->mlx_ptr = mlx_init();
+	if (game->mlx_ptr == NULL)
 		return (fd_error("Failed to initialize mlx.\n"));
-	(*game).win_ptr = mlx_new_window((*game).mlx_ptr, (*game).widthmap * TILE_SIZE,
-									 (*game).heightmap * TILE_SIZE, "Map Display");
-	if ((*game).win_ptr == NULL)
+	game->camera_mlx_ptr = mlx_init();
+	if (game->camera_mlx_ptr == NULL)
+		return (fd_error("Failed to initialize mlx.\n"));
+	game->win_ptr = mlx_new_window(game->mlx_ptr, game->file->widthmap * TILE_SIZE,
+									 game->file->heightmap * TILE_SIZE, "Map Display");
+	game->camera_win_ptr = mlx_new_window(game->camera_mlx_ptr, 360,
+									160, "Camera Display");
+	if (game->win_ptr == NULL)
 		return (fd_error("Failed to create window.\n"));
+	if (game->camera_win_ptr == NULL)
+		return (fd_error("Failed to create camera window.\n"));
 	return 0;
 }

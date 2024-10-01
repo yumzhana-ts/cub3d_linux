@@ -95,6 +95,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ad574847dfafc7f9060c6de1e5e52eb38" id="r_ad574847dfafc7f9060c6de1e5e52eb38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__map_8c.html#ad574847dfafc7f9060c6de1e5e52eb38">draw_square</a> (t_data *game, int x, int y, int color)</td></tr>
 <tr class="memdesc:ad574847dfafc7f9060c6de1e5e52eb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints square by tile size with mlx pixel put.  <br /></td></tr>
 <tr class="separator:ad574847dfafc7f9060c6de1e5e52eb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aaa24c0c95eab6aec102a27e52b8ecd" id="r_a8aaa24c0c95eab6aec102a27e52b8ecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__map_8c.html#a8aaa24c0c95eab6aec102a27e52b8ecd">set_start_view</a> (t_data *game, bool map_init)</td></tr>
+<tr class="separator:a8aaa24c0c95eab6aec102a27e52b8ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb35c64f40d6a26a0ecb17e0845c5514" id="r_abb35c64f40d6a26a0ecb17e0845c5514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514">display_map</a> (t_data *game, bool first_init)</td></tr>
 <tr class="memdesc:abb35c64f40d6a26a0ecb17e0845c5514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints squares, borders and player of the map.  <br /></td></tr>
 <tr class="separator:abb35c64f40d6a26a0ecb17e0845c5514"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,31 +134,33 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="draw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_cgraph.png" border="0" usemap="#adraw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_cgraph" alt=""/></div>
 <map name="adraw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_cgraph" id="adraw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_cgraph">
-<area shape="rect" title="Prints squares, borders and player of the map." alt="" coords="5,158,111,183"/>
-<area shape="rect" href="draw__player_8c.html#a0130fbcda5fe3198cee34212ce33edbc" title="Draw vector of player." alt="" coords="162,34,261,59"/>
-<area shape="poly" title=" " alt="" coords="73,156,182,66,185,70,77,160"/>
-<area shape="rect" href="draw__borders_8c.html#a7a0f61fd1ed16eed914881ad481d3d6f" title="Draw borders of map." alt="" coords="160,133,263,158"/>
-<area shape="poly" title=" " alt="" coords="110,159,146,153,147,159,111,165"/>
-<area shape="rect" href="draw__player_8c.html#aa32d1a2cbd10349e6d59e101d801cb22" title="Draw pixel." alt="" coords="165,207,257,233"/>
-<area shape="poly" title=" " alt="" coords="99,181,159,200,157,205,97,186"/>
-<area shape="rect" href="draw__map_8c.html#ad574847dfafc7f9060c6de1e5e52eb38" title="Prints square by tile size with mlx pixel put." alt="" coords="159,257,264,282"/>
-<area shape="poly" title=" " alt="" coords="77,181,114,210,160,242,171,248,168,253,157,246,111,215,73,186"/>
-<area shape="rect" href="util__2_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="517,133,659,158"/>
-<area shape="poly" title=" " alt="" coords="244,31,290,17,347,6,410,4,441,9,470,19,504,39,533,66,574,119,570,122,529,69,501,43,468,24,439,14,409,10,348,11,291,22,245,36"/>
-<area shape="rect" href="draw__borders_8c.html#a24b7b602bee179e2f49b2f6c4e4f3de0" title="Draw bottom border." alt="" coords="312,34,469,59"/>
-<area shape="poly" title=" " alt="" coords="225,130,262,100,311,68,326,62,328,67,313,73,265,104,228,135"/>
-<area shape="rect" href="draw__borders_8c.html#a9bc672a7253ed16ae0c35641b48214d3" title="Draw left border." alt="" coords="325,83,456,109"/>
-<area shape="poly" title=" " alt="" coords="257,130,329,110,331,115,259,135"/>
-<area shape="rect" href="draw__borders_8c.html#a2a1cbc9a6116e4eb11883cea084346aa" title="Draw right border." alt="" coords="321,133,461,158"/>
-<area shape="poly" title=" " alt="" coords="263,143,307,143,307,148,263,148"/>
-<area shape="rect" href="draw__borders_8c.html#a4bf979fd1a1016b16d047a65f1ea8c0b" title="Draw top border." alt="" coords="325,182,456,207"/>
-<area shape="poly" title=" " alt="" coords="259,155,331,176,329,181,257,161"/>
-<area shape="poly" title=" " alt="" coords="441,57,470,68,519,95,560,122,557,127,516,99,468,73,439,62"/>
-<area shape="poly" title=" " alt="" coords="443,106,524,127,523,132,441,111"/>
-<area shape="poly" title=" " alt="" coords="461,143,504,143,504,148,461,148"/>
-<area shape="poly" title=" " alt="" coords="441,179,523,159,524,164,443,185"/>
-<area shape="poly" title=" " alt="" coords="258,224,356,230,413,227,469,216,519,193,560,165,563,169,521,198,470,221,414,232,356,236,258,230"/>
-<area shape="poly" title=" " alt="" coords="264,269,361,263,416,253,468,236,496,222,522,204,564,166,567,170,525,208,499,226,470,241,417,258,362,268,265,274"/>
+<area shape="rect" title="Prints squares, borders and player of the map." alt="" coords="5,228,111,253"/>
+<area shape="rect" href="draw__player_8c.html#a0130fbcda5fe3198cee34212ce33edbc" title="Draw vector of player." alt="" coords="353,5,452,31"/>
+<area shape="poly" title=" " alt="" coords="68,226,106,185,157,139,236,82,323,40,340,33,342,38,325,44,239,87,160,143,109,189,72,230"/>
+<area shape="rect" href="draw__borders_8c.html#a7a0f61fd1ed16eed914881ad481d3d6f" title="Draw borders of map." alt="" coords="166,153,269,179"/>
+<area shape="poly" title=" " alt="" coords="85,225,176,182,178,187,87,230"/>
+<area shape="rect" href="draw__player_8c.html#aa32d1a2cbd10349e6d59e101d801cb22" title="Draw pixel." alt="" coords="171,228,263,253"/>
+<area shape="poly" title=" " alt="" coords="111,238,158,238,158,243,111,243"/>
+<area shape="rect" href="draw__map_8c.html#ad574847dfafc7f9060c6de1e5e52eb38" title="Prints square by tile size with mlx pixel put." alt="" coords="165,277,270,303"/>
+<area shape="poly" title=" " alt="" coords="100,251,163,271,161,276,99,256"/>
+<area shape="rect" href="draw__map_8c.html#a8aaa24c0c95eab6aec102a27e52b8ecd" title=" " alt="" coords="159,327,276,352"/>
+<area shape="poly" title=" " alt="" coords="76,251,113,281,160,313,170,318,168,323,157,318,110,286,72,256"/>
+<area shape="rect" href="util__2_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="529,153,671,179"/>
+<area shape="poly" title=" " alt="" coords="453,26,483,40,514,63,542,90,584,140,580,144,538,93,510,67,480,44,451,31"/>
+<area shape="rect" href="draw__borders_8c.html#a24b7b602bee179e2f49b2f6c4e4f3de0" title="Draw bottom border." alt="" coords="324,55,481,80"/>
+<area shape="poly" title=" " alt="" coords="232,151,271,120,323,89,339,82,341,87,325,94,274,125,235,155"/>
+<area shape="rect" href="draw__borders_8c.html#a9bc672a7253ed16ae0c35641b48214d3" title="Draw left border." alt="" coords="337,104,468,129"/>
+<area shape="poly" title=" " alt="" coords="265,151,340,130,341,136,266,156"/>
+<area shape="rect" href="draw__borders_8c.html#a2a1cbc9a6116e4eb11883cea084346aa" title="Draw right border." alt="" coords="333,153,473,179"/>
+<area shape="poly" title=" " alt="" coords="269,163,319,163,319,169,269,169"/>
+<area shape="rect" href="draw__borders_8c.html#a4bf979fd1a1016b16d047a65f1ea8c0b" title="Draw top border." alt="" coords="337,203,468,228"/>
+<area shape="poly" title=" " alt="" coords="266,176,341,196,340,202,265,181"/>
+<area shape="poly" title=" " alt="" coords="453,78,482,89,531,115,572,143,569,147,528,120,480,94,451,83"/>
+<area shape="poly" title=" " alt="" coords="455,127,536,147,535,153,453,132"/>
+<area shape="poly" title=" " alt="" coords="473,163,516,163,516,169,473,169"/>
+<area shape="poly" title=" " alt="" coords="453,200,535,179,536,185,455,205"/>
+<area shape="poly" title=" " alt="" coords="264,245,310,250,365,251,423,248,481,237,531,214,572,185,575,190,533,219,482,242,424,253,365,257,309,255,263,250"/>
+<area shape="poly" title=" " alt="" coords="270,290,316,289,370,285,426,275,480,258,508,243,534,225,576,187,580,191,538,229,511,248,482,263,428,281,371,290,317,295,270,295"/>
 </map>
 </div>
 <div class="dynheader">
@@ -164,9 +168,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="draw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_icgraph.png" border="0" usemap="#adraw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_icgraph" alt=""/></div>
 <map name="adraw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_icgraph" id="adraw__map_8c_abb35c64f40d6a26a0ecb17e0845c5514_icgraph">
-<area shape="rect" title="Prints squares, borders and player of the map." alt="" coords="184,5,289,31"/>
-<area shape="rect" href="movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="5,5,136,31"/>
-<area shape="poly" title=" " alt="" coords="170,21,137,21,137,15,170,15"/>
+<area shape="rect" title="Prints squares, borders and player of the map." alt="" coords="513,31,619,56"/>
+<area shape="rect" href="movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="335,5,465,31"/>
+<area shape="poly" title=" " alt="" coords="499,36,465,31,466,25,500,31"/>
+<area shape="rect" href="graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,31,287,56"/>
+<area shape="poly" title=" " alt="" coords="499,46,287,46,287,41,499,41"/>
+<area shape="poly" title=" " alt="" coords="321,30,287,35,287,30,321,25"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
 </map>
 </div>
 
@@ -226,11 +235,61 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="draw__map_8c_ad574847dfafc7f9060c6de1e5e52eb38_icgraph.png" border="0" usemap="#adraw__map_8c_ad574847dfafc7f9060c6de1e5e52eb38_icgraph" alt=""/></div>
 <map name="adraw__map_8c_ad574847dfafc7f9060c6de1e5e52eb38_icgraph" id="adraw__map_8c_ad574847dfafc7f9060c6de1e5e52eb38_icgraph">
-<area shape="rect" title="Prints square by tile size with mlx pixel put." alt="" coords="337,5,443,31"/>
-<area shape="rect" href="draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="184,5,289,31"/>
-<area shape="poly" title=" " alt="" coords="324,21,290,21,290,15,324,15"/>
-<area shape="rect" href="movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="5,5,136,31"/>
-<area shape="poly" title=" " alt="" coords="170,21,137,21,137,15,170,15"/>
+<area shape="rect" title="Prints square by tile size with mlx pixel put." alt="" coords="667,31,772,56"/>
+<area shape="rect" href="draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="513,31,619,56"/>
+<area shape="poly" title=" " alt="" coords="653,46,619,46,619,41,653,41"/>
+<area shape="rect" href="movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="335,5,465,31"/>
+<area shape="poly" title=" " alt="" coords="499,36,465,31,466,25,500,31"/>
+<area shape="rect" href="graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,31,287,56"/>
+<area shape="poly" title=" " alt="" coords="499,46,287,46,287,41,499,41"/>
+<area shape="poly" title=" " alt="" coords="321,30,287,35,287,30,321,25"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8aaa24c0c95eab6aec102a27e52b8ecd" name="a8aaa24c0c95eab6aec102a27e52b8ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aaa24c0c95eab6aec102a27e52b8ecd">&#9670;&#160;</a></span>set_start_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_start_view </td>
+          <td>(</td>
+          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>map_init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw__map_8c_a8aaa24c0c95eab6aec102a27e52b8ecd_icgraph.png" border="0" usemap="#adraw__map_8c_a8aaa24c0c95eab6aec102a27e52b8ecd_icgraph" alt=""/></div>
+<map name="adraw__map_8c_a8aaa24c0c95eab6aec102a27e52b8ecd_icgraph" id="adraw__map_8c_a8aaa24c0c95eab6aec102a27e52b8ecd_icgraph">
+<area shape="rect" title=" " alt="" coords="667,31,784,56"/>
+<area shape="rect" href="draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="513,31,619,56"/>
+<area shape="poly" title=" " alt="" coords="653,46,619,46,619,41,653,41"/>
+<area shape="rect" href="movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="335,5,465,31"/>
+<area shape="poly" title=" " alt="" coords="499,36,465,31,466,25,500,31"/>
+<area shape="rect" href="graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,31,287,56"/>
+<area shape="poly" title=" " alt="" coords="499,46,287,46,287,41,499,41"/>
+<area shape="poly" title=" " alt="" coords="321,30,287,35,287,30,321,25"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
 </map>
 </div>
 

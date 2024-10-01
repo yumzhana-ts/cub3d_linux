@@ -1,7 +1,7 @@
 <map id="check_args" name="check_args">
-<area shape="rect" id="Node000001" title="Validates command&#45;line arguments and file extension." alt="" coords="5,31,100,56"/>
-<area shape="rect" id="Node000002" href="$map__verification_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="148,5,271,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,33,134,28,135,33,101,38"/>
-<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="173,55,246,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,48,160,57,159,62,100,53"/>
+<area shape="rect" id="Node000001" title="Validates command&#45;line arguments and file extension." alt="" coords="5,31,94,56"/>
+<area shape="rect" id="Node000002" href="$map__helpers_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="142,5,254,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,33,126,28,127,33,95,39"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="165,55,230,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,48,150,57,149,62,94,53"/>
 </map>

@@ -1,10 +1,14 @@
 <map id="draw_pixel" name="draw_pixel">
-<area shape="rect" id="Node000001" title="Draw pixel." alt="" coords="339,31,431,56"/>
-<area shape="rect" id="Node000002" href="$draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="185,5,290,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,36,290,30,291,24,326,31"/>
-<area shape="rect" id="Node000004" href="$draw__player_8c.html#accfe03aa2a54df2f6ebd81d862d229fb" title="Moves player position and orintation." alt="" coords="184,55,291,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="325,56,291,61,290,56,324,50"/>
-<area shape="rect" id="Node000003" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="5,31,136,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,31,137,36,136,31,171,25"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="170,60,136,55,137,50,171,55"/>
+<area shape="rect" id="Node000001" title="Draw pixel." alt="" coords="668,56,760,81"/>
+<area shape="rect" id="Node000002" href="$draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="514,31,619,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="654,61,619,55,620,50,655,56"/>
+<area shape="rect" id="Node000006" href="$draw__player_8c.html#accfe03aa2a54df2f6ebd81d862d229fb" title="Moves player position and orintation." alt="" coords="513,80,620,105"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="655,81,620,87,620,81,654,76"/>
+<area shape="rect" id="Node000003" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="335,5,465,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="500,36,465,31,466,25,501,31"/>
+<area shape="rect" id="Node000004" href="$graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,31,287,56"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="501,46,287,46,287,41,501,41"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="321,30,287,35,287,30,321,25"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
 </map>

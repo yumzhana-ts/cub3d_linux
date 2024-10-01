@@ -95,19 +95,68 @@ Include dependency graph for texture_parsing.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1355647db0e7f6c60e04109725204c31" id="r_a1355647db0e7f6c60e04109725204c31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#a1355647db0e7f6c60e04109725204c31">texture_manipulation</a> (t_data *m)</td></tr>
-<tr class="memdesc:a1355647db0e7f6c60e04109725204c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads textures from the file.  <br /></td></tr>
-<tr class="separator:a1355647db0e7f6c60e04109725204c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1c165f7e7254954081e9e0bd16f095" id="r_a0c1c165f7e7254954081e9e0bd16f095"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#a0c1c165f7e7254954081e9e0bd16f095">texture_save</a> (char *str, char *file)</td></tr>
-<tr class="memdesc:a0c1c165f7e7254954081e9e0bd16f095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts texture path from a file line.  <br /></td></tr>
-<tr class="separator:a0c1c165f7e7254954081e9e0bd16f095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4830c7bcce81a00ea93f1bfddd95560" id="r_ac4830c7bcce81a00ea93f1bfddd95560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#ac4830c7bcce81a00ea93f1bfddd95560">print_textures</a> (t_data *m)</td></tr>
-<tr class="memdesc:ac4830c7bcce81a00ea93f1bfddd95560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints texture paths for debugging.  <br /></td></tr>
-<tr class="separator:ac4830c7bcce81a00ea93f1bfddd95560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef9de5cb41fe3fba04291956b6594b7" id="r_a7ef9de5cb41fe3fba04291956b6594b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7">texture_manipulation</a> (t_file *m)</td></tr>
+<tr class="memdesc:a7ef9de5cb41fe3fba04291956b6594b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads textures from the file.  <br /></td></tr>
+<tr class="separator:a7ef9de5cb41fe3fba04291956b6594b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad747f9189df3bc0c573e208b794fd081" id="r_ad747f9189df3bc0c573e208b794fd081"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#ad747f9189df3bc0c573e208b794fd081">save_helper</a> (char *str, t_file *m, char *texture)</td></tr>
+<tr class="memdesc:ad747f9189df3bc0c573e208b794fd081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes texture identifiers (<code>NO</code>, <code>EA</code>, <code>WE</code>, <code>SO</code>) for different directions in the map data, It also checks for duplicates and raises an error if a texture for a given direction has already been saved.  <br /></td></tr>
+<tr class="separator:ad747f9189df3bc0c573e208b794fd081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8e59e84a66365fba67d5449558b2b7" id="r_abf8e59e84a66365fba67d5449558b2b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#abf8e59e84a66365fba67d5449558b2b7">texture_save</a> (char *str, char *file, t_file *m)</td></tr>
+<tr class="memdesc:abf8e59e84a66365fba67d5449558b2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts texture path from a file line.  <br /></td></tr>
+<tr class="separator:abf8e59e84a66365fba67d5449558b2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50670cb6092a00fd0747e54e128bd6d" id="r_ab50670cb6092a00fd0747e54e128bd6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#ab50670cb6092a00fd0747e54e128bd6d">print_textures</a> (t_file *m)</td></tr>
+<tr class="memdesc:ab50670cb6092a00fd0747e54e128bd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints texture paths for debugging.  <br /></td></tr>
+<tr class="separator:ab50670cb6092a00fd0747e54e128bd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6fd0a8684ff3338961a0b1b6e257e3" id="r_afb6fd0a8684ff3338961a0b1b6e257e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture__parsing_8c.html#afb6fd0a8684ff3338961a0b1b6e257e3">check_texture</a> (char *filename)</td></tr>
+<tr class="separator:afb6fd0a8684ff3338961a0b1b6e257e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac4830c7bcce81a00ea93f1bfddd95560" name="ac4830c7bcce81a00ea93f1bfddd95560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4830c7bcce81a00ea93f1bfddd95560">&#9670;&#160;</a></span>print_textures()</h2>
+<a id="afb6fd0a8684ff3338961a0b1b6e257e3" name="afb6fd0a8684ff3338961a0b1b6e257e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6fd0a8684ff3338961a0b1b6e257e3">&#9670;&#160;</a></span>check_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_texture </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="texture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_cgraph.png" border="0" usemap="#atexture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_cgraph" alt=""/></div>
+<map name="atexture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_cgraph" id="atexture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,109,56"/>
+<area shape="rect" href="map__helpers_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="157,5,269,31"/>
+<area shape="poly" title=" " alt="" coords="108,33,141,27,142,32,109,38"/>
+<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="180,55,246,80"/>
+<area shape="poly" title=" " alt="" coords="109,49,165,58,165,63,108,54"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="texture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_icgraph.png" border="0" usemap="#atexture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_icgraph" alt=""/></div>
+<map name="atexture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_icgraph" id="atexture__parsing_8c_afb6fd0a8684ff3338961a0b1b6e257e3_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,609,31"/>
+<area shape="rect" href="texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="481,21,447,21,447,15,481,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab50670cb6092a00fd0747e54e128bd6d" name="ab50670cb6092a00fd0747e54e128bd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50670cb6092a00fd0747e54e128bd6d">&#9670;&#160;</a></span>print_textures()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,7 +164,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void print_textures </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -125,15 +174,15 @@ Functions</h2></td></tr>
 <p>Prints texture paths for debugging. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Pointer to <code>t_data</code> with texture data. </td></tr>
+    <tr><td class="paramname">m</td><td>Pointer to <code>t_file</code> with texture data. </td></tr>
   </table>
   </dd>
 </dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="texture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_cgraph.png" border="0" usemap="#atexture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_cgraph" alt=""/></div>
-<map name="atexture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_cgraph" id="atexture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_cgraph">
+<div class="center"><img src="texture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_cgraph.png" border="0" usemap="#atexture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_cgraph" alt=""/></div>
+<map name="atexture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_cgraph" id="atexture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_cgraph">
 <area shape="rect" title="Prints texture paths for debugging." alt="" coords="5,31,119,56"/>
 <area shape="rect" href="util__1_8c.html#a24cfd74052ac4c8a7d0b27284af44a80" title="Outputs debug info with case in green color." alt="" coords="167,5,273,31"/>
 <area shape="poly" title=" " alt="" coords="119,32,153,26,154,31,119,37"/>
@@ -144,13 +193,86 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="texture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_icgraph.png" border="0" usemap="#atexture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_icgraph" alt=""/></div>
-<map name="atexture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_icgraph" id="atexture__parsing_8c_ac4830c7bcce81a00ea93f1bfddd95560_icgraph">
-<area shape="rect" title="Prints texture paths for debugging." alt="" coords="417,5,531,31"/>
-<area shape="rect" href="texture__parsing_8c.html#a1355647db0e7f6c60e04109725204c31" title="Loads textures from the file." alt="" coords="207,5,369,31"/>
-<area shape="poly" title=" " alt="" coords="404,21,369,21,369,15,404,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="texture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_icgraph.png" border="0" usemap="#atexture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_icgraph" alt=""/></div>
+<map name="atexture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_icgraph" id="atexture__parsing_8c_ab50670cb6092a00fd0747e54e128bd6d_icgraph">
+<area shape="rect" title="Prints texture paths for debugging." alt="" coords="481,31,595,56"/>
+<area shape="rect" href="util__2_8c.html#ad7d661fed596492a19e7d67b862ee02e" title="Prints debugging information about the map." alt="" coords="335,31,433,56"/>
+<area shape="poly" title=" " alt="" coords="468,46,433,46,433,41,468,41"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="133,5,261,31"/>
+<area shape="poly" title=" " alt="" coords="320,37,261,29,262,24,321,32"/>
+<area shape="rect" href="graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,55,287,80"/>
+<area shape="poly" title=" " alt="" coords="321,54,287,58,287,53,321,49"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="120,33,61,42,60,37,119,27"/>
+<area shape="poly" title=" " alt="" coords="96,55,60,50,61,45,97,50"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad747f9189df3bc0c573e208b794fd081" name="ad747f9189df3bc0c573e208b794fd081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad747f9189df3bc0c573e208b794fd081">&#9670;&#160;</a></span>save_helper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int save_helper </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">t_file *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes texture identifiers (<code>NO</code>, <code>EA</code>, <code>WE</code>, <code>SO</code>) for different directions in the map data, It also checks for duplicates and raises an error if a texture for a given direction has already been saved. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>A string that represents the texture identifier (<code>NO</code>, <code>EA</code>, <code>WE</code>, <code>SO</code>). </td></tr>
+    <tr><td class="paramname">m</td><td>A pointer to a <code>t_file</code> structure where texture paths for different directions are stored: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 if the texture is successfully saved. If a duplicate texture is detected, it calls <code>fd_error</code> with an appropriate message and returns the error result. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="texture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_cgraph.png" border="0" usemap="#atexture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_cgraph" alt=""/></div>
+<map name="atexture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_cgraph" id="atexture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_cgraph">
+<area shape="rect" title="Processes texture identifiers (NO, EA, WE, SO) for different directions in the map data,..." alt="" coords="5,5,107,31"/>
+<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="155,5,228,31"/>
+<area shape="poly" title=" " alt="" coords="107,15,141,15,141,21,107,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="texture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_icgraph.png" border="0" usemap="#atexture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_icgraph" alt=""/></div>
+<map name="atexture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_icgraph" id="atexture__parsing_8c_ad747f9189df3bc0c573e208b794fd081_icgraph">
+<area shape="rect" title="Processes texture identifiers (NO, EA, WE, SO) for different directions in the map data,..." alt="" coords="649,5,751,31"/>
+<area shape="rect" href="texture__parsing_8c.html#abf8e59e84a66365fba67d5449558b2b7" title="Extracts texture path from a file line." alt="" coords="495,5,601,31"/>
+<area shape="poly" title=" " alt="" coords="635,21,601,21,601,15,635,15"/>
+<area shape="rect" href="texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="481,21,447,21,447,15,481,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -158,8 +280,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a1355647db0e7f6c60e04109725204c31" name="a1355647db0e7f6c60e04109725204c31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1355647db0e7f6c60e04109725204c31">&#9670;&#160;</a></span>texture_manipulation()</h2>
+<a id="a7ef9de5cb41fe3fba04291956b6594b7" name="a7ef9de5cb41fe3fba04291956b6594b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef9de5cb41fe3fba04291956b6594b7">&#9670;&#160;</a></span>texture_manipulation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +289,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int texture_manipulation </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -175,10 +297,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Loads textures from the file. </p>
-<p>Extracts texture paths for north ("NO "), south ("SO "), west ("WE "), and east ("EA ") from the file data in <code>t_data</code>.</p>
+<p>Extracts texture paths for north ("NO "), south ("SO "), west ("WE "), and east ("EA ") from the file data in <code>t_file</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Pointer to <code>t_data</code> with file and texture data. </td></tr>
+    <tr><td class="paramname">m</td><td>Pointer to <code>t_file</code> with file and texture data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -186,38 +308,41 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="texture__parsing_8c_a1355647db0e7f6c60e04109725204c31_cgraph.png" border="0" usemap="#atexture__parsing_8c_a1355647db0e7f6c60e04109725204c31_cgraph" alt=""/></div>
-<map name="atexture__parsing_8c_a1355647db0e7f6c60e04109725204c31_cgraph" id="atexture__parsing_8c_a1355647db0e7f6c60e04109725204c31_cgraph">
-<area shape="rect" title="Loads textures from the file." alt="" coords="5,129,168,155"/>
-<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="400,5,473,31"/>
-<area shape="poly" title=" " alt="" coords="104,127,153,96,215,65,305,38,386,22,387,27,306,43,217,70,155,101,107,131"/>
-<area shape="rect" href="map__parsing_8c.html#a6087d20282ccd4e416a8ed98b6950872" title="Determines the starting index of the map in the file data." alt="" coords="229,80,317,105"/>
-<area shape="poly" title=" " alt="" coords="135,127,214,105,216,110,136,132"/>
-<area shape="rect" href="texture__parsing_8c.html#ac4830c7bcce81a00ea93f1bfddd95560" title="Prints texture paths for debugging." alt="" coords="216,153,329,179"/>
-<area shape="poly" title=" " alt="" coords="169,150,203,154,202,160,168,155"/>
-<area shape="rect" href="texture__parsing_8c.html#a0c1c165f7e7254954081e9e0bd16f095" title="Extracts texture path from a file line." alt="" coords="219,227,326,252"/>
-<area shape="poly" title=" " alt="" coords="113,152,237,218,234,223,111,157"/>
-<area shape="poly" title=" " alt="" coords="298,78,376,40,390,34,392,39,378,44,300,82"/>
-<area shape="rect" href="util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="377,55,496,80"/>
-<area shape="poly" title=" " alt="" coords="316,83,363,76,364,81,317,89"/>
-<area shape="rect" href="map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="377,104,496,129"/>
-<area shape="poly" title=" " alt="" coords="317,96,364,103,363,109,316,102"/>
-<area shape="rect" href="util__1_8c.html#a24cfd74052ac4c8a7d0b27284af44a80" title="Outputs debug info with case in green color." alt="" coords="383,153,490,179"/>
-<area shape="poly" title=" " alt="" coords="330,163,369,163,369,169,330,169"/>
-<area shape="rect" href="util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="389,203,484,228"/>
-<area shape="poly" title=" " alt="" coords="316,176,381,196,380,201,315,181"/>
-<area shape="rect" href="util__2_8c.html#afe7be0aad77df527e1464669ea972746" title=" " alt="" coords="401,252,473,277"/>
-<area shape="poly" title=" " alt="" coords="327,245,388,254,387,260,326,250"/>
+<div class="center"><img src="texture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_cgraph.png" border="0" usemap="#atexture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_cgraph" alt=""/></div>
+<map name="atexture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_cgraph" id="atexture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_cgraph">
+<area shape="rect" title="Loads textures from the file." alt="" coords="5,132,168,157"/>
+<area shape="rect" href="texture__parsing_8c.html#afb6fd0a8684ff3338961a0b1b6e257e3" title=" " alt="" coords="216,56,331,81"/>
+<area shape="poly" title=" " alt="" coords="118,129,227,84,229,89,120,134"/>
+<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="549,157,623,183"/>
+<area shape="poly" title=" " alt="" coords="168,138,323,137,413,140,502,149,536,155,535,160,501,154,412,146,323,142,168,143"/>
+<area shape="rect" href="map__parsing_8c.html#a279662c9aa3745b424c440132ce4a7b6" title="Determines the starting index of the map in the file data." alt="" coords="229,157,317,183"/>
+<area shape="poly" title=" " alt="" coords="169,153,216,160,215,165,168,158"/>
+<area shape="rect" href="texture__parsing_8c.html#abf8e59e84a66365fba67d5449558b2b7" title="Extracts texture path from a file line." alt="" coords="220,309,327,335"/>
+<area shape="poly" title=" " alt="" coords="103,155,250,297,247,301,99,159"/>
+<area shape="rect" href="map__helpers_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="379,5,501,31"/>
+<area shape="poly" title=" " alt="" coords="315,53,383,32,385,37,317,58"/>
+<area shape="poly" title=" " alt="" coords="331,66,414,73,459,83,502,98,538,120,566,145,562,149,534,124,500,103,458,88,413,79,331,71"/>
+<area shape="poly" title=" " alt="" coords="318,167,536,167,536,173,318,173"/>
+<area shape="rect" href="map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="381,208,499,233"/>
+<area shape="poly" title=" " alt="" coords="317,180,385,201,383,206,315,185"/>
+<area shape="poly" title=" " alt="" coords="326,308,410,283,456,265,500,242,534,218,562,191,566,195,538,222,503,247,458,269,412,288,327,313"/>
+<area shape="rect" href="util__3_8c.html#af2db0ad5acfc0a93036a7aed58610375" title=" " alt="" coords="385,309,495,335"/>
+<area shape="poly" title=" " alt="" coords="327,319,371,319,371,325,327,325"/>
+<area shape="rect" href="util__2_8c.html#afe7be0aad77df527e1464669ea972746" title="if string in string presented" alt="" coords="404,359,476,384"/>
+<area shape="poly" title=" " alt="" coords="318,332,391,354,390,359,316,337"/>
+<area shape="rect" href="texture__parsing_8c.html#ad747f9189df3bc0c573e208b794fd081" title="Processes texture identifiers (NO, EA, WE, SO) for different directions in the map data,..." alt="" coords="389,408,491,433"/>
+<area shape="poly" title=" " alt="" coords="292,333,331,363,380,394,391,400,389,405,377,399,328,367,288,337"/>
+<area shape="poly" title=" " alt="" coords="484,406,500,395,518,372,534,347,558,292,572,239,579,196,585,197,577,240,563,293,539,349,523,375,503,399,488,410"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="texture__parsing_8c_a1355647db0e7f6c60e04109725204c31_icgraph.png" border="0" usemap="#atexture__parsing_8c_a1355647db0e7f6c60e04109725204c31_icgraph" alt=""/></div>
-<map name="atexture__parsing_8c_a1355647db0e7f6c60e04109725204c31_icgraph" id="atexture__parsing_8c_a1355647db0e7f6c60e04109725204c31_icgraph">
-<area shape="rect" title="Loads textures from the file." alt="" coords="207,5,369,31"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="texture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_icgraph.png" border="0" usemap="#atexture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_icgraph" alt=""/></div>
+<map name="atexture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_icgraph" id="atexture__parsing_8c_a7ef9de5cb41fe3fba04291956b6594b7_icgraph">
+<area shape="rect" title="Loads textures from the file." alt="" coords="284,5,447,31"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -225,14 +350,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a0c1c165f7e7254954081e9e0bd16f095" name="a0c1c165f7e7254954081e9e0bd16f095"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c1c165f7e7254954081e9e0bd16f095">&#9670;&#160;</a></span>texture_save()</h2>
+<a id="abf8e59e84a66365fba67d5449558b2b7" name="abf8e59e84a66365fba67d5449558b2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8e59e84a66365fba67d5449558b2b7">&#9670;&#160;</a></span>texture_save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char * texture_save </td>
+          <td class="memname">int texture_save </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -241,7 +366,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>file</em>&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">t_file *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -260,26 +391,34 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to texture path, or NULL on failure. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>this malloc from strtrim can leak </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="texture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_cgraph.png" border="0" usemap="#atexture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_cgraph" alt=""/></div>
-<map name="atexture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_cgraph" id="atexture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_cgraph">
-<area shape="rect" title="Extracts texture path from a file line." alt="" coords="5,5,112,31"/>
-<area shape="rect" href="util__2_8c.html#afe7be0aad77df527e1464669ea972746" title=" " alt="" coords="160,5,232,31"/>
-<area shape="poly" title=" " alt="" coords="112,15,146,15,146,21,112,21"/>
+<div class="center"><img src="texture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_cgraph.png" border="0" usemap="#atexture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_cgraph" alt=""/></div>
+<map name="atexture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_cgraph" id="atexture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_cgraph">
+<area shape="rect" title="Extracts texture path from a file line." alt="" coords="5,53,112,78"/>
+<area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="319,51,392,77"/>
+<area shape="poly" title=" " alt="" coords="77,50,114,29,159,12,215,3,241,5,271,12,302,24,329,41,326,45,300,29,270,17,240,10,216,8,161,17,116,34,80,55"/>
+<area shape="rect" href="util__3_8c.html#af2db0ad5acfc0a93036a7aed58610375" title=" " alt="" coords="160,27,271,53"/>
+<area shape="poly" title=" " alt="" coords="112,54,146,48,147,54,113,59"/>
+<area shape="rect" href="util__2_8c.html#afe7be0aad77df527e1464669ea972746" title="if string in string presented" alt="" coords="179,77,251,102"/>
+<area shape="poly" title=" " alt="" coords="113,71,166,79,165,84,112,76"/>
+<area shape="rect" href="texture__parsing_8c.html#ad747f9189df3bc0c573e208b794fd081" title="Processes texture identifiers (NO, EA, WE, SO) for different directions in the map data,..." alt="" coords="165,126,266,151"/>
+<area shape="poly" title=" " alt="" coords="87,76,161,111,175,118,173,122,159,116,85,80"/>
+<area shape="poly" title=" " alt="" coords="244,123,269,111,321,81,324,86,272,116,247,128"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="texture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_icgraph.png" border="0" usemap="#atexture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_icgraph" alt=""/></div>
-<map name="atexture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_icgraph" id="atexture__parsing_8c_a0c1c165f7e7254954081e9e0bd16f095_icgraph">
-<area shape="rect" title="Extracts texture path from a file line." alt="" coords="417,5,524,31"/>
-<area shape="rect" href="texture__parsing_8c.html#a1355647db0e7f6c60e04109725204c31" title="Loads textures from the file." alt="" coords="207,5,369,31"/>
-<area shape="poly" title=" " alt="" coords="404,21,369,21,369,15,404,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="texture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_icgraph.png" border="0" usemap="#atexture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_icgraph" alt=""/></div>
+<map name="atexture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_icgraph" id="atexture__parsing_8c_abf8e59e84a66365fba67d5449558b2b7_icgraph">
+<area shape="rect" title="Extracts texture path from a file line." alt="" coords="495,5,601,31"/>
+<area shape="rect" href="texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="481,21,447,21,447,15,481,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>

@@ -1,5 +1,10 @@
 <map id="display_map" name="display_map">
-<area shape="rect" id="Node000001" title="Prints squares, borders and player of the map." alt="" coords="184,5,289,31"/>
-<area shape="rect" id="Node000002" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="5,5,136,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,21,137,21,137,15,170,15"/>
+<area shape="rect" id="Node000001" title="Prints squares, borders and player of the map." alt="" coords="513,31,619,56"/>
+<area shape="rect" id="Node000002" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="335,5,465,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,36,465,31,466,25,500,31"/>
+<area shape="rect" id="Node000003" href="$graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,31,287,56"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="499,46,287,46,287,41,499,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="321,30,287,35,287,30,321,25"/>
+<area shape="rect" id="Node000004" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
 </map>

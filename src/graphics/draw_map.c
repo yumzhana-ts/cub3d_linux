@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/14 17:40:46 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/27 16:01:46 by ytsyrend         ###   ########.fr       */
+/*   Created: 2023/11/14 17:TILE_SIZE:46 by ytsyrend          #+#    #+#             */
+/*   Updated: 2024/09/09 22:33:43 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
 /**
- * @brief Prints square by tile size with mlx pixel put
+ * @brief Prints square by boundary size with mlx pixel put
  * @callgraph
  */
 void draw_square(t_data *game, int x, int y, int color)
@@ -34,62 +34,54 @@ void draw_square(t_data *game, int x, int y, int color)
     }
 }
 
+void set_start_view(t_data *game)
+{
+    if (game->file->player_direction == 'E')
+        game->player_angle = 0;
+    else if (game->file->player_direction == 'N')
+        game->player_angle = 1.57;
+    else if (game->file->player_direction == 'W')
+        game->player_angle = M_PI;
+    else if (game->file->player_direction == 'S')
+        game->player_angle = 3 * M_PI / 2;
+    return;
+}
+
+void set_first_player(t_data *game)
+{
+    game->file->player_x = game->file->player_x * TILE_SIZE + TILE_SIZE / 2;
+    game->file->player_y = game->file->player_y * TILE_SIZE + TILE_SIZE / 2;
+    set_start_view(game);
+}
+
 /**
  * @brief Prints squares, borders and player of the map
  * @callgraph
  */
-void display_map(t_data *game, bool first_init)
+void display_map(t_data *game)
 {
-    int x;
-    int y;
     int i;
     int j;
 
-    y = 0;
-    x = 0;
     i = 0;
-    while (i < game->heightmap)
+    while (i < game->file->heightmap)
     {
         j = 0;
-        while (j < game->widthmap)
+        while (j < game->file->widthmap)
         {
-            x = j * TILE_SIZE;
-            y = i * TILE_SIZE;
-            if (game->map[i][j] == '1')
-            {
-                draw_square(game, x, y, 0xFFFFFF); // White for '1'
-            }
-            else if (game->map[i][j] == 'P')
-            {
-
-                draw_square(game, x, y, COLOR_BLUE);
-                // Set the player's coordinates based on the tile's position
-                if (first_init)
-                {
-                    game->player_x = j * TILE_SIZE + TILE_SIZE / 2;
-                    game->player_y = i * TILE_SIZE + TILE_SIZE / 2;
-                }
-                // else
-                // {
-                // 	/* vykreslovani pohybu hrace??? */
-
-                // }
-            }
+            if (game->file->map[i][j] == '1')
+                draw_square(game, j * TILE_SIZE, i * TILE_SIZE, 0xFFFFFF); // White for '1'
             else
-            {
-                draw_square(game, x, y, COLOR_BLACK); // Black for '0' or other characters
-            }
-            draw_border(game, x, y, 0x00FFFF);
+                draw_square(game, j * TILE_SIZE, i * TILE_SIZE, COLOR_BLACK); // Black for '0' or other characters
+            draw_border(game, j * TILE_SIZE, i * TILE_SIZE, 0x4AB1DC);
             j++;
         }
         i++;
     }
-
-    // Draw the arrow after the entire map is drawn
-    if (game->map[game->player_y / TILE_SIZE][game->player_x / TILE_SIZE] == 'P')
-    {
-        // get_shortest_length(game);
-        draw_pixel(game, game->player_x, game->player_y, COLOR_RED);
-        draw_arrow(game, COLOR_RED, 20);
-    }
+    draw_pixel(game, game->file->player_x, game->file->player_y, COLOR_RED);
+    // dda(game);
+	fov(game);
+    // game->file->player_x = 80;
+    // game->file->player_y = 70;
+    // draw_arrow(game, COLOR_RED, game->ray);
 }

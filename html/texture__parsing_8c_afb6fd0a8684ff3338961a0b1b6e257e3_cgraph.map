@@ -1,0 +1,7 @@
+<map id="check_texture" name="check_texture">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,109,56"/>
+<area shape="rect" id="Node000002" href="$map__helpers_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="157,5,269,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,33,141,27,142,32,109,38"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="180,55,246,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,49,165,58,165,63,108,54"/>
+</map>

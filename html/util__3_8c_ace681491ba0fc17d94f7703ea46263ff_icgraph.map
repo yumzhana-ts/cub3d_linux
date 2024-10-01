@@ -1,0 +1,8 @@
+<map id="free_map_all" name="free_map_all">
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,5,391,31"/>
+<area shape="rect" id="Node000002" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,21,60,21,60,15,270,15"/>
+<area shape="rect" id="Node000003" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,31,236,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,31,237,36,236,31,270,26"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="94,32,60,25,61,20,95,27"/>
+</map>

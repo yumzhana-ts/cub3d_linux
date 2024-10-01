@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:40:46 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/31 17:10:19 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/11 19:41:00 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,10 @@
 // # include <Carbon/Carbon.h>
 #include <X11/keysym.h>
 #include <X11/X.h>
+#include <float.h>
 
 #define TILE_SIZE 40
+
 
 typedef struct s_pixel
 {
@@ -44,30 +46,17 @@ typedef struct s_pixel
 	int endian;
 } t_pixel;
 
-typedef struct s_data
+typedef struct s_file
 {
-	int fd;		// File descriptor for the map file
-	char *line; // Stores each line read from the file
+	int fd;
+	char *line;
 	int widthmap;
 	int heightmap;
 	int heightfile;
 	char **map;
 	char **file;
-	void *mlx_ptr;
-	void *win_ptr;
 	int player_x;
 	int player_y;
-	float player_angle;
-	float angle_triangle;
-	int delta_x; // nova pozice hrace
-	int delta_y; //
-	int map_x;
-	int map_y;
-	int min_length;
-	int hor_dx;
-	float hor_dy;
-	int ver_dx;
-	float ver_dy;
 	int map_end;
 	int map_start;
 	int player_direction;
@@ -78,9 +67,145 @@ typedef struct s_data
 	char *texture_e;
 	char **color_c;
 	char **color_f;
+} t_file;
+
+typedef struct s_data
+{
+	void	*mlx_ptr;
+	void	*win_ptr;
+
+	void	*camera_mlx_ptr;
+	void	*camera_win_ptr;
+	double	player_angle;
+	double	angle_for_loop;
+	double	angle_triangle;
+	int	step_x;
+	int	step_y;
+	// int	delta_x;
+	// int	delta_y;
+	int	map_x;
+	int	map_y;
+	int	min_length;
+	double	horizontal_x;
+	double	horizontal_y;
+	double	horizontal_hypotenuse;
+	double	vertical_hypotenuse;
+	double	vertical_x;
+	double	vertical_y;
+	double	ray;
+	int	quadrant;
+	double	angle_per_ray;//určuje úhel, o který se jednotlivé paprsky od sebe liší, když se rozprostírají v rámci zorného pole hráče.
 	t_pixel img;
+	t_pixel	camera_img;
+	t_file *file;
 } t_data;
 
+
+
+
+bool first_angle_is_on_dx(double view_angle);
+double degrees_to_radians(double degrees);
+double get_angle(double view_angle);
+int read_file(char **argv, t_file *m);
+int array_len(char **array);
+int check_args(int argc, char **argv);
+int check_player_ns(t_file *m);
+int check_player_position(t_file *m);
+int check_player_we(t_file *m);
+int check_valid_values(t_file *m);
+int check_walls(t_file *m);
+int checkextension(char *name, char *extension);
+int color_manipulation(t_file *m);
+int exit_point(t_data *game);
+int fd_error(char *s);
+int fill_map(t_file *m);
+int find_map_start(char *str);
+int format_verification(t_file *m);
+void get_ray_line_x(t_data *game);
+void get_ray_line_y(t_data *game);
+int get_shortest_length(t_data *game);
+int handle_keypress(int keysym, t_data *game);
+int main(int argc, char **argv);
+int map_processing(int argc, char **argv, t_file *file);
+int map_controls(t_file *m);
+int mlx_init_create_window(t_data *game);
+int ones(char **src, int size);
+int read_map(t_file *m);
+int rebuild_map(t_file *m);
+int texture_manipulation(t_file *m);
+int validate_map(t_file *m);
+int vertical_wall(t_file *game, int j);
+int width_of_map(t_file *m);
+void debug_case(char *str, char c);
+void debug_number(char *str, int n);
+void debug_string(char *info, char *str);
+void debug_text(char *str);
+void display_map(t_data *game);
+void draw_arrow(t_data *game, int color, double ray_length);
+void draw_border(t_data *game, int x, int y, int color);
+void draw_bottom_border(t_data *game, int x, int y, int color);
+void draw_left_border(t_data *game, int x, int y, int color);
+void draw_pixel(t_data *game, int x, int y, int color);
+void draw_right_border(t_data *game, int x, int y, int color);
+void draw_square(t_data *game, int x, int y, int color);
+void draw_top_border(t_data *game, int x, int y, int color);
+void fix_newlines(t_file *game);
+void map_debug(t_file *game);
+void move_player(t_data *game, int dx, int dy);
+void my_mlx_pixel_put(t_pixel *data, int x, int y, int color);
+void print_arrays(char **array);
+void print_colores(t_file *m);
+void print_player_info(t_file *m);
+void print_textures(t_file *m);
+int wc_split(char *str);
+char *ft_strncpy(char *s1, char *s2, int n);
+char **split_create_array(char *str);
+char *split_save_string(char *str, int i, int j, char * or);
+char **ft_split_comma(char *str);
+char *color_save(char *str, char *file);
+char **color_array_save(char *str, char *file);
+char *ft_strstr(char *str, char *to_find);
+int texture_save(char *str, char *file, t_file *m);
+int color_values_validation(char **array);
+int check_texture(char *filename);
+int check_empty_line(t_file *m);
+int free_memory(char *ptr);
+int free_memory_array(char **ptr);
+void free_map_all(t_file *game);
+int setup_and_run_graphics(t_data *game);
+void	move_forward(t_data *game);
+void game_init(t_data *game, t_file *file);
+void map_init(t_file *file);
+void cute_game_info(t_file *game);
+void set_first_player(t_data *game);
+/* double calculate_distance_to_wall(t_data *game);
+void dda(t_data *game);
+void update_dda(double distance_x, double distance_y, t_data *game); */
+
+/* functions of DDA */
+int		count_boundary(bool positive, int step);
+// int check_wall(int y, int x, t_data *game);
+double	angle(double angle_player);
+int zero_infinity(double angle, t_data *game);
+void get_lines(t_data *game);
+void dda(t_data *game);
+int update_dda(double distance_x, double distance_y, t_data *game);
+double calculate_distance_to_wall(t_data *game);
+bool is_equal(double a, double b);
+void update_dda_backward(double distance_x, double distance_y, t_data *game);
+int quadrant_of_angle(double angle_player);
+int border_point(int step, bool direction_negative);
+void horizontal_intersection(t_data *game, double angle_d);
+void vertical_intersection(t_data *game, double angle);
+int is_wall_up(t_data *game, int start_x, int start_y);
+int is_wall_left(t_data *game, int start_x, int start_y);
+int is_wall_right(t_data *game, int start_x, int start_y);
+
+
+void	fov(t_data *game);
+
+#endif
+#define EPSILON 1e-6
 #define DEBUG 1
 #define COLOR_RED 0xFF0000	 // Red color
 #define COLOR_BLACK 0x000000 // Black color
@@ -93,131 +218,17 @@ typedef struct s_data
 #define WHITE "\033[0;37m"
 #define BOLD_BLACK "\033[1;30m"
 #define BG_WHITE "\033[0;47m"
-
-// Additional prototypes
-// Additional prototypes
-bool first_angle_is_on_dx(float view_angle)
-;
-float degrees_to_radians(double degrees) ;
-float get_angle(float view_angle)
-;
-int	read_file(char **argv, t_data *m)
-;
-int array_len(char **array)
-;
-int check_args(int argc, char **argv)
-;
-int check_player_ns(t_data *m)
-;
-int check_player_position(t_data *m)
-;
-int check_player_we(t_data *m)
-;
-int check_valid_values(t_data *m)
-;
-int check_walls(t_data *m)
-;
-int checkextension(char *name, char *extension)
-;
-int color_manipulation(t_data *m)
-;
-int exit_point(t_data *game)
-;
-int fd_error(char *s)
-;
-int fill_map(t_data *m)
-;
-int find_map_start(char *str)
-;
-int format_verification(t_data *m)
-;
-int get_ray_line_x(t_data *game, int j)
-;
-int get_ray_line_y(t_data *game, int i)
-;
-int get_shortest_length(t_data *game)
-;
-int handle_keypress(int keysym, t_data *game)
-;
-int main(int argc, char **argv)
-;
-int map(int argc, char **argv, t_data *game)
-;
-int map_controls(t_data *m)
-;
-int mlx_init_create_window(t_data *game)
-;
-int ones(char **src, int size)
-;
-int read_map(t_data *m)
-;
-int rebuild_map(t_data *m)
-;
-int texture_manipulation(t_data *m)
-;
-int validate_map(t_data *m)
-;
-int vertical_wall(t_data *game, int j)
-;
-int wc(char *str)
-;
-int width_of_map(t_data *m)
-;
-void debug_case(char *str, char c)
-;
-void debug_number(char *str, int n)
-;
-void debug_string(char *info, char *str)
-;
-void debug_text(char *str)
-;
-void display_map(t_data *game, bool first_init)
-;
-void draw_arrow(t_data *game, int color, int ray_length)
-;
-void draw_border(t_data *game, int x, int y, int color)
-;
-void draw_bottom_border(t_data *game, int x, int y, int color)
-;
-void draw_left_border(t_data *game, int x, int y, int color)
-;
-void draw_pixel(t_data *game, int x, int y, int color)
-;
-void draw_right_border(t_data *game, int x, int y, int color)
-;
-void draw_square(t_data *game, int x, int y, int color)
-;
-void draw_top_border(t_data *game, int x, int y, int color)
-;
-void fix_newlines(t_data *game)
-;
-void map_debug(t_data *game)
-;
-void move_player(t_data *game, int dx, int dy)
-;
-void my_mlx_pixel_put(t_pixel *data, int x, int y, int color)
-;
-void print_arrays(char **array)
-;
-void print_colores(t_data *m)
-;
-void print_player_info(t_data *m)
-;
-void print_textures(t_data *m)
-;
-int wc_split(char *str);
-char *ft_strncpy(char *s1, char *s2, int n);
-char **split_create_array(char *str);
-char *split_save_string(char *str, int i, int j, char * or);
-char **ft_split_comma(char *str);
-char *color_save(char *str, char *file);
-char **color_array_save(char *str, char *file);
-char *ft_strstr(char *str, char *to_find);
-int texture_save(char *str, char *file, t_data *m);
-int color_values_validation(char **array);
-int check_texture(char *filename);
-int check_empty_line(t_data *m);
-int free_memory(char *ptr);
-int free_memory_array(char **ptr);
-
-#endif
+#define BOLD "\x1b[1m"
+#define YELLOW "\e[0;33m"
+#define BOLD_GREY "\033[1;30m"
+#define BOLD_GREEN "\033[1;32m"
+#define BOLD_BLUE "\033[1;34m"
+#define BOLD_RED "\033[1;31m"
+#define LINE_DECORATION "------------------------------------------"
+#define ANGLE_ROTATION (M_PI / 24)//ke zmene velikosti rotace pri stisku klavesy A\D
+#define WALL -1
+/* FOV */
+#define FOV ((60) * M_PI / 180) // Zorné pole hráče v úhlech
+// #define SCREEN_WIDTH 800 // Šířka okna
+// #define SCREEN_HEIGHT 600 // Výška okna
+// #define NUM_RAYS SCREEN_WIDTH // Každý sloupec obrazovky bude mít svůj ray

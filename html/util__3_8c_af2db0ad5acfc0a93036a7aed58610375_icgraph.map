@@ -1,0 +1,17 @@
+<map id="free_memory" name="free_memory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="675,31,785,56"/>
+<area shape="rect" id="Node000002" href="$util__3_8c.html#aa72009f1efdef4c546d257e828852b40" title=" " alt="" coords="495,5,627,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="661,36,626,30,627,25,661,30"/>
+<area shape="rect" id="Node000006" href="$texture__parsing_8c.html#abf8e59e84a66365fba67d5449558b2b7" title="Extracts texture path from a file line." alt="" coords="507,55,614,80"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="661,56,615,62,614,57,661,50"/>
+<area shape="rect" id="Node000003" href="$util__3_8c.html#ace681491ba0fc17d94f7703ea46263ff" title=" " alt="" coords="312,5,419,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="481,21,419,21,419,15,481,15"/>
+<area shape="rect" id="Node000004" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,29,60,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="298,25,60,43,60,37,298,20"/>
+<area shape="rect" id="Node000005" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,55,236,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="303,37,224,57,222,52,301,31"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="94,56,60,49,61,44,95,51"/>
+<area shape="rect" id="Node000007" href="$texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,55,447,80"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="494,70,447,70,447,65,494,65"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="270,70,236,70,236,65,270,65"/>
+</map>

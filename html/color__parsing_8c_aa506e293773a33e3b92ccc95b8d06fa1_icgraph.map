@@ -1,7 +1,7 @@
 <map id="color_manipulation" name="color_manipulation">
-<area shape="rect" id="Node000001" title="Parses the file to save ceiling and floor colors." alt="" coords="207,5,353,31"/>
-<area shape="rect" id="Node000002" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
-<area shape="rect" id="Node000003" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+<area shape="rect" id="Node000001" title="Parses the file to save ceiling and floor colors." alt="" coords="267,5,396,31"/>
+<area shape="rect" id="Node000002" href="$map__handler_8c.html#aa786b66981a4dd684c7c5a74739a5ec5" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="103,5,219,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,21,219,21,219,16,252,16"/>
+<area shape="rect" id="Node000003" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

@@ -1,14 +1,16 @@
 <map id="set_player_info" name="set_player_info">
-<area shape="rect" id="Node000001" title="Sets the player&#39;s position and direction based on map data." alt="" coords="548,31,671,56"/>
-<area shape="rect" id="Node000002" href="$player__verification_8c.html#a3483943405fddf6f035cb64d945b9f23" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="367,5,498,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="534,35,498,30,499,25,535,30"/>
-<area shape="rect" id="Node000006" href="$player__verification_8c.html#ac806885085229a5b7735e4cefb93ada8" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="365,55,500,80"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="534,56,501,61,500,56,534,51"/>
-<area shape="rect" id="Node000003" href="$map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498" title="Validates the game map and player position." alt="" coords="207,31,317,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,32,318,38,317,33,353,27"/>
-<area shape="rect" id="Node000004" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,31,159,56"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,46,159,46,159,41,193,41"/>
-<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="351,59,317,54,318,48,352,53"/>
+<area shape="rect" id="Node000001" title="Sets the player&#39;s position and direction based on map data." alt="" coords="719,31,828,56"/>
+<area shape="rect" id="Node000002" href="$player__verification_8c.html#a3483943405fddf6f035cb64d945b9f23" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="550,5,670,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="703,35,670,30,671,25,704,30"/>
+<area shape="rect" id="Node000007" href="$player__verification_8c.html#ac806885085229a5b7735e4cefb93ada8" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="549,55,671,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="704,56,672,61,671,56,703,51"/>
+<area shape="rect" id="Node000003" href="$map__verification_8c.html#ae2f104cb1e25919656e1d7a8c4e36498" title="Validates the game map and player position." alt="" coords="402,31,501,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="535,33,502,38,501,33,534,28"/>
+<area shape="rect" id="Node000004" href="$map__handler_8c.html#a09daf03b4ab0069f5f0986553ec800fe" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="267,31,354,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,46,355,46,355,41,387,41"/>
+<area shape="rect" id="Node000005" href="$map__handler_8c.html#aa786b66981a4dd684c7c5a74739a5ec5" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="103,31,219,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="251,46,219,46,219,41,251,41"/>
+<area shape="rect" id="Node000006" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,55,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,46,55,46,55,41,87,41"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="533,59,501,54,502,48,534,53"/>
 </map>

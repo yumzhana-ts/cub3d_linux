@@ -1,0 +1,19 @@
+<map id="map_start" name="map_start">
+<area shape="rect" id="Node000001" title="Determines the starting index of the map in the file data." alt="" coords="848,56,936,81"/>
+<area shape="rect" id="Node000002" href="$color__parsing_8c.html#aaba2ea146523de32557d430f3d1fed69" title="Parses the file to save ceiling and floor colors." alt="" coords="495,5,641,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="837,55,799,46,718,33,641,26,642,20,718,28,801,41,838,50"/>
+<area shape="rect" id="Node000005" href="$map__parsing_8c.html#aa41e6d387b624ef849bc0cb2e3f2d982" title="Verifies the map format and controls its placement within the file data." alt="" coords="689,56,800,81"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="834,71,800,71,800,66,834,66"/>
+<area shape="rect" id="Node000008" href="$texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,105,447,131"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="840,88,800,97,706,109,610,116,447,121,447,116,610,111,705,104,800,91,839,82"/>
+<area shape="rect" id="Node000003" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,56,236,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="481,25,386,33,284,46,223,58,222,53,284,41,386,28,481,20"/>
+<area shape="rect" id="Node000004" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,56,60,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,71,60,71,60,66,94,66"/>
+<area shape="rect" id="Node000006" href="$map__parsing_8c.html#ac0bab95559c0f02ae27df9d538db7c0c" title="Verifies the overall format of the map file." alt="" coords="495,56,641,81"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="676,71,642,71,642,66,676,66"/>
+<area shape="rect" id="Node000007" href="$map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="317,56,414,81"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="481,71,414,71,414,66,481,66"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="303,71,236,71,236,66,303,66"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="301,105,222,84,224,79,303,99"/>
+</map>

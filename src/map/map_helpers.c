@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 15:35:24 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ int	check_args(int argc, char **argv)
 * @brief Replaces newline characters with null characters in array of strings.
 * Iterates through each string in `game->file` and replaces '\n' with '\0'.
 * @callgraph
-* @param game Pointer to a t_data structure containing the array of strings.
+* @param game Pointer to a t_file structure containing the array of strings.
 */
-void	fix_newlines(t_data *game)
+void	fix_newlines(t_file *game)
 {
 	int	i;
 	int	j;

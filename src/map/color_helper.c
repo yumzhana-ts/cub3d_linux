@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 16:38:17 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 
 /**
  * @brief Prints color information for debugging.
- * @param m Pointer to `t_data` with color data.
+ * @param m Pointer to `t_file` with color data.
  */
-void	print_colores(t_data *m)
+void	print_colores(t_file *m)
 {
 	debug_text("Colors info c: ");
 	print_arrays(m->color_c);

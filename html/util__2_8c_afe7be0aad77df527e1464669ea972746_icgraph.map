@@ -1,19 +1,19 @@
 <map id="ft_strstr" name="ft_strstr">
-<area shape="rect" id="Node000001" title=" " alt="" coords="753,81,825,107"/>
-<area shape="rect" id="Node000002" href="$color__parsing_8c.html#a3e3149f37161eff9e263077d93e8435f" title="Extracts a color string from a file line." alt="" coords="606,56,698,81"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="740,88,698,80,699,74,741,82"/>
-<area shape="rect" id="Node000007" href="$texture__parsing_8c.html#a0c1c165f7e7254954081e9e0bd16f095" title="Extracts texture path from a file line." alt="" coords="599,105,705,131"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="741,105,706,111,705,106,740,100"/>
-<area shape="rect" id="Node000003" href="$color__parsing_8c.html#a2e8ad273762e56b6271457f0771e12d9" title="Saves color data into an array by splitting a string." alt="" coords="417,5,551,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="595,55,526,33,528,28,597,49"/>
-<area shape="rect" id="Node000004" href="$color__parsing_8c.html#aa506e293773a33e3b92ccc95b8d06fa1" title="Parses the file to save ceiling and floor colors." alt="" coords="215,56,361,81"/>
-<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="592,71,362,71,362,66,592,66"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="421,37,338,59,337,53,420,32"/>
-<area shape="rect" id="Node000005" href="$cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,81,159,107"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="201,86,159,93,158,87,200,80"/>
+<area shape="rect" id="Node000001" title="if string in string presented" alt="" coords="831,81,903,107"/>
+<area shape="rect" id="Node000002" href="$color__parsing_8c.html#a3e3149f37161eff9e263077d93e8435f" title="Extracts a color string from a file line." alt="" coords="683,56,775,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="817,88,775,80,776,74,818,82"/>
+<area shape="rect" id="Node000007" href="$texture__parsing_8c.html#abf8e59e84a66365fba67d5449558b2b7" title="Extracts texture path from a file line." alt="" coords="676,105,783,131"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="818,105,783,111,783,106,817,100"/>
+<area shape="rect" id="Node000003" href="$color__parsing_8c.html#a2e8ad273762e56b6271457f0771e12d9" title="Saves color data into an array by splitting a string." alt="" coords="495,5,628,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="673,55,604,33,605,28,674,49"/>
+<area shape="rect" id="Node000004" href="$color__parsing_8c.html#aaba2ea146523de32557d430f3d1fed69" title="Parses the file to save ceiling and floor colors." alt="" coords="292,56,439,81"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="670,71,439,71,439,66,670,66"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="499,37,416,59,414,53,497,32"/>
+<area shape="rect" id="Node000005" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,81,236,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="279,83,236,88,236,83,278,77"/>
 <area shape="rect" id="Node000006" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,81,60,107"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,97,60,97,60,91,94,91"/>
-<area shape="rect" id="Node000008" href="$texture__parsing_8c.html#a1355647db0e7f6c60e04109725204c31" title="Loads textures from the file." alt="" coords="207,105,369,131"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="585,121,369,121,369,115,585,115"/>
-<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="193,106,158,100,159,95,194,101"/>
+<area shape="rect" id="Node000008" href="$texture__parsing_8c.html#a7ef9de5cb41fe3fba04291956b6594b7" title="Loads textures from the file." alt="" coords="284,105,447,131"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="662,121,447,121,447,115,662,115"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="270,109,236,105,237,99,271,104"/>
 </map>

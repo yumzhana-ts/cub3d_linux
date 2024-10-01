@@ -1,0 +1,11 @@
+<map id="color_values_validation" name="color_values_validation">
+<area shape="rect" id="Node000001" title="Validates color values in a given 2D array of strings." alt="" coords="683,5,859,31"/>
+<area shape="rect" id="Node000002" href="$color__parsing_8c.html#a1e223e1d6016e63ed0be1f7675fe495e" title="Helper function for validating color data in a structure." alt="" coords="479,5,635,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="669,21,635,21,635,15,669,15"/>
+<area shape="rect" id="Node000003" href="$color__parsing_8c.html#aaba2ea146523de32557d430f3d1fed69" title="Parses the file to save ceiling and floor colors." alt="" coords="284,5,431,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,21,431,21,431,15,465,15"/>
+<area shape="rect" id="Node000004" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+<area shape="rect" id="Node000005" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

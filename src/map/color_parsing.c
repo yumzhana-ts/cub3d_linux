@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 16:44:26 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@
  * It ensures that both sets are complete, each has exactly 3 components,
  * and that all color component values fall within the valid range of 0 to 255.
  *
- * @param m A pointer to a `t_data` structure containing the color arrays (`color_c` and `color_f`).
+ * @param m A pointer to a `t_file` structure containing the color arrays (`color_c` and `color_f`).
  * @return Returns 0 if all validations pass.
  */
-int	manipulation_helper(t_data *m)
+int	manipulation_helper(t_file *m)
 {
 	if (!m->color_c || !m->color_f)
 		return (fd_error("[Color] colors are not complete\n"));
@@ -42,10 +42,10 @@ int	manipulation_helper(t_data *m)
 
 /**
  * @brief Parses the file to save ceiling and floor colors.
- * @param m Pointer to `t_data` with file and color data.
+ * @param m Pointer to `t_file` with file and color data.
  * @return 0 on success, or error code on failure.
  */
-int	color_manipulation(t_data *m)
+int	color_manipulation(t_file *m)
 {
 	int		i;
 	char	*temp;

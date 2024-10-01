@@ -1,13 +1,10 @@
 <map id="map_controls" name="map_controls">
-<area shape="rect" id="Node000001" title="Verifies the map format and controls its placement within the file data." alt="" coords="5,55,116,80"/>
-<area shape="rect" id="Node000002" href="$util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="300,5,419,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,52,164,39,286,22,287,27,164,45,109,57"/>
-<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="323,104,396,129"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,78,164,90,309,110,308,115,164,95,108,83"/>
-<area shape="rect" id="Node000004" href="$map__parsing_8c.html#a6087d20282ccd4e416a8ed98b6950872" title="Determines the starting index of the map in the file data." alt="" coords="164,55,252,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,65,150,65,150,70,116,70"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="247,52,306,33,307,38,248,57"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="248,78,311,98,309,103,247,83"/>
-<area shape="rect" id="Node000005" href="$map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="300,55,419,80"/>
-<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="252,65,286,65,286,70,252,70"/>
+<area shape="rect" id="Node000001" title="Verifies the map format and controls its placement within the file data." alt="" coords="5,29,105,55"/>
+<area shape="rect" id="Node000002" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="301,5,366,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,35,285,20,285,25,105,41"/>
+<area shape="rect" id="Node000003" href="$map__parsing_8c.html#a6087d20282ccd4e416a8ed98b6950872" title="Determines the starting index of the map in the file data." alt="" coords="153,55,232,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,49,138,55,137,60,105,54"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="231,52,285,32,287,37,232,57"/>
+<area shape="rect" id="Node000004" href="$map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="280,55,387,80"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="233,65,264,65,264,70,233,70"/>
 </map>

@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['map_5fhelpers_2ec_0',['map_helpers.c',['../map__helpers_8c.html',1,'']]],
-  ['map_5fmanipulation_2ec_1',['map_manipulation.c',['../map__manipulation_8c.html',1,'']]],
-  ['map_5fparsing_2ec_2',['map_parsing.c',['../map__parsing_8c.html',1,'']]],
-  ['map_5fverification_2ec_3',['map_verification.c',['../map__verification_8c.html',1,'']]],
-  ['mlx_5finit_5fcreate_5fwin_2ec_4',['mlx_init_create_win.c',['../mlx__init__create__win_8c.html',1,'']]],
-  ['movement_2ec_5',['movement.c',['../movement_8c.html',1,'']]]
+  ['graphics_5fprocessing_2ec_0',['graphics_processing.c',['../graphics__processing_8c.html',1,'']]]
 ];

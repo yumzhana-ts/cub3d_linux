@@ -1,0 +1,16 @@
+<map id="set_player_info" name="set_player_info">
+<area shape="rect" id="Node000001" title="Sets the player&#39;s position and direction based on map data." alt="" coords="771,31,893,56"/>
+<area shape="rect" id="Node000002" href="$player__verification_8c.html#a9673eac2437df9dc10edcd754f0e8cb2" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="590,5,721,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="757,35,721,30,721,25,757,30"/>
+<area shape="rect" id="Node000007" href="$player__verification_8c.html#a5094498756ca3548617ba9c4c6045207" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="588,55,723,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="757,56,723,61,723,56,756,51"/>
+<area shape="rect" id="Node000003" href="$map__verification_8c.html#a4a115a4aa3711c94db371e80eb7f9a93" title="Validates the game map and player position." alt="" coords="429,31,540,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="576,32,541,38,540,33,576,27"/>
+<area shape="rect" id="Node000004" href="$map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,31,381,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="415,46,382,46,382,41,415,41"/>
+<area shape="rect" id="Node000005" href="$map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,31,236,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="270,46,236,46,236,41,270,41"/>
+<area shape="rect" id="Node000006" href="$cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="574,59,540,54,540,48,575,53"/>
+</map>

@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 16:55:34 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@
  * @brief Loads textures from the file.
  *
  * Extracts texture paths for north ("NO "), south ("SO "), west ("WE "),
- * and east ("EA ") from the file data in `t_data`.
+ * and east ("EA ") from the file data in `t_file`.
  *
- * @param m Pointer to `t_data` with file and texture data.
+ * @param m Pointer to `t_file` with file and texture data.
  * @return 0 on success, error code if textures are missing or on failure.
  */
 
-int	texture_manipulation(t_data *m)
+int	texture_manipulation(t_file *m)
 {
 	int	i;
 
@@ -58,11 +58,11 @@ int	texture_manipulation(t_data *m)
  * It also checks for duplicates and raises an error if a texture for a given direction has already been saved.
  *
  * @param str A string that represents the texture identifier (`NO`, `EA`, `WE`, `SO`).
- * @param m A pointer to a `t_data` structure where texture paths for different directions are stored:
+ * @param m A pointer to a `t_file` structure where texture paths for different directions are stored:
  * @return Returns 0 if the texture is successfully saved. If a duplicate texture is detected, it calls `fd_error`
  *         with an appropriate message and returns the error result.
  */
-int	save_helper(char *str, t_data *m, char *texture)
+int	save_helper(char *str, t_file *m, char *texture)
 {
 	if ((!ft_strcmp("NO ", str) && m->texture_n != NULL)
 		|| (!ft_strcmp("EA ", str) && m->texture_e != NULL)
@@ -90,7 +90,7 @@ int	save_helper(char *str, t_data *m, char *texture)
 	* @return Pointer to texture path, or NULL on failure.
 	* @todo this malloc from strtrim can leak 
 	*/
-int	texture_save(char *str, char *file, t_data *m)
+int	texture_save(char *str, char *file, t_file *m)
 {
 	char	*texture;
 
@@ -114,9 +114,9 @@ int	texture_save(char *str, char *file, t_data *m)
 
 /**
 * @brief Prints texture paths for debugging.
-* @param m Pointer to `t_data` with texture data.
+* @param m Pointer to `t_file` with texture data.
 */
-void	print_textures(t_data *m)
+void	print_textures(t_file *m)
 {
 	debug_text("Textures info: ");
 	debug_string("Texture north", m->texture_n);

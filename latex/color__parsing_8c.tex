@@ -12,14 +12,14 @@ Include dependency graph for color\+\_\+parsing.\+c\+:\nopagebreak
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1}{color\+\_\+manipulation}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{color__parsing_8c_a1e223e1d6016e63ed0be1f7675fe495e}{manipulation\+\_\+helper}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Helper function for validating color data in a structure. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{color__parsing_8c_aaba2ea146523de32557d430f3d1fed69}{color\+\_\+manipulation}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Parses the file to save ceiling and floor colors. \end{DoxyCompactList}\item 
 char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f}{color\+\_\+save}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}file)
 \begin{DoxyCompactList}\small\item\em Extracts a color string from a file line. \end{DoxyCompactList}\item 
 char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9}{color\+\_\+array\+\_\+save}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}file)
-\begin{DoxyCompactList}\small\item\em Saves color data into an array by splitting a string. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{color__parsing_8c_a5869197f83942752bd146063e22d69d9}{print\+\_\+colores}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
-\begin{DoxyCompactList}\small\item\em Prints color information for debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Saves color data into an array by splitting a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -43,26 +43,26 @@ Saves color data into an array by splitting a string.
 \begin{DoxyReturn}{Returns}
 Array of color strings or NULL on failure. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{color__parsing_8c_a2e8ad273762e56b6271457f0771e12d9_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1}\label{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1} 
+\Hypertarget{color__parsing_8c_aaba2ea146523de32557d430f3d1fed69}\label{color__parsing_8c_aaba2ea146523de32557d430f3d1fed69} 
 \index{color\_parsing.c@{color\_parsing.c}!color\_manipulation@{color\_manipulation}}
 \index{color\_manipulation@{color\_manipulation}!color\_parsing.c@{color\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{color\_manipulation()}{color\_manipulation()}}
-{\footnotesize\ttfamily int color\+\_\+manipulation (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int color\+\_\+manipulation (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -70,7 +70,7 @@ Parses the file to save ceiling and floor colors.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to {\ttfamily t\+\_\+data} with file and color data. \\
+{\em m} & Pointer to {\ttfamily t\+\_\+file} with file and color data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -81,14 +81,15 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1_cgraph}
+\includegraphics[width=350pt]{color__parsing_8c_aaba2ea146523de32557d430f3d1fed69_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=341pt]{color__parsing_8c_aa506e293773a33e3b92ccc95b8d06fa1_icgraph}
+\includegraphics[width=350pt]{color__parsing_8c_aaba2ea146523de32557d430f3d1fed69_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f}\label{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f} 
@@ -115,42 +116,50 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=239pt]{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f_cgraph}
+\includegraphics[width=229pt]{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{color__parsing_8c_a3e3149f37161eff9e263077d93e8435f_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{color__parsing_8c_a5869197f83942752bd146063e22d69d9}\label{color__parsing_8c_a5869197f83942752bd146063e22d69d9} 
-\index{color\_parsing.c@{color\_parsing.c}!print\_colores@{print\_colores}}
-\index{print\_colores@{print\_colores}!color\_parsing.c@{color\_parsing.c}}
-\doxysubsubsection{\texorpdfstring{print\_colores()}{print\_colores()}}
-{\footnotesize\ttfamily void print\+\_\+colores (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+\Hypertarget{color__parsing_8c_a1e223e1d6016e63ed0be1f7675fe495e}\label{color__parsing_8c_a1e223e1d6016e63ed0be1f7675fe495e} 
+\index{color\_parsing.c@{color\_parsing.c}!manipulation\_helper@{manipulation\_helper}}
+\index{manipulation\_helper@{manipulation\_helper}!color\_parsing.c@{color\_parsing.c}}
+\doxysubsubsection{\texorpdfstring{manipulation\_helper()}{manipulation\_helper()}}
+{\footnotesize\ttfamily int manipulation\+\_\+helper (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
-Prints color information for debugging. 
+Helper function for validating color data in a structure. 
+
+This function checks the integrity and validity of two sets of color components ({\ttfamily color\+\_\+c} and {\ttfamily color\+\_\+f}) It ensures that both sets are complete, each has exactly 3 components, and that all color component values fall within the valid range of 0 to 255.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to {\ttfamily t\+\_\+data} with color data. \\
+{\em m} & A pointer to a {\ttfamily t\+\_\+file} structure containing the color arrays ({\ttfamily color\+\_\+c} and {\ttfamily color\+\_\+f}). \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+\begin{DoxyReturn}{Returns}
+Returns 0 if all validations pass. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=271pt]{color__parsing_8c_a5869197f83942752bd146063e22d69d9_cgraph}
+\includegraphics[width=350pt]{color__parsing_8c_a1e223e1d6016e63ed0be1f7675fe495e_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{color__parsing_8c_a5869197f83942752bd146063e22d69d9_icgraph}
+\includegraphics[width=350pt]{color__parsing_8c_a1e223e1d6016e63ed0be1f7675fe495e_icgraph}
 \end{center}
 \end{figure}

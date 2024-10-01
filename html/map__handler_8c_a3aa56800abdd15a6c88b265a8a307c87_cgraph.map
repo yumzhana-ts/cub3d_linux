@@ -1,0 +1,63 @@
+<map id="file_parsing" name="file_parsing">
+<area shape="rect" id="Node000001" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="5,396,103,421"/>
+<area shape="rect" id="Node000002" href="$map__helpers_8c.html#a9572228285cd82518fa287634356ac30" title="Validates command&#45;line arguments and file extension." alt="" coords="179,396,273,421"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,406,165,406,165,411,103,411"/>
+<area shape="rect" id="Node000005" href="$map__parsing_8c.html#ac0bab95559c0f02ae27df9d538db7c0c" title="Verifies the overall format of the map file." alt="" coords="153,81,299,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="59,394,148,218,207,117,212,120,153,221,64,397"/>
+<area shape="rect" id="Node000011" href="$util__3_8c.html#a989acceed7699f46029a94e0e80404f6" title=" " alt="" coords="151,547,301,572"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="65,420,99,470,124,499,152,525,174,539,172,543,149,529,120,503,95,473,60,423"/>
+<area shape="rect" id="Node000012" href="$read__file_8c.html#a80bc30d37fc3fd91db7c2c1a2ab93a38" title="Opens a file and readstfile." alt="" coords="187,232,265,257"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="67,394,200,265,204,269,70,398"/>
+<area shape="rect" id="Node000015" href="$map__parsing_8c.html#a689e0727f3117c1f8ed52e1671391620" title="Reads the map from the file data into the t_file structure." alt="" coords="183,333,269,359"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="89,393,176,361,178,366,91,398"/>
+<area shape="rect" id="Node000016" href="$map__manipulation_8c.html#a73d71c5c0794e6a8f5d9597780f939e8" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="175,445,277,471"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="100,419,169,439,167,444,98,424"/>
+<area shape="rect" id="Node000020" href="$map__verification_8c.html#a4a115a4aa3711c94db371e80eb7f9a93" title="Validates the game map and player position." alt="" coords="355,585,466,611"/>
+<area shape="poly" id="edge26_Node000001_Node000020" title=" " alt="" coords="71,420,106,449,152,480,192,498,226,507,260,515,302,532,380,575,378,580,300,536,259,521,225,512,191,503,149,484,103,454,67,424"/>
+<area shape="rect" id="Node000003" href="$map__helpers_8c.html#a7ab11ed507b3d0e58c22de178191e072" title="Checks if the given filename has a specific file extension." alt="" coords="349,359,472,384"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,397,335,384,336,389,274,402"/>
+<area shape="rect" id="Node000004" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="759,283,833,308"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="274,407,366,404,472,393,549,375,625,354,749,310,751,315,627,359,550,381,472,398,366,410,274,412"/>
+<area shape="rect" id="Node000006" href="$map__verification_8c.html#a9f756c577394e97afa158056bd82bf77" title="Checks for empty lines within the map data after the start of the map." alt="" coords="533,181,673,207"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="300,103,383,120,473,142,561,174,559,179,471,147,382,125,299,109"/>
+<area shape="rect" id="Node000007" href="$map__verification_8c.html#a60ef98f8034bcc53e01df2aaf5b33646" title="Checks if each character in the map is valid (01WSEN )." alt="" coords="529,120,678,145"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="299,89,383,91,472,98,548,114,547,119,472,103,382,96,299,95"/>
+<area shape="rect" id="Node000008" href="$map__parsing_8c.html#aa41e6d387b624ef849bc0cb2e3f2d982" title="Verifies the map format and controls its placement within the file data." alt="" coords="355,5,466,31"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="257,79,365,34,367,38,259,84"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="630,204,760,274,758,279,627,209"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="645,143,688,166,717,191,742,219,781,269,777,273,738,222,713,195,685,171,642,148"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="458,28,593,69,654,90,688,105,725,144,754,188,775,232,789,268,784,270,770,234,749,191,721,147,685,110,652,95,592,74,456,33"/>
+<area shape="rect" id="Node000009" href="$map__parsing_8c.html#a279662c9aa3745b424c440132ce4a7b6" title="Determines the starting index of the map in the file data." alt="" coords="559,9,647,35"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="467,16,546,18,546,23,466,22"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="649,31,670,41,688,55,711,80,730,107,760,166,780,223,792,268,787,270,775,225,755,169,725,110,706,83,685,59,667,45,646,36"/>
+<area shape="rect" id="Node000010" href="$map__parsing_8c.html#ab6837669f3e26e1a7826625406863c34" title="Finds the start of the map in the given string." alt="" coords="737,9,855,35"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="648,19,723,19,723,25,648,25"/>
+<area shape="poly" id="edge17_Node000012_Node000004" title=" " alt="" coords="266,245,746,288,746,294,265,251"/>
+<area shape="rect" id="Node000013" href="$read__file_8c.html#a177dd88caa69e41813ba0007a39908f6" title="Adds a new line to the file." alt="" coords="372,207,449,232"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="265,237,358,224,359,229,266,242"/>
+<area shape="rect" id="Node000014" href="$map__helpers_8c.html#a61607b9d42635b519cd2f77713c06e48" title="Replaces newline characters with null characters in array of strings. Iterates through each string in..." alt="" coords="359,157,462,183"/>
+<area shape="poly" id="edge18_Node000012_Node000014" title=" " alt="" coords="257,229,348,192,363,185,365,190,350,196,259,234"/>
+<area shape="poly" id="edge20_Node000015_Node000004" title=" " alt="" coords="269,340,746,297,746,302,270,345"/>
+<area shape="rect" id="Node000017" href="$map__manipulation_8c.html#a3702b5e75161001ba1dd63b72a82a09a" title="Fills the map in the t_file structure by modifying each row using the ones function." alt="" coords="373,460,448,485"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="278,459,360,466,359,471,277,465"/>
+<area shape="rect" id="Node000019" href="$map__manipulation_8c.html#a1a9db3b0b6a45a6a0164f177f2e9852d" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="353,509,468,535"/>
+<area shape="poly" id="edge25_Node000016_Node000019" title=" " alt="" coords="265,468,361,502,359,507,263,473"/>
+<area shape="poly" id="edge23_Node000017_Node000004" title=" " alt="" coords="447,461,575,427,640,406,685,388,734,353,772,317,776,320,737,357,688,392,642,412,577,432,449,466"/>
+<area shape="rect" id="Node000018" href="$map__manipulation_8c.html#a5cb1605f425211f88f0aa268bb6cdf12" title="Replaces the source string with a new string of a given size, filled with &#39;1&#39;, while retaining certai..." alt="" coords="577,460,630,485"/>
+<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="448,470,563,470,563,475,448,475"/>
+<area shape="poly" id="edge35_Node000020_Node000004" title=" " alt="" coords="436,583,519,546,568,533,608,528,645,519,664,510,685,495,723,454,751,406,772,360,785,321,790,323,777,361,756,409,727,457,688,499,667,514,646,524,609,533,569,538,521,551,438,588"/>
+<area shape="rect" id="Node000021" href="$player__verification_8c.html#a9673eac2437df9dc10edcd754f0e8cb2" title="Checks for the presence of player characters &#39;N&#39; or &#39;S&#39; on the map." alt="" coords="538,660,669,685"/>
+<area shape="poly" id="edge27_Node000020_Node000021" title=" " alt="" coords="438,608,521,646,542,653,540,658,519,651,435,613"/>
+<area shape="rect" id="Node000023" href="$player__verification_8c.html#af6a5b0634eeb9b997129550117f11ed4" title="Checks if player is not surrounded by walls." alt="" coords="520,561,687,587"/>
+<area shape="poly" id="edge29_Node000020_Node000023" title=" " alt="" coords="466,588,506,583,507,589,467,594"/>
+<area shape="rect" id="Node000024" href="$player__verification_8c.html#a5094498756ca3548617ba9c4c6045207" title="Checks for the presence of player characters &#39;W&#39; or &#39;E&#39; on the map." alt="" coords="536,709,671,735"/>
+<area shape="poly" id="edge30_Node000020_Node000024" title=" " alt="" coords="424,609,464,652,491,675,521,696,534,702,532,707,519,700,488,680,460,655,420,613"/>
+<area shape="rect" id="Node000025" href="$map__verification_8c.html#a2e6a2523bb20297fb6972ecb4f276ca9" title="Checks if the map is correctly enclosed by walls on all sides." alt="" coords="553,611,654,636"/>
+<area shape="poly" id="edge32_Node000020_Node000025" title=" " alt="" coords="467,603,539,612,538,618,466,608"/>
+<area shape="rect" id="Node000022" href="$player__verification_8c.html#ad1f1b6c05e7d62fc7128029a511de9b2" title="Sets the player&#39;s position and direction based on map data." alt="" coords="735,684,857,709"/>
+<area shape="poly" id="edge28_Node000021_Node000022" title=" " alt="" coords="669,678,721,685,720,690,669,683"/>
+<area shape="poly" id="edge31_Node000024_Node000022" title=" " alt="" coords="671,710,720,704,721,709,671,716"/>
+<area shape="poly" id="edge33_Node000025_Node000004" title=" " alt="" coords="653,614,670,608,685,597,712,566,735,531,752,492,766,453,783,379,790,322,796,322,788,380,771,455,757,494,739,533,717,569,688,601,673,612,655,619"/>
+<area shape="rect" id="Node000026" href="$map__verification_8c.html#aeef82a5663351140dd3fcd335f542bc9" title="Checks if all characters in a specific vertical wall of the map are &#39;1&#39;." alt="" coords="743,611,849,636"/>
+<area shape="poly" id="edge34_Node000025_Node000026" title=" " alt="" coords="654,621,729,621,729,626,654,626"/>
+</map>

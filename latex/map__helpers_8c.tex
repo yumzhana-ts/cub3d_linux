@@ -19,9 +19,11 @@ Include dependency graph for map\+\_\+helpers.\+c\+:\nopagebreak
 \item 
 int \mbox{\hyperlink{map__helpers_8c_a9572228285cd82518fa287634356ac30}{check\+\_\+args}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
 \begin{DoxyCompactList}\small\item\em Validates command-\/line arguments and file extension. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3}{fix\+\_\+newlines}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game)
-\begin{DoxyCompactList}\small\item\em Replaces newline characters with null characters in a 2D array of strings. Iterates through each string in {\ttfamily game-\/\texorpdfstring{$>$}{>}file} and replaces \textquotesingle{}~\newline
-\textquotesingle{} with \textquotesingle{}\textbackslash{}0\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{map__helpers_8c_a61607b9d42635b519cd2f77713c06e48}{fix\+\_\+newlines}} (t\+\_\+file \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Replaces newline characters with null characters in array of strings. Iterates through each string in {\ttfamily game-\/\texorpdfstring{$>$}{>}file} and replaces \textquotesingle{}~\newline
+\textquotesingle{} with \textquotesingle{}\textbackslash{}0\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__helpers_8c_a7ab11ed507b3d0e58c22de178191e072}{checkextension}} (char \texorpdfstring{$\ast$}{*}name, char \texorpdfstring{$\ast$}{*}extension)
+\begin{DoxyCompactList}\small\item\em Checks if the given filename has a specific file extension. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -48,44 +50,72 @@ Validates command-\/line arguments and file extension.
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]👾 Add texture and color reading\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]👾 Add texture and color reading\end{DoxyRefDesc}
 \begin{DoxyReturn}{Returns}
-0 if arguments are valid. Exits the program with an error message otherwise. 
+0 if arguments are valid, error message otherwise. 
 \end{DoxyReturn}
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=279pt]{map__helpers_8c_a9572228285cd82518fa287634356ac30_cgraph}
+\includegraphics[width=267pt]{map__helpers_8c_a9572228285cd82518fa287634356ac30_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=302pt]{map__helpers_8c_a9572228285cd82518fa287634356ac30_icgraph}
+\includegraphics[width=350pt]{map__helpers_8c_a9572228285cd82518fa287634356ac30_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3}\label{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3} 
+\Hypertarget{map__helpers_8c_a7ab11ed507b3d0e58c22de178191e072}\label{map__helpers_8c_a7ab11ed507b3d0e58c22de178191e072} 
+\index{map\_helpers.c@{map\_helpers.c}!checkextension@{checkextension}}
+\index{checkextension@{checkextension}!map\_helpers.c@{map\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{checkextension()}{checkextension()}}
+{\footnotesize\ttfamily int checkextension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{extension }\end{DoxyParamCaption})}
+
+
+
+Checks if the given filename has a specific file extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A pointer to a string representing the filename to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the filename ends with "{}.\+cub"{}, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__helpers_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__helpers_8c_a61607b9d42635b519cd2f77713c06e48}\label{map__helpers_8c_a61607b9d42635b519cd2f77713c06e48} 
 \index{map\_helpers.c@{map\_helpers.c}!fix\_newlines@{fix\_newlines}}
 \index{fix\_newlines@{fix\_newlines}!map\_helpers.c@{map\_helpers.c}}
 \doxysubsubsection{\texorpdfstring{fix\_newlines()}{fix\_newlines()}}
-{\footnotesize\ttfamily void fix\+\_\+newlines (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void fix\+\_\+newlines (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
 
 
 
-Replaces newline characters with null characters in a 2D array of strings. Iterates through each string in {\ttfamily game-\/\texorpdfstring{$>$}{>}file} and replaces \textquotesingle{}~\newline
+Replaces newline characters with null characters in array of strings. Iterates through each string in {\ttfamily game-\/\texorpdfstring{$>$}{>}file} and replaces \textquotesingle{}~\newline
 \textquotesingle{} with \textquotesingle{}\textbackslash{}0\textquotesingle{}. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em game} & Pointer to a t\+\_\+data structure containing the array of strings. \\
+{\em game} & Pointer to a t\+\_\+file structure containing the array of strings. \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__helpers_8c_a3d8ea9766faf2c86e2c85633469e99f3_icgraph}
+\includegraphics[width=350pt]{map__helpers_8c_a61607b9d42635b519cd2f77713c06e48_icgraph}
 \end{center}
 \end{figure}

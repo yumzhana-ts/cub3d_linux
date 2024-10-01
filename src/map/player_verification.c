@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 16:53:40 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  * @brief Prints the player's position and direction information for debugging.
  * @callgraph
  */
-void	print_player_info(t_data *m)
+void	print_player_info(t_file *m)
 {
 	debug_text("Starting player position info");
 	debug_number("- Player X", m->player_x);
@@ -34,7 +34,7 @@ void	print_player_info(t_data *m)
  * @brief Sets the player's position and direction based on map data.
  * @callgraph
  */
-static int	set_player_info(int i, char *str, int c, t_data *m)
+static int	set_player_info(int i, char *str, int c, t_file *m)
 {
 	m->player_direction = c;
 	m->player_y = i;
@@ -50,7 +50,7 @@ static int	set_player_info(int i, char *str, int c, t_data *m)
  * @return 0 if a player character 'N' or 'S' is 
  * found and player info is set, otherwise 1.
  */
-int	check_player_ns(t_data *m)
+int	check_player_ns(t_file *m)
 {
 	int	i;
 	int	j;
@@ -77,7 +77,7 @@ int	check_player_ns(t_data *m)
  * @return 0 if a player character 'N' or 'S' is 
  * found and player info is set, otherwise 1.
  */
-int	check_player_we(t_data *m)
+int	check_player_we(t_file *m)
 {
 	int	i;
 	int	j;
@@ -103,7 +103,7 @@ int	check_player_we(t_data *m)
  * @brief Checks if player is not surrounded by walls
  * @return
  */
-int	check_player_position(t_data *m)
+int	check_player_position(t_file *m)
 {
 	int	i;
 	int	j;

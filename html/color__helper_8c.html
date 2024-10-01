@@ -95,95 +95,107 @@ Include dependency graph for color_helper.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:accbc8abe1d4ff400f1fe694d2f338bb7" id="r_accbc8abe1d4ff400f1fe694d2f338bb7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="color__helper_8c.html#accbc8abe1d4ff400f1fe694d2f338bb7">ft_strncpy</a> (char *s1, char *s2, int n)</td></tr>
-<tr class="separator:accbc8abe1d4ff400f1fe694d2f338bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad57ecdce78737f830dfa1844b698e1fe" id="r_ad57ecdce78737f830dfa1844b698e1fe"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="color__helper_8c.html#ad57ecdce78737f830dfa1844b698e1fe">ft_split_comma</a> (char *str)</td></tr>
-<tr class="separator:ad57ecdce78737f830dfa1844b698e1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7a7177014a8c102f543a033e4dc16a" id="r_a9b7a7177014a8c102f543a033e4dc16a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="color__helper_8c.html#a9b7a7177014a8c102f543a033e4dc16a">print_colores</a> (t_file *m)</td></tr>
+<tr class="memdesc:a9b7a7177014a8c102f543a033e4dc16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints color information for debugging.  <br /></td></tr>
+<tr class="separator:a9b7a7177014a8c102f543a033e4dc16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9724a44019ba43767db94d610f52af" id="r_a3b9724a44019ba43767db94d610f52af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="color__helper_8c.html#a3b9724a44019ba43767db94d610f52af">color_values_validation</a> (char **array)</td></tr>
+<tr class="memdesc:a3b9724a44019ba43767db94d610f52af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates color values in a given 2D array of strings.  <br /></td></tr>
+<tr class="separator:a3b9724a44019ba43767db94d610f52af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad57ecdce78737f830dfa1844b698e1fe" name="ad57ecdce78737f830dfa1844b698e1fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad57ecdce78737f830dfa1844b698e1fe">&#9670;&#160;</a></span>ft_split_comma()</h2>
+<a id="a3b9724a44019ba43767db94d610f52af" name="a3b9724a44019ba43767db94d610f52af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9724a44019ba43767db94d610f52af">&#9670;&#160;</a></span>color_values_validation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char ** ft_split_comma </td>
+          <td class="memname">int color_values_validation </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Validates color values in a given 2D array of strings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>A 2D array of strings where each string represents a color component. If the array is NULL, the function immediately returns an error (1). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 if all values within the range of 0 to 255), and 1 if any value is out of range or the input array is NULL. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="color__helper_8c_a3b9724a44019ba43767db94d610f52af_icgraph.png" border="0" usemap="#acolor__helper_8c_a3b9724a44019ba43767db94d610f52af_icgraph" alt=""/></div>
+<map name="acolor__helper_8c_a3b9724a44019ba43767db94d610f52af_icgraph" id="acolor__helper_8c_a3b9724a44019ba43767db94d610f52af_icgraph">
+<area shape="rect" title="Validates color values in a given 2D array of strings." alt="" coords="683,5,859,31"/>
+<area shape="rect" href="color__parsing_8c.html#a1e223e1d6016e63ed0be1f7675fe495e" title="Helper function for validating color data in a structure." alt="" coords="479,5,635,31"/>
+<area shape="poly" title=" " alt="" coords="669,21,635,21,635,15,669,15"/>
+<area shape="rect" href="color__parsing_8c.html#aaba2ea146523de32557d430f3d1fed69" title="Parses the file to save ceiling and floor colors." alt="" coords="284,5,431,31"/>
+<area shape="poly" title=" " alt="" coords="465,21,431,21,431,15,465,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b7a7177014a8c102f543a033e4dc16a" name="a9b7a7177014a8c102f543a033e4dc16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7a7177014a8c102f543a033e4dc16a">&#9670;&#160;</a></span>print_colores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_colores </td>
+          <td>(</td>
+          <td class="paramtype">t_file *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints color information for debugging. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Pointer to <code>t_file</code> with color data. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="color__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_cgraph.png" border="0" usemap="#acolor__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_cgraph" alt=""/></div>
-<map name="acolor__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_cgraph" id="acolor__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,128,31"/>
-<area shape="rect" href="color__helper_8c.html#accbc8abe1d4ff400f1fe694d2f338bb7" title=" " alt="" coords="176,5,263,31"/>
-<area shape="poly" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
+<div class="center"><img src="color__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_cgraph.png" border="0" usemap="#acolor__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_cgraph" alt=""/></div>
+<map name="acolor__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_cgraph" id="acolor__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_cgraph">
+<area shape="rect" title="Prints color information for debugging." alt="" coords="5,31,112,56"/>
+<area shape="rect" href="util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="163,5,257,31"/>
+<area shape="poly" title=" " alt="" coords="112,32,149,26,150,31,113,37"/>
+<area shape="rect" href="util__2_8c.html#a493bccc094a8b964b4610c4d914106c6" title="Prints the map to the standard output." alt="" coords="160,55,260,80"/>
+<area shape="poly" title=" " alt="" coords="113,49,147,55,146,60,112,54"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="color__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_icgraph.png" border="0" usemap="#acolor__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_icgraph" alt=""/></div>
-<map name="acolor__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_icgraph" id="acolor__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_icgraph">
-<area shape="rect" title=" " alt="" coords="340,5,463,31"/>
-<area shape="rect" href="color__parsing_8c.html#a8ea2c61f9db943fc11e76502f571718d" title=" " alt="" coords="200,5,292,31"/>
-<area shape="poly" title=" " alt="" coords="326,21,292,21,292,15,326,15"/>
-<area shape="rect" href="color__parsing_8c.html#aa506e293773a33e3b92ccc95b8d06fa1" title=" " alt="" coords="5,5,152,31"/>
-<area shape="poly" title=" " alt="" coords="186,21,152,21,152,15,186,15"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="accbc8abe1d4ff400f1fe694d2f338bb7" name="accbc8abe1d4ff400f1fe694d2f338bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accbc8abe1d4ff400f1fe694d2f338bb7">&#9670;&#160;</a></span>ft_strncpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * ft_strncpy </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>s1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>s2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="color__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7_icgraph.png" border="0" usemap="#acolor__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7_icgraph" alt=""/></div>
-<map name="acolor__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7_icgraph" id="acolor__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7_icgraph">
-<area shape="rect" title=" " alt="" coords="511,5,597,31"/>
-<area shape="rect" href="color__helper_8c.html#ad57ecdce78737f830dfa1844b698e1fe" title=" " alt="" coords="340,5,463,31"/>
-<area shape="poly" title=" " alt="" coords="497,21,463,21,463,15,497,15"/>
-<area shape="rect" href="color__parsing_8c.html#a8ea2c61f9db943fc11e76502f571718d" title=" " alt="" coords="200,5,292,31"/>
-<area shape="poly" title=" " alt="" coords="326,21,292,21,292,15,326,15"/>
-<area shape="rect" href="color__parsing_8c.html#aa506e293773a33e3b92ccc95b8d06fa1" title=" " alt="" coords="5,5,152,31"/>
-<area shape="poly" title=" " alt="" coords="186,21,152,21,152,15,186,15"/>
+<div class="center"><img src="color__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_icgraph.png" border="0" usemap="#acolor__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_icgraph" alt=""/></div>
+<map name="acolor__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_icgraph" id="acolor__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_icgraph">
+<area shape="rect" title="Prints color information for debugging." alt="" coords="481,31,588,56"/>
+<area shape="rect" href="util__2_8c.html#ad7d661fed596492a19e7d67b862ee02e" title="Prints debugging information about the map." alt="" coords="335,31,433,56"/>
+<area shape="poly" title=" " alt="" coords="467,46,434,46,434,41,467,41"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="133,5,261,31"/>
+<area shape="poly" title=" " alt="" coords="320,37,261,29,262,24,321,32"/>
+<area shape="rect" href="graphics__processing_8c.html#af6ed1d623a5b7d34bfdc27a5bd38adae" title=" " alt="" coords="108,55,287,80"/>
+<area shape="poly" title=" " alt="" coords="321,54,287,58,287,53,321,49"/>
+<area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="120,33,61,42,60,37,119,27"/>
+<area shape="poly" title=" " alt="" coords="96,55,60,50,61,45,97,50"/>
 </map>
 </div>
 

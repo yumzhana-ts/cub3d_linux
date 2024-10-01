@@ -98,15 +98,15 @@ Include dependency graph for map_manipulation.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a99ff7ec6d4b94c8553ed4bcc4674861f" id="r_a99ff7ec6d4b94c8553ed4bcc4674861f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f">rebuild_map</a> (t_data *m)</td></tr>
-<tr class="memdesc:a99ff7ec6d4b94c8553ed4bcc4674861f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuilds the map by calculating its width and filling it with modified data.  <br /></td></tr>
-<tr class="separator:a99ff7ec6d4b94c8553ed4bcc4674861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa90f1f0c25556207e47fc2f745ee1b08" id="r_aa90f1f0c25556207e47fc2f745ee1b08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__manipulation_8c.html#aa90f1f0c25556207e47fc2f745ee1b08">fill_map</a> (t_data *m)</td></tr>
-<tr class="memdesc:aa90f1f0c25556207e47fc2f745ee1b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the map in the <code>t_data</code> structure by modifying each row using the <code>ones</code> function.  <br /></td></tr>
-<tr class="separator:aa90f1f0c25556207e47fc2f745ee1b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4819a56cb75720839b162da18bc30e1e" id="r_a4819a56cb75720839b162da18bc30e1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__manipulation_8c.html#a4819a56cb75720839b162da18bc30e1e">width_of_map</a> (t_data *m)</td></tr>
-<tr class="memdesc:a4819a56cb75720839b162da18bc30e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the width of the map. Iterates through each row of the map and finds the maximum width.  <br /></td></tr>
-<tr class="separator:a4819a56cb75720839b162da18bc30e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d71c5c0794e6a8f5d9597780f939e8" id="r_a73d71c5c0794e6a8f5d9597780f939e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__manipulation_8c.html#a73d71c5c0794e6a8f5d9597780f939e8">rebuild_map</a> (t_file *m)</td></tr>
+<tr class="memdesc:a73d71c5c0794e6a8f5d9597780f939e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuilds the map by calculating its width and filling it with modified data.  <br /></td></tr>
+<tr class="separator:a73d71c5c0794e6a8f5d9597780f939e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3702b5e75161001ba1dd63b72a82a09a" id="r_a3702b5e75161001ba1dd63b72a82a09a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__manipulation_8c.html#a3702b5e75161001ba1dd63b72a82a09a">fill_map</a> (t_file *m)</td></tr>
+<tr class="memdesc:a3702b5e75161001ba1dd63b72a82a09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the map in the <code>t_file</code> structure by modifying each row using the <code>ones</code> function.  <br /></td></tr>
+<tr class="separator:a3702b5e75161001ba1dd63b72a82a09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9db3b0b6a45a6a0164f177f2e9852d" id="r_a1a9db3b0b6a45a6a0164f177f2e9852d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__manipulation_8c.html#a1a9db3b0b6a45a6a0164f177f2e9852d">width_of_map</a> (t_file *m)</td></tr>
+<tr class="memdesc:a1a9db3b0b6a45a6a0164f177f2e9852d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the width of the map. Iterates through each row of the map and finds the maximum width.  <br /></td></tr>
+<tr class="separator:a1a9db3b0b6a45a6a0164f177f2e9852d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb1605f425211f88f0aa268bb6cdf12" id="r_a5cb1605f425211f88f0aa268bb6cdf12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__manipulation_8c.html#a5cb1605f425211f88f0aa268bb6cdf12">ones</a> (char **src, int size)</td></tr>
 <tr class="memdesc:a5cb1605f425211f88f0aa268bb6cdf12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the source string with a new string of a given size, filled with '1', while retaining certain characters ('0', '1', 'N', 'S', 'W', 'E').  <br /></td></tr>
 <tr class="separator:a5cb1605f425211f88f0aa268bb6cdf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,8 +114,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains functions for manipulating the map data and modifying its contents. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aa90f1f0c25556207e47fc2f745ee1b08" name="aa90f1f0c25556207e47fc2f745ee1b08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa90f1f0c25556207e47fc2f745ee1b08">&#9670;&#160;</a></span>fill_map()</h2>
+<a id="a3702b5e75161001ba1dd63b72a82a09a" name="a3702b5e75161001ba1dd63b72a82a09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3702b5e75161001ba1dd63b72a82a09a">&#9670;&#160;</a></span>fill_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,17 +123,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int fill_map </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fills the map in the <code>t_data</code> structure by modifying each row using the <code>ones</code> function. </p>
+<p>Fills the map in the <code>t_file</code> structure by modifying each row using the <code>ones</code> function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Pointer to a <code>t_data</code> structure that contains the map data to be modified. </td></tr>
+    <tr><td class="paramname">m</td><td>Pointer to a <code>t_file</code> structure that contains the map data to be modified. </td></tr>
   </table>
   </dd>
 </dl>
@@ -141,9 +141,9 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_cgraph.png" border="0" usemap="#amap__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_cgraph" alt=""/></div>
-<map name="amap__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_cgraph" id="amap__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_cgraph">
-<area shape="rect" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="5,31,80,56"/>
+<div class="center"><img src="map__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_cgraph.png" border="0" usemap="#amap__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_cgraph" alt=""/></div>
+<map name="amap__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_cgraph" id="amap__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_cgraph">
+<area shape="rect" title="Fills the map in the t_file structure by modifying each row using the ones function." alt="" coords="5,31,80,56"/>
 <area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="128,5,201,31"/>
 <area shape="poly" title=" " alt="" coords="80,33,114,26,115,31,81,38"/>
 <area shape="rect" href="map__manipulation_8c.html#a5cb1605f425211f88f0aa268bb6cdf12" title="Replaces the source string with a new string of a given size, filled with &#39;1&#39;, while retaining certai..." alt="" coords="138,55,191,80"/>
@@ -153,13 +153,15 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_icgraph.png" border="0" usemap="#amap__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_icgraph" alt=""/></div>
-<map name="amap__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_icgraph" id="amap__manipulation_8c_aa90f1f0c25556207e47fc2f745ee1b08_icgraph">
-<area shape="rect" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="357,5,432,31"/>
-<area shape="rect" href="map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="207,5,309,31"/>
-<area shape="poly" title=" " alt="" coords="344,21,310,21,310,15,344,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_icgraph.png" border="0" usemap="#amap__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_icgraph" alt=""/></div>
+<map name="amap__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_icgraph" id="amap__manipulation_8c_a3702b5e75161001ba1dd63b72a82a09a_icgraph">
+<area shape="rect" title="Fills the map in the t_file structure by modifying each row using the ones function." alt="" coords="580,5,655,31"/>
+<area shape="rect" href="map__manipulation_8c.html#a73d71c5c0794e6a8f5d9597780f939e8" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="429,5,532,31"/>
+<area shape="poly" title=" " alt="" coords="566,21,532,21,532,15,566,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="416,21,382,21,382,15,416,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -207,13 +209,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="map__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12_icgraph.png" border="0" usemap="#amap__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12_icgraph" alt=""/></div>
 <map name="amap__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12_icgraph" id="amap__manipulation_8c_a5cb1605f425211f88f0aa268bb6cdf12_icgraph">
-<area shape="rect" title="Replaces the source string with a new string of a given size, filled with &#39;1&#39;, while retaining certai..." alt="" coords="480,5,533,31"/>
-<area shape="rect" href="map__manipulation_8c.html#aa90f1f0c25556207e47fc2f745ee1b08" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="357,5,432,31"/>
-<area shape="poly" title=" " alt="" coords="467,21,432,21,432,15,467,15"/>
-<area shape="rect" href="map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="207,5,309,31"/>
-<area shape="poly" title=" " alt="" coords="344,21,310,21,310,15,344,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<area shape="rect" title="Replaces the source string with a new string of a given size, filled with &#39;1&#39;, while retaining certai..." alt="" coords="703,5,756,31"/>
+<area shape="rect" href="map__manipulation_8c.html#a3702b5e75161001ba1dd63b72a82a09a" title="Fills the map in the t_file structure by modifying each row using the ones function." alt="" coords="580,5,655,31"/>
+<area shape="poly" title=" " alt="" coords="689,21,655,21,655,15,689,15"/>
+<area shape="rect" href="map__manipulation_8c.html#a73d71c5c0794e6a8f5d9597780f939e8" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="429,5,532,31"/>
+<area shape="poly" title=" " alt="" coords="566,21,532,21,532,15,566,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="416,21,382,21,382,15,416,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -221,8 +225,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a99ff7ec6d4b94c8553ed4bcc4674861f" name="a99ff7ec6d4b94c8553ed4bcc4674861f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99ff7ec6d4b94c8553ed4bcc4674861f">&#9670;&#160;</a></span>rebuild_map()</h2>
+<a id="a73d71c5c0794e6a8f5d9597780f939e8" name="a73d71c5c0794e6a8f5d9597780f939e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d71c5c0794e6a8f5d9597780f939e8">&#9670;&#160;</a></span>rebuild_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +234,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int rebuild_map </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -240,7 +244,7 @@ Here is the caller graph for this function:</div>
 <p>Rebuilds the map by calculating its width and filling it with modified data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Pointer to the t_data structure that contains the map data. </td></tr>
+    <tr><td class="paramname">m</td><td>Pointer to the t_file structure that contains the map data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,12 +252,12 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_cgraph.png" border="0" usemap="#amap__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_cgraph" alt=""/></div>
-<map name="amap__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_cgraph" id="amap__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_cgraph">
+<div class="center"><img src="map__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_cgraph.png" border="0" usemap="#amap__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_cgraph" alt=""/></div>
+<map name="amap__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_cgraph" id="amap__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_cgraph">
 <area shape="rect" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="5,55,108,80"/>
-<area shape="rect" href="map__manipulation_8c.html#aa90f1f0c25556207e47fc2f745ee1b08" title="Fills the map in the t_data structure by modifying each row using the ones function." alt="" coords="176,29,251,55"/>
+<area shape="rect" href="map__manipulation_8c.html#a3702b5e75161001ba1dd63b72a82a09a" title="Fills the map in the t_file structure by modifying each row using the ones function." alt="" coords="176,29,251,55"/>
 <area shape="poly" title=" " alt="" coords="108,56,162,48,163,53,109,62"/>
-<area shape="rect" href="map__manipulation_8c.html#a4819a56cb75720839b162da18bc30e1e" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="156,79,271,104"/>
+<area shape="rect" href="map__manipulation_8c.html#a1a9db3b0b6a45a6a0164f177f2e9852d" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="156,79,271,104"/>
 <area shape="poly" title=" " alt="" coords="109,73,143,78,142,83,108,78"/>
 <area shape="rect" href="util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="319,5,392,31"/>
 <area shape="poly" title=" " alt="" coords="250,33,305,24,306,29,251,38"/>
@@ -264,11 +268,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_icgraph.png" border="0" usemap="#amap__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_icgraph" alt=""/></div>
-<map name="amap__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_icgraph" id="amap__manipulation_8c_a99ff7ec6d4b94c8553ed4bcc4674861f_icgraph">
-<area shape="rect" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="207,5,309,31"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_icgraph.png" border="0" usemap="#amap__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_icgraph" alt=""/></div>
+<map name="amap__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_icgraph" id="amap__manipulation_8c_a73d71c5c0794e6a8f5d9597780f939e8_icgraph">
+<area shape="rect" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="429,5,532,31"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="416,21,382,21,382,15,416,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
@@ -276,8 +282,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a4819a56cb75720839b162da18bc30e1e" name="a4819a56cb75720839b162da18bc30e1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4819a56cb75720839b162da18bc30e1e">&#9670;&#160;</a></span>width_of_map()</h2>
+<a id="a1a9db3b0b6a45a6a0164f177f2e9852d" name="a1a9db3b0b6a45a6a0164f177f2e9852d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9db3b0b6a45a6a0164f177f2e9852d">&#9670;&#160;</a></span>width_of_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +291,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int width_of_map </td>
           <td>(</td>
-          <td class="paramtype">t_data *&#160;</td>
+          <td class="paramtype">t_file *&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -295,7 +301,7 @@ Here is the caller graph for this function:</div>
 <p>Calculates the width of the map. Iterates through each row of the map and finds the maximum width. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Pointer to the t_data structure containing the map data. </td></tr>
+    <tr><td class="paramname">m</td><td>Pointer to the t_file structure containing the map data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -303,13 +309,15 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="map__manipulation_8c_a4819a56cb75720839b162da18bc30e1e_icgraph.png" border="0" usemap="#amap__manipulation_8c_a4819a56cb75720839b162da18bc30e1e_icgraph" alt=""/></div>
-<map name="amap__manipulation_8c_a4819a56cb75720839b162da18bc30e1e_icgraph" id="amap__manipulation_8c_a4819a56cb75720839b162da18bc30e1e_icgraph">
-<area shape="rect" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="357,5,472,31"/>
-<area shape="rect" href="map__manipulation_8c.html#a99ff7ec6d4b94c8553ed4bcc4674861f" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="207,5,309,31"/>
-<area shape="poly" title=" " alt="" coords="344,21,309,21,309,15,344,15"/>
-<area shape="rect" href="cub3d_8c.html#ae34ab973156b2d388ca9e6283d78bba3" title="Processes the command&#45;line arguments and initializes the game map." alt="" coords="108,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+<div class="center"><img src="map__manipulation_8c_a1a9db3b0b6a45a6a0164f177f2e9852d_icgraph.png" border="0" usemap="#amap__manipulation_8c_a1a9db3b0b6a45a6a0164f177f2e9852d_icgraph" alt=""/></div>
+<map name="amap__manipulation_8c_a1a9db3b0b6a45a6a0164f177f2e9852d_icgraph" id="amap__manipulation_8c_a1a9db3b0b6a45a6a0164f177f2e9852d_icgraph">
+<area shape="rect" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="580,5,695,31"/>
+<area shape="rect" href="map__manipulation_8c.html#a73d71c5c0794e6a8f5d9597780f939e8" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="429,5,532,31"/>
+<area shape="poly" title=" " alt="" coords="567,21,532,21,532,15,567,15"/>
+<area shape="rect" href="map__handler_8c.html#a3aa56800abdd15a6c88b265a8a307c87" title="Parses input file and processes game data. Checks arguments, reads the file, verifies format,..." alt="" coords="284,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="416,21,382,21,382,15,416,15"/>
+<area shape="rect" href="map__handler_8c.html#a60f2e4975b07a237c51f659e8d58bd3b" title="Handles map initialization and processing. Calls functions to parse the file, manipulate textures,..." alt="" coords="108,5,236,31"/>
+<area shape="poly" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
 <area shape="rect" href="cub3d_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the program." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>

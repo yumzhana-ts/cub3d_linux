@@ -30,10 +30,11 @@ MAP_DIR		:= src/map/
 GRAPH_DIR	:= src/graphics/
 UTIL_DIR	:= src/utils/
 SRC_DIR		:= src/
-COMMON_SRCS	:= $(SRC_DIR)*.c $(GRAPH_DIR)*.c $(MAP_DIR)*.c $(UTIL_DIR)*.c $(GNL_DIR)
+DDA_DIR		:= dda/
+COMMON_SRCS	:= $(SRC_DIR)*.c $(GRAPH_DIR)*.c $(MAP_DIR)*.c $(UTIL_DIR)*.c $(GNL_DIR) $(DDA_DIR)*.c
 SRCS 		:= $(COMMON_SRCS)
 
-TEST_MAP_DIR := ./maps/good
+TEST_MAP_DIR := ./maps/bad
 MAPS = $(wildcard $(TEST_MAP_DIR)/*)
 VALGRIND		= @valgrind --leak-check=full --show-leak-kinds=all \
 --track-origins=yes --quiet --tool=memcheck --keep-debuginfo=yes
@@ -79,7 +80,7 @@ test: cub3d
 
 
 mem: cub3d
-	valgrind --track-origins=yes --log-file=val.txt ./cub3d ./maps/good/test_map.cub
+	valgrind --track-origins=yes --log-file=val.txt ./cub3d ./maps/good/creepy.cub
 	make leaks
 
 leaks:	

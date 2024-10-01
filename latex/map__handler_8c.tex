@@ -1,0 +1,79 @@
+\doxysection{src/map/map\+\_\+handler.c File Reference}
+\hypertarget{map__handler_8c}{}\label{map__handler_8c}\index{src/map/map\_handler.c@{src/map/map\_handler.c}}
+{\ttfamily \#include "{}cub3d.\+h"{}}\newline
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+Include dependency graph for map\+\_\+handler.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{map__handler_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{map__handler_8c_a3aa56800abdd15a6c88b265a8a307c87}{file\+\_\+parsing}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, t\+\_\+file \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Parses input file and processes game data. Checks arguments, reads the file, verifies format, and processes the map. Frees memory and returns 1 on error, or 0 on success. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__handler_8c_a60f2e4975b07a237c51f659e8d58bd3b}{map\+\_\+processing}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, t\+\_\+file \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handles map initialization and processing. Calls functions to parse the file, manipulate textures, and manage colors. Frees allocated memory in case of errors and performs map debugging if successful. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{map__handler_8c_a3aa56800abdd15a6c88b265a8a307c87}\label{map__handler_8c_a3aa56800abdd15a6c88b265a8a307c87} 
+\index{map\_handler.c@{map\_handler.c}!file\_parsing@{file\_parsing}}
+\index{file\_parsing@{file\_parsing}!map\_handler.c@{map\_handler.c}}
+\doxysubsubsection{\texorpdfstring{file\_parsing()}{file\_parsing()}}
+{\footnotesize\ttfamily int file\+\_\+parsing (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
+
+
+
+Parses input file and processes game data. Checks arguments, reads the file, verifies format, and processes the map. Frees memory and returns 1 on error, or 0 on success. 
+
+\begin{DoxyReturn}{Returns}
+0 on success, 1 on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__handler_8c_a3aa56800abdd15a6c88b265a8a307c87_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__handler_8c_a3aa56800abdd15a6c88b265a8a307c87_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__handler_8c_a60f2e4975b07a237c51f659e8d58bd3b}\label{map__handler_8c_a60f2e4975b07a237c51f659e8d58bd3b} 
+\index{map\_handler.c@{map\_handler.c}!map\_processing@{map\_processing}}
+\index{map\_processing@{map\_processing}!map\_handler.c@{map\_handler.c}}
+\doxysubsubsection{\texorpdfstring{map\_processing()}{map\_processing()}}
+{\footnotesize\ttfamily int map\+\_\+processing (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
+
+
+
+Handles map initialization and processing. Calls functions to parse the file, manipulate textures, and manage colors. Frees allocated memory in case of errors and performs map debugging if successful. 
+
+\begin{DoxyReturn}{Returns}
+0 on success, 1 on failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__handler_8c_a60f2e4975b07a237c51f659e8d58bd3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{map__handler_8c_a60f2e4975b07a237c51f659e8d58bd3b_icgraph}
+\end{center}
+\end{figure}

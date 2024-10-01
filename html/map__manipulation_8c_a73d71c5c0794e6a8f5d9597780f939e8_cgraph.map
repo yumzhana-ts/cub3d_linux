@@ -1,0 +1,11 @@
+<map id="rebuild_map" name="rebuild_map">
+<area shape="rect" id="Node000001" title="Rebuilds the map by calculating its width and filling it with modified data." alt="" coords="5,55,108,80"/>
+<area shape="rect" id="Node000002" href="$map__manipulation_8c.html#a3702b5e75161001ba1dd63b72a82a09a" title="Fills the map in the t_file structure by modifying each row using the ones function." alt="" coords="176,29,251,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,56,162,48,163,53,109,62"/>
+<area shape="rect" id="Node000005" href="$map__manipulation_8c.html#a1a9db3b0b6a45a6a0164f177f2e9852d" title="Calculates the width of the map. Iterates through each row of the map and finds the maximum width." alt="" coords="156,79,271,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="109,73,143,78,142,83,108,78"/>
+<area shape="rect" id="Node000003" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="319,5,392,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,33,305,24,306,29,251,38"/>
+<area shape="rect" id="Node000004" href="$map__manipulation_8c.html#a5cb1605f425211f88f0aa268bb6cdf12" title="Replaces the source string with a new string of a given size, filled with &#39;1&#39;, while retaining certai..." alt="" coords="329,55,382,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="251,46,316,58,315,63,250,51"/>
+</map>

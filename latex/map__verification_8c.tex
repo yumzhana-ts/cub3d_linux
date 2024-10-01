@@ -17,17 +17,17 @@ Include dependency graph for map\+\_\+verification.\+c\+:\nopagebreak
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498}{validate\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{map__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93}{validate\+\_\+map}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Validates the game map and player position. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072}{checkextension}} (char \texorpdfstring{$\ast$}{*}name, char \texorpdfstring{$\ast$}{*}extension)
-\begin{DoxyCompactList}\small\item\em Checks if the given filename has a specific file extension. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{map__verification_8c_a753104db9499b280a27994290cee30d2}{vertical\+\_\+wall}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game, int j)
+int \mbox{\hyperlink{map__verification_8c_aeef82a5663351140dd3fcd335f542bc9}{vertical\+\_\+wall}} (t\+\_\+file \texorpdfstring{$\ast$}{*}game, int j)
 \begin{DoxyCompactList}\small\item\em Checks if all characters in a specific vertical wall of the map are \textquotesingle{}1\textquotesingle{}. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103}{check\+\_\+walls}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{map__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9}{check\+\_\+walls}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Checks if the map is correctly enclosed by walls on all sides. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1}{check\+\_\+valid\+\_\+values}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{map__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646}{check\+\_\+valid\+\_\+values}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Checks if each character in the map is valid (01WSEN~\newline
-). \end{DoxyCompactList}\end{DoxyCompactItemize}
+). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__verification_8c_a9f756c577394e97afa158056bd82bf77}{check\+\_\+empty\+\_\+line}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Checks for empty lines within the map data after the start of the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -36,11 +36,52 @@ Contains functions for validation the game map and player position.
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1}\label{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1} 
+\Hypertarget{map__verification_8c_a9f756c577394e97afa158056bd82bf77}\label{map__verification_8c_a9f756c577394e97afa158056bd82bf77} 
+\index{map\_verification.c@{map\_verification.c}!check\_empty\_line@{check\_empty\_line}}
+\index{check\_empty\_line@{check\_empty\_line}!map\_verification.c@{map\_verification.c}}
+\doxysubsubsection{\texorpdfstring{check\_empty\_line()}{check\_empty\_line()}}
+{\footnotesize\ttfamily int check\+\_\+empty\+\_\+line (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Checks for empty lines within the map data after the start of the map. 
+
+This function iterates through the map data starting from the specified {\ttfamily map\+\_\+start} index in the {\ttfamily t\+\_\+file} structure. It looks for empty lines that consist solely of spaces and checks if the next line contains map elements (either \textquotesingle{}1\textquotesingle{} or \textquotesingle{}0\textquotesingle{}). If an empty line is found followed by a valid map line, an error is raised.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & A pointer to a {\ttfamily t\+\_\+file} structure that contains the map and file data.
+\begin{DoxyItemize}
+\item {\ttfamily m-\/\texorpdfstring{$>$}{>}map\+\_\+start} represents the index of the first line of the map in the file.
+\item {\ttfamily m-\/\texorpdfstring{$>$}{>}heightfile} is the total number of lines in the file.
+\item {\ttfamily m-\/\texorpdfstring{$>$}{>}file} is a 2D array of characters representing each line of the file. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if no issues are found. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{map__verification_8c_a9f756c577394e97afa158056bd82bf77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__verification_8c_a9f756c577394e97afa158056bd82bf77_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{map__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646}\label{map__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646} 
 \index{map\_verification.c@{map\_verification.c}!check\_valid\_values@{check\_valid\_values}}
 \index{check\_valid\_values@{check\_valid\_values}!map\_verification.c@{map\_verification.c}}
 \doxysubsubsection{\texorpdfstring{check\_valid\_values()}{check\_valid\_values()}}
-{\footnotesize\ttfamily int check\+\_\+valid\+\_\+values (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int check\+\_\+valid\+\_\+values (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -49,31 +90,33 @@ Checks if each character in the map is valid (01WSEN~\newline
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to the {\ttfamily t\+\_\+data} structure containing map data. \\
+{\em m} & Pointer to the {\ttfamily t\+\_\+file} structure containing map data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 int 0 if valid, or the error code from {\ttfamily fd\+\_\+error} if invalid. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=283pt]{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_cgraph}
+\includegraphics[width=283pt]{map__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__verification_8c_a7a942c088d4ce1fdde82d4c687625bd1_icgraph}
+\includegraphics[width=350pt]{map__verification_8c_a60ef98f8034bcc53e01df2aaf5b33646_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103}\label{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103} 
+\Hypertarget{map__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9}\label{map__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9} 
 \index{map\_verification.c@{map\_verification.c}!check\_walls@{check\_walls}}
 \index{check\_walls@{check\_walls}!map\_verification.c@{map\_verification.c}}
 \doxysubsubsection{\texorpdfstring{check\_walls()}{check\_walls()}}
-{\footnotesize\ttfamily int check\+\_\+walls (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int check\+\_\+walls (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -81,56 +124,33 @@ Checks if the map is correctly enclosed by walls on all sides.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & A pointer to the t\+\_\+data structure that contains the game map and its dimensions. \\
+{\em m} & A pointer to the t\+\_\+file structure that contains the game map and its dimensions. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns 0 if all walls are correctly enclosed, otherwise returns a non-\/zero value and reports an error. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=271pt]{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_cgraph}
+\includegraphics[width=271pt]{map__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__verification_8c_a5b9b9dd9feb7d525a8c55b9378cc8103_icgraph}
+\includegraphics[width=350pt]{map__verification_8c_a2e6a2523bb20297fb6972ecb4f276ca9_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072}\label{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072} 
-\index{map\_verification.c@{map\_verification.c}!checkextension@{checkextension}}
-\index{checkextension@{checkextension}!map\_verification.c@{map\_verification.c}}
-\doxysubsubsection{\texorpdfstring{checkextension()}{checkextension()}}
-{\footnotesize\ttfamily int checkextension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{extension }\end{DoxyParamCaption})}
-
-
-
-Checks if the given filename has a specific file extension. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em name} & A pointer to a string representing the filename to be checked. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-0 if the filename ends with "{}.\+cub"{}, 1 otherwise. 
-\end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{map__verification_8c_a7ab11ed507b3d0e58c22de178191e072_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498}\label{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498} 
+\Hypertarget{map__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93}\label{map__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93} 
 \index{map\_verification.c@{map\_verification.c}!validate\_map@{validate\_map}}
 \index{validate\_map@{validate\_map}!map\_verification.c@{map\_verification.c}}
 \doxysubsubsection{\texorpdfstring{validate\_map()}{validate\_map()}}
-{\footnotesize\ttfamily int validate\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int validate\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -140,31 +160,33 @@ This function performs various checks to validate the map and player configurati
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to a {\ttfamily t\+\_\+data} structure containing map and player data. \\
+{\em m} & Pointer to a {\ttfamily t\+\_\+file} structure containing map and player data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 0 if the map is valid, 1 if there are wall issues, or an error code if validation fails. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_cgraph}
+\includegraphics[width=350pt]{map__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=314pt]{map__verification_8c_ae2f104cb1e25919656e1d7a8c4e36498_icgraph}
+\includegraphics[width=350pt]{map__verification_8c_a4a115a4aa3711c94db371e80eb7f9a93_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__verification_8c_a753104db9499b280a27994290cee30d2}\label{map__verification_8c_a753104db9499b280a27994290cee30d2} 
+\Hypertarget{map__verification_8c_aeef82a5663351140dd3fcd335f542bc9}\label{map__verification_8c_aeef82a5663351140dd3fcd335f542bc9} 
 \index{map\_verification.c@{map\_verification.c}!vertical\_wall@{vertical\_wall}}
 \index{vertical\_wall@{vertical\_wall}!map\_verification.c@{map\_verification.c}}
 \doxysubsubsection{\texorpdfstring{vertical\_wall()}{vertical\_wall()}}
-{\footnotesize\ttfamily int vertical\+\_\+wall (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game,  }\item[{int}]{j }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int vertical\+\_\+wall (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{game,  }\item[{int}]{j }\end{DoxyParamCaption})}
 
 
 
@@ -172,7 +194,7 @@ Checks if all characters in a specific vertical wall of the map are \textquotesi
 
 
 \begin{DoxyParams}{Parameters}
-{\em game} & A pointer to the t\+\_\+data structure that contains the game map and its dimensions. \\
+{\em game} & A pointer to the t\+\_\+file structure that contains the game map and its dimensions. \\
 \hline
 {\em j} & The column index to check for a vertical wall. \\
 \hline
@@ -180,10 +202,11 @@ Checks if all characters in a specific vertical wall of the map are \textquotesi
 \begin{DoxyReturn}{Returns}
 Returns 0 if the entire column is filled with \textquotesingle{}1\textquotesingle{}s, otherwise returns 1. 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__verification_8c_a753104db9499b280a27994290cee30d2_icgraph}
+\includegraphics[width=350pt]{map__verification_8c_aeef82a5663351140dd3fcd335f542bc9_icgraph}
 \end{center}
 \end{figure}

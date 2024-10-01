@@ -2,8 +2,7 @@
 \hypertarget{color__helper_8c}{}\label{color__helper_8c}\index{src/map/color\_helper.c@{src/map/color\_helper.c}}
 {\ttfamily \#include "{}cub3d.\+h"{}}\newline
 {\ttfamily \#include "{}libft.\+h"{}}\newline
-Include dependency graph for color\+\_\+helper.\+c\+:
-\nopagebreak
+Include dependency graph for color\+\_\+helper.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,25 +12,60 @@ Include dependency graph for color\+\_\+helper.\+c\+:
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{color__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7}{ft\+\_\+strncpy}} (char \texorpdfstring{$\ast$}{*}s1, char \texorpdfstring{$\ast$}{*}s2, int n)
-\item 
-char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{color__helper_8c_ad57ecdce78737f830dfa1844b698e1fe}{ft\+\_\+split\+\_\+comma}} (char \texorpdfstring{$\ast$}{*}str)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{color__helper_8c_a9b7a7177014a8c102f543a033e4dc16a}{print\+\_\+colores}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Prints color information for debugging. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{color__helper_8c_a3b9724a44019ba43767db94d610f52af}{color\+\_\+values\+\_\+validation}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}array)
+\begin{DoxyCompactList}\small\item\em Validates color values in a given 2D array of strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{color__helper_8c_ad57ecdce78737f830dfa1844b698e1fe}\label{color__helper_8c_ad57ecdce78737f830dfa1844b698e1fe} 
-\index{color\_helper.c@{color\_helper.c}!ft\_split\_comma@{ft\_split\_comma}}
-\index{ft\_split\_comma@{ft\_split\_comma}!color\_helper.c@{color\_helper.c}}
-\doxysubsubsection{\texorpdfstring{ft\_split\_comma()}{ft\_split\_comma()}}
-{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} ft\+\_\+split\+\_\+comma (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+\Hypertarget{color__helper_8c_a3b9724a44019ba43767db94d610f52af}\label{color__helper_8c_a3b9724a44019ba43767db94d610f52af} 
+\index{color\_helper.c@{color\_helper.c}!color\_values\_validation@{color\_values\_validation}}
+\index{color\_values\_validation@{color\_values\_validation}!color\_helper.c@{color\_helper.c}}
+\doxysubsubsection{\texorpdfstring{color\_values\_validation()}{color\_values\_validation()}}
+{\footnotesize\ttfamily int color\+\_\+values\+\_\+validation (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{array }\end{DoxyParamCaption})}
 
+
+
+Validates color values in a given 2D array of strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & A 2D array of strings where each string represents a color component. If the array is NULL, the function immediately returns an error (1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if all values within the range of 0 to 255), and 1 if any value is out of range or the input array is NULL. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color__helper_8c_a3b9724a44019ba43767db94d610f52af_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{color__helper_8c_a9b7a7177014a8c102f543a033e4dc16a}\label{color__helper_8c_a9b7a7177014a8c102f543a033e4dc16a} 
+\index{color\_helper.c@{color\_helper.c}!print\_colores@{print\_colores}}
+\index{print\_colores@{print\_colores}!color\_helper.c@{color\_helper.c}}
+\doxysubsubsection{\texorpdfstring{print\_colores()}{print\_colores()}}
+{\footnotesize\ttfamily void print\+\_\+colores (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Prints color information for debugging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to {\ttfamily t\+\_\+file} with color data. \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=273pt]{color__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_cgraph}
+\includegraphics[width=271pt]{color__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:
@@ -39,20 +73,6 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{color__helper_8c_ad57ecdce78737f830dfa1844b698e1fe_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{color__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7}\label{color__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7} 
-\index{color\_helper.c@{color\_helper.c}!ft\_strncpy@{ft\_strncpy}}
-\index{ft\_strncpy@{ft\_strncpy}!color\_helper.c@{color\_helper.c}}
-\doxysubsubsection{\texorpdfstring{ft\_strncpy()}{ft\_strncpy()}}
-{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} ft\+\_\+strncpy (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s1,  }\item[{char \texorpdfstring{$\ast$}{*}}]{s2,  }\item[{int}]{n }\end{DoxyParamCaption})}
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{color__helper_8c_accbc8abe1d4ff400f1fe694d2f338bb7_icgraph}
+\includegraphics[width=350pt]{color__helper_8c_a9b7a7177014a8c102f543a033e4dc16a_icgraph}
 \end{center}
 \end{figure}

@@ -1,0 +1,68 @@
+<map id="setup_and_run_graphics" name="setup_and_run_graphics">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,255,184,280"/>
+<area shape="rect" id="Node000002" href="$draw__map_8c.html#abb35c64f40d6a26a0ecb17e0845c5514" title="Prints squares, borders and player of the map." alt="" coords="473,155,579,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,252,164,220,197,203,231,190,291,176,351,168,460,163,460,168,352,173,292,181,233,195,199,208,166,225,115,257"/>
+<area shape="rect" id="Node000013" href="$util__5_8c.html#a935bbae1ea2cb5d18534db1274ec24dd" title="Destroy window." alt="" coords="279,205,365,231"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="153,252,265,228,266,233,154,257"/>
+<area shape="rect" id="Node000014" href="$movement_8c.html#a27dbbdbc6d071f3731c4593d051de838" title=" " alt="" coords="257,255,387,280"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="184,265,243,265,243,270,184,270"/>
+<area shape="rect" id="Node000017" href="$util__2_8c.html#ad7d661fed596492a19e7d67b862ee02e" title="Prints debugging information about the map." alt="" coords="273,457,371,483"/>
+<area shape="poly" id="edge25_Node000001_Node000017" title=" " alt="" coords="112,278,298,446,295,450,108,282"/>
+<area shape="rect" id="Node000026" href="$mlx__init__create__win_8c.html#a81e5bd795cb879b651de99812ac575da" title="Initialize the MLX library and create a new window." alt="" coords="232,305,412,331"/>
+<area shape="poly" id="edge39_Node000001_Node000026" title=" " alt="" coords="153,278,252,300,251,305,152,283"/>
+<area shape="rect" id="Node000003" href="$draw__player_8c.html#a0130fbcda5fe3198cee34212ce33edbc" title="Draw vector of player." alt="" coords="650,255,749,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="570,178,593,189,618,211,642,233,661,246,658,250,638,237,615,215,591,194,568,182"/>
+<area shape="rect" id="Node000005" href="$draw__borders_8c.html#a7a0f61fd1ed16eed914881ad481d3d6f" title="Draw borders of map." alt="" coords="648,153,751,179"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="579,164,634,164,634,169,579,170"/>
+<area shape="rect" id="Node000010" href="$draw__player_8c.html#aa32d1a2cbd10349e6d59e101d801cb22" title="Draw pixel." alt="" coords="839,252,931,277"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="575,177,827,246,825,251,573,183"/>
+<area shape="rect" id="Node000011" href="$draw__map_8c.html#ad574847dfafc7f9060c6de1e5e52eb38" title="Prints square by tile size with mlx pixel put." alt="" coords="833,5,938,31"/>
+<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="541,152,584,121,639,89,732,53,819,29,820,34,733,58,641,94,587,126,544,157"/>
+<area shape="rect" id="Node000012" href="$draw__map_8c.html#a8aaa24c0c95eab6aec102a27e52b8ecd" title=" " alt="" coords="641,104,758,129"/>
+<area shape="poly" id="edge17_Node000002_Node000012" title=" " alt="" coords="570,152,641,131,642,136,571,157"/>
+<area shape="rect" id="Node000004" href="$util__2_8c.html#a26e24eb705fb43a7fc63f86db9427312" title="Fast version on pixel put." alt="" coords="1012,153,1153,179"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="736,277,783,291,841,300,903,301,934,296,963,286,996,267,1024,241,1065,189,1069,192,1028,245,999,271,965,291,935,301,903,306,840,306,781,296,734,283"/>
+<area shape="rect" id="Node000006" href="$draw__borders_8c.html#a24b7b602bee179e2f49b2f6c4e4f3de0" title="Draw bottom border." alt="" coords="807,153,964,179"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="751,163,793,163,793,169,751,169"/>
+<area shape="rect" id="Node000007" href="$draw__borders_8c.html#a9bc672a7253ed16ae0c35641b48214d3" title="Draw left border." alt="" coords="820,203,951,228"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="749,176,824,196,822,202,747,181"/>
+<area shape="rect" id="Node000008" href="$draw__borders_8c.html#a2a1cbc9a6116e4eb11883cea084346aa" title="Draw right border." alt="" coords="815,55,955,80"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="735,151,757,138,771,126,780,114,790,101,805,89,817,83,819,88,808,94,794,105,784,117,775,130,760,143,737,155"/>
+<area shape="rect" id="Node000009" href="$draw__borders_8c.html#a4bf979fd1a1016b16d047a65f1ea8c0b" title="Draw top border." alt="" coords="820,104,951,129"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="747,151,822,130,824,136,749,156"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="964,163,998,163,998,169,964,169"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="936,200,1017,179,1019,185,937,205"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="936,78,965,89,1013,115,1055,143,1052,147,1011,120,963,94,934,83"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="937,127,1019,147,1017,153,936,132"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="931,250,963,237,1010,211,1051,184,1054,189,1013,216,965,242,933,254"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="939,28,965,40,996,63,1024,90,1067,140,1063,144,1021,93,993,67,963,44,937,32"/>
+<area shape="poly" id="edge20_Node000014_Node000002" title=" " alt="" coords="383,252,411,240,425,228,434,215,443,202,458,189,468,183,471,188,462,193,447,206,438,219,429,232,413,244,385,257"/>
+<area shape="poly" id="edge21_Node000014_Node000003" title=" " alt="" coords="388,265,636,265,636,270,388,270"/>
+<area shape="rect" id="Node000015" href="$util__1_8c.html#abdd79f8c7592cfe0da42efdeeb0b09a1" title="Outputs an error message to the standard error stream." alt="" coords="489,305,563,331"/>
+<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="375,278,477,303,475,308,373,283"/>
+<area shape="rect" id="Node000016" href="$draw__player_8c.html#a56929c7070f2809e4dffa71a0a9e1d09" title=" " alt="" coords="468,204,584,229"/>
+<area shape="poly" id="edge23_Node000014_Node000016" title=" " alt="" coords="373,252,461,230,462,235,375,257"/>
+<area shape="poly" id="edge24_Node000016_Node000003" title=" " alt="" coords="571,227,642,248,641,253,570,232"/>
+<area shape="rect" id="Node000018" href="$util__1_8c.html#a08016234ad2e243c79137f0d479e69c2" title="Outputs debug info with number in green color." alt="" coords="640,607,759,632"/>
+<area shape="poly" id="edge26_Node000017_Node000018" title=" " alt="" coords="335,481,384,537,420,568,461,593,502,607,545,616,626,621,626,626,544,621,500,612,459,598,417,573,380,541,331,485"/>
+<area shape="rect" id="Node000019" href="$util__1_8c.html#a02f953addb15c10c0207a72be1aed7cb" title="Outputs debug text." alt="" coords="652,457,747,483"/>
+<area shape="poly" id="edge27_Node000017_Node000019" title=" " alt="" coords="372,467,638,467,638,473,372,473"/>
+<area shape="rect" id="Node000020" href="$util__2_8c.html#a493bccc094a8b964b4610c4d914106c6" title="Prints the map to the standard output." alt="" coords="649,381,749,407"/>
+<area shape="poly" id="edge28_Node000017_Node000020" title=" " alt="" coords="338,455,390,421,424,404,459,391,505,383,551,380,636,383,635,388,551,385,505,388,461,397,426,409,393,426,341,459"/>
+<area shape="rect" id="Node000021" href="$color__helper_8c.html#a9b7a7177014a8c102f543a033e4dc16a" title="Prints color information for debugging." alt="" coords="473,407,579,432"/>
+<area shape="poly" id="edge29_Node000017_Node000021" title=" " alt="" coords="371,455,460,433,462,438,372,460"/>
+<area shape="rect" id="Node000022" href="$player__verification_8c.html#a4906364ad41c63f91e951ea60b80478b" title="Prints the player&#39;s position and direction information for debugging." alt="" coords="460,557,592,583"/>
+<area shape="poly" id="edge32_Node000017_Node000022" title=" " alt="" coords="345,481,397,511,461,544,476,550,474,555,459,548,395,515,343,485"/>
+<area shape="rect" id="Node000024" href="$texture__parsing_8c.html#ab50670cb6092a00fd0747e54e128bd6d" title="Prints texture paths for debugging." alt="" coords="469,508,583,533"/>
+<area shape="poly" id="edge36_Node000017_Node000024" title=" " alt="" coords="372,480,462,502,460,507,371,485"/>
+<area shape="poly" id="edge30_Node000021_Node000019" title=" " alt="" coords="571,430,642,451,641,456,570,435"/>
+<area shape="poly" id="edge31_Node000021_Node000020" title=" " alt="" coords="579,409,635,401,636,406,580,414"/>
+<area shape="poly" id="edge34_Node000022_Node000018" title=" " alt="" coords="572,580,641,600,640,605,571,585"/>
+<area shape="poly" id="edge35_Node000022_Node000019" title=" " alt="" coords="569,555,591,544,605,532,614,519,623,507,638,493,649,487,652,491,642,497,627,510,618,523,609,535,593,548,571,560"/>
+<area shape="rect" id="Node000023" href="$util__1_8c.html#a5616d9ac38f4be83b46d3d995bbe6e75" title="Outputs debug info with case in green color." alt="" coords="650,557,749,583"/>
+<area shape="poly" id="edge33_Node000022_Node000023" title=" " alt="" coords="592,567,636,567,636,573,592,573"/>
+<area shape="poly" id="edge38_Node000024_Node000019" title=" " alt="" coords="570,505,641,484,642,489,571,510"/>
+<area shape="rect" id="Node000025" href="$util__1_8c.html#a24cfd74052ac4c8a7d0b27284af44a80" title="Outputs debug info with case in green color." alt="" coords="646,508,753,533"/>
+<area shape="poly" id="edge37_Node000024_Node000025" title=" " alt="" coords="583,518,632,518,632,523,583,523"/>
+<area shape="poly" id="edge40_Node000026_Node000015" title=" " alt="" coords="412,315,475,315,475,321,412,321"/>
+</map>

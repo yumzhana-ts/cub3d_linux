@@ -17,15 +17,15 @@ Include dependency graph for map\+\_\+parsing.\+c\+:\nopagebreak
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{map__parsing_8c_a7c433d738867e1aa6b529290ef9b5cda}{read\+\_\+map}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
-\begin{DoxyCompactList}\small\item\em Reads the map from the file data into the t\+\_\+data structure. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{map__parsing_8c_ac190d22718f692b89123f6067a935371}{format\+\_\+verification}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{map__parsing_8c_a689e0727f3117c1f8ed52e1671391620}{read\+\_\+map}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Reads the map from the file data into the t\+\_\+file structure. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map__parsing_8c_ac0bab95559c0f02ae27df9d538db7c0c}{format\+\_\+verification}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Verifies the overall format of the map file. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{map__parsing_8c_ab6837669f3e26e1a7826625406863c34}{find\+\_\+map\+\_\+start}} (char \texorpdfstring{$\ast$}{*}str)
 \begin{DoxyCompactList}\small\item\em Finds the start of the map in the given string. \end{DoxyCompactList}\item 
-static int \mbox{\hyperlink{map__parsing_8c_a6087d20282ccd4e416a8ed98b6950872}{map\+\_\+start}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+static int \mbox{\hyperlink{map__parsing_8c_a279662c9aa3745b424c440132ce4a7b6}{map\+\_\+start}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Determines the starting index of the map in the file data. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{map__parsing_8c_a66b150036d9a4a18c2b8f45481ec322e}{map\+\_\+controls}} (t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{map__parsing_8c_aa41e6d387b624ef849bc0cb2e3f2d982}{map\+\_\+controls}} (t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Verifies the map format and controls its placement within the file data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -53,18 +53,19 @@ Finds the start of the map in the given string.
 \begin{DoxyReturn}{Returns}
 Returns 0 if the map starts with \textquotesingle{}1\textquotesingle{}, otherwise returns 1. 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{map__parsing_8c_ab6837669f3e26e1a7826625406863c34_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__parsing_8c_ac190d22718f692b89123f6067a935371}\label{map__parsing_8c_ac190d22718f692b89123f6067a935371} 
+\Hypertarget{map__parsing_8c_ac0bab95559c0f02ae27df9d538db7c0c}\label{map__parsing_8c_ac0bab95559c0f02ae27df9d538db7c0c} 
 \index{map\_parsing.c@{map\_parsing.c}!format\_verification@{format\_verification}}
 \index{format\_verification@{format\_verification}!map\_parsing.c@{map\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{format\_verification()}{format\_verification()}}
-{\footnotesize\ttfamily int format\+\_\+verification (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int format\+\_\+verification (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -72,31 +73,33 @@ Verifies the overall format of the map file.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to the t\+\_\+data structure that contains the file data. \\
+{\em m} & Pointer to the t\+\_\+file structure that contains the file data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns 0 on success, 1 on failure. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__parsing_8c_ac190d22718f692b89123f6067a935371_cgraph}
+\includegraphics[width=350pt]{map__parsing_8c_ac0bab95559c0f02ae27df9d538db7c0c_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=341pt]{map__parsing_8c_ac190d22718f692b89123f6067a935371_icgraph}
+\includegraphics[width=350pt]{map__parsing_8c_ac0bab95559c0f02ae27df9d538db7c0c_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__parsing_8c_a66b150036d9a4a18c2b8f45481ec322e}\label{map__parsing_8c_a66b150036d9a4a18c2b8f45481ec322e} 
+\Hypertarget{map__parsing_8c_aa41e6d387b624ef849bc0cb2e3f2d982}\label{map__parsing_8c_aa41e6d387b624ef849bc0cb2e3f2d982} 
 \index{map\_parsing.c@{map\_parsing.c}!map\_controls@{map\_controls}}
 \index{map\_controls@{map\_controls}!map\_parsing.c@{map\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{map\_controls()}{map\_controls()}}
-{\footnotesize\ttfamily int map\+\_\+controls (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int map\+\_\+controls (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -104,31 +107,33 @@ Verifies the map format and controls its placement within the file data.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to the t\+\_\+data structure that contains the file data. \\
+{\em m} & Pointer to the t\+\_\+file structure that contains the file data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns 0 on success, 1 on failure. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__parsing_8c_a66b150036d9a4a18c2b8f45481ec322e_cgraph}
+\includegraphics[width=350pt]{map__parsing_8c_aa41e6d387b624ef849bc0cb2e3f2d982_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__parsing_8c_a66b150036d9a4a18c2b8f45481ec322e_icgraph}
+\includegraphics[width=350pt]{map__parsing_8c_aa41e6d387b624ef849bc0cb2e3f2d982_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__parsing_8c_a6087d20282ccd4e416a8ed98b6950872}\label{map__parsing_8c_a6087d20282ccd4e416a8ed98b6950872} 
+\Hypertarget{map__parsing_8c_a279662c9aa3745b424c440132ce4a7b6}\label{map__parsing_8c_a279662c9aa3745b424c440132ce4a7b6} 
 \index{map\_parsing.c@{map\_parsing.c}!map\_start@{map\_start}}
 \index{map\_start@{map\_start}!map\_parsing.c@{map\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{map\_start()}{map\_start()}}
-{\footnotesize\ttfamily static int map\+\_\+start (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static int map\+\_\+start (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -136,55 +141,59 @@ Determines the starting index of the map in the file data.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to the t\+\_\+data structure that contains the file data. \\
+{\em m} & Pointer to the t\+\_\+file structure that contains the file data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns 0 on success, 1 on failure. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=271pt]{map__parsing_8c_a6087d20282ccd4e416a8ed98b6950872_cgraph}
+\includegraphics[width=271pt]{map__parsing_8c_a279662c9aa3745b424c440132ce4a7b6_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{map__parsing_8c_a6087d20282ccd4e416a8ed98b6950872_icgraph}
+\includegraphics[width=350pt]{map__parsing_8c_a279662c9aa3745b424c440132ce4a7b6_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{map__parsing_8c_a7c433d738867e1aa6b529290ef9b5cda}\label{map__parsing_8c_a7c433d738867e1aa6b529290ef9b5cda} 
+\Hypertarget{map__parsing_8c_a689e0727f3117c1f8ed52e1671391620}\label{map__parsing_8c_a689e0727f3117c1f8ed52e1671391620} 
 \index{map\_parsing.c@{map\_parsing.c}!read\_map@{read\_map}}
 \index{read\_map@{read\_map}!map\_parsing.c@{map\_parsing.c}}
 \doxysubsubsection{\texorpdfstring{read\_map()}{read\_map()}}
-{\footnotesize\ttfamily int read\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int read\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
-Reads the map from the file data into the t\+\_\+data structure. 
+Reads the map from the file data into the t\+\_\+file structure. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em m} & Pointer to the t\+\_\+data structure that will store the map data. \\
+{\em m} & Pointer to the t\+\_\+file structure that will store the map data. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Returns 0 on success, 1 on failure. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=236pt]{map__parsing_8c_a7c433d738867e1aa6b529290ef9b5cda_cgraph}
+\includegraphics[width=236pt]{map__parsing_8c_a689e0727f3117c1f8ed52e1671391620_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=296pt]{map__parsing_8c_a7c433d738867e1aa6b529290ef9b5cda_icgraph}
+\includegraphics[width=350pt]{map__parsing_8c_a689e0727f3117c1f8ed52e1671391620_icgraph}
 \end{center}
 \end{figure}

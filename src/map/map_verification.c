@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 16:53:21 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@
  * ensures the player has been placed properly,
  * and verifies that the player is not in an invalid or locked position.
  *
- * @param m Pointer to a `t_data` structure containing map and player data.
+ * @param m Pointer to a `t_file` structure containing map and player data.
  * @return 0 if the map is valid, 1 if there are wall issues, 
  * or an error code if validation fails.
  */
-int	validate_map(t_data *m)
+int	validate_map(t_file *m)
 {
 	if (check_walls(m))
 		return (1);
@@ -46,13 +46,13 @@ int	validate_map(t_data *m)
 /**
  * @brief Checks if all characters in a specific
  *  vertical wall of the map are '1'.
- * @param game A pointer to the t_data structure that 
+ * @param game A pointer to the t_file structure that 
  * contains the game map and its dimensions.
  * @param j The column index to check for a vertical wall.
  * @return Returns 0 if the entire column is 
  * filled with '1's, otherwise returns 1.
  */
-int	vertical_wall(t_data *game, int j)
+int	vertical_wall(t_file *game, int j)
 {
 	int	i;
 
@@ -69,12 +69,12 @@ int	vertical_wall(t_data *game, int j)
 /**
  * @brief Checks if the map is correctly enclosed by walls on all sides.
  * @callgraph
- * @param m A pointer to the t_data structure that 
+ * @param m A pointer to the t_file structure that 
  * contains the game map and its dimensions.
  * @return Returns 0 if all walls are correctly enclosed, 
  * otherwise returns a non-zero value and reports an error.
  */
-int	check_walls(t_data *m)
+int	check_walls(t_file *m)
 {
 	if (ft_strchr(m->map[0], '0') || ft_strchr(m->map[0], 'N')
 		|| ft_strchr(m->map[0], 'S') || ft_strchr(m->map[0], 'W')
@@ -92,10 +92,10 @@ int	check_walls(t_data *m)
 /**
  * @brief Checks if each character in the map is valid (01WSEN\n).
  * @callgraph
- * @param m Pointer to the `t_data` structure containing map data.
+ * @param m Pointer to the `t_file` structure containing map data.
  * @return int 0 if valid, or the error code from `fd_error` if invalid.
  */
-int	check_valid_values(t_data *m)
+int	check_valid_values(t_file *m)
 {
 	int	i;
 	int	j;
@@ -119,17 +119,17 @@ int	check_valid_values(t_data *m)
 /**
  * @brief Checks for empty lines within the map data after the start of the map.
  *
- * This function iterates through the map data starting from the specified `map_start` index in the `t_data` structure.
+ * This function iterates through the map data starting from the specified `map_start` index in the `t_file` structure.
  * It looks for empty lines that consist solely of spaces and checks if the next line contains map elements (either '1' or '0').
  * If an empty line is found followed by a valid map line, an error is raised.
  *
- * @param m A pointer to a `t_data` structure that contains the map and file data.
+ * @param m A pointer to a `t_file` structure that contains the map and file data.
  *          - `m->map_start` represents the index of the first line of the map in the file.
  *          - `m->heightfile` is the total number of lines in the file.
  *          - `m->file` is a 2D array of characters representing each line of the file.
  * @return Returns 0 if no issues are found. 
  */
-int	check_empty_line(t_data *m)
+int	check_empty_line(t_file *m)
 {
 	int	i;
 	int	j;

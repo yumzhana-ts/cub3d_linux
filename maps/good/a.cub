@@ -1,0 +1,14 @@
+NO textures/test/north.xpm
+SO textures/test/south.xpm
+WE textures/test/west.xpm
+EA textures/test/east.xpm
+
+C 35,19,73
+F 15,6,40
+
+1111111
+1000011
+10N0011
+1000011
+1000011
+1111111

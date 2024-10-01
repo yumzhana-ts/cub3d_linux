@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/06 11:54:38 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@
  * @todo 👾 Handle differenttfile forms
  */
 
-static int	add_line(t_data *game, char *line)
+static int	add_line(t_file *game, char *line)
 {
 	char	**temporary;
 	int		i;
@@ -60,11 +60,11 @@ static int	add_line(t_data *game, char *line)
 /**
 * @brief Opens a file and readstfile
 * @param argv File path.
-* @param m Pointer to `t_data` for storing the file descriptor and line.
+* @param m Pointer to `t_file` for storing the file descriptor and line.
 * @return 0 on success; error code from `fd_error` otherwise.
 * @callgraph
 */
-int	read_file(char **argv, t_data *m)
+int	read_file(char **argv, t_file *m)
 {
 	char	*readfile;
 

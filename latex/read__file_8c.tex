@@ -12,18 +12,18 @@ Include dependency graph for read\+\_\+file.\+c\+:\nopagebreak
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \mbox{\hyperlink{read__file_8c_a804cd515bd4c1bf7169adeb352db80fb}{add\+\_\+line}} (t\+\_\+data \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}line)
+static int \mbox{\hyperlink{read__file_8c_a177dd88caa69e41813ba0007a39908f6}{add\+\_\+line}} (t\+\_\+file \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}line)
 \begin{DoxyCompactList}\small\item\em Adds a new line to the file. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{read__file_8c_a0a6c39f92e83ec40dea691b333ea800c}{read\+\_\+file}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, t\+\_\+data \texorpdfstring{$\ast$}{*}m)
+int \mbox{\hyperlink{read__file_8c_a80bc30d37fc3fd91db7c2c1a2ab93a38}{read\+\_\+file}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, t\+\_\+file \texorpdfstring{$\ast$}{*}m)
 \begin{DoxyCompactList}\small\item\em Opens a file and readstfile. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{read__file_8c_a804cd515bd4c1bf7169adeb352db80fb}\label{read__file_8c_a804cd515bd4c1bf7169adeb352db80fb} 
+\Hypertarget{read__file_8c_a177dd88caa69e41813ba0007a39908f6}\label{read__file_8c_a177dd88caa69e41813ba0007a39908f6} 
 \index{read\_file.c@{read\_file.c}!add\_line@{add\_line}}
 \index{add\_line@{add\_line}!read\_file.c@{read\_file.c}}
 \doxysubsubsection{\texorpdfstring{add\_line()}{add\_line()}}
-{\footnotesize\ttfamily static int add\+\_\+line (\begin{DoxyParamCaption}\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{game,  }\item[{char \texorpdfstring{$\ast$}{*}}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static int add\+\_\+line (\begin{DoxyParamCaption}\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{game,  }\item[{char \texorpdfstring{$\ast$}{*}}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -42,19 +42,20 @@ This function increments the heightfile count, allocates a new array to accommod
 1 if the line was successfully added and thetfile was updated, 0 if the provided line was {\ttfamily NULL} or memory allocation failed. 
 \end{DoxyReturn}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]👾 Handle differenttfile forms \end{DoxyRefDesc}
-Here is the caller graph for this function\+:\nopagebreak
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]👾 Handle differenttfile forms \end{DoxyRefDesc}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{read__file_8c_a804cd515bd4c1bf7169adeb352db80fb_icgraph}
+\includegraphics[width=350pt]{read__file_8c_a177dd88caa69e41813ba0007a39908f6_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{read__file_8c_a0a6c39f92e83ec40dea691b333ea800c}\label{read__file_8c_a0a6c39f92e83ec40dea691b333ea800c} 
+\Hypertarget{read__file_8c_a80bc30d37fc3fd91db7c2c1a2ab93a38}\label{read__file_8c_a80bc30d37fc3fd91db7c2c1a2ab93a38} 
 \index{read\_file.c@{read\_file.c}!read\_file@{read\_file}}
 \index{read\_file@{read\_file}!read\_file.c@{read\_file.c}}
 \doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
-{\footnotesize\ttfamily int read\+\_\+file (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{t\+\_\+data \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int read\+\_\+file (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{t\+\_\+file \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
 
 
 
@@ -64,23 +65,25 @@ Opens a file and readstfile.
 \begin{DoxyParams}{Parameters}
 {\em argv} & File path. \\
 \hline
-{\em m} & Pointer to {\ttfamily t\+\_\+data} for storing the file descriptor and line. \\
+{\em m} & Pointer to {\ttfamily t\+\_\+file} for storing the file descriptor and line. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 0 on success; error code from {\ttfamily fd\+\_\+error} otherwise. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=252pt]{read__file_8c_a0a6c39f92e83ec40dea691b333ea800c_cgraph}
+\includegraphics[width=252pt]{read__file_8c_a80bc30d37fc3fd91db7c2c1a2ab93a38_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=290pt]{read__file_8c_a0a6c39f92e83ec40dea691b333ea800c_icgraph}
+\includegraphics[width=350pt]{read__file_8c_a80bc30d37fc3fd91db7c2c1a2ab93a38_icgraph}
 \end{center}
 \end{figure}
