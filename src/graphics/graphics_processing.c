@@ -27,10 +27,10 @@ void game_init(t_data *game, t_file *file)
 
 void	camera_mlx_process(t_data *game)
 {
-	game->camera_img.img = mlx_new_image(game->mlx_ptr, 360, 160);
+	game->camera_img.img = mlx_new_image(game->mlx_ptr, SCREEN_WIDTH, SCREEN_HEIGHT);
     game->camera_img.addr = mlx_get_data_addr(game->camera_img.img, &game->camera_img.bits_per_pixel, &game->camera_img.line_length,
                                 &game->camera_img.endian);
-    // display_map(game);
+    display_camera(game);
     mlx_put_image_to_window(game->mlx_ptr, game->camera_win_ptr, game->camera_img.img, 0, 0);
     mlx_hook(game->camera_win_ptr, 17, 0, exit_point, game);
     mlx_key_hook(game->win_ptr, (int (*)())handle_keypress, game);

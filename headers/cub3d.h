@@ -25,6 +25,7 @@
 #include <stdbool.h>
 // # include <mlx.h>
 #include "get_next_line.h"
+#include "libft.h"
 #include "../minilibx/mlx.h"
 // # include "../mlx/mlx.h"
 #include "../headers/ft_printf.h"
@@ -200,11 +201,15 @@ void vertical_intersection(t_data *game, double angle);
 int is_wall_up(t_data *game, int start_x, int start_y);
 int is_wall_left(t_data *game, int start_x, int start_y);
 int is_wall_right(t_data *game, int start_x, int start_y);
+void display_camera(t_data *game);
 
 
 void	fov(t_data *game);
 
 #endif
+
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 320
 #define EPSILON 1e-6
 #define DEBUG 1
 #define COLOR_RED 0xFF0000	 // Red color
