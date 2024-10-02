@@ -105,7 +105,10 @@ int zero_infinity(double angle, t_data *game)
 	{
 		if (is_equal(angle, M_PI) || is_equal(angle, M_PI/2))
 		{
-				game->ray -= cathetus;
+				printf("odecitany cathethus = %d \n, game.ray pred odectenim %.16f\n", cathetus, game->ray);
+				// game->ray -= cathetus;
+				printf("odecitany cathethus = %d \n, konecny game.ray %.16f\n", cathetus, game->ray);
+				// exit(1);
 		}
 		return (WALL);
 	}

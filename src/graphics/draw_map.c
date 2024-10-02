@@ -80,7 +80,7 @@ void display_map(t_data *game)
     }
     draw_pixel(game, game->file->player_x, game->file->player_y, COLOR_RED);
     // dda(game);
-	fov(game);
+	// fov(game);
     // game->file->player_x = 80;
     // game->file->player_y = 70;
     // draw_arrow(game, COLOR_RED, game->ray);

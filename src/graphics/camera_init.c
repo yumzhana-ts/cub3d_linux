@@ -15,10 +15,10 @@
 void draw_line(t_data *game, int x, int y, int color, int length)
 {
     int i;
-    int j;
+    int j = 0;
 
-    i = 0; 
-    while (i < length)
+    i = 0;
+    while (i < length)//length delka zdi
     {
         j = 0;
         while(j < 8)
@@ -34,11 +34,18 @@ void camera_wall(t_data *game, int i)
 {
     int wall_line;
     int line_off;
+	// int j = 0;
 
     wall_line = (TILE_SIZE * SCREEN_HEIGHT) / game->ray;
     if (wall_line > SCREEN_HEIGHT)
         wall_line = SCREEN_HEIGHT;
     line_off = (SCREEN_HEIGHT / 2) - (wall_line >>1);
+	// while (j < 8)
+	// {
+	// 	draw_line(game, i + j, line_off, 0x4AB1DC, (line_off + wall_line));
+	// 	j++;
+	// }
+	
     draw_line(game, i, line_off, 0x4AB1DC, (line_off + wall_line));
 }
 
@@ -61,6 +68,7 @@ void display_camera(t_data *game)
         printf(GREEN "\n\n\t\t\t\tCOUNT RAYS :%d\n\n\n" RESET_COLOR, i + 1);
         dda(game);
         camera_wall(game, i);
-        i++;
+		i++;
+        // i = i + 8;
     }
 }

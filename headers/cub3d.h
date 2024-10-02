@@ -35,7 +35,7 @@
 #include <X11/X.h>
 #include <float.h>
 
-#define TILE_SIZE 40
+#define TILE_SIZE 80
 
 
 typedef struct s_pixel
