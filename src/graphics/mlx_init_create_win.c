@@ -39,8 +39,8 @@ int mlx_init_create_window(t_data *game)
 		return (fd_error("Failed to initialize mlx.\n"));
 	game->win_ptr = mlx_new_window(game->mlx_ptr, game->file->widthmap * TILE_SIZE,
 									 game->file->heightmap * TILE_SIZE, "Map Display");
-	game->camera_win_ptr = mlx_new_window(game->camera_mlx_ptr, 360,
-									160, "Camera Display");
+	game->camera_win_ptr = mlx_new_window(game->camera_mlx_ptr, SCREEN_WIDTH,
+									SCREEN_HEIGHT, "Camera Display");
 	if (game->win_ptr == NULL)
 		return (fd_error("Failed to create window.\n"));
 	if (game->camera_win_ptr == NULL)

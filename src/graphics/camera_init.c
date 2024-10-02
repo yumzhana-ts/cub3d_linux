@@ -15,13 +15,15 @@
 void draw_line(t_data *game, int x, int y, int color, int length)
 {
     int i;
-    int j = 0;
+    int j;
+    //int ray_w;
 
     i = 0;
+    //ray_w = SCREEN_WIDTH / 58;
     while (i < length)//length delka zdi
     {
         j = 0;
-        while(j < 8)
+        while(j < 10)
         {
             my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
             j++;
@@ -33,20 +35,20 @@ void draw_line(t_data *game, int x, int y, int color, int length)
 void camera_wall(t_data *game, int i)
 {
     int wall_line;
-    int line_off;
-	// int j = 0;
+    //float line_off;
+    int x;
+    //int ray_w;
 
-    wall_line = (TILE_SIZE * SCREEN_HEIGHT) / game->ray;
+    //ray_w = SCREEN_WIDTH / 58;
+    wall_line = (SCREEN_HEIGHT) * 64 / game->ray;
     if (wall_line > SCREEN_HEIGHT)
         wall_line = SCREEN_HEIGHT;
-    line_off = (SCREEN_HEIGHT / 2) - (wall_line >>1);
-	// while (j < 8)
-	// {
-	// 	draw_line(game, i + j, line_off, 0x4AB1DC, (line_off + wall_line));
-	// 	j++;
-	// }
-	
-    draw_line(game, i, line_off, 0x4AB1DC, (line_off + wall_line));
+    //line_off = 160 - (wall_line / 2);
+    
+	x = (i + 1) * 10;
+    printf(RED"%d"RESET_COLOR, x);
+    draw_line(game, x, 0, 0x4AB1DC, wall_line);
+    //raw_line(game, x, wall_line, 0x4AB1DC, wall_line);
 }
 
 void display_camera(t_data *game)
@@ -56,6 +58,7 @@ void display_camera(t_data *game)
 
     game->angle_per_ray = FOV / 60;
     start_angle = game->player_angle - (FOV / 2);
+    
     i = 0;
     while (i < 60)
     {
@@ -69,6 +72,5 @@ void display_camera(t_data *game)
         dda(game);
         camera_wall(game, i);
 		i++;
-        // i = i + 8;
     }
 }

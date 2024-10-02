@@ -76,6 +76,8 @@ int handle_keypress(int keysym, t_data *game)
 	correction_of_angle(game);
     display_map(game);
     mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, game->img.img, 0, 0);
+    display_camera(game);
+    mlx_put_image_to_window(game->camera_mlx_ptr, game->camera_win_ptr, game->camera_img.img, 0, 0);
     print_game_status(game);
     ft_printf("\n");
     return 0;
