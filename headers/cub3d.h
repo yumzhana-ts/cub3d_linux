@@ -74,19 +74,16 @@ typedef struct s_data
 {
 	void	*mlx_ptr;
 	void	*win_ptr;
-
 	void	*camera_mlx_ptr;
 	void	*camera_win_ptr;
 	double	player_angle;
 	double	angle_for_loop;
 	double	angle_triangle;
-	int	step_x;
-	int	step_y;
-	// int	delta_x;
-	// int	delta_y;
-	int	map_x;
-	int	map_y;
-	int	min_length;
+	int		step_x;
+	int		step_y;
+	int		map_x;
+	int		map_y;
+	int		min_length;
 	double	horizontal_x;
 	double	horizontal_y;
 	double	horizontal_hypotenuse;
@@ -94,11 +91,12 @@ typedef struct s_data
 	double	vertical_x;
 	double	vertical_y;
 	double	ray;
-	int	quadrant;
+	int		quadrant;
 	double	angle_per_ray;//určuje úhel, o který se jednotlivé paprsky od sebe liší, když se rozprostírají v rámci zorného pole hráče.
 	t_pixel img;
 	t_pixel	camera_img;
 	t_file *file;
+	int 	side;
 } t_data;
 
 
@@ -202,6 +200,11 @@ int is_wall_up(t_data *game, int start_x, int start_y);
 int is_wall_left(t_data *game, int start_x, int start_y);
 int is_wall_right(t_data *game, int start_x, int start_y);
 void display_camera(t_data *game);
+void wall_line(t_data *game, int i);
+void draw_line(t_data *game, int x, int y, int length);
+int line_end(int wall_line);
+int line_start(int wall_line);
+int fix_fisheye(t_data *game);
 
 
 void	fov(t_data *game);

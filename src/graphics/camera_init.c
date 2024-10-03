@@ -12,43 +12,25 @@
 
 #include "cub3d.h"
 
-void draw_line(t_data *game, int x, int y, int color, int length)
-{
-    int i;
-    int j;
-    //int ray_w;
 
-    i = 0;
-    //ray_w = SCREEN_WIDTH / 58;
-    while (i < length)//length delka zdi
-    {
-        j = 0;
-        while(j < 10)
-        {
-            my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
-            j++;
-        }
-        i++;
-    }
-}
-
-void camera_wall(t_data *game, int i)
+void wall_line(t_data *game, int i)
 {
     int wall_line;
-    //float line_off;
+    int start;
+    int length;
+    int end;
     int x;
-    //int ray_w;
+    int distance;
 
-    //ray_w = SCREEN_WIDTH / 58;
-    wall_line = (SCREEN_HEIGHT) * 64 / game->ray;
-    if (wall_line > SCREEN_HEIGHT)
-        wall_line = SCREEN_HEIGHT;
-    //line_off = 160 - (wall_line / 2);
-    
-	x = (i + 1) * 10;
-    printf(RED"%d"RESET_COLOR, x);
-    draw_line(game, x, 0, 0x4AB1DC, wall_line);
-    //raw_line(game, x, wall_line, 0x4AB1DC, wall_line);
+    distance = fix_fisheye(game);
+    wall_line = (SCREEN_HEIGHT * TILE_SIZE) / distance;
+    start = line_start(wall_line);
+    end = line_end(wall_line);
+    length = end - start;
+
+    x = (i + 1) * 10;
+    printf(RED "%d" RESET_COLOR, x);
+    draw_line(game, x, start, length);
 }
 
 void display_camera(t_data *game)
@@ -58,7 +40,7 @@ void display_camera(t_data *game)
 
     game->angle_per_ray = FOV / 60;
     start_angle = game->player_angle - (FOV / 2);
-    
+
     i = 0;
     while (i < 60)
     {
@@ -70,7 +52,7 @@ void display_camera(t_data *game)
         ;
         printf(GREEN "\n\n\t\t\t\tCOUNT RAYS :%d\n\n\n" RESET_COLOR, i + 1);
         dda(game);
-        camera_wall(game, i);
-		i++;
+        wall_line(game, i);
+        i++;
     }
 }

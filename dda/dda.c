@@ -19,7 +19,6 @@ void dda(t_data *game)
 	int	expected;
 	int	i;
 
-	// game->angle_for_loop = game->player_angle;
 	expected = (int)calculate_distance_to_wall(game);
 	i = 1;
 	game->ray = 0;
@@ -27,7 +26,6 @@ void dda(t_data *game)
 	game->horizontal_hypotenuse = 0;
 	game->step_x = game->file->player_x;
 	game->step_y = game->file->player_y;
-	//int last_cathetus;
 	while (true)
 	{
 		printf(BLUE "Checking tile %d: " RESET_COLOR, i++);
@@ -37,8 +35,6 @@ void dda(t_data *game)
 		{
 			if (zero_infinity(game->angle_for_loop, game) == WALL)
 				break;
-			//kontrola yed dalsi
-			// break;
 		}
 		else
 		{
@@ -93,9 +89,16 @@ int	len_horizontal_ray(t_data *game, double distance_x, int array_x, int array_y
 	array_x = game->step_x / TILE_SIZE;
 	array_y = game->step_y / TILE_SIZE;
 	if ((game->quadrant == 3 || game->quadrant == 4) && game->file->map[array_y][array_x] == '1')
+	{
+		game->side = 0;
 		return (1);
+	}
+		
 	else if ((game->quadrant == 1 || game->quadrant == 2) && is_wall_up(game, array_x, array_y) == 1)
+	{
+		game->side = 0;
 		return (1);
+	}
 	return (0);
 }
 
@@ -108,10 +111,13 @@ int	len_vertical_ray(t_data *game, double distance_y, int array_x, int array_y)
 	array_x = game->step_x / TILE_SIZE;
 	array_y = game->step_y / TILE_SIZE;
 	if ((game->quadrant == 1 || game->quadrant == 4) && game->file->map[array_y][array_x] == '1')
+	{
+		game->side = 1;
 		return (1);
+	}	
 	else if ((game->quadrant == 2 || game->quadrant == 3) && is_wall_left(game, array_x, array_y) == 1)
 	{
-		printf("exit loop");
+		game->side = 1;
 		return (1);
 	}
 	return (0);
@@ -150,7 +156,6 @@ int	update_dda(double distance_x, double distance_y, t_data *game)
 				return (1);
 		}
 	}
-	
 	return (0);
 }
 /* 
