@@ -208,6 +208,9 @@ int fix_fisheye(t_data *game);
 double distance(t_data *game);
 
 
+double	perpWallDist(t_data *game, int number_ray_loop);
+
+
 void	fov(t_data *game);
 
 #endif
