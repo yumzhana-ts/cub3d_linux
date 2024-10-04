@@ -205,6 +205,7 @@ void draw_line(t_data *game, int x, int y, int length);
 int line_end(int wall_line);
 int line_start(int wall_line);
 int fix_fisheye(t_data *game);
+double distance(t_data *game);
 
 
 void	fov(t_data *game);

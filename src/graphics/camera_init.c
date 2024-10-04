@@ -20,10 +20,11 @@ void wall_line(t_data *game, int i)
     int length;
     int end;
     int x;
-    int distance;
+    int d;
 
-    distance = fix_fisheye(game);
-    wall_line = (SCREEN_HEIGHT * TILE_SIZE) / distance;
+    //distance = fix_fisheye(game);
+    d = distance(game);
+    wall_line = (SCREEN_HEIGHT) * 40/ d;
     start = line_start(wall_line);
     end = line_end(wall_line);
     length = end - start;

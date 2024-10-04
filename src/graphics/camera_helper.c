@@ -54,3 +54,15 @@ void draw_line(t_data *game, int x, int y, int length)
     }
 }
 
+double distance(t_data *game )
+{
+   double distance;
+
+    if(game->side == 0)
+    {
+        distance = game->ray * sin(game->angle_for_loop);
+    }
+    else
+        distance = game->ray * cos(M_PI - game->angle_for_loop);
+    return (distance);
+}
