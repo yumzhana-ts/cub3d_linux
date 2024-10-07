@@ -13,7 +13,6 @@
 #include "cub3d.h"
 #include <stdio.h>
 
-
 int is_wall_left(t_data *game, int start_x, int start_y)
 {
 	int x = start_x - 1; // Check the tile directly to the left

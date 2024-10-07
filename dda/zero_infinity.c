@@ -12,19 +12,32 @@
 
 #include "cub3d.h"
 
+
 int count_boundary(bool positive, int step)
 {
 	int boundary;
+	printf("\nstart_step CB = %d\n", step);
 
 	boundary = 0;
 	if (positive)
 		boundary = ((step / TILE_SIZE) + 1) * TILE_SIZE;
 	else if (!positive)
 	{
-		if (step % TILE_SIZE == 0) /* když  nestojí uprostřed */
+		if (step % TILE_SIZE == 0)/* když nestojí uprostřed */
+		{
 			boundary = ((step / TILE_SIZE) - 1) * TILE_SIZE;
+			printf("\nnestoji uprostred\n");
+		}
 		else
+		{
 			boundary = ((step / TILE_SIZE)) * TILE_SIZE;
+			printf("\nstoji uprostred\n");
+		}
+	}
+	else
+	{
+		printf("undefined behavior count_boundary");
+		exit(1);
 	}
 	return (boundary);
 }
@@ -34,10 +47,11 @@ int	finish_count_ray(t_data *game, int step_x, int step_y)
 {
 	double angle;
 
-	angle = game->player_angle;
+	angle = game->angle_for_loop;
 	printf("stepX_: %d, STEPy>%d\n\n", step_x, step_y);
 	if (is_equal(angle, M_PI / 2))
 	{
+		printf(BOLD_BLUE"KONTROLA IS_WALL UPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP?\n"RESET_COLOR);
 		if (is_wall_up(game, step_x, step_y))
 			return (WALL);
 	}
@@ -53,6 +67,7 @@ int	finish_count_ray(t_data *game, int step_x, int step_y)
 	}
 	else
 	{
+		printf(BOLD_BLUE"SMER NENI NAHORU ANI DOLEVA ANI DOPRAVA\n"RESET_COLOR);
 		if (game->file->map[step_y][step_x] == '1')
 			return (WALL);
 	}
@@ -68,8 +83,10 @@ int zero_infinity(double angle, t_data *game)
 
 	if (is_equal(angle, M_PI / 2))
 	{
+		printf(RED"uhel paprsku je PI/2 "RESET_COLOR);
 		boundary = count_boundary(false, game->step_y);
 		cathetus = game->step_y - boundary;
+		// 
 		printf("Step position: %d  | ", game->step_y);
 		game->step_y = boundary;
 		
@@ -92,7 +109,7 @@ int zero_infinity(double angle, t_data *game)
 	}
 	else
 	{
-		boundary = count_boundary(true, game->step_y);
+		boundary = count_boundary(true, game->step_y);		
 		cathetus = boundary - game->step_y;
 		printf("Step position: %d  | ", game->step_y);
 		game->step_y = boundary;

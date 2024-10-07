@@ -12,10 +12,10 @@ void	fov(t_data *game)
 	// SCREEN_HEIGHT = game->file->heightmap * TILE_SIZE;
 	// screen_width = game->file->widthmap * TILE_SIZE;
 	// screen_width = game->file->widthmap * TILE_SIZE;
-	game->angle_per_ray = FOV / 60;
+	game->angle_per_ray = FOV / NUMBER_RAYS;
 	start_angle = game->player_angle - (FOV / 2);
 	i = 0;
-	while (i < 60)//SCREEN_WIDTH
+	while (i < NUMBER_RAYS)//SCREEN_WIDTH
 	{
 		game->angle_for_loop = start_angle + i * game->angle_per_ray;
 		if (game->angle_for_loop > 2 * M_PI)
