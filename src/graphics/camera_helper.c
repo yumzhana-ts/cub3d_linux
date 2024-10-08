@@ -45,7 +45,7 @@ void draw_line(t_data *game, int x, int y, int length)
     while (i < length)
     {
         j = 0;
-        while (j < 10)
+        while (j < NUM_PIX_COLUMN)
         {
             my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
             j++;

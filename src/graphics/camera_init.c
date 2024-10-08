@@ -24,13 +24,13 @@ void wall_line(t_data *game, int i)
 
     //distance = fix_fisheye(game);
     // d = distance(game);
-    d = perpWallDist(game, i);
-    wall_line = (SCREEN_HEIGHT) * 50/ d;
+    d = perp_wall_dist(game, i);
+    wall_line = (SCREEN_HEIGHT) * 60/ d;
     start = line_start(wall_line);
     end = line_end(wall_line);
     length = end - start;
 
-    x = (NUMBER_RAYS - i) * 2;
+    x = (NUMBER_RAYS - i) * NUM_PIX_COLUMN;
     printf(RED "%d" RESET_COLOR, x);
     draw_line(game, x, start, length);
 }
@@ -82,7 +82,7 @@ void display_camera(t_data *game)
 }
 
 /* vypocet trojuhelníku v kamerové rovině */
-// double	perpWallDist(t_data *game, int number_ray_loop)
+// double	perp_wall_dist(t_data *game, int number_ray_loop)
 // {
 // 	double	final_distance;
 // 	double	angle;
@@ -105,25 +105,27 @@ void display_camera(t_data *game)
 // 	{
 // 		final_distance = game->ray;
 // 	}
-// 	// else if(number_ray_loop < 30)
-// 	// {
-// 	// 	angle = 90 - (30 - number_ray_loop);
-// 	// 	angle = degrees_to_radians(angle);
-// 	// 	final_distance = sin(angle) * game->ray;
-// 	// }
+// 	else if(number_ray_loop < 30)
+// 	{
+// 		angle = 90 - (30 - number_ray_loop);
+// 		angle = degrees_to_radians(angle);
+// 		final_distance = sin(angle) * game->ray;
+// 	}
+// 	// number_ray_loop++;
 // 	return final_distance;
 // }
 
-double perpWallDist(t_data *game, int number_ray_loop)
+double perp_wall_dist(t_data *game, int number_ray_loop)
 {
     double final_distance;
     double angle_diff;
 
     // Rozdíl mezi úhlem paprsku a úhlem hráčova pohledu
     angle_diff = game->angle_for_loop - game->player_angle;
-    if (angle_diff < 0) angle_diff += 2 * M_PI;
-    if (angle_diff > 2 * M_PI) angle_diff -= 2 * M_PI;
-
+    if (angle_diff < 0)
+		angle_diff += 2 * M_PI;
+    if (angle_diff > 2 * M_PI)
+		angle_diff -= 2 * M_PI;
     // Korekce vzdálenosti pomocí kosinové funkce
     final_distance = cos(angle_diff) * game->ray;
 	number_ray_loop++;

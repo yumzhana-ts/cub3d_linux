@@ -35,8 +35,17 @@
 #include <X11/X.h>
 #include <float.h>
 
-#define TILE_SIZE 42
-
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 320
+//width of texture/tile
+#define TILE_SIZE 80
+// Zorné pole hráče v úhlech
+#define FOV (M_PI / 3)
+// #define FOV ((60) * M_PI / 180) // Zorné pole hráče v úhlech
+//number of rays in FOV
+#define NUMBER_RAYS 60
+//number of pixels for ray to write
+#define NUM_PIX_COLUMN 8
 
 typedef struct s_pixel
 {
@@ -208,15 +217,14 @@ int fix_fisheye(t_data *game);
 double distance(t_data *game);
 
 
-double	perpWallDist(t_data *game, int number_ray_loop);
+double	perp_wall_dist(t_data *game, int number_ray_loop);
 
 
 void	fov(t_data *game);
 
 #endif
 
-#define SCREEN_WIDTH 1280
-#define SCREEN_HEIGHT 320
+
 #define EPSILON 1e-6
 #define DEBUG 1
 #define COLOR_RED 0xFF0000	 // Red color
@@ -240,10 +248,6 @@ void	fov(t_data *game);
 #define ANGLE_ROTATION (M_PI / 24)//ke zmene velikosti rotace pri stisku klavesy A\D
 #define WALL -1
 /* FOV */
-#define FOV (M_PI / 3) // Zorné pole hráče v úhlech
-
-// #define FOV ((60) * M_PI / 180) // Zorné pole hráče v úhlech
-#define NUMBER_RAYS 120 // Zorné pole hráče v úhlech
 
 // #define SCREEN_WIDTH 800 // Šířka okna
 // #define SCREEN_HEIGHT 600 // Výška okna
