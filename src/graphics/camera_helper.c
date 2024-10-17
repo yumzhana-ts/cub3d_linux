@@ -54,33 +54,39 @@ void draw_line(t_data *game, int x, int y, int length)
     }
 }
 
-unsigned int texture_color(int line, unsigned int *hex_colors)
+unsigned int texture_color(int y, int line)
 {
-    int index = (line % 32) + ((line / 32) * 32);
-    printf("line: %d, index: %d, color: %#x\n", line, index, hex_colors[index]);
-    return hex_colors[index];
+    int index = (y + ((line % 32) * 32)) % 1024;
+    printf("line: %d, index: %d, color: %#x\n", line, index);
+    return (index);
 }
 
-void texture_line(t_data *game, int x, int y, int length, unsigned int *hex_colors)
+
+// TOD0: length of ray and line are connected, we need to change scaling inside loop 
+//shall we save everuthing in struct first?
+void draw_texture(t_data *game, int x, int y, int length, unsigned int *hex_colors)
 {
     int i;
     int j;
 
     i = 0;
-    int color;
-    
+    j = game->line_count % 32;
+    int index;
+    int scale = length / 32;
+    num = 0;
     while (i < length)
     {
         j = 0;
-        while (j < NUM_PIX_COLUMN)
+        index = texture_color(i, game->line_count);
+        while (j < scale)
         {
-            color = texture_color(game->line_count, hex_colors);
-            my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
-            game->line_count++;
+            my_mlx_pixel_put(&game->camera_img, x + game->line_count, y + i, hex_colors[index]);
             j++;
+            i++;
         }
-        i++;
+        num++;
     }
+    game->line_count++;
 }
 
 

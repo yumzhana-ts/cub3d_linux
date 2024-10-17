@@ -92,7 +92,7 @@ void display_camera(t_data *game)
         ;
         printf(GREEN "\n\n\t\t\t\tCOUNT RAYS :%d\n\n\n" RESET_COLOR, i + 1);
         dda(game);
-        //wall_line(game, i);
+        wall_line(game, i);
         texture_line(game, i, hex_colors);
         i++;
     }
