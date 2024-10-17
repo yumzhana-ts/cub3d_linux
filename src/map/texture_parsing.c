@@ -129,7 +129,7 @@ int	check_texture(char *filename)
 {
 	int	fd;
 
-	if (checkextension(filename, ".xpm"))
+	if (checkextension(filename, ".ppm"))
 		return (fd_error("[Texture verification] invalid texture format\n"));
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)

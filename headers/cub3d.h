@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:40:46 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/11 19:41:00 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/16 20:40:00 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ typedef struct s_file
 	char *texture_e;
 	char **color_c;
 	char **color_f;
+	char *texture;
+	char **array_texture_s;
 } t_file;
 
 typedef struct s_data
@@ -106,8 +108,15 @@ typedef struct s_data
 	t_pixel	camera_img;
 	t_file *file;
 	int 	side;
+	int		line_count;
 } t_data;
 
+typedef struct
+{
+	unsigned char red;
+	unsigned char green;
+	unsigned char blue;
+} RGB;
 
 
 
@@ -215,13 +224,15 @@ int line_end(int wall_line);
 int line_start(int wall_line);
 int fix_fisheye(t_data *game);
 double distance(t_data *game);
-
-
+void print_char_array(char **arr);
+int texture_array(t_data *game);
 double	perp_wall_dist(t_data *game, int number_ray_loop);
-
-
+unsigned int create_color(unsigned char r, unsigned char g, unsigned char b);
+void store_colors_in_hex(RGB colors[], int count, unsigned int hex_colors[]);
+void process_flat_colors(t_data *game, unsigned int *hex_colors);
 void	fov(t_data *game);
-
+void draw_texture(t_data *game, int x, int y, int length, unsigned int *hex_colors);
+void texture_line(t_data *game, int i, unsigned int *hex_colors);
 #endif
 
 

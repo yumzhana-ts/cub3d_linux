@@ -33,8 +33,10 @@ int main(int argc, char **argv)
 	game_init(&game, &file);
 ;	if (map_processing(argc, argv, &file))
 		return (1);
+	texture_array(&game);
 	if (setup_and_run_graphics(&game))
 		return (1);
+	//process_flat_colors(&game);
 	// if ()
 	// {
 	// 	/* code */

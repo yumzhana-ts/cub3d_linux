@@ -6,7 +6,7 @@
 /*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:40:46 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 12:16:30 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/16 20:41:45 by ytsyrend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void game_init(t_data *game, t_file *file)
     game->camera_mlx_ptr = NULL;
     game->camera_win_ptr = NULL;
     game->file = file;
+    game->line_count = 0;
 }
 
 void	camera_mlx_process(t_data *game)

@@ -18,6 +18,7 @@ void dda(t_data *game)
 {
 	int	expected;
 	int	i;
+	int stupid_fix;
 
 	expected = (int)calculate_distance_to_wall(game);
 	i = 1;
@@ -44,6 +45,8 @@ void dda(t_data *game)
 			printf("\n");
 		}
 	}
+	stupid_fix = expected - (int)game->ray;
+	game->ray = game->ray + stupid_fix;
 	printf(BLUE "\nTotal: " RESET_COLOR);
 	printf("Total tiles: %d | ", i - 2);
 	printf("Final distance expected: %-6.2d | Final distance counted: %-6.2d\n", expected, (int)game->ray);
