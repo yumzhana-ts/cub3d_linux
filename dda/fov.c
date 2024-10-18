@@ -22,7 +22,7 @@ void	fov(t_data *game)
 			game->angle_for_loop = 0 + game->angle_for_loop -  2 * M_PI;
 		if (game->angle_for_loop < 0)
 			game->angle_for_loop = game->angle_for_loop + 2 * M_PI;;
-		printf(GREEN"\n\n\t\t\t\tCOUNT RAYS :%d\n\n\n"RESET_COLOR, i+1);
+		//printf(GREEN"\n\n\t\t\t\tCOUNT RAYS :%d\n\n\n"RESET_COLOR, i+1);
 		dda(game);
 		draw_arrow(game, COLOR_RED, game->ray);
 		i++;

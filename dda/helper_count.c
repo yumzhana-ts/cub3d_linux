@@ -19,11 +19,11 @@ int is_wall_left(t_data *game, int start_x, int start_y)
 	
 	if (x >= 0 && game->file->map[start_y][x] == '1')
 	{
-		printf("Left: Closest tile is a wall - position map[%d][%d]: %c\n", start_y, x, game->file->map[start_y][x]);
+		//printf("Left: Closest tile is a wall - position map[%d][%d]: %c\n", start_y, x, game->file->map[start_y][x]);
 		return 1; // Wall found
 	}
 	
-	printf("Left: Closest tile is not a wall\n");
+	//printf("Left: Closest tile is not a wall\n");
 	return 0; // No wall found
 }
 
@@ -34,11 +34,11 @@ int is_wall_up(t_data *game, int start_x, int start_y)
 	
 	if (y >= 0 && game->file->map[y][start_x] == '1')
 	{
-		printf("Up: Closest tile is a wall - position map[%d][%d]: %c\n", y, start_x, game->file->map[y][start_x]);
+		//printf("Up: Closest tile is a wall - position map[%d][%d]: %c\n", y, start_x, game->file->map[y][start_x]);
 		return 1; // Wall found
 	}
 	
-	printf("Up: Closest tile is not a wall\n");
+	//printf("Up: Closest tile is not a wall\n");
 	return 0; // No wall found
 }
 
@@ -48,10 +48,10 @@ int is_wall_right(t_data *game, int start_x, int start_y)
 	
 	if (x < game->file->widthmap && game->file->map[start_y][x] == '1')
 	{
-		printf("Right: Closest tile is a wall - position map[%d][%d]: %c\n", start_y, x, game->file->map[start_y][x]);
+		//printf("Right: Closest tile is a wall - position map[%d][%d]: %c\n", start_y, x, game->file->map[start_y][x]);
 		return 1; // Wall found
 	}
 	
-	printf("Right: Closest tile is not a wall\n");
+	//printf("Right: Closest tile is not a wall\n");
 	return 0; // No wall found
 }

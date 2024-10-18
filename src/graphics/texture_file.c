@@ -24,7 +24,7 @@ int texture_array(t_data *game)
     }
     game->file->texture = get_next_line(fd);
     game->file->array_texture_s = ft_split(game->file->texture, ',');
-    print_char_array(game->file->array_texture_s);
+    //print_char_array(game->file->array_texture_s);
     free(game->file->texture);
     close(fd);
     return (0);

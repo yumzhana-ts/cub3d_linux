@@ -60,10 +60,10 @@ void horizontal_intersection(t_data *game, double angle)
 	double adjacent_cathetus; /* delka */
 	double opposite_cathetus;
 	
-	printf(GREEN"\nChecking horizontal intersection ...\n"RESET_COLOR);
-	printf("Before intersection:\n");
-	printf("  Step x: %d\n", game->step_x);
-	printf("  Step y: %d\n", game->step_y);
+	//printf(GREEN"\nChecking horizontal intersection ...\n"RESET_COLOR);
+	//printf("Before intersection:\n");
+	//printf("  Step x: %d\n", game->step_x);
+	//printf("  Step y: %d\n", game->step_y);
 	if (game->quadrant == 1 || game->quadrant == 2) /* zjistíme jestli kouká nahoru */
 	{
 		// printf("\n\n quadrant 1\n\n");//debug
@@ -90,15 +90,15 @@ void horizontal_intersection(t_data *game, double angle)
 		else if (game->quadrant == 4)
 			game->horizontal_x = game->step_x + (int)opposite_cathetus;
 	}
-	printf("After intersection:\n");
-	printf(" Angle: %.16f\n", angle);
-	printf("  Adjacent cathetus: %.16f\n", adjacent_cathetus);
-	printf("  Opposite cathetus: %.16f\n", opposite_cathetus);
-	printf("  Horizontal x: %.16f\n", game->horizontal_x);
-	printf("  Horizontal y: %.16f\n", game->horizontal_y);
+	//printf("After intersection:\n");
+	//printf(" Angle: %.16f\n", angle);
+	//printf("  Adjacent cathetus: %.16f\n", adjacent_cathetus);
+	//printf("  Opposite cathetus: %.16f\n", opposite_cathetus);
+	//printf("  Horizontal x: %.16f\n", game->horizontal_x);
+	//printf("  Horizontal y: %.16f\n", game->horizontal_y);
 	game->horizontal_hypotenuse = sqrt(adjacent_cathetus * adjacent_cathetus + opposite_cathetus * opposite_cathetus);
-	printf("  Hypotenuse: %.16f\n", game->horizontal_hypotenuse);
-	printf(LINE_DECORATION);
+	//printf("  Hypotenuse: %.16f\n", game->horizontal_hypotenuse);
+	//printf(LINE_DECORATION);
 }
 
 void vertical_intersection(t_data *game, double angle)
@@ -106,10 +106,10 @@ void vertical_intersection(t_data *game, double angle)
 	double opposite_cathetus;
 	double adjacent_cathetus;
 
-	printf(GREEN"\nChecking vertical intersection ...\n"RESET_COLOR);
-	printf("Before intersection:\n");
-	printf("  Step x: %d\n", game->step_x);
-	printf("  Step y: %d\n", game->step_y);
+	//printf(GREEN"\nChecking vertical intersection ...\n"RESET_COLOR);
+	//printf("Before intersection:\n");
+	//printf("  Step x: %d\n", game->step_x);
+	//printf("  Step y: %d\n", game->step_y);
 	if (game->quadrant == 2 || game->quadrant == 3)
 	{
 		adjacent_cathetus = game->step_x - border_point(game->step_x, true);
@@ -131,13 +131,13 @@ void vertical_intersection(t_data *game, double angle)
 		else if(game->quadrant == 4)
 			game->vertical_y  = game->step_y + (int)opposite_cathetus;
 	}
-	printf("After intersection:\n");
-	printf(" Angle: %.16f\n", angle);
-	printf("  Adjacent cathetus: %.16f\n", adjacent_cathetus);
-	printf("  Opposite cathetus: %.16f\n", opposite_cathetus);
-	printf("  Vertical x: %.16f\n", game->vertical_x);
-	printf("  Vertical y: %.16f\n", game->vertical_y);
+	//printf("After intersection:\n");
+	//printf(" Angle: %.16f\n", angle);
+	//printf("  Adjacent cathetus: %.16f\n", adjacent_cathetus);
+	//printf("  Opposite cathetus: %.16f\n", opposite_cathetus);
+	//printf("  Vertical x: %.16f\n", game->vertical_x);
+	//printf("  Vertical y: %.16f\n", game->vertical_y);
 	game->vertical_hypotenuse = sqrt(adjacent_cathetus * adjacent_cathetus + opposite_cathetus * opposite_cathetus);
-	printf("  Hypotenuse: %.16f\n", game->vertical_hypotenuse);
-	printf(LINE_DECORATION);
+	//printf("  Hypotenuse: %.16f\n", game->vertical_hypotenuse);
+	//printf(LINE_DECORATION);
 }

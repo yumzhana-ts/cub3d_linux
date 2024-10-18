@@ -1,5 +1,5 @@
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char** argv)
@@ -34,4 +34,4 @@ int main(int argc, char** argv)
     }
     printf("row: %d, column: %d, index: %d\n", row, column, index);
     printf("position %d: %d", pos, position[pos]);
-}
+} */

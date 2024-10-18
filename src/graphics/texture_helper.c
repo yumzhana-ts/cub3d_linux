@@ -25,7 +25,7 @@ void store_colors_in_hex(RGB colors[], int count, unsigned int hex_colors[])
 	while (i < count)
 	{
 		hex_colors[i] = create_color(colors[i].red, colors[i].green, colors[i].blue);
-		printf("Color %d: 0x%06X\n", i + 1, hex_colors[i]);
+		//printf("Color %d: 0x%06X\n", i + 1, hex_colors[i]);
 		i++;
 	}
 }

@@ -56,6 +56,14 @@ typedef struct s_pixel
 	int endian;
 } t_pixel;
 
+typedef struct s_fov
+{
+	int ray_number;
+	int x;
+	int start;
+	int length;
+} t_fov;
+
 typedef struct s_file
 {
 	int fd;
@@ -109,6 +117,7 @@ typedef struct s_data
 	t_file *file;
 	int 	side;
 	int		line_count;
+	t_fov	fov[NUMBER_RAYS];
 } t_data;
 
 typedef struct
@@ -117,6 +126,7 @@ typedef struct
 	unsigned char green;
 	unsigned char blue;
 } RGB;
+
 
 
 
@@ -232,7 +242,9 @@ void store_colors_in_hex(RGB colors[], int count, unsigned int hex_colors[]);
 void process_flat_colors(t_data *game, unsigned int *hex_colors);
 void	fov(t_data *game);
 void draw_texture(t_data *game, int x, int y, int length, unsigned int *hex_colors);
-void texture_line(t_data *game, int i, unsigned int *hex_colors);
+unsigned int texture_color(int y, int line);
+t_fov texture_line(t_data *game, int i);
+
 #endif
 
 

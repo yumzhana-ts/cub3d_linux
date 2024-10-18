@@ -32,23 +32,23 @@ void wall_line(t_data *game, int i)
     draw_line(game, x, start, length);
 }
 
-void texture_line(t_data *game, int i, unsigned int *hex_colors)
+t_fov texture_line(t_data *game, int i)
 {
     int wall_line;
-    int start;
-    int length;
     int end;
     int d;
-    int x;
 
+    t_fov data;
     d = perp_wall_dist(game, i);
     wall_line = (SCREEN_HEIGHT) * 60 / d;
-    start = line_start(wall_line);
+    data.start = line_start(wall_line);
     end = line_end(wall_line);
-    length = end - start;
+    data.length = end - data.start;
+    data.ray_number = i;
+    data.x = (NUMBER_RAYS - i);
 
-    x = (NUMBER_RAYS - i) * (NUM_PIX_COLUMN);
-    draw_texture(game, x, start, length, hex_colors);
+    return(data);
+    //draw_texture(game, x, start, length, hex_colors);
 }
 
 void black_reset(t_data *game)
@@ -90,10 +90,10 @@ void display_camera(t_data *game)
         if (game->angle_for_loop < 0)
             game->angle_for_loop = game->angle_for_loop + 2 * M_PI;
         ;
-        printf(GREEN "\n\n\t\t\t\tCOUNT RAYS :%d\n\n\n" RESET_COLOR, i + 1);
         dda(game);
         wall_line(game, i);
-        texture_line(game, i, hex_colors);
+        game->fov[i] = texture_line(game, i);
+        printf("ray number:%d,x:%d, start:%d, length:%d\n",game->fov[i].ray_number,game->fov[i].x,game->fov[i].start, game->fov[i].length);
         i++;
     }
 }

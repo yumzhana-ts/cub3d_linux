@@ -57,7 +57,7 @@ void draw_line(t_data *game, int x, int y, int length)
 unsigned int texture_color(int y, int line)
 {
     int index = (y + ((line % 32) * 32)) % 1024;
-    printf("line: %d, index: %d, color: %#x\n", line, index);
+    //printf("line: %d, index: %d, color: %#x\n", line, index);
     return (index);
 }
 
@@ -67,24 +67,22 @@ unsigned int texture_color(int y, int line)
 void draw_texture(t_data *game, int x, int y, int length, unsigned int *hex_colors)
 {
     int i;
-    int j;
+    int copy;
 
     i = 0;
-    j = game->line_count % 32;
     int index;
-    int scale = length / 32;
-    num = 0;
+    int scale;
+    scale = 2;
     while (i < length)
     {
-        j = 0;
-        index = texture_color(i, game->line_count);
-        while (j < scale)
+        index = ((i + (game->line_count * 32)) % 1024);
+        copy = 0;
+        while(copy <= scale)
         {
-            my_mlx_pixel_put(&game->camera_img, x + game->line_count, y + i, hex_colors[index]);
-            j++;
-            i++;
+            my_mlx_pixel_put(&game->camera_img, x, y + i, hex_colors[index]);
+            copy++;
+            i++; 
         }
-        num++;
     }
     game->line_count++;
 }

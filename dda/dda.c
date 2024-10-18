@@ -12,16 +12,14 @@
 
 #include "cub3d.h"
 
-
-
 void dda(t_data *game)
 {
-	int	expected;
-	int	i;
-	int stupid_fix;
+	//int	expected;
+	//int	i;
+	//int stupid_fix;
 
-	expected = (int)calculate_distance_to_wall(game);
-	i = 1;
+	//expected = (int)calculate_distance_to_wall(game);
+	//i = 1;
 	game->ray = 0;
 	game->vertical_hypotenuse = 0;
 	game->horizontal_hypotenuse = 0;
@@ -29,7 +27,7 @@ void dda(t_data *game)
 	game->step_y = game->file->player_y;
 	while (true)
 	{
-		printf(BLUE "Checking tile %d: " RESET_COLOR, i++);
+		//printf(BLUE "Checking tile %d: " RESET_COLOR, i++);
 		if (is_equal(game->angle_for_loop, M_PI) || is_equal(game->angle_for_loop, M_PI / 2) ||
 			is_equal(game->angle_for_loop, 0) || is_equal(game->angle_for_loop, 2 * M_PI) ||
 			is_equal(game->angle_for_loop, 3 * M_PI / 2))
@@ -42,16 +40,16 @@ void dda(t_data *game)
 			get_lines(game);
 			if (update_dda(game->horizontal_hypotenuse, game->vertical_hypotenuse, game) == 1)
 				break;
-			printf("\n");
+			//printf("\n");
 		}
 	}
-	stupid_fix = expected - (int)game->ray;
-	game->ray = game->ray + stupid_fix;
-	printf(BLUE "\nTotal: " RESET_COLOR);
-	printf("Total tiles: %d | ", i - 2);
-	printf("Final distance expected: %-6.2d | Final distance counted: %-6.2d\n", expected, (int)game->ray);
-	fabs(expected - game->ray) <= 2 ? printf(GREEN "PASSED\n" RESET_COLOR) : printf(RED "FAILED " RESET_COLOR);
-	printf("Difference is approx: %d\n", expected - (int)game->ray);
+	//stupid_fix = expected - (int)game->ray;
+	//game->ray = game->ray + stupid_fix;
+	//printf(BLUE "\nTotal: " RESET_COLOR);
+	//printf("Total tiles: %d | ", i - 2);
+	//printf("Final distance expected: %-6.2d | Final distance counted: %-6.2d\n", expected, (int)game->ray);
+	//fabs(expected - game->ray) <= 2 ? printf(GREEN "PASSED\n" RESET_COLOR) : printf(RED "FAILED " RESET_COLOR);
+	//printf("Difference is approx: %d\n", expected - (int)game->ray);
 }
 
 void	get_lines(t_data *game)
@@ -64,12 +62,12 @@ void	get_lines(t_data *game)
 	game->quadrant = quadrant_of_angle(game->angle_for_loop);
 	if (game->quadrant > 4)
 	{
-		printf("angle%.16f\n", game->angle_for_loop);
+		//printf("angle%.16f\n", game->angle_for_loop);
 		fflush(stdout);
 		exit(printf("exit game quadrant %d", game->quadrant));
 		fflush(stdout);
 	}
-	printf("[Angle %.2f in %d quadrant: %.2f and %.2f]", game->angle_for_loop, game->quadrant, angle_triangle, rest_triangle);
+	//printf("[Angle %.2f in %d quadrant: %.2f and %.2f]", game->angle_for_loop, game->quadrant, angle_triangle, rest_triangle);
 	if (game->quadrant == 1 || game->quadrant == 3)
 	{
 		horizontal_intersection(game, rest_triangle);
@@ -85,7 +83,7 @@ void	get_lines(t_data *game)
 /*  */
 int	len_horizontal_ray(t_data *game, double distance_x, int array_x, int array_y)
 {
-	printf(RED "Shortest hypotenuse is horizontal: %.16f Counted ray: %.16f\n" RESET_COLOR, distance_x, game->ray);
+	//printf(RED "Shortest hypotenuse is horizontal: %.16f Counted ray: %.16f\n" RESET_COLOR, distance_x, game->ray);
 	game->ray += distance_x;
 	game->step_x = game->horizontal_x;
 	game->step_y = game->horizontal_y;
@@ -107,7 +105,7 @@ int	len_horizontal_ray(t_data *game, double distance_x, int array_x, int array_y
 
 int	len_vertical_ray(t_data *game, double distance_y, int array_x, int array_y)
 {
-	printf(GREEN "Shortest hypotenuse is vertical: %.16f Counted ray: %.16f\n" RESET_COLOR, distance_y, game->ray);
+	//printf(GREEN "Shortest hypotenuse is vertical: %.16f Counted ray: %.16f\n" RESET_COLOR, distance_y, game->ray);
 	game->ray += distance_y;
 	game->step_x = game->vertical_x;
 	game->step_y = game->vertical_y;
@@ -130,7 +128,7 @@ int	update_dda(double distance_x, double distance_y, t_data *game)
 {
 	int array_x = 0;
 	int array_y = 0;
-	printf(BOLD "\nChecking shortest tile: " RESET_COLOR);
+	//printf(BOLD "\nChecking shortest tile: " RESET_COLOR);
 	if (distance_x < distance_y)
 	{
 		if (len_horizontal_ray(game, distance_x, array_x, array_y))
