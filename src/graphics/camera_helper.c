@@ -66,6 +66,23 @@ int	find_color_in_texture(t_data *game, int length)
 	return(width_scale);
 }
 
+unsigned int darken_color(unsigned int color, float factor) {
+    // Extract the individual RGB components
+    unsigned int r = (color >> 16) & 0xFF; // Extract red
+    unsigned int g = (color >> 8) & 0xFF;  // Extract green
+    unsigned int b = color & 0xFF;         // Extract blue
+
+    // Apply shading factor (for example, factor = 0.7 to darken by 30%)
+    r *= factor;
+    g *= factor;
+    b *= factor;
+
+    // Combine the new RGB components back into a single color
+    unsigned int shaded_color = (r << 16) | (g << 8) | b;
+
+    return shaded_color;
+}
+
 void draw_line(t_data *game, int x, int y, int length)
 {
     int i;
@@ -77,38 +94,35 @@ void draw_line(t_data *game, int x, int y, int length)
     int color;
 	// int length_scale_index;
 	scale = length/TILE_SIZE;
-	color = change_color(game);
-	// find_color_in_texture(game, length);
-    // color = 0x4AB1DC;
-    // if (game->side == 1)
-    //     (color = 0x2C6A84);
 	int width_scale = column_texture(game);
 	int	vertical_index = 0;
 	int	color_index = 0;
     while (i < length)
     {
-		// length_scale_index = vertical_pos_texture(length);
-		// printf("color length index: %d\n" ,length_scale_index);
+		vertical_index = vertical_pos_texture(i, length);
         j = 0;
         while (j < NUM_PIX_COLUMN)
         {
 			color = change_color(game);
 			if (color == 0)
 			{
-				color_index = ((width_scale + (vertical_index * WIDTH_TEXTURE)) % 1024);
+				color_index = ((width_scale + (vertical_index * WIDTH_TEXTURE)) % (WIDTH_TEXTURE * WIDTH_TEXTURE));
 				color = game->hex_col[color_index];
+				if (game->side == 0)
+				{
+					// color = ((color & 0xFEFEFE) >> 2) & 0x7F7F7F;
+					color = darken_color(color, 0.6);
+				}
+				
 			}
-			// printf("color index :%d \n",color_index);
 			i_scale = 0;
-			
 			while (i_scale <= scale && i < length)
 			{
             	my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
 				i_scale++;
-				i++;
+				// i++;
 				// j++;
 			}
-			vertical_index += 1;
             j++;
         }
         i++;
@@ -141,12 +155,12 @@ int	column_texture(t_data *game)
 	return (result);
 }
 
-int	vertical_pos_texture(int length)
+int	vertical_pos_texture(int pixel_y, int length)
 {
 	float	result;
 	float	percentil_count;
 
-	percentil_count = 100 / (float)length;
+	percentil_count = (float)pixel_y / (float)length;
 	// printf("test percentil_c = %f\n", percentil_count);
 	result = (float)WIDTH_TEXTURE * percentil_count;
 	// printf("test percentil_c22 = %f\n", result);

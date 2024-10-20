@@ -35,15 +35,15 @@
 #include <X11/X.h>
 #include <float.h>
 
-#define SCREEN_WIDTH 640
-#define SCREEN_HEIGHT 320
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
 //width of texture/tile
-#define TILE_SIZE 80
+#define TILE_SIZE 60
 // Zorné pole hráče v úhlech
 #define FOV (M_PI / 3)
 // #define FOV ((60) * M_PI / 180) // Zorné pole hráče v úhlech
 //number of rays in FOV
-#define NUMBER_RAYS 240
+#define NUMBER_RAYS 800
 //number of pixels for ray to write
 #define NUM_PIX_COLUMN 1
 #define	WIDTH_TEXTURE 32
@@ -134,7 +134,7 @@ typedef struct
 
 
 int	column_texture(t_data *game);
-int	vertical_pos_texture(int length);
+int	vertical_pos_texture(int y, int length);
 
 
 bool first_angle_is_on_dx(double view_angle);
