@@ -43,9 +43,10 @@
 #define FOV (M_PI / 3)
 // #define FOV ((60) * M_PI / 180) // Zorné pole hráče v úhlech
 //number of rays in FOV
-#define NUMBER_RAYS 60
+#define NUMBER_RAYS 240
 //number of pixels for ray to write
-#define NUM_PIX_COLUMN 8
+#define NUM_PIX_COLUMN 1
+#define	WIDTH_TEXTURE 32
 
 typedef struct s_pixel
 {
@@ -62,6 +63,8 @@ typedef struct s_fov
 	int x;
 	int start;
 	int length;
+	int	final_x;
+	int	final_y;
 } t_fov;
 
 typedef struct s_file
@@ -103,6 +106,7 @@ typedef struct s_data
 	int		map_x;
 	int		map_y;
 	int		min_length;
+	int		current_ray;//pro funkci kde pot5ebuji zjistit aktualni paprsek, prochazet pole paprsku
 	double	horizontal_x;
 	double	horizontal_y;
 	double	horizontal_hypotenuse;
@@ -118,6 +122,7 @@ typedef struct s_data
 	int 	side;
 	int		line_count;
 	t_fov	fov[NUMBER_RAYS];
+	unsigned int		*hex_col;
 } t_data;
 
 typedef struct
@@ -128,6 +133,8 @@ typedef struct
 } RGB;
 
 
+int	column_texture(t_data *game);
+int	vertical_pos_texture(int length);
 
 
 bool first_angle_is_on_dx(double view_angle);
@@ -243,7 +250,7 @@ void process_flat_colors(t_data *game, unsigned int *hex_colors);
 void	fov(t_data *game);
 void draw_texture(t_data *game, int x, int y, int length, unsigned int *hex_colors);
 unsigned int texture_color(int y, int line);
-t_fov texture_line(t_data *game, int i);
+t_fov texture_line(t_data *game, int i, unsigned int *hex_color, bool draw);
 
 #endif
 

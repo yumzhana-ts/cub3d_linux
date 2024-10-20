@@ -43,6 +43,8 @@ void dda(t_data *game)
 			//printf("\n");
 		}
 	}
+	
+	printf("na co koukam? x = %d, y = %d \n", game->step_x/TILE_SIZE, game->step_y/TILE_SIZE);
 	//stupid_fix = expected - (int)game->ray;
 	//game->ray = game->ray + stupid_fix;
 	//printf(BLUE "\nTotal: " RESET_COLOR);

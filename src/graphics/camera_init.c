@@ -12,6 +12,8 @@
 
 #include "cub3d.h"
 
+
+
 void wall_line(t_data *game, int i)
 {
     int wall_line;
@@ -32,7 +34,9 @@ void wall_line(t_data *game, int i)
     draw_line(game, x, start, length);
 }
 
-t_fov texture_line(t_data *game, int i)
+
+
+t_fov texture_line(t_data *game, int i, unsigned int *hex_colors, bool draw)
 {
     int wall_line;
     int end;
@@ -46,9 +50,14 @@ t_fov texture_line(t_data *game, int i)
     data.length = end - data.start;
     data.ray_number = i;
     data.x = (NUMBER_RAYS - i);
-
+	data.final_x = game->step_x;
+	data.final_y = game->step_y;
+	hex_colors++;
+	if (draw)
+	{
+		draw_texture(game, data.x, data.start, data.length, hex_colors);
+	}
     return(data);
-    //draw_texture(game, x, start, length, hex_colors);
 }
 
 void black_reset(t_data *game)
@@ -80,6 +89,7 @@ void display_camera(t_data *game)
     /* black reset */
     black_reset(game);
     process_flat_colors(game, hex_colors);
+	game->hex_col = hex_colors;
     while (i < NUMBER_RAYS)
     {
         game->angle_for_loop = start_angle + i * game->angle_per_ray;
@@ -91,8 +101,12 @@ void display_camera(t_data *game)
             game->angle_for_loop = game->angle_for_loop + 2 * M_PI;
         ;
         dda(game);
+        game->fov[i] = texture_line(game, i, hex_colors, false);
+    // black_reset(game);
+
+		game->current_ray = i;
         wall_line(game, i);
-        game->fov[i] = texture_line(game, i);
+		// texture_line(game, i, hex_colors, true);
         printf("ray number:%d,x:%d, start:%d, length:%d\n",game->fov[i].ray_number,game->fov[i].x,game->fov[i].start, game->fov[i].length);
         i++;
     }
