@@ -56,7 +56,7 @@ void draw_scaled_texture(t_data *game, unsigned int *hex_colors, int scale, int 
 	}
 }
 
-void process_flat_colors(t_data *game, unsigned int *hex_colors)
+void process_flat_colors(char **array, unsigned int hex_colors[])
 {
 	RGB colors[1024];
 	int i;
@@ -64,9 +64,9 @@ void process_flat_colors(t_data *game, unsigned int *hex_colors)
 	i = 0;
 	while (i < 1024)
 	{
-		colors[i].red = ft_atoi(game->file->array_texture_s[i * 3]);
-		colors[i].green = ft_atoi(game->file->array_texture_s[i * 3 + 1]);
-		colors[i].blue = ft_atoi(game->file->array_texture_s[i * 3 + 2]);
+		colors[i].red = ft_atoi(array[i * 3]);
+		colors[i].green = ft_atoi(array[i * 3 + 1]);
+		colors[i].blue = ft_atoi(array[i * 3 + 2]);
 		i++;
 	}
 	store_colors_in_hex(colors, 1024, hex_colors);

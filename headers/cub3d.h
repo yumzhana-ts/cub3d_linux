@@ -89,7 +89,14 @@ typedef struct s_file
 	char **color_c;
 	char **color_f;
 	char *texture;
+	char **array_texture_e;
+	char **array_texture_w;
 	char **array_texture_s;
+	char **array_texture_n;
+	unsigned int east_hex[1024];
+	unsigned int west_hex[1024];
+	unsigned int north_hex[1024];
+	unsigned int south_hex[1024];
 } t_file;
 
 typedef struct s_data
@@ -122,7 +129,6 @@ typedef struct s_data
 	int 	side;
 	int		line_count;
 	t_fov	fov[NUMBER_RAYS];
-	unsigned int		*hex_col;
 } t_data;
 
 typedef struct
@@ -242,15 +248,17 @@ int line_start(int wall_line);
 int fix_fisheye(t_data *game);
 double distance(t_data *game);
 void print_char_array(char **arr);
-int texture_array(t_data *game);
 double	perp_wall_dist(t_data *game, int number_ray_loop);
 unsigned int create_color(unsigned char r, unsigned char g, unsigned char b);
 void store_colors_in_hex(RGB colors[], int count, unsigned int hex_colors[]);
-void process_flat_colors(t_data *game, unsigned int *hex_colors);
+void process_flat_colors(char **array, unsigned int *hex_colors);
 void	fov(t_data *game);
 void draw_texture(t_data *game, int x, int y, int length, unsigned int *hex_colors);
 unsigned int texture_color(int y, int line);
 t_fov texture_line(t_data *game, int i, unsigned int *hex_color, bool draw);
+int texture_array(t_data *game, char *texture, char **array, unsigned int *hex_colors);
+void store_textures(t_data *game);
+void free_hexs(t_file *game);
 
 #endif
 

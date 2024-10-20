@@ -12,8 +12,6 @@
 
 #include "cub3d.h"
 
-
-
 void wall_line(t_data *game, int i)
 {
     int wall_line;
@@ -80,16 +78,12 @@ void display_camera(t_data *game)
 {
     double start_angle;
     int i;
-    unsigned int hex_colors[1024];
 
     game->angle_per_ray = FOV / NUMBER_RAYS;
     start_angle = game->player_angle - (FOV / 2);
 
     i = 0;
-    /* black reset */
     black_reset(game);
-    process_flat_colors(game, hex_colors);
-	game->hex_col = hex_colors;
     while (i < NUMBER_RAYS)
     {
         game->angle_for_loop = start_angle + i * game->angle_per_ray;
@@ -101,7 +95,7 @@ void display_camera(t_data *game)
             game->angle_for_loop = game->angle_for_loop + 2 * M_PI;
         ;
         dda(game);
-        game->fov[i] = texture_line(game, i, hex_colors, false);
+        game->fov[i] = texture_line(game, i, game->file->east_hex, false);
     // black_reset(game);
 
 		game->current_ray = i;

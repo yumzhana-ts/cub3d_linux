@@ -107,7 +107,14 @@ void draw_line(t_data *game, int x, int y, int length)
 			if (color == 0)
 			{
 				color_index = ((width_scale + (vertical_index * WIDTH_TEXTURE)) % (WIDTH_TEXTURE * WIDTH_TEXTURE));
-				color = game->hex_col[color_index];
+				if(game->quadrant == 1)
+					color = game->file->east_hex[color_index];
+				else if(game->quadrant == 2)
+					color = game->file->north_hex[color_index];
+				else if(game->quadrant == 3)
+					color = game->file->west_hex[color_index];
+				else if(game->quadrant == 4)
+					color = game->file->south_hex[color_index];
 				if (game->side == 0)
 				{
 					// color = ((color & 0xFEFEFE) >> 2) & 0x7F7F7F;

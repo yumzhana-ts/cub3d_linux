@@ -12,21 +12,22 @@
 
 #include "cub3d.h"
 
-int texture_array(t_data *game)
+int texture_array(t_data *game,char *texture, char **array, unsigned int *hex_colors)
 {
     int fd;
 
-    fd = open(game->file->texture_e, O_RDONLY);
+    fd = open(texture, O_RDONLY);
     if (fd < 0)
     {
         perror("Error opening file");
         return (1);
     }
     game->file->texture = get_next_line(fd);
-    game->file->array_texture_s = ft_split(game->file->texture, ',');
+    array = ft_split(game->file->texture, ',');
     //print_char_array(game->file->array_texture_s);
     free(game->file->texture);
     close(fd);
+    process_flat_colors(array, hex_colors);
     return (0);
 }
 
