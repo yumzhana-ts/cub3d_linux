@@ -74,6 +74,32 @@ void black_reset(t_data *game)
     }
 }
 
+void	reset_color(t_data *game)
+{
+	int x = 0;
+    int y = 0;
+    while (y < SCREEN_HEIGHT / 2)
+    {
+        while (x < SCREEN_WIDTH)
+        {
+            my_mlx_pixel_put(&game->camera_img, x, y, game->file->ceiling_color);
+            x++;
+        }
+        x = 0;
+        y++;
+    }
+    while (y < SCREEN_HEIGHT)
+    {
+        while (x < SCREEN_WIDTH)
+        {
+            my_mlx_pixel_put(&game->camera_img, x, y, game->file->floor_color);
+            x++;
+        }
+        x = 0;
+        y++;
+    }
+}
+
 void display_camera(t_data *game)
 {
     double start_angle;
@@ -83,7 +109,7 @@ void display_camera(t_data *game)
     start_angle = game->player_angle - (FOV / 2);
 
     i = 0;
-    black_reset(game);
+    reset_color(game);
     while (i < NUMBER_RAYS)
     {
         game->angle_for_loop = start_angle + i * game->angle_per_ray;
@@ -104,6 +130,7 @@ void display_camera(t_data *game)
         printf("ray number:%d,x:%d, start:%d, length:%d\n",game->fov[i].ray_number,game->fov[i].x,game->fov[i].start, game->fov[i].length);
         i++;
     }
+	printf("color c: %s color f:%s\n", game->file->color_c[0], game->file->color_f[0]);
 }
 
 /* vypocet trojuhelníku v kamerové rovině */

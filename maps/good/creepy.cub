@@ -3,8 +3,8 @@ SO textures/test/south.ppm
 WE textures/test/west.ppm
 EA textures/test/east.ppm
 
-C 35,19,73
-F 15,6,40
+C 0,136,173
+F 0,137,58
 
 111111111111111
 111111000111111

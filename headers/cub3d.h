@@ -35,17 +35,17 @@
 #include <X11/X.h>
 #include <float.h>
 
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 600
+#define SCREEN_WIDTH 400
+#define SCREEN_HEIGHT 300
 //width of texture/tile
 #define TILE_SIZE 60
 // Zorné pole hráče v úhlech
 #define FOV (M_PI / 3)
 // #define FOV ((60) * M_PI / 180) // Zorné pole hráče v úhlech
 //number of rays in FOV
-#define NUMBER_RAYS 800
+#define NUMBER_RAYS 200
 //number of pixels for ray to write
-#define NUM_PIX_COLUMN 1
+#define NUM_PIX_COLUMN 2
 #define	WIDTH_TEXTURE 32
 
 typedef struct s_pixel
@@ -97,6 +97,8 @@ typedef struct s_file
 	unsigned int west_hex[1024];
 	unsigned int north_hex[1024];
 	unsigned int south_hex[1024];
+	unsigned int ceiling_color;
+	unsigned int floor_color;
 } t_file;
 
 typedef struct s_data
@@ -113,7 +115,7 @@ typedef struct s_data
 	int		map_x;
 	int		map_y;
 	int		min_length;
-	int		current_ray;//pro funkci kde pot5ebuji zjistit aktualni paprsek, prochazet pole paprsku
+	int		current_ray;//pro funkci kde pot5ebuji zjistit aktualni paprsek, prochazet pole paprsku INDEX
 	double	horizontal_x;
 	double	horizontal_y;
 	double	horizontal_hypotenuse;
@@ -141,7 +143,7 @@ typedef struct
 
 int	column_texture(t_data *game);
 int	vertical_pos_texture(int y, int length);
-
+void process_color(char **array, unsigned int *hex_colors);
 
 bool first_angle_is_on_dx(double view_angle);
 double degrees_to_radians(double degrees);

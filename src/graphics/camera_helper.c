@@ -66,7 +66,7 @@ int	find_color_in_texture(t_data *game, int length)
 	return(width_scale);
 }
 
-unsigned int darken_color(unsigned int color, float factor) {
+unsigned int darken_color(unsigned int color, double factor) {
     // Extract the individual RGB components
     unsigned int r = (color >> 16) & 0xFF; // Extract red
     unsigned int g = (color >> 8) & 0xFF;  // Extract green
@@ -85,56 +85,116 @@ unsigned int darken_color(unsigned int color, float factor) {
 
 void draw_line(t_data *game, int x, int y, int length)
 {
-    int i;
+    int i = 0;
     int j;
-	int scale;
-	int	i_scale = 0;
-
-    i = 0;
+    float tex_pos;  // Uloží aktuální vertikální pozici v textuře (plovoucí bod pro přesný výpočet)
+    float step;     // Krok, který určuje, kolik pixelů textury namapujeme na každý pixel výstupu
+    int width_scale = column_texture(game);  // Horizontální pozice v textuře (sloupec)
+    int vertical_index;
     int color;
-	// int length_scale_index;
-	scale = length/TILE_SIZE;
-	int width_scale = column_texture(game);
-	int	vertical_index = 0;
-	int	color_index = 0;
+    int color_index;
+
+    // Výpočet kroku textury podle poměru délky stěny a výšky textury
+    step = (float)WIDTH_TEXTURE / length;
+    tex_pos = 0.0;  // Startovací pozice v textuře je na vrcholu
+
     while (i < length)
     {
-		vertical_index = vertical_pos_texture(i, length);
+        vertical_index = (int)tex_pos;  // Získání aktuální vertikální pozice v textuře (zaokrouhlení dolů)
+
         j = 0;
         while (j < NUM_PIX_COLUMN)
         {
-			color = change_color(game);
-			if (color == 0)
-			{
-				color_index = ((width_scale + (vertical_index * WIDTH_TEXTURE)) % (WIDTH_TEXTURE * WIDTH_TEXTURE));
-				if(game->quadrant == 1)
-					color = game->file->east_hex[color_index];
-				else if(game->quadrant == 2)
-					color = game->file->north_hex[color_index];
-				else if(game->quadrant == 3)
-					color = game->file->west_hex[color_index];
-				else if(game->quadrant == 4)
-					color = game->file->south_hex[color_index];
-				if (game->side == 0)
-				{
-					// color = ((color & 0xFEFEFE) >> 2) & 0x7F7F7F;
-					color = darken_color(color, 0.6);
-				}
-				
-			}
-			i_scale = 0;
-			while (i_scale <= scale && i < length)
-			{
-            	my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
-				i_scale++;
-				// i++;
-				// j++;
-			}
+            color_index = ((width_scale + (vertical_index * WIDTH_TEXTURE)) % (WIDTH_TEXTURE * WIDTH_TEXTURE));
+
+            // Určení barvy na základě směru (N, S, E, W) a strany
+            if (game->side == 1)
+            {
+                if (game->angle_for_loop < M_PI / 2 || game->angle_for_loop > 3 * M_PI / 2)
+                    color = game->file->east_hex[color_index];
+                else
+                    color = game->file->west_hex[color_index];
+            }
+            else
+            {
+                if (game->angle_for_loop < M_PI && game->angle_for_loop > 0)
+                    color = game->file->north_hex[color_index];
+                else
+                    color = game->file->south_hex[color_index];
+            }
+
+            // Kreslení pixelů, NUM_PIX_COLUMN určuje šířku sloupce
+            my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
+            
             j++;
         }
-        i++;
+
+        // Posun v textuře o krok "step" pro další pixel ve vertikálním směru
+        tex_pos += step;
+
+        i++;  // Posun na další vertikální pixel
     }
 }
+
+// void draw_line(t_data *game, int x, int y, int length)
+// {
+//     int i;
+//     int j;
+// 	int scale;
+// 	int	i_scale = 0;
+
+//     i = 0;
+//     int color;
+// 	// int length_scale_index;
+// 	scale = length/TILE_SIZE;
+// 	int width_scale = column_texture(game);
+// 	int	vertical_index = 0;
+// 	int	color_index = 0;
+//     while (i < length)
+//     {
+// 		vertical_index = vertical_pos_texture(i, length);
+//         j = 0;
+//         while (j < NUM_PIX_COLUMN)
+//         {
+// 			// color = change_color(game);
+// 			color = 0;
+// 			color_index = ((width_scale + (vertical_index * WIDTH_TEXTURE)) % (WIDTH_TEXTURE * WIDTH_TEXTURE));
+
+// 			if (color == 0)
+// 			{
+// 				if (game->side == 1)
+// 				{
+// 					if (game->angle_for_loop < M_PI / 2 || game->angle_for_loop > 3 * M_PI / 2)
+// 						color = game->file->east_hex[color_index];
+// 					else
+// 						color = game->file->west_hex[color_index];
+// 				}
+// 				else
+// 				{
+// 					if (game->angle_for_loop < M_PI && game->angle_for_loop > 0)
+// 						color = game->file->north_hex[color_index];
+// 					else
+// 						color = game->file->south_hex[color_index];
+// 				}
+// 				// if (game->side == 0)
+// 				// {
+// 				// 	// color = ((color & 0xFEFEFE) >> 2) & 0x7F7F7F;
+// 				// 	color = darken_color(color, 0.6);
+// 				// }
+// 			}
+// 			i_scale = 0;
+// 			while (i_scale <= scale && i < length)
+// 			{
+//             	my_mlx_pixel_put(&game->camera_img, x + j, y + i, color);
+// 				i_scale++;
+// 				// i++;
+// 				// j++;
+// 			}
+//             j++;
+//         }
+//         i++;
+//     }
+// }
 
 unsigned int texture_color(int y, int line)
 {
@@ -146,17 +206,18 @@ unsigned int texture_color(int y, int line)
 
 int	column_texture(t_data *game)
 {
-	float	result;
+
+	double	result;
 	int	position_in_square;
-	float	percentil_position_in_square;
+	double	percentil_position_in_square;
 
 
 	if (game->side == 1)
 		position_in_square = game->fov[game->current_ray].final_y % TILE_SIZE;
 	else
 		position_in_square = game->fov[game->current_ray].final_x % TILE_SIZE;
-	percentil_position_in_square = (100 / (float)TILE_SIZE) * (float)position_in_square;//procentualni vzjadreni v jake casti sirky textury se nachazime
-	result = ((float)WIDTH_TEXTURE / 100) * percentil_position_in_square;
+	percentil_position_in_square = (100 / (double)TILE_SIZE) * (double)position_in_square;//procentualni vzjadreni v jake casti sirky textury se nachazime
+	result = ((double)WIDTH_TEXTURE / 100) * percentil_position_in_square;
 	// printf("test percentil_c = %f\n", percentil_position_in_square);
 	// printf("test result = %f\n", result);
 	return (result);
@@ -164,12 +225,12 @@ int	column_texture(t_data *game)
 
 int	vertical_pos_texture(int pixel_y, int length)
 {
-	float	result;
-	float	percentil_count;
+	double	result;
+	double	percentil_count;
 
-	percentil_count = (float)pixel_y / (float)length;
+	percentil_count = (double)pixel_y / (double)length;
 	// printf("test percentil_c = %f\n", percentil_count);
-	result = (float)WIDTH_TEXTURE * percentil_count;
+	result = (double)WIDTH_TEXTURE * percentil_count;
 	// printf("test percentil_c22 = %f\n", result);
 	return ((int)result);
 }
