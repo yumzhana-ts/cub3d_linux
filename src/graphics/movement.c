@@ -37,12 +37,30 @@ void correction_of_angle(t_data *game)
     game->player_angle = angle;
 }
 
+long get_current_time() {
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    return (tv.tv_sec * 1000) + (tv.tv_usec / 1000);
+}
+
+
+
 int handle_keypress(int keysym, t_data *game)
 {
     int speed;
 
-    speed = 4;
+	game->current_time = get_current_time();
+    // long delta_time = game->current_time - game->last_time; // čas mezi snímky v ms
+    game->last_time = game->current_time;
+	// double distance = SPEED * (delta_time / 1000.0);
+	speed = 4;
+	// if (speed < 1)
+	// {
+	// 	speed = 1;
+	// }
+	
     // display_map(game);
+    // if (keysym == XK_Escape)
     if (keysym == XK_Escape)
     {
         mlx_destroy_window(game->camera_mlx_ptr, game->camera_win_ptr);
@@ -51,8 +69,10 @@ int handle_keypress(int keysym, t_data *game)
         mlx_destroy_display(game->mlx_ptr);
         exit(0);
     }
-    else if (keysym == XK_w)
+    // else if (keysym == XK_w)
+    if (game->keys[XK_w])
     {
+		// printf("mowingforwar");
         int next_x = (game->file->player_x + cos(game->player_angle) * speed) / TILE_SIZE;
         int next_y = (game->file->player_y - sin(game->player_angle) * speed) / TILE_SIZE;
         if (game->file->map[next_y][next_x] != '1')
@@ -60,8 +80,10 @@ int handle_keypress(int keysym, t_data *game)
             game->file->player_x += cos(game->player_angle) * speed; // Move forward on x-axis
             game->file->player_y -= sin(game->player_angle) * speed; // Move upward (decrease y)
         }
+		game->keys[XK_w] = false;
     }
-    else if (keysym == XK_s)
+    // else if (keysym == XK_s)
+    if (game->keys[XK_s])
     {
         int next_x = (game->file->player_x - cos(game->player_angle) * speed) / TILE_SIZE;
         int next_y = (game->file->player_y + sin(game->player_angle) * speed) / TILE_SIZE;
@@ -70,25 +92,31 @@ int handle_keypress(int keysym, t_data *game)
             game->file->player_x -= cos(game->player_angle) * speed; // Move backward on x-axis
             game->file->player_y += sin(game->player_angle) * speed; // Move downward (increase y)
         }
+		game->keys[XK_s] = false;
     }
-    else if (keysym == XK_d) // Rotate right
+    // else if (keysym == XK_d) // Rotate right
+    if (game->keys[XK_d])
     {
         game->player_angle -= ANGLE_ROTATION; // Rotate clockwise
         if (game->player_angle < 0)
             game->player_angle = (2 * M_PI) - ANGLE_ROTATION;
+		game->keys[XK_d] = false;
     }
-    else if (keysym == XK_a) // Rotate left
+    // else if (keysym == XK_a) // Rotate left
+    if (game->keys[XK_a])
     {
         game->player_angle += ANGLE_ROTATION; // Rotate counter-clockwise
         if (game->player_angle >= 2 * M_PI)
             game->player_angle = 0;
+		game->keys[XK_a] = false;
     }
+
     correction_of_angle(game);
     display_map(game);
     mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, game->img.img, 0, 0);
     display_camera(game);
     mlx_put_image_to_window(game->camera_mlx_ptr, game->camera_win_ptr, game->camera_img.img, 0, 0);
-    print_game_status(game);
+    // print_game_status(game);
     ft_printf("\n");
     return 0;
 }

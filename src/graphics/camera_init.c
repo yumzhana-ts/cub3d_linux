@@ -127,10 +127,10 @@ void display_camera(t_data *game)
 		game->current_ray = i;
         wall_line(game, i);
 		// texture_line(game, i, hex_colors, true);
-        printf("ray number:%d,x:%d, start:%d, length:%d\n",game->fov[i].ray_number,game->fov[i].x,game->fov[i].start, game->fov[i].length);
+        // printf("ray number:%d,x:%d, start:%d, length:%d\n",game->fov[i].ray_number,game->fov[i].x,game->fov[i].start, game->fov[i].length);
         i++;
     }
-	printf("color c: %s color f:%s\n", game->file->color_c[0], game->file->color_f[0]);
+	// printf("color c: %s color f:%s\n", game->file->color_c[0], game->file->color_f[0]);
 }
 
 /* vypocet trojuhelníku v kamerové rovině */

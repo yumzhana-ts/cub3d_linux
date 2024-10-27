@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:40:46 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/10/16 20:40:00 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/27 22:43:22 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@
 #include <X11/keysym.h>
 #include <X11/X.h>
 #include <float.h>
+#include <sys/time.h>
 
 #define SCREEN_WIDTH 400
 #define SCREEN_HEIGHT 300
@@ -43,10 +44,11 @@
 #define FOV (M_PI / 3)
 // #define FOV ((60) * M_PI / 180) // Zorné pole hráče v úhlech
 //number of rays in FOV
-#define NUMBER_RAYS 200
+#define NUMBER_RAYS 400
 //number of pixels for ray to write
-#define NUM_PIX_COLUMN 2
+#define NUM_PIX_COLUMN 1
 #define	WIDTH_TEXTURE 32
+#define	SPEED 4
 
 typedef struct s_pixel
 {
@@ -131,6 +133,9 @@ typedef struct s_data
 	int 	side;
 	int		line_count;
 	t_fov	fov[NUMBER_RAYS];
+	bool	keys[256];
+	long	current_time;
+	long	last_time;
 } t_data;
 
 typedef struct
@@ -232,7 +237,6 @@ int zero_infinity(double angle, t_data *game);
 void get_lines(t_data *game);
 void dda(t_data *game);
 int update_dda(double distance_x, double distance_y, t_data *game);
-double calculate_distance_to_wall(t_data *game);
 bool is_equal(double a, double b);
 void update_dda_backward(double distance_x, double distance_y, t_data *game);
 int quadrant_of_angle(double angle_player);
@@ -285,8 +289,14 @@ void free_hexs(t_file *game);
 #define BOLD_BLUE "\033[1;34m"
 #define BOLD_RED "\033[1;31m"
 #define LINE_DECORATION "------------------------------------------"
-#define ANGLE_ROTATION (M_PI / 24)//ke zmene velikosti rotace pri stisku klavesy A\D
+#define ANGLE_ROTATION (M_PI / 48)//ke zmene velikosti rotace pri stisku klavesy A\D
+// #define ANGLE_ROTATION //ke zmene velikosti rotace pri stisku klavesy A\D
+
 #define WALL -1
+#define KEY_W 13
+#define KEY_S 1
+#define KEY_A 0
+#define KEY_D 2
 /* FOV */
 
 // #define SCREEN_WIDTH 800 // Šířka okna

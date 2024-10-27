@@ -38,6 +38,25 @@ void	camera_mlx_process(t_data *game)
     // mlx_loop(game->camera_mlx_ptr);
 }
 
+int key_press(int keycode, t_data *data) {
+    printf("Key pressed: %d\n", keycode); // Debug output
+    if (keycode >= 0 && keycode < 256) {
+        data->keys[keycode] = true;
+        printf("Key %d pressed: %d\n", keycode, data->keys[keycode]);
+    }
+    return (0);
+}
+
+int key_release(int keycode, t_data *data) {
+    printf("Key released: %d\n", keycode); // Debug output
+    if (keycode >= 0 && keycode < 256) {
+        data->keys[keycode] = false;
+        printf("Key %d released: %d\n", keycode, data->keys[keycode]);
+        fflush(stdout);
+    }
+    return (0);
+}
+
 void    map_mlx_process(t_data *game)
 {
     game->img.img = mlx_new_image(game->mlx_ptr, game->file->widthmap * TILE_SIZE, 
@@ -46,7 +65,9 @@ void    map_mlx_process(t_data *game)
                                 &game->img.endian);
     display_map(game);
     mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, game->img.img, 0, 0);
-    mlx_hook(game->win_ptr, 17, 0, exit_point, game);
+	// mlx_hook(game->win_ptr, 3, 1L << 1, key_release, game);
+    mlx_hook(game->win_ptr, 2, 1L << 0, key_press, game);
+	mlx_hook(game->win_ptr, 17, 0, exit_point, game);
     mlx_key_hook(game->win_ptr, (int (*)())handle_keypress, game);
     // mlx_loop(game->mlx_ptr);
 }
