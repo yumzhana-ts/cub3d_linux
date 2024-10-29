@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   color_helper.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:24:26 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,13 @@ void	print_colores(t_file *m)
 
 /**
  * @brief Validates color values in a given 2D array of strings.
- * @param array A 2D array of strings where each string represents a color component.
- *              If the array is NULL, the function immediately returns an error (1).
+ * @param array A 2D array of strings where each 
+ * string represents a color component.
+ *              If the array is NULL, the function 
+ * immediately returns an error (1).
  * @return Returns 0 if all values within the range of 0 to 255),
- *         and 1 if any value is out of range or the input array is NULL.
+ *         and 1 if any value is out of range 
+ * or the input array is NULL.
  */
 int	color_values_validation(char **array)
 {

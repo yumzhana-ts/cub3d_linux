@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   map_handler.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:36:51 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 #include "libft.h"
 
-
-void map_init(t_file *file)
+void	map_init(t_file *file)
 {
 	file->map = NULL;
 	file->heightmap = 0;
@@ -36,14 +35,14 @@ void map_init(t_file *file)
  * Frees memory and returns 1 on error, or 0 on success.
  * @return 0 on success, 1 on failure.
  */
-int file_parsing(int argc, char **argv, t_file *game)
+int	file_parsing(int argc, char **argv, t_file *game)
 {
 	if (check_args(argc, argv))
 		return (1);
 	if (read_file(argv, game))
 		return (free_memory_array(game->file));
 	if (format_verification(game))
-		return (free_memory_array(game->file));;
+		return (free_memory_array(game->file));
 	if (!read_map(game))
 	{
 		if (rebuild_map(game))
@@ -52,7 +51,7 @@ int file_parsing(int argc, char **argv, t_file *game)
 		{
 			free_memory_array(game->map);
 			free_memory_array(game->file);
-			return(1);
+			return (1);
 		}
 	}
 	return (0);
@@ -60,11 +59,13 @@ int file_parsing(int argc, char **argv, t_file *game)
 
 /**
  * @brief Handles map initialization and processing.
- * Calls functions to parse the file, manipulate textures, and manage colors.
- * Frees allocated memory in case of errors and performs map debugging if successful.
+ * Calls functions to parse the file, manipulate 
+ * textures, and manage colors.
+ * Frees allocated memory in case of errors and
+ *  performs map debugging if successful.
  * @return 0 on success, 1 on failure.
  */
-int map_processing(int argc, char **argv, t_file *game)
+int	map_processing(int argc, char **argv, t_file *game)
 {
 	if (file_parsing(argc, argv, game))
 		return (1);
@@ -76,10 +77,8 @@ int map_processing(int argc, char **argv, t_file *game)
 	if (color_manipulation(game))
 	{
 		free_map_all(game);
-		return(free_memory_array(game->file));
+		return (free_memory_array(game->file));
 	}
-	if (DEBUG)
-		cute_game_info(game);
 	free_memory_array(game->file);
-	return(0);
+	return (0);
 }

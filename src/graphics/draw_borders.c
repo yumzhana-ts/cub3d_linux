@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw_borders.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:40:46 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/08/27 16:01:42 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/29 22:23:57 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
  * @brief Draw top border
  * @callgraph
  */
-void draw_top_border(t_data *game, int x, int y, int color)
+void	draw_top_border(t_data *game, int x, int y, int color)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (i < TILE_SIZE)
+	while (i < TILE_SIZE / SCALE_2D)
 	{
-		my_mlx_pixel_put(&game->img, x + i, y, color);
+		my_mlx_pixel_put(&game->camera_img, x + i, y, color);
 		i++;
 	}
 }
@@ -32,14 +32,14 @@ void draw_top_border(t_data *game, int x, int y, int color)
  * @brief Draw bottom border
  * @callgraph
  */
-void draw_bottom_border(t_data *game, int x, int y, int color)
+void	draw_bottom_border(t_data *game, int x, int y, int color)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (i < TILE_SIZE)
+	while (i < TILE_SIZE / SCALE_2D)
 	{
-		my_mlx_pixel_put(&game->img, x + i, y + TILE_SIZE - 1, color);
+		my_mlx_pixel_put(&game->camera_img, x + i, y + (TILE_SIZE / SCALE_2D) - 1, color);
 		i++;
 	}
 }
@@ -48,14 +48,14 @@ void draw_bottom_border(t_data *game, int x, int y, int color)
  * @brief Draw left border
  * @callgraph
  */
-void draw_left_border(t_data *game, int x, int y, int color)
+void	draw_left_border(t_data *game, int x, int y, int color)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (i < TILE_SIZE)
+	while (i < TILE_SIZE /SCALE_2D)
 	{
-		my_mlx_pixel_put(&game->img, x, y + i, color);
+		my_mlx_pixel_put(&game->camera_img, x, y + i, color);
 		i++;
 	}
 }
@@ -64,14 +64,14 @@ void draw_left_border(t_data *game, int x, int y, int color)
  * @brief Draw right border
  * @callgraph
  */
-void draw_right_border(t_data *game, int x, int y, int color)
+void	draw_right_border(t_data *game, int x, int y, int color)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (i < TILE_SIZE)
+	while (i < TILE_SIZE / SCALE_2D)
 	{
-		my_mlx_pixel_put(&game->img, x + TILE_SIZE - 1, y + i, color);
+		my_mlx_pixel_put(&game->camera_img, x + (TILE_SIZE / SCALE_2D) - 1, y + i, color);
 		i++;
 	}
 }
@@ -80,7 +80,7 @@ void draw_right_border(t_data *game, int x, int y, int color)
  * @brief Draw borders of map
  * @callgraph
  */
-void draw_border(t_data *game, int x, int y, int color)
+void	draw_border(t_data *game, int x, int y, int color)
 {
 	draw_top_border(game, x, y, color);
 	draw_bottom_border(game, x, y, color);

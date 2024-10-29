@@ -6,7 +6,7 @@
 /*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:40:46 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/10/27 22:43:22 by jstrojsa         ###   ########.fr       */
+/*   Updated: 2024/10/29 23:22:16 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@
 #include <X11/X.h>
 #include <float.h>
 #include <sys/time.h>
-
+#define DEBUG 0
 #define SCREEN_WIDTH 400
 #define SCREEN_HEIGHT 300
 //width of texture/tile
@@ -49,6 +49,7 @@
 #define NUM_PIX_COLUMN 1
 #define	WIDTH_TEXTURE 32
 #define	SPEED 4
+#define SCALE_2D 8
 
 typedef struct s_pixel
 {
@@ -145,10 +146,30 @@ typedef struct
 	unsigned char blue;
 } RGB;
 
+typedef struct s_dl
+{
+	int		i;
+	int		j;
+	float	tex_pos;
+	float	step;
+	int		width_scale;
+	float	vertical_index;
+	int		color;
+	int		color_index;
+} t_dl;
+
+/* key functions */
+void	key_w(t_data *game);
+void	key_s(t_data *game);
+void	key_a(t_data *game);
+void	key_d(t_data *game);
+void	key_escape(t_data *game);
+void	key_m(t_data *game, int keysym);
 
 int	column_texture(t_data *game);
 int	vertical_pos_texture(int y, int length);
-void process_color(char **array, unsigned int *hex_colors);
+void	process_color(char **array, unsigned int *hex_colors);
+void	reset_color(t_data *game);
 
 bool first_angle_is_on_dx(double view_angle);
 double degrees_to_radians(double degrees);
@@ -261,7 +282,7 @@ void process_flat_colors(char **array, unsigned int *hex_colors);
 void	fov(t_data *game);
 void draw_texture(t_data *game, int x, int y, int length, unsigned int *hex_colors);
 unsigned int texture_color(int y, int line);
-t_fov texture_line(t_data *game, int i, unsigned int *hex_color, bool draw);
+t_fov texture_line(t_data *game, int i, unsigned int *hex_color);
 int texture_array(t_data *game, char *texture, char **array, unsigned int *hex_colors);
 void store_textures(t_data *game);
 void free_hexs(t_file *game);
@@ -270,7 +291,6 @@ void free_hexs(t_file *game);
 
 
 #define EPSILON 1e-6
-#define DEBUG 1
 #define COLOR_RED 0xFF0000	 // Red color
 #define COLOR_BLACK 0x000000 // Black color
 #define COLOR_BLUE 0x0000FF	 // Blue color

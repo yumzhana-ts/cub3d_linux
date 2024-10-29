@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mlx_init_create_win.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 17:25:55 by jstrojsa          #+#    #+#             */
-/*   Updated: 2024/08/27 16:02:24 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/29 22:24:23 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,21 +29,14 @@
  * @todo 👾 Handle proper resource cleanup on error\n
  *       👾 Further error handling and logging
  */
-int mlx_init_create_window(t_data *game)
+int	mlx_init_create_window(t_data *game)
 {
-	game->mlx_ptr = mlx_init();
-	if (game->mlx_ptr == NULL)
-		return (fd_error("Failed to initialize mlx.\n"));
 	game->camera_mlx_ptr = mlx_init();
 	if (game->camera_mlx_ptr == NULL)
 		return (fd_error("Failed to initialize mlx.\n"));
-	game->win_ptr = mlx_new_window(game->mlx_ptr, game->file->widthmap * TILE_SIZE,
-									 game->file->heightmap * TILE_SIZE, "Map Display");
 	game->camera_win_ptr = mlx_new_window(game->camera_mlx_ptr, SCREEN_WIDTH,
-									SCREEN_HEIGHT, "Camera Display");
-	if (game->win_ptr == NULL)
-		return (fd_error("Failed to create window.\n"));
+			SCREEN_HEIGHT, "Camera Display");
 	if (game->camera_win_ptr == NULL)
 		return (fd_error("Failed to create camera window.\n"));
-	return 0;
+	return (0);
 }

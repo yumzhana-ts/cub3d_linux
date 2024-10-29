@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   util_3.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 11:58:41 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/28 22:52:35 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	free_memory_array(char **ptr)
 	return (1);
 }
 
-void free_textures_all(t_file *game)
+void	free_textures_all(t_file *game)
 {
 	free_memory(game->texture_e);
 	free_memory(game->texture_w);
@@ -49,13 +49,13 @@ void free_textures_all(t_file *game)
 	free_memory(game->texture_s);
 }
 
-void free_colors_all(t_file *game)
+void	free_colors_all(t_file *game)
 {
 	free_memory_array(game->color_f);
 	free_memory_array(game->color_c);
 }
 
-void free_map_all(t_file *game)
+void	free_map_all(t_file *game)
 {
 	free_colors_all(game);
 	free_textures_all(game);

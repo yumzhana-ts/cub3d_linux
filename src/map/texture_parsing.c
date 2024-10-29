@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   texture_parsing.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:19:07 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,12 +54,17 @@ int	texture_manipulation(t_file *m)
 }
 
 /**
- * @brief Processes texture identifiers (`NO`, `EA`, `WE`, `SO`) for different directions in the map data,
- * It also checks for duplicates and raises an error if a texture for a given direction has already been saved.
+ * @brief Processes texture identifiers (`NO`, `EA`, `WE`, `SO`) 
+ * for different directions in the map data,
+ * It also checks for duplicates and raises an error if a texture 
+ * for a given direction has already been saved.
  *
- * @param str A string that represents the texture identifier (`NO`, `EA`, `WE`, `SO`).
- * @param m A pointer to a `t_file` structure where texture paths for different directions are stored:
- * @return Returns 0 if the texture is successfully saved. If a duplicate texture is detected, it calls `fd_error`
+ * @param str A string that represents the texture identifier 
+ * (`NO`, `EA`, `WE`, `SO`).
+ * @param m A pointer to a `t_file` structure where texture paths 
+ * for different directions are stored:
+ * @return Returns 0 if the texture is successfully saved. 
+ * If a duplicate texture is detected, it calls `fd_error`
  *         with an appropriate message and returns the error result.
  */
 int	save_helper(char *str, t_file *m, char *texture)

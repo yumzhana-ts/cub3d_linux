@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   util_2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 09:33:33 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:18:03 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	map_debug(t_file *game)
 {
 	print_arrays(game->map);
 	debug_number("Map width", game->widthmap);
-	debug_number("Map height", game->heightmap);	
+	debug_number("Map height", game->heightmap);
 	print_player_info(game);
 	print_textures(game);
 	print_colores(game);
@@ -104,33 +104,4 @@ char	*ft_strstr(char *str, char *to_find)
 		i++;
 	}
 	return (0);
-}
-
-void cute_game_info(t_file *game) 
-{
-	print_arrays(game->map);
-    printf("+----------------------------------------------+\n");
-    printf("| 🗺️  Map Info                                  |\n");
-    printf("+---------------------+------------------------+\n");
-    printf("| 🌍 Width: %-10d | 🌍 Height: %-10d |\n", game->widthmap, game->heightmap);
-    printf("+---------------------+------------------------+\n");
-    printf("| 🛠️  Player Position Info                      |\n");
-    printf("+---------------------+------------------------+\n");
-    printf("| 📍 X: %-14d | 📍 Y: %-15d |\n", game->player_x, game->player_y);
-    printf("| 🧭 Direction: %-5c                          |\n", game->player_direction);
-    printf("+---------------------+------------------------+\n");
-    printf("| 🛠️  Textures Info                             |\n");
-    printf("+---------------------+------------------------+\n");
-    printf("| 🏔️  North: %-34s |\n", game->texture_n);
-    printf("| 🌄  South: %-33s |\n", game->texture_s);
-    printf("| 🌲  West: %-34s |\n", game->texture_w);
-    printf("| 🌅  East: %-34s |\n", game->texture_e);
-    printf("+---------------------+------------------------+\n");
-
-    // Print colors info
-    printf("| 🎨 Colors Info (Ceiling and Floor)           |\n");
-    printf("+---------------------+------------------------+\n");
-    printf("| 🌈 Ceiling: %-3s, %-3s, %-3s                    |\n", game->color_c[0], game->color_c[1], game->color_c[2]);
-    printf("| 🌿 Floor: %-3s, %-3s, %-3s                      |\n", game->color_f[0], game->color_f[1], game->color_f[2]);
-    printf("+----------------------------------------------+\n");
 }

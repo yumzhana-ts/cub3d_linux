@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_verification.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:21:35 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,18 +115,24 @@ int	check_valid_values(t_file *m)
 	return (0);
 }
 
-
 /**
- * @brief Checks for empty lines within the map data after the start of the map.
+ * @brief Checks for empty lines within the map data after the
+ *  start of the map.
  *
- * This function iterates through the map data starting from the specified `map_start` index in the `t_file` structure.
- * It looks for empty lines that consist solely of spaces and checks if the next line contains map elements (either '1' or '0').
- * If an empty line is found followed by a valid map line, an error is raised.
+ * This function iterates through the map data starting from 
+ * the specified `map_start` index in the `t_file` structure.
+ * It looks for empty lines that consist solely of spaces and 
+ * checks if the next line contains map elements (either '1' or '0').
+ * If an empty line is found followed by a valid map line, 
+ * an error is raised.
  *
- * @param m A pointer to a `t_file` structure that contains the map and file data.
- *          - `m->map_start` represents the index of the first line of the map in the file.
+ * @param m A pointer to a `t_file` structure that contains
+ *  the map and file data.
+ *          - `m->map_start` represents the index of 
+ * the first line of the map in the file.
  *          - `m->heightfile` is the total number of lines in the file.
- *          - `m->file` is a 2D array of characters representing each line of the file.
+ *          - `m->file` is a 2D array of characters 
+ * representing each line of the file.
  * @return Returns 0 if no issues are found. 
  */
 int	check_empty_line(t_file *m)

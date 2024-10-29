@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   color_parsing.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ytsyrend <ytsyrend@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jstrojsa <jstrojsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 21:23:15 by ytsyrend          #+#    #+#             */
-/*   Updated: 2024/09/09 15:36:02 by ytsyrend         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:24:02 by jstrojsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,11 @@
  * This function checks the integrity and 
  * validity of two sets of color components (`color_c` and `color_f`)
  * It ensures that both sets are complete, each has exactly 3 components,
- * and that all color component values fall within the valid range of 0 to 255.
+ * and that all color component values fall within the 
+ * valid range of 0 to 255.
  *
- * @param m A pointer to a `t_file` structure containing the color arrays (`color_c` and `color_f`).
+ * @param m A pointer to a `t_file` structure containing 
+ * the color arrays (`color_c` and `color_f`).
  * @return Returns 0 if all validations pass.
  */
 int	manipulation_helper(t_file *m)
@@ -69,7 +71,7 @@ int	color_manipulation(t_file *m)
 		i++;
 	}
 	if (manipulation_helper(m))
-		return(1);
+		return (1);
 	return (0);
 }
 
